@@ -45,3 +45,5 @@ get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a firstNam
 put cdb_BuildQuery("MACAddress","regex","^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$") into tQueryA
 get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a correctly-formatted 'MACAddress'
 ```
+
+\* optional parameter

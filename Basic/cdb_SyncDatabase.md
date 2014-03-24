@@ -1,47 +1,37 @@
-cdb_BuildQuery
+cdb_SyncDatabase
 ===
-`function cdb_BuildQuery pKey, pOperator, pValue`
+`command cdb_SyncDatabase pClientDatabaseName, pResolutionMode`
 
-**Summary:**
-This function returns a query-style array properly formatted for usage in other query-based API calls.
+**Summary:**  
+This command synchronizes the local database with the database stored in the cloud.
 
-**Inputs:**
- `pKey` *(String)* – The key in the database to search, as defined by your active schema.
- `pOperator` *(String)* – The method to compare the 'key' and the 'value'.
- `pValue` *(String)* – The value to compare against the contents of the 'key'.
+**Inputs:**  
+`pClientDatabaseName`\* *(String)* – The label of the database to access, or the working database if empty.  
+`pResolutionMode`\* *(String)* – The resolution mode to use for conflicts, from the following options:  
+* `server_master` – Local records are created, removed, or updated to match the cloud database. (This is the default if no mode is provided.)
+* `local_master` – Cloud records are created, removed, or updated to match the local database.
+* `older_record` – Records that exist in both the cloud and local databases are merged, with the least recently modified version taking precedence. Records which do not exist in both databases are ignored.
+* `newer_record` – Records that exist in both the cloud and local databases are merged, with the most recently modified version taking precedence. Records which do not exist in both databases are ignored.
 
-**Outputs:**
+**Outputs:**  
 *(Array)* – An array containing an array-formatted query, for use in other query functions.
 
-**Query Syntax:**
-Queries are formatted as an array containing the following keys:
-`key` – The key in the database to search, as defined by your active schema
-`value` – The value to compare against the contents of the 'key'
-`operator` – The method to compare the 'key' and the 'value':
-* `is in` – A key's contents contains the 'value'
-* `is not in` – A key's contents does not contain the 'value'
-* `is` – A key's contents is equal to the 'value'
-* `is not` – A key's contents is not equal to the 'value'
-* `starts with` – A key's contents begins with the 'value'
-* `ends with` – A key's contents ends with the 'value'
-* `>` – A key's contents are greater than the 'value' (non-numeric contents are ignored)
-* `<` – A key's contents are less than the 'value' (non-numeric contents are ignored)
-* `>=` – A key's contents are greater than or equal to the 'value' (non-numeric contents are ignored)
-* `<=` – A key's contents are less than or equal to the 'value' (non-numeric contents are ignored)
-* `regex` – A key's contents matches the 'value' regular expression
+**Additional Requirements:**  
+This API call requires internet access.
 
-**API Version:**
-Introduced – 1.0
+**API Version:**  
+Introduced – 1.0  
 Modified – 1.4
 
 **Examples:**
 ---
 ```
-put cdb_BuildQuery("firstName","=","Kevin") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a firstName equal to 'Kevin'
+cdb_syncDatabase //sync all records for the current working database
 ```
 
 ```
-put cdb_BuildQuery("MACAddress","regex","^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a correctly-formatted 'MACAddress'
+cdb_syncDatabase "Customers","server_master" //download the latest version of the Customers database from the cloud
 ```
+
+
+\* optional parameter

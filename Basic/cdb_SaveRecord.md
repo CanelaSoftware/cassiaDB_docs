@@ -1,47 +1,31 @@
-cdb_BuildQuery
+cdb_SaveRecord
 ===
-`function cdb_BuildQuery pKey, pOperator, pValue`
+`function cdb_SaveRecord pRecordA, pClientDatabaseName`
 
-**Summary:**
-This function returns a query-style array properly formatted for usage in other query-based API calls.
+**Summary:**  
+This function creates a record both in the cloud and locally with the provided data, or updates an existing record with the provided data if the record exists.
 
-**Inputs:**
- `pKey` *(String)* – The key in the database to search, as defined by your active schema.
- `pOperator` *(String)* – The method to compare the 'key' and the 'value'.
- `pValue` *(String)* – The value to compare against the contents of the 'key'.
+**Inputs:**  
+`pRecordA` *(Array)* – An array containing a number of keys pertaining to a specific record. May or may not contain a cdbRecordID.  
+`pClientDatabaseName`\* *(String)* – The label of the database to access, or the working database if empty.
 
-**Outputs:**
-*(Array)* – An array containing an array-formatted query, for use in other query functions.
+**Outputs:**  
+*(String)* – Contains the allocated cdbRecordID for the new record, or the provided cdbRecordID for updates. Note: Empty output indicates function failed to complete successfully.
 
-**Query Syntax:**
-Queries are formatted as an array containing the following keys:
-`key` – The key in the database to search, as defined by your active schema
-`value` – The value to compare against the contents of the 'key'
-`operator` – The method to compare the 'key' and the 'value':
-* `is in` – A key's contents contains the 'value'
-* `is not in` – A key's contents does not contain the 'value'
-* `is` – A key's contents is equal to the 'value'
-* `is not` – A key's contents is not equal to the 'value'
-* `starts with` – A key's contents begins with the 'value'
-* `ends with` – A key's contents ends with the 'value'
-* `>` – A key's contents are greater than the 'value' (non-numeric contents are ignored)
-* `<` – A key's contents are less than the 'value' (non-numeric contents are ignored)
-* `>=` – A key's contents are greater than or equal to the 'value' (non-numeric contents are ignored)
-* `<=` – A key's contents are less than or equal to the 'value' (non-numeric contents are ignored)
-* `regex` – A key's contents matches the 'value' regular expression
+**Additional Requirements:**  
+This API call requires internet access.
 
-**API Version:**
-Introduced – 1.0
+**API Version:**  
+Introduced – 1.0  
 Modified – 1.4
 
 **Examples:**
 ---
 ```
-put cdb_BuildQuery("firstName","=","Kevin") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a firstName equal to 'Kevin'
+put "550e8400-e29b-41d4-a716-446655440000" into tCustomerA["cdbRecordID"]
+put "Gary" into tCustomerA["firstName"]
+put cdb_SaveRecord(tCustomerA,"Customers") into tNewUUID
 ```
 
-```
-put cdb_BuildQuery("MACAddress","regex","^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a correctly-formatted 'MACAddress'
-```
+
+\* optional parameter

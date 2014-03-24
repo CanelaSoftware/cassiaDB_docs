@@ -34,3 +34,5 @@ put cdb_BuildQuery("lastName","=","Miller") into tQuerySetA["LnMiller"]
 put cdb_BuildQuery("lastName","=","Stevens") into tQuerySetA["LnStevens"]
 get cdb_AdvancedCloudQuery(tQuerySetA,"((FnMark AND LnMiller) OR (FnMark AND LnStevens))","Users","recordList")
 ```
+
+\* optional parameter
