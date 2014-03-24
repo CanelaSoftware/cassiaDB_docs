@@ -29,8 +29,8 @@ Introduced – 1.5
 ---
 ```
 //list all users named 'Mark Miller' or 'Mark Stevens'
-put cdb_BuildQuery("firstName","=","Mark") into tQuerySetA["AllMarks"]
-put cdb_BuildQuery("lastName","=","Miller") into tQuerySetA["AllMillers"]
-put cdb_BuildQuery("lastName","=","Stevens") into tQuerySetA["AllStevens"]
-get cdb_AdvancedCloudQuery(tQuerySetA,"((AllMarks AND AllMillers) OR (AllMarks AND AllStevens))","Users","recordList")
+put cdb_BuildQuery("firstName","=","Mark") into tQuerySetA["FnMark"]
+put cdb_BuildQuery("lastName","=","Miller") into tQuerySetA["LnMiller"]
+put cdb_BuildQuery("lastName","=","Stevens") into tQuerySetA["LnStevens"]
+get cdb_AdvancedCloudQuery(tQuerySetA,"((FnMark AND LnMiller) OR (FnMark AND LnStevens))","Users","recordList")
 ```
