@@ -1,17 +1,19 @@
-cdb_BuildQuery
-===
-`function cdb_BuildQuery pKey, pOperator, pValue`
+cdb_BasicCloudQuery
+======================
+`function cdb_BasicCloudQuery pQueryA, pClientDatabasename, pOutputFormat`
 
-**Summary:**
-This function returns a query-style array properly formatted for usage in other query-based API calls.
+**Summary:**  
+This function searches the specified cloud database, and returns the subset that matches that query in several possible formats.
 
-**Inputs:**
- `pKey` *(String)* – The key in the database to search, as defined by your active schema.
- `pOperator` *(String)* – The method to compare the 'key' and the 'value'.
- `pValue` *(String)* – The value to compare against the contents of the 'key'.
+**Inputs:**  
+`pQueryA` *(Array)* - The search query; see “Query Syntax” below.  
+`pClientDatabaseName`\* *(String)* - The label of the database to access, or the working database if empty.  
+`pOutputFormat`\* *(String)* - The output format to use, from the following options:
+* `recordList` - A line-delimited String of the matching cdbRecordIDs. (This is the default if no format is provided.)
+* `structured` - A multidimensional Array of parsed, expanded database information.
 
-**Outputs:**
-*(Array)* – An array containing an array-formatted query, for use in other query functions.
+**Outputs:**  
+*(String or Array)* - Varies based on 'pOutputFormat' parameter; see description above.
 
 **Query Syntax:**
 Queries are formatted as an array containing the following keys:
@@ -24,26 +26,30 @@ Queries are formatted as an array containing the following keys:
 * `is not` – A key's contents is not equal to the 'value'
 * `starts with` – A key's contents begins with the 'value'
 * `ends with` – A key's contents ends with the 'value'
+* `regex` – A key's contents matches the 'value' regular expression
 * `>` – A key's contents are greater than the 'value' (non-numeric contents are ignored)
 * `<` – A key's contents are less than the 'value' (non-numeric contents are ignored)
 * `>=` – A key's contents are greater than or equal to the 'value' (non-numeric contents are ignored)
 * `<=` – A key's contents are less than or equal to the 'value' (non-numeric contents are ignored)
-* `regex` – A key's contents matches the 'value' regular expression
 
-**API Version:**
-Introduced – 1.0
-Modified – 1.4
+**Additional Requirements:**  
+This API call requires internet access.
+
+**API Version:**  
+Introduced – 1.5  
+
+\* *optional parameter*
 
 **Examples:**
----
+-------------
+```
+put "transactionAmount" into tQueryA["key"]
+put "25.00" into tQueryA["value"]
+put ">" into tQueryA["operator"]
+get cdb_BasicCloudQuery(tQueryA) //list all cdbRecordIDs with 'transactionAmounts' greater than 25.00
+```
+
 ```
 put cdb_BuildQuery("firstName","=","Kevin") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a firstName equal to 'Kevin'
+get cdb_BasicCloudQuery(tQueryA,,"structured") //structured array of all cdbRecordIDs with firstName 'Kevin' located in the current working database
 ```
-
-```
-put cdb_BuildQuery("MACAddress","regex","^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a correctly-formatted 'MACAddress'
-```
-
-\* optional parameter

@@ -1,49 +1,39 @@
-cdb_BuildQuery
-===
-`function cdb_BuildQuery pKey, pOperator, pValue`
+cdb_AdvancedLocalQuery
+======================
+`function cdb_AdvancedLocalQuery pQuerySetA, pLogicMap, pClientDatabasename, pOutputFormat`
 
-**Summary:**
-This function returns a query-style array properly formatted for usage in other query-based API calls.
+**Summary:**  
+This function searches the specified local database using provided queries, applies the logical operations detailed in the pLogicMap, and returns the resulting subset in several possible formats.
 
-**Inputs:**
- `pKey` *(String)* – The key in the database to search, as defined by your active schema.
- `pOperator` *(String)* – The method to compare the 'key' and the 'value'.
- `pValue` *(String)* – The value to compare against the contents of the 'key'.
+**Inputs:**  
+`pQuerySetA` *(Array)* - A set of one or more search queries; each query's key should be a single word, and correspond to one (or more) in the pLogicMap.  
+`pLogicMap` *(String)* - The order and method in which the queries' results are combined.  
+`pClientDatabaseName`\* *(String)* - The label of the database to access, or the working database if empty.  
+`pOutputFormat`\* *(String)* - The output format to use, from the following options:
+* `recordList` - A line-delimited String of the matching cdbRecordIDs. (This is the default if no format is provided.)
+* `structured` - A multidimensional Array of parsed, expanded database information.
 
-**Outputs:**
-*(Array)* – An array containing an array-formatted query, for use in other query functions.
+**Outputs:**  
+*(String or Array)* - Varies based on 'pOutputFormat' parameter; see description above.
 
-**Query Syntax:**
-Queries are formatted as an array containing the following keys:
-`key` – The key in the database to search, as defined by your active schema
-`value` – The value to compare against the contents of the 'key'
-`operator` – The method to compare the 'key' and the 'value':
-* `is in` – A key's contents contains the 'value'
-* `is not in` – A key's contents does not contain the 'value'
-* `is` – A key's contents is equal to the 'value'
-* `is not` – A key's contents is not equal to the 'value'
-* `starts with` – A key's contents begins with the 'value'
-* `ends with` – A key's contents ends with the 'value'
-* `>` – A key's contents are greater than the 'value' (non-numeric contents are ignored)
-* `<` – A key's contents are less than the 'value' (non-numeric contents are ignored)
-* `>=` – A key's contents are greater than or equal to the 'value' (non-numeric contents are ignored)
-* `<=` – A key's contents are less than or equal to the 'value' (non-numeric contents are ignored)
-* `regex` – A key's contents matches the 'value' regular expression
+**Logic Map Syntax:**  
+The logic map is formatted as a String that can be parenthetically nested, with the following logical set operations:
+* 'AND' - The intersection of the results.
+* 'OR' - The union of the results.
+* 'XOR' - The symmetric difference of the results.
 
-**API Version:**
+**API Version:**  
 Introduced – 1.0
-Modified – 1.4
+Modified - 1.4
+
+\* *optional parameter*
 
 **Examples:**
----
+-------------
 ```
-put cdb_BuildQuery("firstName","=","Kevin") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a firstName equal to 'Kevin'
+//list all users named 'Mark Miller' or 'Mark Stevens'
+put cdb_BuildQuery("firstName","=","Mark") into tQuerySetA["FnMark"]
+put cdb_BuildQuery("lastName","=","Miller") into tQuerySetA["LnMiller"]
+put cdb_BuildQuery("lastName","=","Stevens") into tQuerySetA["LnStevens"]
+get cdb_AdvancedLocalQuery(tQuerySetA,"((FnMark AND LnMiller) OR (FnMark AND LnStevens))","Users","recordList")
 ```
-
-```
-put cdb_BuildQuery("MACAddress","regex","^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$") into tQueryA
-get cdb_BasicQuery(tQueryA) //returns a list of all cdbRecordIDs with a correctly-formatted 'MACAddress'
-```
-
-\* optional parameter

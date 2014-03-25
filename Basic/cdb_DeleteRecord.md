@@ -1,5 +1,5 @@
 cdb_DeleteRecord
-===
+================
 `command cdb_DeleteRecord pRecordIDList, pClientDatabaseName`
 
 **Summary:**  
@@ -16,11 +16,10 @@ This API call requires internet access.
 Introduced – 1.0  
 Modified – 1.1
 
+\* *optional parameter*
+
 **Examples:**
----
+-------------
 ```
 cdb_DeleteRecord "550e8400-e29b-41d4-a716-446655440000","Transactions"
 ```
-
-
-\* optional parameter

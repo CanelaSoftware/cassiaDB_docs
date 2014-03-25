@@ -1,5 +1,5 @@
 cdb_SaveRecord
-===
+==============
 `function cdb_SaveRecord pRecordA, pClientDatabaseName`
 
 **Summary:**  
@@ -19,13 +19,12 @@ This API call requires internet access.
 Introduced – 1.0  
 Modified – 1.4
 
+\* *optional parameter*
+
 **Examples:**
----
+-------------
 ```
 put "550e8400-e29b-41d4-a716-446655440000" into tCustomerA["cdbRecordID"]
 put "Gary" into tCustomerA["firstName"]
 put cdb_SaveRecord(tCustomerA,"Customers") into tNewUUID
 ```
-
-
-\* optional parameter

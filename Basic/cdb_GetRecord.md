@@ -1,5 +1,5 @@
 cdb_GetRecord
-===
+=============
 `function cdb_GetRecord pRecordIDList, pClientDatabaseName`
 
 **Summary:**  
@@ -19,8 +19,10 @@ This API call requires internet access.
 Introduced – 1.0  
 Modified – 1.4
 
+\* *optional parameter*
+
 **Examples:**
----
+-------------
 ```
 get cdb_GetRecord("550e8400-e29b-41d4-a716-446655440000")
 ```
@@ -28,5 +30,3 @@ get cdb_GetRecord("550e8400-e29b-41d4-a716-446655440000")
 ```
 put cdb_GetRecord(tCurrentUser,"Customers") into tCustomerDataA
 ```
-
-\* optional parameter
