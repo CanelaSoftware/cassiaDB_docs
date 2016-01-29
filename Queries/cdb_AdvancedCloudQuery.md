@@ -21,8 +21,10 @@ This function searches the specified database using the provided queries, applie
   * `"basic"` - A multidimensional array of all user-defined keys.
   * `"advanced"` - A multidimensional array of all keys, including internal keys.
 
+> _*These parameters are optional; default values are specified in the description._
+
 ## Outputs:
-Output varies based on `pOutputFormat`; see description above.
+Output varies based on `pOutputFormat`; see description in the Input section above.
 
 ## API Version:
 * `1.0` - Introduced
