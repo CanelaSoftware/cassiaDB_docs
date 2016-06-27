@@ -18,7 +18,7 @@ This function locally (but not in the cloud) allocates a new cdbRecordID for a b
 
 > _*optional parameter._
 
-![alt text] (file://https://github.com/CanelaSoftware/cassiaDB_docs/chartimages/Screen%20Shot%202016-06-27%20at%208.58.01%20AM.png)
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/chartimages/Screen%20Shot%202016-06-27%20at%208.58.01%20AM.png)
 ## Outputs:
 (Array) -- This output array has similar structure to the input array, except that the recordKeys in the input array are replaced with the corresponding cdbRecordID keys that are associated with the data that the recordKeys contained. The corresponding cdbRecordID keys have empty contents. 
 
