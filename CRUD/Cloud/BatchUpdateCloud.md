@@ -18,7 +18,7 @@ This command makes changes to a number of records on the cloud, without making c
 
 > _*optional parameter._
 
-![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%209.04.38%20AM.png)
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/updateInput.png)
 ## Additional Requirements:
 This API call requires internet access.
 ## API Version:

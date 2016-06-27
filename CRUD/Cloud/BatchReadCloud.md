@@ -15,10 +15,10 @@ This function reads a list of records on the cloud and returns those records' co
 
 > _*optional parameter._
 
-![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%208.58.16%20AM.png)
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/readInput.png)
 ## Outputs:
 (Aray) -- This output array is essentially the same as the input array but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.
-![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%2010.34.26%20AM.png)
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/readOutput.png)
 ## Additional Requirements:
 This API call requires internet access.
 ## API Version:

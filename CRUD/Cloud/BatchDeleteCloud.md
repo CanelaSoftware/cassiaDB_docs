@@ -17,7 +17,7 @@ This function deletes a list of records over the cloud.
 
 > Note: To delete all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
-![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%208.58.16%20AM.png)
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/deleteInput.png)
 ## Additional Requirements:
 This API call requires internet access.
 ## API Version:
