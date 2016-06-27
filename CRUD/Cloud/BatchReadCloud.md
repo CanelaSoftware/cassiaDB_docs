@@ -1,10 +1,10 @@
-# BatchReadLocal
+# BatchReadCloud
 ---
 ```
-function cdb_batchReadLocal(pRecordA)
+function cdb_batchReadCloud(pRecordA)
 ```
 ## Summary:
-This function reads a list of local records and returns those records' contents. It takes the input array and essentially fills the empty contents of each cdbRecordID key.
+This function reads a list of records on the cloud and returns those records' contents. It takes the input array and essentially fills the empty contents of each cdbRecordID key.
 
 ## Inputs:
 * **`pRecordA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdx_getTableID* and passing in the table name, returning the table's unique UID. There must be at least one table UID key in the array.
@@ -18,10 +18,9 @@ This function reads a list of local records and returns those records' contents.
 ![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%208.58.16%20AM.png)
 ## Outputs:
 (Aray) -- This output array is essentially the same as the input array but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.
-
 ![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%2010.34.26%20AM.png)
-
-
+## Additional Requirements:
+This API call requires internet access.
 ## API Version:
 * `0.3.1` - Introduced
 
@@ -35,5 +34,5 @@ repeat for each line xRecordID in fld "recordIDtRecordA"
 	put empty into tRecordA[tTableID][xRecordID]
 end repeat
      
-put cdb_batchReadLocal(tRecordA) into tRecordA
+put cdb_batchReadCloud(tRecordA) into tRecordA
 ```

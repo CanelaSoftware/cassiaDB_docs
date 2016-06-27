@@ -1,10 +1,10 @@
-# BatchDeleteLocal
+# BatchDeleteCloud
 ---
 ```
-commnad cdb_batchDeleteLocal pRecordA
+commnad cdb_batchDeleteCloud pRecordA
 ```
 ## Summary:
-This function deletes a list of local records.
+This function deletes a list of records over the cloud.
 
 ## Inputs:
 * **`pRecordA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdx_getTableID* and passing in the table name, returning the table's unique UID. There must be at least one table UID key in the array.
@@ -17,9 +17,9 @@ This function deletes a list of local records.
 
 > Note: To delete all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
-
 ![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%208.58.16%20AM.png)
-
+## Additional Requirements:
+This API call requires internet access.
 ## API Version:
 * `0.3.1` - Introduced
 
@@ -33,7 +33,7 @@ repeat for each line xRecordID in fld "recordIDtRecordA"
 	put empty into tRecordA[tTableID][xRecordID]
 end repeat
      
-put cdb_batchDeleteLocal(tRecordA) into tRecordA
+put cdb_batchDeleteCloud(tRecordA) into tRecordA
 ```
 
 or, to delete all the keys for a given table:
@@ -45,5 +45,5 @@ put cdx_getTableID("clients") into tTableID
      
 put empty into tRecordA[tTableID]["*"]
 
-put cdb_batchDeleteLocal(tRecordA) into tRecordA
+put cdb_batchDeleteCloud(tRecordA) into tRecordA
 ```

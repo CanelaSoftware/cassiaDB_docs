@@ -1,10 +1,10 @@
-# BatchUpdateLocal
+# BatchUpdateCloud
 ---
 ```
-command cdb_batchUpdateLocal pRecordA
+command cdb_batchUpdateCloud pRecordA
 ```
 ## Summary:
-This command makes changes to a number of local records, without making changes to the corresponding cloud records.
+This command makes changes to a number of records on the cloud, without making changes to the corresponding local records.
 
 ## Inputs:
 * **`pRecordA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdx_getTableID* and passing in the table name, returns the table's unique UID. There must be at least one table UID key in this array.
@@ -19,6 +19,8 @@ This command makes changes to a number of local records, without making changes 
 > _*optional parameter._
 
 ![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%209.04.38%20AM.png)
+## Additional Requirements:
+This API call requires internet access.
 ## API Version:
 * `0.3.1` - Introduced
 
@@ -38,5 +40,5 @@ put fld "lastName2" into tDataA[tTableID][2]["lastName"]
 put fld "age2" into tDataA[tTableID][2]["age"]
 put fld "income2" into tDataA[tTableID][2]["income"]
 
-cdb_batchUpdateLocal tDataA
+cdb_batchUpdateCloud tDataA
 ```

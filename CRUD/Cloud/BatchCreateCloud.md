@@ -23,6 +23,8 @@ This function (but not locally) allocates a new cdbRecordID in the cloud for a b
 (Array) -- This output array has similar structure to the input array, except that the recordKeys in the input array are replaced with the corresponding cdbRecordID keys that are associated with the data that the recordKeys contained. The corresponding cdbRecordID keys have empty contents. 
 
 ![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%2010.17.23%20AM.png)
+## Additional Requirements:
+This API call requires internet access.
 ## API Version:
 * `0.3.1` - Introduced
 
