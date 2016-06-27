@@ -4,7 +4,7 @@
 function cdb_batchCreateLocal(pRecordA)
 ```
 ## Summary:
-This function stores data to one or more tables in a single call. A new cdbRecordID is returned for every new record created.
+This function stores data locally to one or more tables in a single call. A cdbRecordID is returned for every new record created.
 
 ## Inputs:
 * **`pRecordA`** *(Array)* - A multidimensional array of keys, where each key is a table UUID to another array of keys. This table UUID can be obtained by calling the function *cdx_getTableID* and passing in the table name, returns the table's unique UUID. There must be at least one table UUID key in the array.
