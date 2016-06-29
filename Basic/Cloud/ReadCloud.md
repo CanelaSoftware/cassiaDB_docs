@@ -7,7 +7,7 @@ function cdb_readCloud(pRecordA)
 This function downloads the most recent version of a cloud record, and returns it as an array without updating the local record.
 
 ## Inputs:
-* **`pRecordA`** *(Array)* - An array containing the cdbTableName, an an array of record IDs
+* **`pRecordA`** *(Array)* - * **`pRecordA`** *(Array)* - An array of keys containing the cdbTableName, and one or more cdbRecordIDs. Here are the choices for key names:
     * `["cdbTableName"]` *(String)* - The specified table name
     * `["cdbRecordID"]` *(String)* - A single cdbRecordID, or a line-delimited list of cdbRecordIDs.
 
