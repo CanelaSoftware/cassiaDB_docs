@@ -4,13 +4,13 @@
 function cdb_localRecordCount(pTableName)
 ```
 ## Summary:
-This function counts the number of unique records in a given database.
+This function counts the number of unique records in a given table.
 
 ## Inputs:
-* **`pTableName`** *(String)* - The label of the database to access.
+* **`pTableName`** *(String)* - The label of the table to access.
 
 ## Outputs:
-(String) – Contains the numeric count of records in a given database.
+(String) – Contains the numeric count of records in a given table.
 
 ## API Version:
 * `0.3.1` - Introduced
