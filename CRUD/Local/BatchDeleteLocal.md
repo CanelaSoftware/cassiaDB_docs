@@ -1,4 +1,4 @@
-# BatchDeleteLocal
+# cdb_batchDeleteLocal
 ---
 ```
 commnad cdb_batchDeleteLocal pRecordA

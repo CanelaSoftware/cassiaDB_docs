@@ -1,4 +1,4 @@
-# LocalRecordCount
+# cdb_localRecordCount
 ---
 ```
 function cdb_localRecordCount(pTableName)

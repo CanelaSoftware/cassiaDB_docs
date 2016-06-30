@@ -1,4 +1,4 @@
-# BatchDeleteCloud
+# cdb_batchDeleteCloud
 ---
 ```
 commnad cdb_batchDeleteCloud pRecordA

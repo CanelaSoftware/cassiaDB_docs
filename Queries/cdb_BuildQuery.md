@@ -1,4 +1,4 @@
-cdb_BuildQuery
+cdb_buildQuery
 ==============
 `function cdb_BuildQuery pKey, pOperator, pValue`
 

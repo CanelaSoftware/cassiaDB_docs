@@ -1,4 +1,4 @@
-# CloudRecordCount
+# cdb_cloudRecordCount
 ---
 ```
 function cdb_cloudRecordCount(pTableName)

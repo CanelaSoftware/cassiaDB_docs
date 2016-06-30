@@ -1,4 +1,4 @@
-# BatchUpdateLocal
+# cdb_batchUpdateLocal
 ---
 ```
 command cdb_batchUpdateLocal pRecordA

@@ -1,4 +1,4 @@
-# BatchUpdateCloud
+# cdb_batchUpdateCloud
 ---
 ```
 command cdb_batchUpdateCloud pRecordA

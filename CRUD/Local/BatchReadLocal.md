@@ -1,4 +1,4 @@
-# BatchReadLocal
+# cdb_batchReadLocal
 ---
 ```
 function cdb_batchReadLocal(pRecordA)

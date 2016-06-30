@@ -1,4 +1,4 @@
-cdb_BasicLocalQuery
+cdb_basicLocalQuery
 ======================
 `function cdb_BasicLocalQuery pQueryA, pClientDatabasename, pOutputFormat`
 

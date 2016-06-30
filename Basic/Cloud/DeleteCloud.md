@@ -1,4 +1,4 @@
-# DeleteCloud
+# cdb_deleteCloud
 ---
 ```
 command cdb_deleteCloud pRecordID, pTableName
