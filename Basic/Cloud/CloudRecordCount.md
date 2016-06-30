@@ -4,10 +4,10 @@
 function cdb_cloudRecordCount(pTableName)
 ```
 ## Summary:
-This function counts the number of cloud records in a given database.
+This function counts the number of cloud records in a given table.
 
 ## Inputs:
-* **`pTableName`** *(String)* - The label of the database to access.
+* **`pTableName`** *(String)* - The label of the table to access.
 
 ## Outputs:
 (String) – Contains the numeric count of records in the cloud.
