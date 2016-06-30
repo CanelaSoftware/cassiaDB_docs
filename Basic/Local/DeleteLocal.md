@@ -1,4 +1,4 @@
-# DeleteLocal
+# cdb_deleteLocal
 ---
 ```
 command cdb_deleteLocal pRecordA

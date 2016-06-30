@@ -1,4 +1,4 @@
-# ReadCloud
+# cdb_readCloud
 ---
 ```
 function cdb_readCloud(pRecordA)

@@ -1,4 +1,4 @@
-cdb_AdvancedLocalQuery
+cdb_advancedLocalQuery
 ======================
 `function cdb_AdvancedLocalQuery pQuerySetA, pLogicMap, pClientDatabasename, pOutputFormat`
 

@@ -1,4 +1,4 @@
-# BatchCreateLocal
+# cdb_batchCreateLocal
 ---
 ```
 function cdb_batchCreateLocal(pRecordA)

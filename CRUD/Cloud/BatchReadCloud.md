@@ -1,4 +1,4 @@
-# BatchReadCloud
+# cdb_batchReadCloud
 ---
 ```
 function cdb_batchReadCloud(pRecordA)

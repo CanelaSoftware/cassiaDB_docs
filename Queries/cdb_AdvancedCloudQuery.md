@@ -1,4 +1,4 @@
-# AdvancedCloudQuery
+# cdb_advancedCloudQuery
 ---
 ```
 function cdb_AdvancedCloudQuery(pQuerySetA, pLogicMap, pClientDatabaseName, pOutputFormat)

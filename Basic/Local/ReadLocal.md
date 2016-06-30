@@ -1,4 +1,4 @@
-# ReadLocal
+# cdb_readLocal
 ---
 ```
 function cdb_readLocal(pRecordA)

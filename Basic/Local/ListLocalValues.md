@@ -1,4 +1,4 @@
-# ListLocalValues
+# cdb_listLocalValues
 ---
 ```
 function cdb_listLocalValues(pArrayA)

@@ -1,4 +1,4 @@
-cdb_BasicCloudQuery
+cdb_basicCloudQuery
 ======================
 `function cdb_BasicCloudQuery pQueryA, pClientDatabasename, pOutputFormat`
 

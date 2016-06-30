@@ -1,4 +1,4 @@
-# CreateCloud
+# cdb_createCloud
 ---
 ```
 function cdb_createCloud(pRecordA)
