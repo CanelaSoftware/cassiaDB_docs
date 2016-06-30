@@ -10,7 +10,7 @@ This function counts the number of cloud records in a given table.
 * **`pTableName`** *(String)* - The label of the table to access.
 
 ## Outputs:
-(String) – Contains the numeric count of records in the cloud.
+(String) – Contains the numeric count of records in a given table on the cloud.
 
 ## API Version:
 * `0.3.1` - Introduced
