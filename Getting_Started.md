@@ -9,7 +9,7 @@ These are the steps to setting up your CassiaDB SDK (cSDK). Working with the cSD
 
 
 • Start your commercial edition of LiveCode
-• Make a new stack and paste the following code into the card script of card 1 of your new stack. This code engages the cSDK at the start up of this stack.
+• Make a new stack and paste the following code into the card script of card 1 of your new stack. This code initializes the cSDK at the start up of this stack.
 
 			on preOpenStack
 				 initializeLiveCloud
@@ -33,31 +33,13 @@ These are the steps to setting up your CassiaDB SDK (cSDK). Working with the cSD
 			end initializeLiveCloud
 
 
-• Save and quit your stack
-• Place the cassiaDB folder next to your stack
+• Save and Quit your stack
+• Place the cassiaDB folder next to your mainstack.
 • Start your stack. Your SDK should now have access to a number of libraries for this stack. Open your message box and click on the 'Stacks in Use' icon to see the libraries.
-• Our gCDBauthKey is temporary
+• The provided gCDBauthKey in the code above is temporary. We will get our own gCDBauthKey later in this guide.
 
 Your cSDK is ready for configuration. We will start by creating our first table and keys.
 
 • Open your message box and type the following to create your first table: cdb_createTable "customers"
 
 
-required: local/server
-localDirectory
-mainStack
-
-
-required: cloud 
-instanceName
-maxTransportSize
-mode
-
-
-
-required: local/cloud
-authKey
-clientData
-coreValues
-coreValuesSafe
-keySizeLimit
