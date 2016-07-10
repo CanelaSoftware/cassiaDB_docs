@@ -7,7 +7,7 @@ function cdb_listLocalValues(pArrayA)
 This function returns a line-delimited list of the values of the requested key.
 
 ## Inputs:
-* **`pArrayA`** *(Array)* - An array containing the cdbTableName. the keyList.
+* **`pArrayA`** *(Array)* - An array of keys containing the cdbTableName and a number of optional keys. Here are the choices for key names:
     * `*["keyList"]` *(String)* - The key whose values will be listed.
     * `*["sortType"]` *(String)* - The type of sort to apply to the results, from the following options:
        * `'text'` - sorts by the ASCII value of each character.  

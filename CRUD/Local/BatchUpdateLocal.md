@@ -18,7 +18,9 @@ This command makes changes to a number of local records, without making changes 
 
 > _*optional parameter._
 
-![alt text] (file:///Users/georgekarma/Desktop/Screen%20Shot%202016-06-27%20at%209.04.38%20AM.png)
+> Note: for each record, one of its keyNames must be "cdbRecordID" and it must contain the record ID for that record to be updated.
+
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/updateInput.png)
 ## API Version:
 * `0.3.1` - Introduced
 
