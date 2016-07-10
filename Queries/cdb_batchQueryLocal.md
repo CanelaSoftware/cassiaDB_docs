@@ -1,6 +1,6 @@
-cdb_advancedLocalQuery
+cdb_batchQueryLocal
 ======================
-`function cdb_AdvancedLocalQuery pQuerySetA, pLogicMap, pClientDatabasename, pOutputFormat`
+`function cdb_batchQueryLocal pQuerySetA, pLogicMap, pClientDatabasename, pOutputFormat`
 
 **Summary:**  
 This function searches the specified local database using provided queries, applies the logical operations detailed in the pLogicMap, and returns the resulting subset in several possible formats.

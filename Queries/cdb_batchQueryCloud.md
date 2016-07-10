@@ -1,7 +1,7 @@
-# cdb_advancedCloudQuery
+# cdb_batchQueryCloud
 ---
 ```
-function cdb_AdvancedCloudQuery(pQuerySetA, pLogicMap, pClientDatabaseName, pOutputFormat)
+function cdb_batchQueryCloud(pQuerySetA, pLogicMap, pClientDatabaseName, pOutputFormat)
 ```
 ## Summary:
 This function searches the specified database using the provided queries, applies one or more logical operations against the results, and returns the resulting subset of data.
