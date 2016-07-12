@@ -1,12 +1,10 @@
-cdb_buildQuery
-==============
 `function cdb_BuildQuery pKey, pOperator, pValue`
 
 **Summary:**
 This function returns a query-style array properly formatted for usage in other query-based API calls.
 
 **Inputs:**
-`pKey` *(String)* – The key in the database to search, as defined by your active schema.
+`pKey` *(String)* – The key in the database to search, as defined by your schema.
 `pOperator` *(String)* – The method to compare the 'key' and the 'value'.
 `pValue` *(String)* – The value to compare against the contents of the 'key'.
 
@@ -15,7 +13,7 @@ This function returns a query-style array properly formatted for usage in other 
 
 **Query Syntax:**
 Queries are formatted as an array containing the following keys:
-`key` – The key in the database to search, as defined by your active schema
+`key` – The key in the database to search, as defined by your schema
 `value` – The value to compare against the contents of the 'key'
 `operator` – The method to compare the 'key' and the 'value':
 * `is in` – A key's contents contains the 'value'
@@ -30,9 +28,8 @@ Queries are formatted as an array containing the following keys:
 * `>=` – A key's contents are greater than or equal to the 'value' (non-numeric contents are ignored)
 * `<=` – A key's contents are less than or equal to the 'value' (non-numeric contents are ignored)
 
-**API Version:**
-Introduced – 1.0
-Modified – 1.4
+
+
 
 **Examples:**
 -------------
