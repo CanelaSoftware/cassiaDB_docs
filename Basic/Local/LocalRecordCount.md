@@ -1,13 +1,13 @@
 # cdb_localRecordCount
 ---
 ```
-function cdb_localRecordCount(pTableName)
+function cdb_localRecordCount(tTableName)
 ```
 ## Summary:
 This function counts the number of unique records in a given table.
 
 ## Inputs:
-* **`pTableName`** *(String)* - The label of the table to access.
+* **`tTableName`** *(String)* - The label of the table to access.
 
 ## Outputs:
 (String) – Contains the numeric count of records in a given table.

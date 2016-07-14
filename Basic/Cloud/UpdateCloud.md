@@ -1,13 +1,13 @@
 # cdb_updateCloud
 ---
 ```
-command cdb_updateCloud pRecordA
+command cdb_updateCloud tInputA
 ```
 ## Summary:
 This command makes changes to an existing cloud record without modifying the corresponding local record.
 
 ## Inputs:
-* **`pRecordA`** *(Array)* - An array of keys containing the cdbTableName, cdbRecordID, and one or more user-defined keys. Here are the choices for key names:
+* **`tInputA`** *(Array)* - An array of keys containing the cdbTableName, cdbRecordID, and one or more user-defined keys. Here are the choices for key names:
     * `["cdbTableName"]` *(String)* - The specified table name.
     * `["cdbRecordID"]` *(String)* - A single cdbRecordID, or a line-delimited list of cdbRecordIDs.
     * `[`*`yourKey 1`*`]` *(String)* - User-defined key, where *yourKey1* is an arbitrary String for the key name. User must provide at least one self-defined key.
@@ -21,14 +21,14 @@ This command makes changes to an existing cloud record without modifying the cor
 
 ## Examples:
 ```
-tRecordAlocal tRecordA
+local tInputA
      
-put fld "recordID" into tRecordA["cdbRecordID"]
-put fld "firstName" into tRecordA["firstName"]
-put fld "lastName" into tRecordA["lastName"]
-put fld "age" into tRecordA["age"]
-put fld "income" into tRecordA["income"]
-put "clients" into tRecordA["cdbTableName"]
+put fld "recordID" into tInputA["cdbRecordID"]
+put fld "firstName" into tInputA["firstName"]
+put fld "lastName" into tInputA["lastName"]
+put fld "age" into tInputA["age"]
+put fld "income" into tInputA["income"]
+put "clients" into tInputA["cdbTableName"]
      
-cdb_updateCloud tRecordA
+cdb_updateCloud tInputA
 ```

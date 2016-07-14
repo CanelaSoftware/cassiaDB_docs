@@ -1,13 +1,13 @@
 # cdb_deleteCloud
 ---
 ```
-command cdb_deleteCloud pRecordID, pTableName
+command cdb_deleteCloud tRecordID, tTableName
 ```
 ## Summary:
 This command deletes one or more records from the cloud database.
 
 ## Inputs:
-* **`pRecordA`** *(Array)* - An array of keys containing the cdbTableName, and one or more cdbRecordIDs. Here are the choices for key names:
+* **`tInputA`** *(Array)* - An array of keys containing the cdbTableName, and one or more cdbRecordIDs. Here are the choices for key names:
     * `["cdbTableName"]` *(String)* - The specified table name.
     * `["cdbRecordID"]` *(String)* - A single cdbRecordID, or a line-delimited list of cdbRecordIDs.
 

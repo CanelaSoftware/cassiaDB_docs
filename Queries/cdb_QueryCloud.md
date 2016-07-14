@@ -4,7 +4,7 @@
 function cdb_QueryCloud(tQueryA)
 ```
 ## Summary:
-This function searches the specified cloud table, and returns the subset that matches that query in several possible formats.
+This function searches the specified table over the cloud, and returns the subset that matches that query in several possible formats.
 
 ## Inputs:
 * **`tInputA`**  *(Array)* - An array of keys containing the query, the tableName, and an optional output format.
@@ -24,6 +24,9 @@ This function searches the specified cloud table, and returns the subset that ma
 	* Output is  a line-delimited list of the recordIDs that match the query.
 * *(Array)* - If *pInputA["resultFormat"]* is "recordData":
 	* Output is an array of full records that match the query.
+
+## Additional Requirements:
+This API call requires internet access.
 
 ## API Version:
 * `0.3.1` - Introduced

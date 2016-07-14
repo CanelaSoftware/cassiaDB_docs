@@ -1,13 +1,13 @@
 # cdb_listCloudValues
 ---
 ```
-function cdb_listCloudValues(pArrayA)
+function cdb_listCloudValues(tInputA)
 ```
 ## Summary:
 This function returns a line-delimited list of the values of the requested key.
 
 ## Inputs:
-* **`pArrayA`** *(Array)* - An array of keys containing the cdbTableName and a number of optional keys. Here are the choices for key names:
+* **`tInputA`** *(Array)* - An array of keys containing the cdbTableName and a number of optional keys. Here are the choices for key names:
     * `*["keyList"]` *(String)* - The key whose values will be listed.
     * `*["sortType"]` *(String)* - The type of sort to apply to the results, from the following options:
        * `'text'` - sorts by the ASCII value of each character.  
@@ -29,12 +29,12 @@ This function returns a line-delimited list of the values of the requested key.
 
 ## Examples:
 ```
-local tData, tArrayA
+local tData, tInputA
 
-put empty into tArrayA["keyList"]
-put empty into tArrayA["sortType"]
-put empty into tArrayA["sortDirection"]
-put "clients" into tArrayA["cdbTableName"]
+put empty into tInputA["keyList"]
+put empty into tInputA["sortType"]
+put empty into tInputA["sortDirection"]
+put "clients" into tInputA["cdbTableName"]
 
-put cdb_listCloudValues(tArrayA) into tData
+put cdb_listCloudValues(tInputA) into tData
 ```
