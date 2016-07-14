@@ -12,9 +12,9 @@ This function searches the specified cloud table, and returns the subset that ma
     - `["cdbTableName"]` : the table name or table ID to search
     - `*["resultFormat"]` : can be "recordData" which returns an array of full records that match the query, or "recordList" (the default) which returns a line-delimited list of the recordIDs.
 
-> _*optional parameter._
-
 ![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/QuerySimpleInput.png)
+
+> _*optional parameter._
 
 ## Outputs:
 *(String or Array)* - Varies based on 'resultFormat' parameter; see description above.
