@@ -25,7 +25,7 @@ This function searches the specified local table(s), and returns the subset that
  			- true - the array is elided from the result.
  			- false - the array maintains the original structure (default).
 
-![alt text] (https-//github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/QueryBatchInput.png)
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/QueryBatchInput.png)
 
 > _*optional parameter._
 
