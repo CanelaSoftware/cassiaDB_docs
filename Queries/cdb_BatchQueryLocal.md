@@ -1,9 +1,12 @@
-
-
-**Summary:**  
+# cdb_BatchQueryLocal
+---
+```
+function cdb_BatchQueryLocal(pInputA)
+```
+## Summary:
 This function searches the specified local table, and returns the subset that matches that query in several possible formats.
 
-**Inputs:**  
+## Inputs:
 pInputA -
 	["batchQuery"]
    		[table id 1] (required)
@@ -24,7 +27,7 @@ pInputA -
  			- true : any array levels in the result that contain only one key (such as a single table name, or a single query) are elided from the result
  			- false : the array maintains the original structure (default)
 
-**Outputs:**  
+## Outputs:
 (Array) (the following structure assumes that collapseArray is 'false')
 	[table id 1]
 		[query 1] : contains the results as specified in the 'resultFormat'
@@ -32,8 +35,7 @@ pInputA -
 	[table id N] : as above, if queries were executed on multiple tables at once
 
 
-**Examples:**
--------------
+## Examples:
 ```
 put cdb_BuildQuery("transactionAmount",">","25.00") into tInputA[cdx_getTableID("transactions")][1]
 put cdb_BuildQuery("firstName","=","Kevin") into tInputA[cdx_getTableID("users")][1]

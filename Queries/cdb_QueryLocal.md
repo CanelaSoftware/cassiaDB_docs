@@ -1,19 +1,25 @@
-
-
-**Summary:**  
+# cdb_QueryLocal
+---
+```
+function cdb_QueryLocal(pQueryA)
+```
+## Summary:
 This function searches the specified local table, and returns the subset that matches that query in several possible formats.
 
-**Inputs:**  
-pInputA -
-    - "query" : required, an array-formatted query; see cdb_BuildQuery for additional formatting information
-    - "cdbTableName" : required, the table name or table ID to search
-    - "resultFormat" : optional, can be "recordData" which returns an array of full records that match the query, or "recordList" (the default) which returns a line-delimited list of the recordIDs.
+## Inputs:
+* **`pInputA`**  *(Array)* - an array of keys containing 
+    * `["query"]` : an array-formatted query; see cdb_BuildQuery for additional formatting information
+    - `["cdbTableName"]` : the table name or table ID to search
+    - `*["resultFormat"]` : can be "recordData" which returns an array of full records that match the query, or "recordList" (the default) which returns a line-delimited list of the recordIDs.
 
-**Outputs:**  
+> _*optional parameter._
+
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/QuerySimpleInput.png)
+
+## Outputs: 
 *(String or Array)* - Varies based on 'resultFormat' parameter; see description above.
 
-
-**Examples:**
+## Examples:
 -------------
 ```
 put "transactionAmount" into tQueryA["key"]
