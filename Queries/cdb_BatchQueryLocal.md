@@ -7,25 +7,27 @@ function cdb_BatchQueryLocal(pInputA)
 This function searches the specified local table, and returns the subset that matches that query in several possible formats.
 
 ## Inputs:
-pInputA -
-	["batchQuery"]
-   		[table id 1] (required)
-  		 		[query 1] (required)
-  		 		[query 2] (optional)
-  		 		[query N] (optional)
- 	    [table id 2] (optional)
- 	    [table id N] (optional)
- 	["settings"] (optional)
- 		["mode"] (optional)
+* **`pInputA`** *(Array)* - an array of one or two keys that specify the batch query and the query settings.
+	* `["batchQuery"]` *(String)* - an array of one or more table IDs to be queried upon.
+  		* `[`*`tableID 1`*`]` *(String)* - an array of one or more queries for this table.
+  			* `[`*`query 1`*`]` *(String)* - An arbitrary user-defined key for a query. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UUID of *tableID 1*. This is a key to a properly formatted query with keys, "key" "value" and "operator".
+  			* `*[`*`query N`*`]` *(String)* - The nth query for *tableID 1*. Repeat *query 1*'s sublevel structure.
+ 		* `*[`*`tableID N`*`]` *(String)* - an array of one or mdore queries for this table. Repeat *table ID 1*'s sublevel structure.
+	* `*["settings"]` *(String)* - an array of 
+ 		* `*["mode"]` *(String)* - key that specifies how to logically combine the queries when returning each query's appropriate records. Here are options for this key's value:
  			- "logicalAND" : records which match ALL of the provided queries are returned; results are combined into a single query key
  			- "logicalOR" : record which match ANY of the provided queries are returned; results are combined into a single query key
  			- "batch" : each query is executed independently of the others, with distinct results (default)
- 		["resultFormat"] (optional)
+ 		* `*["resultFormat"]` *(String)* - key that specifies the output format when returning matched records.
  			- "recordList" : results are line-delimited lists of record IDs (default)
  			- "recordData" : results are arrays populated with the full record data of each result
- 		["collapseArray"] (optional)
+ 		* `*["collapseArray"]` *(String)*
  			- true : any array levels in the result that contain only one key (such as a single table name, or a single query) are elided from the result
  			- false : the array maintains the original structure (default)
+
+![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/QueryBatchInput.png)
+
+> _*optional parameter._
 
 ## Outputs:
 (Array) (the following structure assumes that collapseArray is 'false')
