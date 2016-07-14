@@ -1,13 +1,13 @@
 # cdb_BatchQueryLocal
 ---
 ```
-function cdb_BatchQueryLocal(pInputA)
+function cdb_BatchQueryLocal(tInputA)
 ```
 ## Summary:
 This function searches the specified local table(s), and returns the subset that matches that query in several possible formats.
 
 ## Inputs:
-* **`pInputA`** *(Array)* - An array of one or two keys that specify the batch query and the query settings.
+* **`tInputA`** *(Array)* - An array of one or two keys that specify the batch query and the query settings.
 	* `["batchQuery"]` *(String)* - An array of one or more table IDs to be queried upon.
   		* `[`*`tableID 1`*`]` *(String)* - An array of one or more queries for this table.
   			* `[`*`query 1`*`]` *(String)* - An arbitrary user-defined key for a query. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UUID of *tableID 1*. This is a key to a properly formatted query with keys, "key" "value" and "operator".
@@ -35,7 +35,9 @@ This function searches the specified local table(s), and returns the subset that
 		* `[`*`query 1`*`]` - contains the results as specified in the 'resultFormat'.
 		* `[`*`query N`*`]` - contains the results as specified in the 'resultFormat' when the 'mode' is not "logicalAND" or "logicalOR".
 	* `[`*`tableID N`*`]` - as above, if queries were executed on multiple tables at once.
-
+	
+## API Version:
+* `0.3.1` - Introduced
 
 ## Examples:
 ```

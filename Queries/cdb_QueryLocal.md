@@ -1,13 +1,13 @@
 # cdb_QueryLocal
 ---
 ```
-function cdb_QueryLocal(pQueryA)
+function cdb_QueryLocal(tQueryA)
 ```
 ## Summary:
 This function searches the specified local table, and returns the subset that matches that query in several possible formats.
 
 ## Inputs:
-* **`pInputA`**  *(Array)* - An array of keys containing the query, the tableName, and an optional output format.
+* **`tInputA`**  *(Array)* - An array of keys containing the query, the tableName, and an optional output format.
 	* `["query"]` *(String)* - An array-formatted query; see cdb_BuildQuery for additional formatting information.
     	* `["key"]` *(String)* - The key name to consider when querying through the records. Example- "age" to look at the age value of all records.
     	* `["value"]` *(String)* - The value to compare against each record's value at the key specified above.
@@ -24,6 +24,9 @@ This function searches the specified local table, and returns the subset that ma
 	* Output is  a line-delimited list of the recordIDs that match the query.
 * *(Array)* - If *pInputA["resultFormat"]* is "recordData":
 	* Output is an array of full records that match the query.
+
+## API Version:
+* `0.3.1` - Introduced
 
 ## Examples:
 ```
