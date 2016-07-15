@@ -22,10 +22,10 @@ This API call requires internet access.
 
 ## Examples:
 ```
-local tInputA
+local tInputA, tDataA
 
 put fld "recordID" into tInputA["cdbRecordID"]
 put "clients" into tInputA["cdbTableName"]
     
-put cdb_readCloud(tInputA) into tInputA
+put cdb_readCloud(tInputA) into tDataA
 ```

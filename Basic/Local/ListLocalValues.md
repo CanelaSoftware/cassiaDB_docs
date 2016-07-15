@@ -29,12 +29,12 @@ This function returns a line-delimited list of the values of the requested key.
 
 ## Examples:
 ```
-local tInputA
+local tInputA,tDataA
 
 put empty into tInputA["keyList"]
 put empty into tInputA["sortType"]
 put empty into tInputA["sortDirection"]
 put "clients" into tInputA["cdbTableName"]
 
-put cdb_listLocalValues(tInputA) into tInputA
+put cdb_listLocalValues(tInputA) into tDataA
 ```

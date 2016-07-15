@@ -24,5 +24,5 @@ local tInputA, tDataA
 put fld "recordID" into tInputA["cdbRecordID"]
 put "clients" into tInputA["cdbTableName"]
      
-put cdb_readLocal(tInputA) into tInputA
+put cdb_readLocal(tInputA) into tDataA
 ```

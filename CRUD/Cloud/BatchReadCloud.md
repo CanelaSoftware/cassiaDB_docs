@@ -26,7 +26,7 @@ This API call requires internet access.
 
 ## Examples:
 ```
-local tInputA, tTableID
+local tInputA, tTableID, tDataA
      
 put cdb_getTableID("clients") into tTableID
      
@@ -34,5 +34,5 @@ repeat for each line xRecordID in fld "recordID"
 	put empty into tInputA[tTableID][xRecordID]
 end repeat
      
-put cdb_batchReadCloud(tInputA) into tInputA
+put cdb_batchReadCloud(tInputA) into tDataA
 ```

@@ -33,7 +33,7 @@ repeat for each line xRecordID in fld "recordID"
 	put empty into tInputA[tTableID][xRecordID]
 end repeat
      
-put cdb_batchDeleteCloud(tInputA) into tInputA
+cdb_batchDeleteCloud tInputA
 ```
 
 or, to delete all the keys for a given table:
@@ -45,5 +45,5 @@ put cdb_getTableID("clients") into tTableID
      
 put empty into tInputA[tTableID]["*"]
 
-put cdb_batchDeleteCloud(tInputA) into tInputA
+cdb_batchDeleteCloud tInputA
 ```

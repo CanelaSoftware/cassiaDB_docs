@@ -30,7 +30,7 @@ This API call requires internet access.
 
 ## Examples:
 ```
-local tInputA, tTableID
+local tInputA, tTableID, tDataA
      
 put cdb_getTableID("clients") into tTableID
           
@@ -44,5 +44,5 @@ put fld "lastName2" into tInputA[tTableID][2]["lastName"]
 put fld "age2" into tInputA[tTableID][2]["age"]
 put fld "income2" into tInputA[tTableID][2]["income"]
 
-put cdb_batchCreateCloud(tInputA) into tInputA
+put cdb_batchCreateCloud(tInputA) into tDataA
 ```

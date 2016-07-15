@@ -25,7 +25,7 @@ This function deletes a list of local records.
 
 ## Examples:
 ```
-local tInputA, tTableID
+local tInputA, tTableID, tDataA
      
 put cdb_getTableID("clients") into tTableID
      
@@ -33,17 +33,17 @@ repeat for each line xRecordID in fld "recordID"
 	put empty into tInputA[tTableID][xRecordID]
 end repeat
      
-put cdb_batchDeleteLocal(tInputA) into tInputA
+cdb_batchDeleteLocal tInputA
 ```
 
 or, to delete all the keys for a given table:
 
 ```
-local tInputA, tTableID
+local tInputA, tTableID, tDataA
      
 put cdb_getTableID("clients") into tTableID
      
 put empty into tInputA[tTableID]["*"]
 
-put cdb_batchDeleteLocal(tInputA) into tInputA
+cdb_batchDeleteLocal tInputA
 ```

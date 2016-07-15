@@ -27,7 +27,7 @@ This function reads a list of local records and returns those records' contents.
 
 ## Examples:
 ```
-local tInputA, tTableID
+local tInputA, tTableID, tDataA
      
 put cdb_getTableID("clients") into tTableID
      
@@ -35,5 +35,5 @@ repeat for each line xRecordID in fld "recordID"
 	put empty into tInputA[tTableID][xRecordID]
 end repeat
      
-put cdb_batchReadLocal(tInputA) into tInputA
+put cdb_batchReadLocal(tInputA) into tDataA
 ```

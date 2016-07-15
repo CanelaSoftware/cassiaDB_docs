@@ -28,7 +28,7 @@ This function stores data locally to one or more tables in a single call. A cdbR
 
 ## Examples:
 ```
-local tInputA, tTableID
+local tInputA, tTableID, tDataA
      
 put cdb_getTableID("clients") into tTableID
           
@@ -42,5 +42,5 @@ put fld "lastName2" into tInputA[tTableID][2]["lastName"]
 put fld "age2" into tInputA[tTableID][2]["age"]
 put fld "income2" into tInputA[tTableID][2]["income"]
 
-put cdb_batchCreateLocal(tInputA) into tInputA
+put cdb_batchCreateLocal(tInputA) into tDataA
 ```
