@@ -1,7 +1,7 @@
 # cdb_deleteCloud
 ---
 ```
-command cdb_deleteCloud tRecordID, tTableName
+command cdb_deleteCloud tInputA
 ```
 ## Summary:
 This command deletes one or more records from the cloud database.
@@ -19,10 +19,10 @@ This API call requires internet access.
 
 ## Examples:
 ```
-local tRecordID, tTableName
-
-put fld "TableName" into tTableName
-put fld "recordID" into tRecordID
-
-cdb_deleteCloud tRecordID,tTableName
+local tInputA
+     
+put fld "TableName" into tInputA["cdbTableName"]
+put fld "recordID" into tInputA["cdbRecordID"]
+     
+cdb_deleteCloud tInputA
 ```
