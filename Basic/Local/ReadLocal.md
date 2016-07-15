@@ -1,13 +1,13 @@
 # cdb_readLocal
 ---
 ```
-function cdb_readLocal(pRecordA)
+function cdb_readLocal(tInputA)
 ```
 ## Summary:
 This function reads a local record and returns that record’s contents.
 
 ## Inputs:
-* **`pRecordA`** *(Array)* - An array of keys containing the cdbTableName, and one or more cdbRecordIDs. Here are the choices for key names:
+* **`tInputA `** *(Array)* - An array of keys containing the cdbTableName, and one or more cdbRecordIDs. Here are the choices for key names:
     * `["cdbTableName"]` *(String)* - The specified table name.
     * `["cdbRecordID"]` *(String)* - A single cdbRecordID, or a line-delimited list of cdbRecordIDs.
 
@@ -19,10 +19,10 @@ This function reads a local record and returns that record’s contents.
 
 ## Examples:
 ```
-local tRecordA, tDataA
+local tInputA, tDataA
      
-put fld "recordID" into tRecordA["cdbRecordID"]
-put "clients" into tRecordA["cdbTableName"]
+put fld "recordID" into tInputA["cdbRecordID"]
+put "clients" into tInputA["cdbTableName"]
      
-put cdb_readLocal(tRecordA) into tDataA
+put cdb_readLocal(tInputA) into tDataA
 ```
