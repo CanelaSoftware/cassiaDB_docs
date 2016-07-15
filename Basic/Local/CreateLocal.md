@@ -22,13 +22,13 @@ This function allocates a new cdbRecordID for a record locally (but not in the c
 
 ## Examples:
 ```
-local tData, tRecordID
+local tInputA, tRecordID
 
-put fld "firstName" into tDataA["firstName"]
-put fld "lastName" into tDataA["lastName"]
-put fld "age" into tDataA["age"]
-put fld "income" into tDataA["income"]
-put "clients" into tDataA["cdbTableName"]
+put fld "firstName" into tInputA["firstName"]
+put fld "lastName" into tInputA["lastName"]
+put fld "age" into tInputA["age"]
+put fld "income" into tInputA["income"]
+put "clients" into tInputA["cdbTableName"]
 
-put cdb_createLocal(tDataA) into tRecordID
+put cdb_createLocal(tInputA) into tRecordID
 ```

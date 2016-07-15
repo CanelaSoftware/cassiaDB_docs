@@ -16,10 +16,10 @@ This command deletes a record from the local database only.
 
 ## Examples:
 ```
-local tRecordA
+local tInputA
      
-put fld "TableName" into tRecordA["cdbTableName"]
-put fld "recordID" into tRecordA["cdbRecordID"]
+put fld "TableName" into tInputA["cdbTableName"]
+put fld "recordID" into tInputA["cdbRecordID"]
      
-cdb_deleteLocal tRecordA
+cdb_deleteLocal tInputA
 ```

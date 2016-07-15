@@ -19,7 +19,7 @@ This API call requires internet access.
 
 ## Examples:
 ```
-local tRecordID,TableName
+local tRecordID, tTableName
 
 put fld "TableName" into tTableName
 put fld "recordID" into tRecordID

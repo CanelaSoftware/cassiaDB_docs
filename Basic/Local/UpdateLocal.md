@@ -18,14 +18,14 @@ This command makes changes to a local record, without making changes to the corr
 
 ## Examples:
 ```
-local tRecordA,tRecordID
+local tInputA,tRecordID
      
-put fld "recordID" into tRecordA["cdbRecordID"]
-put fld "firstName" into tRecordA["firstName"]
-put fld "lastName" into tRecordA["lastName"]
-put fld "age" into tRecordA["age"]
-tRecordAput fld "income" into tRecordA["income"]
-put "clients" into tRecordA["cdbTableName"]
+put fld "recordID" into tInputA["cdbRecordID"]
+put fld "firstName" into tInputA["firstName"]
+put fld "lastName" into tInputA["lastName"]
+put fld "age" into tInputA["age"]
+put fld "income" into tInputA["income"]
+put "clients" into tInputA["cdbTableName"]
      
-cdb_updateLocal tRecordA
+cdb_updateLocal tInputA
 ```
