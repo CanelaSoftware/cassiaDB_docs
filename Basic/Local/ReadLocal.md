@@ -19,10 +19,10 @@ This function reads a local record and returns that record’s contents.
 
 ## Examples:
 ```
-local tRecordA, tDataA
+local tInputA, tDataA
      
-put fld "recordID" into tRecordA["cdbRecordID"]
-put "clients" into tRecordA["cdbTableName"]
+put fld "recordID" into tInputA["cdbRecordID"]
+put "clients" into tInputA["cdbTableName"]
      
-put cdb_readLocal(tRecordA) into tDataA
+put cdb_readLocal(tInputA) into tInputA
 ```
