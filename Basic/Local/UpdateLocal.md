@@ -18,7 +18,7 @@ This command makes changes to a local record, without making changes to the corr
 
 ## Examples:
 ```
-local tInputA,tRecordID
+local tInputA
      
 put fld "recordID" into tInputA["cdbRecordID"]
 put fld "firstName" into tInputA["firstName"]
