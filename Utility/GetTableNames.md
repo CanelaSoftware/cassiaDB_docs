@@ -1,13 +1,13 @@
 # cdb_getTableNames
 ---
 ```
-function cdb_getTableNames tInputA
+function cdb_getTableNames
 ```
 ## Summary:
-This function returns all the table names for a team ID.
+This function returns all the table names in an account.
 
 ## Outputs:
-*(String)* – The names of the tables, or empty if no table has been defined.
+*(String)* – A line-delimited list of the table names in an account. 
 
 ## API Version:
 * `0.3.1` - Introduced
