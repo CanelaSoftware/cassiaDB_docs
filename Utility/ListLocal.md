@@ -1,7 +1,7 @@
-# cdb_listLocalValues
+# cdb_listLocal
 ---
 ```
-function cdb_listLocalValues(tInputA)
+function cdb_listLocal(tInputA)
 ```
 ## Summary:
 This function returns a line-delimited list of the values of the requested key.
@@ -36,5 +36,5 @@ put empty into tInputA["sortType"]
 put empty into tInputA["sortDirection"]
 put "clients" into tInputA["cdbTableName"]
 
-put cdb_listLocalValues(tInputA) into tDataA
+put cdb_listLocal(tInputA) into tDataA
 ```

@@ -1,7 +1,7 @@
-# cdb_listCloudValues
+# cdb_listCloud
 ---
 ```
-function cdb_listCloudValues(tInputA)
+function cdb_listCloud(tInputA)
 ```
 ## Summary:
 This function returns a line-delimited list of the values of the requested key.
@@ -36,5 +36,5 @@ put empty into tInputA["sortType"]
 put empty into tInputA["sortDirection"]
 put "clients" into tInputA["cdbTableName"]
 
-put cdb_listCloudValues(tInputA) into tDataA
+put cdb_listCloud(tInputA) into tDataA
 ```
