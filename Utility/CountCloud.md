@@ -1,7 +1,7 @@
-# cdb_cloudCount
+# cdb_countCloud
 ---
 ```
-function cdb_cloudCount(tTableName)
+function cdb_countCloud(tTableName)
 ```
 ## Summary:
 This function counts the number of cloud records in a given table.
@@ -19,5 +19,5 @@ This function counts the number of cloud records in a given table.
 ```
 local tCount
 
-put cdb_cloudCount("clients") into tCount
+put cdb_countCloud("clients") into tCount
 ```

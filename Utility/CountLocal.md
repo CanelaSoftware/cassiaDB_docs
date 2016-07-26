@@ -1,7 +1,7 @@
-# cdb_localCount
+# cdb_countLocal
 ---
 ```
-function cdb_localCount(tTableName)
+function cdb_countLocal(tTableName)
 ```
 ## Summary:
 This function counts the number of unique records in a given table.
@@ -19,5 +19,5 @@ This function counts the number of unique records in a given table.
 ```
 local tCount
 
-put cdb_localCount("clients") into tCount
+put cdb_countLocal("clients") into tCount
 ```
