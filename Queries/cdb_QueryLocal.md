@@ -23,7 +23,7 @@ This function searches the specified local table, and returns the subset that ma
 * *(Array)* - If *pInputA["resultFormat"]* is "recordList" or if no such key is provided:
 	* Output is  a line-delimited list of the recordIDs that match the query.
 * *(Array)* - If *pInputA["resultFormat"]* is "recordData":
-	* Output is an array of full records that match the query.
+	* Output is an array keys where each key is a recordID whose data matches the query, where each recordID key maps to the keys defined by the schema and each schema key leads to the storied data.
 
 ## API Version:
 * `0.3.1` - Introduced
