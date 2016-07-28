@@ -23,26 +23,40 @@
 [QueryCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/QueryCloud.md)
 
 ## Batch:
-[BatchCreateLocal] 
+[BatchCreateLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchCreateLocal.md)
 
-[BatchCreateCloud] 
+[BatchCreateCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchCreateCloud.md)
 
-[BatchUpdateLocal] 
+[BatchUpdateLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchUpdateLocal.md)
 
-[BatchUpdateCloud] 
+[BatchUpdateCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchUpdateCloud.md)
 
-[BatchReadLocal] 
+[BatchReadLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchReadLocal.md)
 
-[BatchReadCloud] 
+[BatchReadCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/.md)
 
-[BatchDeleteLocal] 
+[BatchDeleteLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchDeleteLocal.md)
 
-[BatchDeleteCloud] 
+[BatchDeleteCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchDeleteCloud.md)
 
-[BatchQueryLocal] 
+[BatchQueryLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/BatchQueryLocal.md)
 
-[BatchQueryCloud] 
+[BatchQueryCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/BatchQueryCloud.md)
 
 ## Utility:
+[ListLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/ListLocal.md)
 
+[ListCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/ListCloud.md)
+
+[CountLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/CountLocal.md)
+
+[CountCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/CountCloud.md)
+
+[LookupLocalValue] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/LookupLocalValue.md)
+
+[LookupCloudValue] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/LookupCloudValue.md)
+
+[GetTableNames] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/GetTableNames.md)
+
+[GetSchema] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/GetSchema.md)
 
