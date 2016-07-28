@@ -10,7 +10,7 @@ This function searches the specified local table(s), and returns the subset that
 * **`tInputA`** *(Array)* - An array of one or two keys that specify the batch query and the query settings.
 	* `["batchQuery"]` *(String)* - An array of one or more table IDs to be queried upon.
   		* `[`*`tableID 1`*`]` *(String)* - An array of one or more queries for this table.
-  			* `[`*`query 1`*`]` *(String)* - An arbitrary user-defined key for a query. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UUID of *tableID 1*. This is a key to a properly formatted query with keys, "key" "value" and "operator".
+  			* `[`*`query 1`*`]` *(String)* - An arbitrary user-defined key for a query. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UUID of *tableID 1*. This is a key to a properly formatted query with keys, "key" "value" and "operator". [Click here] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/QueryOps.png) to see available operators to use in the query.
   			* `*[`*`query N`*`]` *(String)* - The nth query for *tableID 1*. Repeat *query 1*'s sublevel structure.
  		* `*[`*`tableID N`*`]` *(String)* - An array of one or mdore queries for this table. Repeat *table ID 1*'s sublevel structure.
 	* `*["settings"]` *(String)* - An array of keys that can be set to produce different output forms.
