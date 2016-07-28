@@ -11,7 +11,7 @@ This function searches the specified local table, and returns the subset that ma
 	* `["query"]` *(String)* - An array-formatted query; see cdb_BuildQuery for additional formatting information.
     	* `["key"]` *(String)* - The key name to consider when querying through the records. Example- "age" to look at the age value of all records.
     	* `["value"]` *(String)* - The value to compare against each record's value at the key specified above.
-    	* `["operator"]` *(String)* - The comparison operator to compare each record's value at the key specified above to the value specified above.
+    	* `["operator"]` *(String)* - The comparison operator to compare each record's value at the key specified above to the value specified above. [Click here] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/QueryOps.png) to see available operators.
     - `["cdbTableName"]` *(String)* - The table name or table ID to search through.
     - `*["resultFormat"]` *(String)* - Can be "recordData" which returns an array of full records that match the query, or "recordList" (the default) which returns a line-delimited list of the recordIDs.
 
