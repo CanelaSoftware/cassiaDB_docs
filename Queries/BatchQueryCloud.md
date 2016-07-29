@@ -46,10 +46,22 @@ This API call requires internet access.
 ```
 local tTableID, tInputA
 
+//gets the table ID
 put cdx_getTableID("transactions") into tTableID
-put cdb_BuildQuery("transactionAmount",">","25.00") into tInputA["batchQuery"][tTableID][1]
-put cdb_BuildQuery("firstName","=","Kevin") into tInputA["batchQuery"][tTableID][1]
+
+//first query
+put "transactionAmount" into tInputA["batchQuery"][tTableID][1]["key"]
+put ">" into tInputA["batchQuery"][tTableID][1]["operator"]
+put "25.00" into tInputA["batchQuery"][tTableID][1]["value"]
+
+//second query
+put "firstName" into tInputA["batchQuery"][tTableID][2]["key"]
+put "=" into tInputA["batchQuery"][tTableID][2]["operator"]
+put "Kevin" into tInputA["batchQuery"][tTableID][2]["value"]
+
+//settings
 put "recordData" into tInputA["settings"]["resultFormat"]
 put "true" into tInputA["settings"]["collapseArray"]
+
 get cdb_BatchQueryCloud(tInputA)
 ```
