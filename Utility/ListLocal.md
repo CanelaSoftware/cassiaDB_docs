@@ -8,7 +8,7 @@ This function returns a line-delimited list of the values of the requested key.
 
 ## Inputs:
 * **`tInputA`** *(Array)* - An array of keys containing the cdbTableName and a number of optional keys. Here are the choices for key names:
-    * `*["keyList"]` *(String)* - The key whose values will be listed.
+    * `*["keyList"]` *(String)* - The key whose values will be listed. Default is the cdbRecordID.
     * `*["sortType"]` *(String)* - The type of sort to apply to the results, from the following options:
        * `'text'` - sorts by the ASCII value of each character.  
        * `'numeric'` - sorts by the ASCII value of each character.    
