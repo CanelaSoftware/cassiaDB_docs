@@ -48,6 +48,10 @@ This project is designed to give a detailed overview of the API calls available 
 
 [BatchQueryCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/BatchQueryCloud.md)
 
+[BatchMergeLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchMergeLocal.md)
+
+[BatchMergeCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchMergeCloud.md)
+
 ## Utility:
 [ListLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/ListLocal.md)
 
