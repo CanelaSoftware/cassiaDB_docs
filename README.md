@@ -64,7 +64,3 @@ This project is designed to give a detailed overview of the API calls available 
 [LookupLocalValue] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/LookupLocalValue.md)
 
 [LookupCloudValue] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/LookupCloudValue.md)
-
-[GetTableNames] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/GetTableNames.md)
-
-[GetSchema] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/GetSchema.md)
