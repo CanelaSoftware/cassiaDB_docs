@@ -22,7 +22,7 @@ This command allows for the modification of a record key's value through compari
 		* `[`*`recordID N`*`]` *(String)* - Repeat *recordID 1*'s sublevel structure.
 	* `[`*`tableID N`*`]` *(String)* - Repeat *table ID 1*'s sublevel structure.
 
-![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/batchMergeInput.png)
+![BatchMerge input diagram](../../chartimages/batchMergeInput.png)
 
 ## API Version:
 * `0.3.1` - Introduced

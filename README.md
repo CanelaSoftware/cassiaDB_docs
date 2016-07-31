@@ -7,60 +7,60 @@ This project is designed to give a detailed overview of the API calls available 
 ---
 
 ## Simple:
-[CreateLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Local/CreateLocal.md)
+[CreateLocal](Basic/Local/CreateLocal.md)
 
-[CreateCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Cloud/CreateCloud.md)
+[CreateCloud](Basic/Cloud/CreateCloud.md)
 
-[UpdateLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Local/UpdateLocal.md)
+[UpdateLocal](Basic/Local/UpdateLocal.md)
 
-[UpdateCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Cloud/UpdateCloud.md)
+[UpdateCloud](Basic/Cloud/UpdateCloud.md)
 
-[ReadLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Local/ReadLocal.md)
+[ReadLocal](Basic/Local/ReadLocal.md)
 
-[ReadCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Cloud/ReadCloud.md)
+[ReadCloud](Basic/Cloud/ReadCloud.md)
 
-[DeleteLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Local/DeleteLocal.md)
+[DeleteLocal](Basic/Local/DeleteLocal.md)
 
-[DeleteCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Basic/Cloud/DeleteCloud.md)
+[DeleteCloud](Basic/Cloud/DeleteCloud.md)
 
-[QueryLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/QueryLocal.md)
+[QueryLocal](Queries/QueryLocal.md)
 
-[QueryCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/QueryCloud.md)
+[QueryCloud](Queries/QueryCloud.md)
 
 ## Batch:
-[BatchCreateLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchCreateLocal.md)
+[BatchCreateLocal](CRUD/Local/BatchCreateLocal.md)
 
-[BatchCreateCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchCreateCloud.md)
+[BatchCreateCloud](CRUD/Cloud/BatchCreateCloud.md)
 
-[BatchUpdateLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchUpdateLocal.md)
+[BatchUpdateLocal](CRUD/Local/BatchUpdateLocal.md)
 
-[BatchUpdateCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchUpdateCloud.md)
+[BatchUpdateCloud](CRUD/Cloud/BatchUpdateCloud.md)
 
-[BatchReadLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchReadLocal.md)
+[BatchReadLocal](CRUD/Local/BatchReadLocal.md)
 
-[BatchReadCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/.md)
+[BatchReadCloud](CRUD/Cloud/.md)
 
-[BatchDeleteLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchDeleteLocal.md)
+[BatchDeleteLocal](CRUD/Local/BatchDeleteLocal.md)
 
-[BatchDeleteCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchDeleteCloud.md)
+[BatchDeleteCloud](CRUD/Cloud/BatchDeleteCloud.md)
 
-[BatchQueryLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/BatchQueryLocal.md)
+[BatchQueryLocal](Queries/BatchQueryLocal.md)
 
-[BatchQueryCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Queries/BatchQueryCloud.md)
+[BatchQueryCloud](Queries/BatchQueryCloud.md)
 
-[BatchMergeLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Local/BatchMergeLocal.md)
+[BatchMergeLocal](CRUD/Local/BatchMergeLocal.md)
 
-[BatchMergeCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/CRUD/Cloud/BatchMergeCloud.md)
+[BatchMergeCloud](CRUD/Cloud/BatchMergeCloud.md)
 
 ## Utility:
-[ListLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/ListLocal.md)
+[ListLocal](Utility/ListLocal.md)
 
-[ListCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/ListCloud.md)
+[ListCloud](Utility/ListCloud.md)
 
-[CountLocal] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/CountLocal.md)
+[CountLocal](Utility/CountLocal.md)
 
-[CountCloud] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/CountCloud.md)
+[CountCloud](Utility/CountCloud.md)
 
-[LookupLocalValue] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/LookupLocalValue.md)
+[LookupLocalValue](Utility/LookupLocalValue.md)
 
-[LookupCloudValue] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/Utility/LookupCloudValue.md)
+[LookupCloudValue](Utility/LookupCloudValue.md)

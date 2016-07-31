@@ -18,11 +18,11 @@ This function stores data locally to one or more tables in a single call. A cdbR
 
 > _*optional parameter._
 
-![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/createInput.png)
+![BatchCreate input diagram](../../chartimages/createInput.png)
 ## Outputs:
 (Array) -- This output array has similar structure to the input array, except that the recordKeys in the input array are replaced with the corresponding cdbRecordID keys that are associated with the data that the recordKeys contained. The corresponding cdbRecordID keys have empty contents. 
 
-![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/createOutput.png)
+![BatchCreate output diagram](../../chartimages/createOutput.png)
 ## API Version:
 * `0.3.1` - Introduced
 

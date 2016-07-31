@@ -18,7 +18,7 @@ This function deletes a list of local records.
 > Note: To delete all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
 
-![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/deleteReadInput.png)
+![BatchDelete input diagram](../../chartimages/deleteReadInput.png)
 
 ## API Version:
 * `0.3.1` - Introduced

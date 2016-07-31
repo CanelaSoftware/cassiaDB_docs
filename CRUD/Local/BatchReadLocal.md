@@ -15,11 +15,11 @@ This function reads a list of local records and returns those records' contents.
 
 > _*optional parameter._
 
-![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/deleteReadInput.png)
+![BatchRead input diagram](../../chartimages/deleteReadInput.png)
 ## Outputs:
 (Aray) -- This output array is essentially the same as the input array but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.
 
-![alt text] (https://github.com/CanelaSoftware/cassiaDB_docs/blob/master/chartimages/readOutput.png)
+![BatchRead output diagram](../../chartimages/readOutput.png)
 
 
 ## API Version:
