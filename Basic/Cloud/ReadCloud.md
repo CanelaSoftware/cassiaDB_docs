@@ -14,6 +14,12 @@ This function downloads the most recent version of a cloud record, and returns i
 ## Outputs:
 (Array) – A record with keys as defined by the schema of the accessed database.
 
+![Read output diagram](../../chartimages/ReadOutputSingle.png)
+
+If there are multiple records returned, the array will have each of the recordIDs as keys, with the record inside each recordID.
+
+![Read output diagram](../../chartimages/ReadOutputMultiple.png)
+
 ## Additional Requirements:
 This API call requires internet access.
 
