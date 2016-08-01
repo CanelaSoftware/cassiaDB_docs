@@ -4,10 +4,10 @@
 function cdb_createCloud(tInputA)
 ```
 ## Summary:
-This function allocates a new cdbRecordID for a record in the cloud (but not locally), storing the provided data if any.
+This function allocates a new cdbRecordID for a record in the cloud (but not locally), storing the provided data.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing the cdbTableName and one or more keys to store in a new record. Here are the choices for key names:
+* **`tInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
     * `[`*`yourKey1`*`]` *(String)* - User-defined key, where *yourKey1* is an arbitrary String for the key name. User must provide at least one self-defined key.
     * `*[`*`yourKeyN`*`]` *(String)* - User-defined key, where *yourKeyN* is an arbitrary String for the key name. User may provide more than one if desired.

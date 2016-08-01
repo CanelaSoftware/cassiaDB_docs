@@ -7,18 +7,14 @@ function cdb_readCloud(tInputA)
 This function downloads the most recent version of a cloud record, and returns it as an array without updating the local record.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - * **`tInputA`** *(Array)* - An array of keys containing the cdbTableName, and one or more cdbRecordIDs. Here are the choices for key names:
+* **`tInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name
-    * `["cdbRecordID"]` *(String)* - A single cdbRecordID, or a line-delimited list of cdbRecordIDs.
+    * `["cdbRecordID"]` *(String)* - A single cdbRecordID
 
 ## Outputs:
 (Array) – A record with keys as defined by the schema of the accessed database.
 
 ![Read output diagram](../../chartimages/ReadOutputSingle.png)
-
-If there are multiple records returned, the array will have each of the recordIDs as keys, with the record inside each recordID.
-
-![Read output diagram](../../chartimages/ReadOutputMultiple.png)
 
 ## Additional Requirements:
 This API call requires internet access.

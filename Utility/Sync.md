@@ -5,11 +5,13 @@ command cdb_sync tInputA
 ```
 
 ## Summary:
-This command will sync the local table with the cloud table. The local table will delete all records not found on the cloud, add all new records from the cloud, and update all existing records to match the cloud.
+This command will sync a specified local table with the same table on the cloud.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing the cdbTableName to be synced
+* **`tInputA`** *(Array)* - An array with the name of the table to be synced.
     * `["cdbTableName"]` *(String)* - The specified table name to be synced
+    * `*["syncMode"]` *(String)* - The method of resolving conflicts from the following options:
+    	- `"cloudMaster"` *(default)* - Modifies local data to match the cloud.
 
 ## Additional Requirements:
 This API call requires internet access.

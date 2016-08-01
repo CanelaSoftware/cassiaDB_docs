@@ -8,7 +8,7 @@ command cdb_loadTable tInputA
 This command will load a table into memory so it can be accessed through other CDB commands and functions.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing the cdbTableName, cdbRecordID, and one or more user-defined keys. Here are the choices for key names:
+* **`tInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name to be loaded, or a line-separated list of tables to be loaded.
     	* Putting `"*"` in this key will load all tables, reloading any tables that have already been loaded.
     	* Putting `empty` in this key will load all tables that have not previously been loaded.

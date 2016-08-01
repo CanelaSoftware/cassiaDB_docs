@@ -1,25 +1,21 @@
 # cdb_getTeamID
 ---
 ```
-function cdb_getTeamID(tTableID)
+function cdb_getTeamID()
 ```
 
 ## Summary:
-This function returns the team ID when given a table ID.
-
-## Inputs:
- * `tTableID` *(String)* - The table ID to get the team ID from.
+This function returns the active team ID.
 
 ## Outputs:
- * *(String)* the team ID of the table ID given as input.
+ * (String) - The active team ID.
 
 ## API Version:
 * `0.3.1` - Introduced
 
 ## Examples:
 ```
-local tTableID, tTeamID
+local tTeamID
 
-put cdb_getTableID("clients") into tTableID
-put cdb_getTeamID(tTableID) into tTeamID
+put getTeamID() into tTeamID
 ``` 

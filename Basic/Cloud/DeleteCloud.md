@@ -4,12 +4,12 @@
 command cdb_deleteCloud tInputA
 ```
 ## Summary:
-This command deletes one or more records from the cloud database.
+This command deletes a record from a cloud table (but not from local).
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing the cdbTableName, and one or more cdbRecordIDs. Here are the choices for key names:
+* **`tInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
-    * `["cdbRecordID"]` *(String)* - A single cdbRecordID, or a line-delimited list of cdbRecordIDs.
+    * `["cdbRecordID"]` *(String)* - A single cdbRecordID.
 
 ## Additional Requirements:
 This API call requires internet access.

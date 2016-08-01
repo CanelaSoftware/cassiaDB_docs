@@ -8,8 +8,8 @@ function cdb_getTableKeys(tInputA)
 This function takes a table name and returns a comma-separated list of the keys of that table.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array that includes the table name
-	* `["cdbTableName"]` *(String)* - The specified table name
+* **`tInputA`** *(Array)* - An array that specifies the table name
+	* `["cdbTableName"]` *(String)* - The specified table name.
 
 ## Outputs:
 (String) - A comma-separated list of the keys in the table.
