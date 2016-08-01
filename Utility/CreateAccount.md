@@ -5,16 +5,16 @@ command cdb_createAccount tInputA
 ```
 
 ## Summary:
-This command will create you an account.
+This command will create you an account on the CassiaDB account server. You must specify the keys for your first table, which will also be created. Once you have created an account, your configuration will be updated so your application will have access to your tables.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing information to create the table.
+* **`tInputA`** *(Array)* - An array of keys containing information to create the table per the following:
     * `["cdbTableName"]` *(String)* - The specified table name to be created.
     * `["email"]` *(String)* - Your email.
     * `["password"]` *(String)* - Your password.
-    * `["keys"]` *(String)* - The keys you want to define record on your table to abide by.
-    * `[`*`yourKey 1`*`]` - user defined keys to store data in records on your table.
-    * `[`*`yourKey N`*`]` - user defined keys to store data in records on your table.
+    * `["keys"]` *(String)* - The keys you want your table to have. Minimum of one key is required.
+   		- `[`*`yourKey1`*`]` - user defined key(s) to store data in records on your table.
+    	- `[`*`yourKeyN`*`]` - user defined key(s) to store data in records on your table.
 
 ## API Version:
 * `0.3.1` - Introduced

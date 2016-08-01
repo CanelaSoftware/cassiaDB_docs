@@ -14,9 +14,9 @@ This function searches the specified table over the cloud, and returns the subse
     		- `"$"` - Searches all schema-defined keys
     		- `"*"` - Searches all schema-defined keys and internal keys.
     	* `["value"]` *(String)* - The value to compare against each record's value at the key specified above.
-    	* `["operator"]` *(String)* - The comparison operator to compare each record's value at the key specified above to the value specified above. [Click here](../chartimages/QueryOps.png) to see available operators.
+    	* `["operator"]` *(String)* - The [comparison operator](QueryOperators.md) to compare each record's value at the key specified above to the value specified above.
     - `["cdbTableName"]` *(String)* - The table name or table ID to search through.
-    - `*["resultFormat"]` *(String)* - 
+    - `*["resultFormat"]` *(String)*: 
     	-  `"recordList"` *(default)* - returns a line-delimited list of the recordIDs that match the query.
     	- `"recordData"` - returns an array of full records that match the query.
 
@@ -50,9 +50,12 @@ get cdb_QueryCloud(tInputA)
 ```
 
 ```
-local tInputA
+local tQueryA, tInputA
 
-put cdb_BuildQuery("firstName","=","Kevin") into tInputA["query"]
+put "firstName" into tQueryA["key"]
+put "Kevin" into tQueryA["value"]
+put "=" into tQueryA["operator"]
+put tQueryA into tInputA["query"]
 put "users" into tInputA["cdbTableName"]
 put "recordData" into tInputA["resultFormat"]
 get cdb_QueryCloud(tInputA) 
