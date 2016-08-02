@@ -1,16 +1,16 @@
-# cdb_BatchQueryCloud
+# cdb_BatchQueryLocal
 ---
 ```
-function cdb_BatchQueryCloud(tInputA)
+function cdb_BatchQueryLocal(tInputA)
 ```
 ## Summary:
-This function searches the specified table(s) over the cloud, and returns the subset that matches that query in several possible formats.
+This function searches the specified local table(s), and returns the subset that matches that query in several possible formats.
 
 ## Inputs:
 * **`tInputA`** *(Array)* - An array of one or two keys that specify the batch query and the query settings.
 	* `["batchQuery"]` *(String)* - An array of one or more table IDs to be queried upon.
   		* `[`*`tableID 1`*`]` *(String)* - An array of one or more queries for this table.
-  			* `[`*`query 1`*`]` *(String)* - An arbitrary user-defined key for a query. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UUID of *tableID 1*. This is a key to a properly formatted query with keys, "key" "value" and "[operator](QueryOperators.md)".
+  			* `[`*`query 1`*`]` *(String)* - An arbitrary user-defined key for a query. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UUID of *tableID 1*. This is a key to a properly formatted query with keys, "key" "value" and "[operator](../../Basic/QueryOperators.md)".
   			* `*[`*`query N`*`]` *(String)* - The nth query for *tableID 1*. Repeat *query 1*'s sublevel structure.
  		* `*[`*`tableID N`*`]` *(String)* - An array of one or mdore queries for this table. Repeat *table ID 1*'s sublevel structure.
 	* `*["settings"]` *(String)* - An array of keys that can be set to produce different output forms.
@@ -35,9 +35,6 @@ This function searches the specified table(s) over the cloud, and returns the su
 		* `[`*`query 1`*`]` - contains the results as specified in the 'resultFormat'.
 		* `[`*`query N`*`]` - contains the results as specified in the 'resultFormat' when the 'mode' is not "logicalAND" or "logicalOR".
 	* `[`*`tableID N`*`]` - as above, if queries were executed on multiple tables at once.
-
-## Additional Requirements:
-This API call requires internet access.
 	
 ## API Version:
 * `0.3.1` - Introduced
@@ -63,5 +60,5 @@ put "Kevin" into tInputA["batchQuery"][tTableID][2]["value"]
 put "recordData" into tInputA["settings"]["resultFormat"]
 put "true" into tInputA["settings"]["collapseArray"]
 
-get cdb_BatchQueryCloud(tInputA)
+get cdb_BatchQueryLocal(tInputA)
 ```

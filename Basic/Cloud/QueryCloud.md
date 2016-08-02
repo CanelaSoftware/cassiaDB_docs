@@ -14,7 +14,7 @@ This function searches the specified table over the cloud, and returns the subse
     		- `"$"` - Searches all schema-defined keys
     		- `"*"` - Searches all schema-defined keys and internal keys.
     	* `["value"]` *(String)* - The value to compare against each record's value at the key specified above.
-    	* `["operator"]` *(String)* - The [comparison operator](QueryOperators.md) to compare each record's value at the key specified above to the value specified above.
+    	* `["operator"]` *(String)* - The [comparison operator](../QueryOperators.md) to compare each record's value at the key specified above to the value specified above.
     - `["cdbTableName"]` *(String)* - The table name or table ID to search through.
     - `*["resultFormat"]` *(String)*: 
     	-  `"recordList"` *(default)* - returns a line-delimited list of the recordIDs that match the query.

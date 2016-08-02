@@ -28,29 +28,29 @@ This project is designed to give a detailed overview of the API calls available 
 [QueryCloud](Queries/QueryCloud.md)
 
 ## Batch:
-[BatchCreateLocal](CRUD/Local/BatchCreateLocal.md)
+[BatchCreateLocal](Batch/Local/BatchCreateLocal.md)
 
-[BatchCreateCloud](CRUD/Cloud/BatchCreateCloud.md)
+[BatchCreateCloud](Batch/Cloud/BatchCreateCloud.md)
 
-[BatchUpdateLocal](CRUD/Local/BatchUpdateLocal.md)
+[BatchUpdateLocal](Batch/Local/BatchUpdateLocal.md)
 
-[BatchUpdateCloud](CRUD/Cloud/BatchUpdateCloud.md)
+[BatchUpdateCloud](Batch/Cloud/BatchUpdateCloud.md)
 
-[BatchReadLocal](CRUD/Local/BatchReadLocal.md)
+[BatchReadLocal](Batch/Local/BatchReadLocal.md)
 
-[BatchReadCloud](CRUD/Cloud/.md)
+[BatchReadCloud](Batch/Cloud/.md)
 
-[BatchDeleteLocal](CRUD/Local/BatchDeleteLocal.md)
+[BatchDeleteLocal](Batch/Local/BatchDeleteLocal.md)
 
-[BatchDeleteCloud](CRUD/Cloud/BatchDeleteCloud.md)
+[BatchDeleteCloud](Batch/Cloud/BatchDeleteCloud.md)
 
 [BatchQueryLocal](Queries/BatchQueryLocal.md)
 
 [BatchQueryCloud](Queries/BatchQueryCloud.md)
 
-[BatchMergeLocal](CRUD/Local/BatchMergeLocal.md)
+[BatchMergeLocal](Batch/Local/BatchMergeLocal.md)
 
-[BatchMergeCloud](CRUD/Cloud/BatchMergeCloud.md)
+[BatchMergeCloud](Batch/Cloud/BatchMergeCloud.md)
 
 ## Utility:
 [ListLocal](Utility/ListLocal.md)
@@ -64,3 +64,28 @@ This project is designed to give a detailed overview of the API calls available 
 [LookupLocalValue](Utility/LookupLocalValue.md)
 
 [LookupCloudValue](Utility/LookupCloudValue.md)
+
+[GetTeamID](Utility/GetTeamID.md)
+
+[CreateAccount](Utility/CreateAccount.md)
+
+[Ping](Utility/Ping.md)
+
+[Result](Utility/Result.md)
+
+[Sync](Utility/Sync.md)
+
+[GetTableNames](Utility/GetTableNames.md)
+
+##Table:
+[CreateTable](Table/CreateTable.md)
+
+[DeleteTable](Table/DeleteTable.md)
+
+[GetTableID](Table/GetTableID.md)
+
+[GetTableKeys](Table/GetTableKeys.md)
+
+[LoadTable](Table/LoadTable.md)
+
+[UnloadTable](Table/UnloadTable.md)
