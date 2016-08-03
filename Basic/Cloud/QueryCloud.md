@@ -20,7 +20,7 @@ This function searches the specified table over the cloud, and returns the subse
     	-  `"recordList"` *(default)* - returns a line-delimited list of the recordIDs that match the query.
     	- `"recordData"` - returns an array of full records that match the query.
 
-![Query input diagram](../chartimages/QuerySimpleInput.png)
+![Query input diagram](../../chartimages/QuerySimpleInput.png)
 
 > _*optional parameter._
 
