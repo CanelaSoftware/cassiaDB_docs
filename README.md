@@ -23,9 +23,9 @@ This project is designed to give a detailed overview of the API calls available 
 
 [DeleteCloud](Basic/Cloud/DeleteCloud.md)
 
-[QueryLocal](Queries/QueryLocal.md)
+[QueryLocal](Basic/Local/QueryLocal.md)
 
-[QueryCloud](Queries/QueryCloud.md)
+[QueryCloud](Basic/Cloud/QueryCloud.md)
 
 ## Batch:
 [BatchCreateLocal](Batch/Local/BatchCreateLocal.md)
@@ -38,15 +38,15 @@ This project is designed to give a detailed overview of the API calls available 
 
 [BatchReadLocal](Batch/Local/BatchReadLocal.md)
 
-[BatchReadCloud](Batch/Cloud/.md)
+[BatchReadCloud](Batch/Cloud/BatchReadCloud.md)
 
 [BatchDeleteLocal](Batch/Local/BatchDeleteLocal.md)
 
 [BatchDeleteCloud](Batch/Cloud/BatchDeleteCloud.md)
 
-[BatchQueryLocal](Queries/BatchQueryLocal.md)
+[BatchQueryLocal](Batch/Local/BatchQueryLocal.md)
 
-[BatchQueryCloud](Queries/BatchQueryCloud.md)
+[BatchQueryCloud](Batch/Cloud/BatchQueryCloud.md)
 
 [BatchMergeLocal](Batch/Local/BatchMergeLocal.md)
 
