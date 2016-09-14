@@ -25,7 +25,7 @@ This function searches the specified table(s) over the cloud, and returns the su
  			- true - the array is elided from the result.
  			- false - the array maintains the original structure (default).
 
-![BatchQuery input diagram](../chartimages/QueryBatchInput.png)
+![BatchQuery input diagram](../../chartimages/QueryBatchInput.png)
 
 > _*optional parameter._
 
