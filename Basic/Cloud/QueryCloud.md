@@ -8,7 +8,7 @@ This function searches the specified table over the cloud, and returns the subse
 
 ## Inputs:
 * **`tInputA`**  *(Array)* - An array of keys containing the query, the table name, and an optional output format.
-	* `["query"]` *(Array)* - An array formatted as follows:
+	* `["query"]` *(Key)* - An array formatted as follows:
     	* `["key"]` *(String)* - One of the following:
     		- *`yourKey`* - Searches the specified key
     		- `"$"` - Searches all schema-defined keys

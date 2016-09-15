@@ -8,7 +8,7 @@ This function searches the specified local table, and returns the subset that ma
 
 ## Inputs:
 * **`tInputA`**  *(Array)* - An array of keys containing the query, the table name, and an optional output format.
-	* `["query"]` *(Array)* - An array formatted as follows:
+	* `["query"]` *(Key)* - An array formatted as follows:
     	* `["key"]` *(String)* - One of the following:
     		- *`yourKey`* - Searches the specified key
     		- `"$"` - Searches all schema-defined keys
