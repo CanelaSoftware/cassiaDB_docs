@@ -14,7 +14,7 @@ This function reads a local record and returns that record’s contents.
 ## Outputs:
 (Array) – A record with keys as defined by the schema of the accessed database. 
 
-![Read output diagram](../../chartimages/ReadOutputSingle.png)
+![Read output diagram](../../chartimages/readOutputSingle.png)
 
 ## API Version:
 * `0.3.1` - Introduced
