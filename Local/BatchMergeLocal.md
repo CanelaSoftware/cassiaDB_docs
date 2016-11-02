@@ -1,13 +1,13 @@
 # cdb_batchMergeLocal
 ---
 ```
-command cdb_batchMergeLocal tInputA
+command cdb_batchMergeLocal pInputA
 ```
 ## Summary:
 This command allows for the modification of a record key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables. This occurs locally.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of one or more keys that are the table IDs of the tables being used in the merge.
+* **`pInputA`** *(Array)* - An array of one or more keys that are the table IDs of the tables being used in the merge.
     * `[`*`tableID 1`*`]` *(Key)* - The table ID of the first table name that is being worked with.
     	* `[`*`recordID 1`*`]` *(Key)* - The record ID of the first record being modified on this first table.
    			* `[`*`yourKey 1`*`]` *(Key)* - The user defined key in above the record that contains the data to be modified.

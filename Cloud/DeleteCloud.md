@@ -1,15 +1,15 @@
 # cdb_deleteCloud
 ---
 ```
-command cdb_deleteCloud tInputA
+command cdb_deleteCloud pInputA
 ```
 ## Summary:
 This command deletes a record from a cloud table (but not from local).
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing data per the following format:
+* **`pInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
-    * `["cdbRecordID"]` *(String)* - A single cdbRecordID.
+    * `["cdbRecordID"]` *(String)* - A line delimited list of cdbRecordIDs.
 
 ## Additional Requirements:
 This API call requires internet access.
@@ -21,8 +21,8 @@ This API call requires internet access.
 ```
 local tInputA
      
-put fld "TableName" into tInputA["cdbTableName"]
-put fld "recordID" into tInputA["cdbRecordID"]
+put "clients" into tInputA["cdbTableName"]
+put "123456abcdef" into tInputA["cdbRecordID"]
      
 cdb_deleteCloud tInputA
 ```

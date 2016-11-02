@@ -1,13 +1,13 @@
 # cdb_batchMergeCloud
 ---
 ```
-command cdb_batchMergeCloud tInputA
+command cdb_batchMergeCloud pInputA
 ```
 ## Summary:
 This command allows for the modification of a record key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables. This occurs over the cloud.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of one or more keys that are the table IDs of the tables being used in the merge.
+* **`pInputA`** *(Array)* - An array of one or more keys that are the table IDs of the tables being used in the merge.
     * `[`*`tableID 1`*`]` *(String)* - The table ID of the first table name that is being worked with.
     	* `[`*`recordID 1`*`]` *(String)* - The record ID of the first record being modified on this first table.
    			* `[`*`yourKey 1`*`]` *(String)* - The user defined key in above the record that contains the data to be modified.
@@ -22,7 +22,7 @@ This command allows for the modification of a record key's value through compari
 		* `[`*`recordID N`*`]` *(String)* - Repeat *recordID 1*'s sublevel structure.
 	* `[`*`tableID N`*`]` *(String)* - Repeat *table ID 1*'s sublevel structure.
 
-![BatchMerge input diagram](../../chartimages/batchMergeInput.png)
+![BatchMerge input diagram](../chartimages/batchMergeInput.png)
 
 ## API Version:
 * `0.3.1` - Introduced

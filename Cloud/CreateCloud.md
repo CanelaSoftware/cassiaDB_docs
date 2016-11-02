@@ -25,13 +25,16 @@ This API call requires internet access.
 
 ## Examples:
 ```
-local tInputA, tRecordID
+#Table name: clients
+#Schema: firstName, lastName, age, income
 
-put fld "firstName" into tInputA["firstName"]
-put fld "lastName" into tInputA["lastName"]
-put fld "age" into tInputA["age"]
-put fld "income" into tInputA["income"]
+put "John" into tInputA["firstName"]
+put "Doe" into tInputA["lastName"]
+put "20" into tInputA["age"]
+put "30000 into tInputA["income"]
 put "clients" into tInputA["cdbTableName"]
 
+#tRecordID now contains the ID of the created record
 put cdb_createCloud(tInputA) into tRecordID
+#Output: 123456abcdef
 ```

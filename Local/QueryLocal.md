@@ -1,13 +1,13 @@
-# cdb_QueryCloud
+# cdb_QueryLocal
 ---
 ```
-function cdb_QueryCloud(tQueryA)
+function cdb_QueryLocal(pInputA)
 ```
 ## Summary:
-This function searches the specified table over the cloud, and returns the subset that matches that query in several possible formats.
+This function searches the specified local table, and returns the subset that matches that query in several possible formats.
 
 ## Inputs:
-* **`tInputA`**  *(Array)* - An array of keys containing the query, the table name, and an optional output format.
+* **`pInputA`**  *(Array)* - An array of keys containing the query, the table name, and an optional output format.
 	* `["query"]` *(Key)* - An array formatted as follows:
     	* `["key"]` *(String)* - One of the following:
     		- *`yourKey`* - Searches the specified key
@@ -16,7 +16,7 @@ This function searches the specified table over the cloud, and returns the subse
     	* `["value"]` *(String)* - The value to compare against each record's value at the key specified above.
     	* `["operator"]` *(String)* - The [comparison operator](../QueryOperators.md) to compare each record's value at the key specified above to the value specified above.
     - `["cdbTableName"]` *(String)* - The table name or table ID to search through.
-    - `*["resultFormat"]` *(String)*: 
+    - `*["resultFormat"]` *(String)*:
     	-  `"recordList"` *(default)* - returns a line-delimited list of the recordIDs that match the query.
     	- `"recordData"` - returns an array of full records that match the query.
 
@@ -30,9 +30,6 @@ This function searches the specified table over the cloud, and returns the subse
 * *(Array)* - If *pInputA["resultFormat"]* is "recordData":
 	* Output is an array where each key is a recordID that matches the query, with subkeys defined by the schema.
 
-## Additional Requirements:
-This API call requires internet access.
-
 ## API Version:
 * `0.3.1` - Introduced
 
@@ -45,7 +42,7 @@ put "25.00" into tQueryA["value"]
 put ">" into tQueryA["operator"]
 put tQueryA into tInputA["query"]
 put "transactions" into tInputA["cdbTableName"]
-get cdb_QueryCloud(tInputA) 
+get cdb_QueryLocal(tInputA) 
 -- list all cdbRecordIDs with 'transactionAmounts' greater than 25.00
 ```
 

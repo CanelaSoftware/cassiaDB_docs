@@ -1,13 +1,13 @@
 # cdb_updateLocal
 ---
 ```
-command cdb_updateLocal tInputA
+command cdb_updateLocal pInputA
 ```
 ## Summary:
 This command makes changes to a local record, without making changes to the corresponding cloud record.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing data per the following format:
+* **`pInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
     * `["cdbRecordID"]` *(String)* - A single cdbRecordID.
     * `[`*`yourKey1`*`]` *(String)* - User-defined key, where *yourKey1* is an arbitrary String for the key name. User must provide at least one self-defined key.
@@ -19,13 +19,16 @@ This command makes changes to a local record, without making changes to the corr
 ## Examples:
 ```
 local tInputA
-     
-put fld "recordID" into tInputA["cdbRecordID"]
-put fld "firstName" into tInputA["firstName"]
-put fld "lastName" into tInputA["lastName"]
-put fld "age" into tInputA["age"]
-put fld "income" into tInputA["income"]
-put "clients" into tInputA["cdbTableName"]
+
+#Table name and recordID
+put "clients" into tInputA["cdbTableName"]     
+put "123456abcdef" into tInputA["cdbRecordID"]
+
+#One or more keys
+put "Tom" into tInputA["firstName"]
+put "Jerry" into tInputA["lastName"]
+put "31" into tInputA["age"]
+put "31000" into tInputA["income"]
      
 cdb_updateLocal tInputA
 ```

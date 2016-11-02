@@ -1,13 +1,13 @@
 # cdb_batchDeleteLocal
 ---
 ```
-commnad cdb_batchDeleteLocal tInputA
+commnad cdb_batchDeleteLocal pInputA
 ```
 ## Summary:
 This function deletes a list of local records.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returning the table's unique UID. There must be at least one table UID key in the array.
+* **`pInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returning the table's unique UID. There must be at least one table UID key in the array.
     * `[`*`tableID 1`*`]` *(Key)* - key that is the first table's UID, which maps to an array of keys, where each key is a cdb record UID. There must be at least one record UID key in this sub-array.
     	* `[`*`cdbRecordID 1`*`]` *(Key)* - key that is the record UID for the first record wanting to be deleted. Must put empty or any arbirary value in it.
     	* `*[`*`cdbRecordID N`*`]` *(Key)* - key that is the record UID for the nth record wanting to be deleted. Must put empty or any arbirary value in it.
@@ -18,7 +18,7 @@ This function deletes a list of local records.
 > Note: To delete all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
 
-![BatchDelete input diagram](../../chartimages/deleteReadInput.png)
+![BatchDelete input diagram](../chartimages/deleteReadInput.png)
 
 ## API Version:
 * `0.3.1` - Introduced

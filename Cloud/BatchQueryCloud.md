@@ -1,13 +1,13 @@
 # cdb_BatchQueryCloud
 ---
 ```
-function cdb_BatchQueryCloud(tInputA)
+function cdb_BatchQueryCloud(pInputA)
 ```
 ## Summary:
 This function searches the specified table(s) over the cloud, and returns the subset that matches that query in several possible formats.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of one or two keys that specify the batch query and the query settings.
+* **`pInputA`** *(Array)* - An array of one or two keys that specify the batch query and the query settings.
 	* `["batchQuery"]` *(Key)* - An array of one or more table IDs to be queried upon.
   		* `[`*`tableID 1`*`]` *(Key)* - An array of one or more queries for this table.
   			* `[`*`query 1`*`]` *(Key)* - An arbitrary user-defined key for a query. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UUID of *tableID 1*. This is a key to a properly formatted query with keys: "key" "value" and "[operator](../../Basic/QueryOperators.md)" which map to desired String values to be queried.

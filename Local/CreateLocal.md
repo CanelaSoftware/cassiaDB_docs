@@ -24,11 +24,16 @@ This function allocates a new cdbRecordID for a record locally (but not in the c
 ```
 local tInputA, tRecordID
 
-put fld "firstName" into tInputA["firstName"]
-put fld "lastName" into tInputA["lastName"]
-put fld "age" into tInputA["age"]
-put fld "income" into tInputA["income"]
+#Table name: clients
+#Schema: firstName, lastName, age, income
+
+put "John" into tInputA["firstName"]
+put "Doe" into tInputA["lastName"]
+put "20" into tInputA["age"]
+put "30000 into tInputA["income"]
 put "clients" into tInputA["cdbTableName"]
 
+#tRecordID now contains the ID of the created record
 put cdb_createLocal(tInputA) into tRecordID
+#Output: 123456abcdef
 ```

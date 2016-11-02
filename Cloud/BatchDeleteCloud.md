@@ -1,13 +1,13 @@
 # cdb_batchDeleteCloud
 ---
 ```
-commnad cdb_batchDeleteCloud tInputA
+commnad cdb_batchDeleteCloud pInputA
 ```
 ## Summary:
 This function deletes a list of records over the cloud.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returning the table's unique UID. There must be at least one table UID key in the array.
+* **`pInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returning the table's unique UID. There must be at least one table UID key in the array.
     * `[`*`tableID 1`*`]` *(Key)* - key that is the first table's UID, which maps to an array of keys, where each key is a cdb record UID. There must be at least one record UID key in this sub-array.
     	* `[`*`cdbRecordID 1`*`]` *(Key)* - key that is the record UID for the first record wanting to be deleted. Must put empty or any arbirary value in it.
     	* `*[`*`cdbRecordID N`*`]` *(Key)* - key that is the record UID for the nth record wanting to be deleted. Must put empty or any arbirary value in it.
@@ -17,7 +17,7 @@ This function deletes a list of records over the cloud.
 
 > Note: To delete all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
-![BatchDelete input diagram](../../chartimages/deleteReadInput.png)
+![BatchDelete input diagram](../chartimages/deleteReadInput.png)
 ## Additional Requirements:
 This API call requires internet access.
 ## API Version:
