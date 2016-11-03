@@ -7,50 +7,50 @@ This project is designed to give a detailed overview of the API calls available 
 ---
 
 ## Simple:
-[CreateLocal](Basic/Local/CreateLocal.md)
+[CreateLocal](Local/CreateLocal.md)
 
-[CreateCloud](Basic/Cloud/CreateCloud.md)
+[CreateCloud](Cloud/CreateCloud.md)
 
-[UpdateLocal](Basic/Local/UpdateLocal.md)
+[UpdateLocal](Local/UpdateLocal.md)
 
-[UpdateCloud](Basic/Cloud/UpdateCloud.md)
+[UpdateCloud](Cloud/UpdateCloud.md)
 
-[ReadLocal](Basic/Local/ReadLocal.md)
+[ReadLocal](Local/ReadLocal.md)
 
-[ReadCloud](Basic/Cloud/ReadCloud.md)
+[ReadCloud](Cloud/ReadCloud.md)
 
-[DeleteLocal](Basic/Local/DeleteLocal.md)
+[DeleteLocal](Local/DeleteLocal.md)
 
-[DeleteCloud](Basic/Cloud/DeleteCloud.md)
+[DeleteCloud](Cloud/DeleteCloud.md)
 
-[QueryLocal](Basic/Local/QueryLocal.md)
+[QueryLocal](Local/QueryLocal.md)
 
-[QueryCloud](Basic/Cloud/QueryCloud.md)
+[QueryCloud](Cloud/QueryCloud.md)
 
 ## Batch:
-[BatchCreateLocal](Batch/Local/BatchCreateLocal.md)
+[BatchCreateLocal](Local/BatchCreateLocal.md)
 
-[BatchCreateCloud](Batch/Cloud/BatchCreateCloud.md)
+[BatchCreateCloud](Cloud/BatchCreateCloud.md)
 
-[BatchUpdateLocal](Batch/Local/BatchUpdateLocal.md)
+[BatchUpdateLocal](Local/BatchUpdateLocal.md)
 
-[BatchUpdateCloud](Batch/Cloud/BatchUpdateCloud.md)
+[BatchUpdateCloud](Cloud/BatchUpdateCloud.md)
 
-[BatchReadLocal](Batch/Local/BatchReadLocal.md)
+[BatchReadLocal](Local/BatchReadLocal.md)
 
-[BatchReadCloud](Batch/Cloud/BatchReadCloud.md)
+[BatchReadCloud](Cloud/BatchReadCloud.md)
 
-[BatchDeleteLocal](Batch/Local/BatchDeleteLocal.md)
+[BatchDeleteLocal](Local/BatchDeleteLocal.md)
 
-[BatchDeleteCloud](Batch/Cloud/BatchDeleteCloud.md)
+[BatchDeleteCloud](Cloud/BatchDeleteCloud.md)
 
-[BatchQueryLocal](Batch/Local/BatchQueryLocal.md)
+[BatchQueryLocal](Local/BatchQueryLocal.md)
 
-[BatchQueryCloud](Batch/Cloud/BatchQueryCloud.md)
+[BatchQueryCloud](Cloud/BatchQueryCloud.md)
 
-[BatchMergeLocal](Batch/Local/BatchMergeLocal.md)
+[BatchMergeLocal](Local/BatchMergeLocal.md)
 
-[BatchMergeCloud](Batch/Cloud/BatchMergeCloud.md)
+[BatchMergeCloud](Cloud/BatchMergeCloud.md)
 
 ## Utility:
 [ListLocal](Utility/ListLocal.md)
