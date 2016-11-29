@@ -10,7 +10,6 @@ This function reads a cloud record and returns only the keys requested from a re
 * **`pInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UUID that maps to another array of keys. This table UUID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returning the table's unique UUID. There must be at least one table UID key in the array.
     * `[tableID 1]` *(Key)* - key to the first table's UUID, which maps to an array of keys, where each key is a cdb record UUID. There must be at least one record UID key in this sub-array.
     	* `[cdbRecordID 1]` *(Key)* - key that is the record UUID for the first record wanting to be read. Must put empty or any arbirary value in it.
-    		* test
     		* `[key1,key2,key3]` *(Key)* - comma delimited list of keys in the record.
     	* `[cdbRecordID N]` *(Key)* - key that is the record UUID for the nth record wanting to be read. Must put empty or any arbirary value in it.
     * `[tableID N]` *(Key)* - key that is the nth table's UUID. Repeat *tableID1*'s sublevel structure.
