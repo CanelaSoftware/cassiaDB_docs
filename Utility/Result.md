@@ -1,8 +1,5 @@
-# cdb_result
+# function cdb_result(pPram)
 ---
-```
-function cdb_result(pParam)
-```
 ## Summary:
 Used to check the status of the most recently executed CDB call.
 
@@ -23,17 +20,18 @@ Depending on the input parameter -
 * (String) - When `"response"` is the input, the error message associated with the most recent call, if any.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
-local tDataA, tRecordID
+local tDataA, tRecordID, tResult
 
 ...
 
+#Sample function call
 put cdb_createLocal(tDataA) into tRecordID
-     
-if not cdb_result() then
-	put "Error, create failed"
-end if
+
+put cdb_result() into tResult
+
+#Output: 'true' if succeed, 'false' otherwise     
 ```
