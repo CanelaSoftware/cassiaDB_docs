@@ -1,23 +1,26 @@
-# cdb_countCloud
+# function cdb_countCloud(pTableName)
 ---
-```
-function cdb_countCloud(tTableName)
-```
 ## Summary:
 This function counts the number of cloud records in a given table.
 
 ## Inputs:
-* **`tTableName`** *(String)* - The label of the table to access.
+* **`pTableName`** *(String)* - The label of the table to access.
 
 ## Outputs:
 (String) – Contains the numeric count of records in a given table on the cloud.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
 local tCount
 
+#Table name: clients
+#Keys: firstName, lastName, age, income
+#Assuming there is only 1 record in the table clients
+
 put cdb_countCloud("clients") into tCount
+
+#Output: 1
 ```
