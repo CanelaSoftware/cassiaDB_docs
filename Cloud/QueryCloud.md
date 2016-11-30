@@ -1,8 +1,5 @@
-# cdb_QueryCloud
+# function cdb_QueryCloud(pInputA)
 ---
-```
-function cdb_QueryCloud(pInputA)
-```
 ## Summary:
 This function searches the specified table over the cloud, and returns the subset that matches that query in several possible formats.
 
@@ -34,30 +31,37 @@ This function searches the specified table over the cloud, and returns the subse
 This API call requires internet access.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
-local tQueryA, tInputA
+local tQueryA, tInputA, tOutputA
 
-put "transactionAmount" into tQueryA["key"]
-put "25.00" into tQueryA["value"]
-put ">" into tQueryA["operator"]
-put tQueryA into tInputA["query"]
-put "transactions" into tInputA["cdbTableName"]
-get cdb_QueryCloud(tInputA) 
--- list all cdbRecordIDs with 'transactionAmounts' greater than 25.00
-```
+#Table name: clients
+#Schema: firstName, lastName, age, income
 
-```
-local tQueryA, tInputA
-
+#Construct "query" array
 put "firstName" into tQueryA["key"]
-put "Kevin" into tQueryA["value"]
+put "John" into tQueryA["value"]
 put "=" into tQueryA["operator"]
+
+#Set up the input array
 put tQueryA into tInputA["query"]
-put "users" into tInputA["cdbTableName"]
+put "clients" into tInputA["cdbTableName"]
+
+#recordData output format
 put "recordData" into tInputA["resultFormat"]
-get cdb_QueryCloud(tInputA) 
--- array of all records with firstName 'Kevin' located in the "users" table
+#OR
+#recordList output format
+put "recordList" into tInputA["resultFormat"]
+
+put cdb_QueryLocal(tInputA) into tOutputA
+
+#recordData Output: tOutputA[123456abcdef]["cdb"] - metadata
+					  	       ["firstName"] - value
+					  		   ["lastName"] - value
+					  		   ["age"] - value
+					  		   ["income"] - value
+						  
+#recordList Output: 123456abcdef
 ```

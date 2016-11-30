@@ -1,8 +1,5 @@
-# cdb_updateLocal
+# command cdb_updateLocal pInputA
 ---
-```
-command cdb_updateLocal pInputA
-```
 ## Summary:
 This command makes changes to a local record, without making changes to the corresponding cloud record.
 
@@ -14,13 +11,16 @@ This command makes changes to a local record, without making changes to the corr
     * `*[`*`yourKeyN`*`]` *(String)* - User-defined key, where *yourKeyN* is an arbitrary String for the key name. User may provide more than one if desired.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
 local tInputA
 
-#Table name and recordID
+#Table name: clients
+#Schema: firstName, lastName, age, income
+
+#Set up
 put "clients" into tInputA["cdbTableName"]     
 put "123456abcdef" into tInputA["cdbRecordID"]
 

@@ -1,23 +1,24 @@
-# cdb_deleteLocal
+# command cdb_deleteLocal pInputA
 ---
-```
-command cdb_deleteLocal pInputA
-```
 ## Summary:
-This command deletes a record from a local table (but not from the cloud).
+This command deletes one or more record(s) from the local table (but not from the cloud).
 
 ## Inputs:
 * **`pInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
-    * `["cdbRecordID"]` *(String)* - A line delimited list of cdbRecordIDs.
+    * `["cdbRecordID"]` *(String)* - A single cdbRecordID or a line delimited list of cdbRecordIDs.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
 local tInputA
-     
+
+#Table name: clients
+#Schema: firstName, lastName, age, income
+#A single cdbRecordID: 123456abcdef
+
 put "clients" into tInputA["cdbTableName"]
 put "123456abcdef" into tInputA["cdbRecordID"]
      

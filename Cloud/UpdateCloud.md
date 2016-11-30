@@ -1,8 +1,5 @@
-# cdb_updateCloud
+# command cdb_updateCloud pInputA
 ---
-```
-command cdb_updateCloud pInputA
-```
 ## Summary:
 This command makes changes to an existing cloud record without modifying the corresponding local record.
 
@@ -17,13 +14,16 @@ This command makes changes to an existing cloud record without modifying the cor
 * This API call requires internet access.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
 local tInputA
-     
-#Table name and recordID
+
+#Table name: clients
+#Schema: firstName, lastName, age, income
+
+#Set up
 put "clients" into tInputA["cdbTableName"]     
 put "123456abcdef" into tInputA["cdbRecordID"]
 

@@ -1,8 +1,5 @@
-# cdb_QueryLocal
+# function cdb_QueryLocal(pInputA)
 ---
-```
-function cdb_QueryLocal(pInputA)
-```
 ## Summary:
 This function searches the specified local table, and returns the subset that matches that query in several possible formats.
 
@@ -10,7 +7,7 @@ This function searches the specified local table, and returns the subset that ma
 * **`pInputA`**  *(Array)* - An array of keys containing the query, the table name, and an optional output format.
 	* `["query"]` *(Key)* - An array formatted as follows:
     	* `["key"]` *(String)* - One of the following:
-    		- *`yourKey`* - Searches the specified key
+    		- `yourKey` - Searches the specified key
     		- `"$"` - Searches all schema-defined keys
     		- `"*"` - Searches all schema-defined keys and internal keys.
     	* `["value"]` *(String)* - The value to compare against each record's value at the key specified above.
@@ -20,7 +17,7 @@ This function searches the specified local table, and returns the subset that ma
     	-  `"recordList"` *(default)* - returns a line-delimited list of the recordIDs that match the query.
     	- `"recordData"` - returns an array of full records that match the query.
 
-![Query input diagram](../../chartimages/QuerySimpleInput.png)
+![Query input diagram](../chartimages/QuerySimpleInput.png)
 
 > _*optional parameter._
 
@@ -31,30 +28,37 @@ This function searches the specified local table, and returns the subset that ma
 	* Output is an array where each key is a recordID that matches the query, with subkeys defined by the schema.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
-local tQueryA, tInputA
+local tQueryA, tInputA, tOutputA
 
-put "transactionAmount" into tQueryA["key"]
-put "25.00" into tQueryA["value"]
-put ">" into tQueryA["operator"]
-put tQueryA into tInputA["query"]
-put "transactions" into tInputA["cdbTableName"]
-get cdb_QueryLocal(tInputA) 
--- list all cdbRecordIDs with 'transactionAmounts' greater than 25.00
-```
+#Table name: clients
+#Schema: firstName, lastName, age, income
 
-```
-local tQueryA, tInputA
-
+#Construct "query" array
 put "firstName" into tQueryA["key"]
-put "Kevin" into tQueryA["value"]
+put "John" into tQueryA["value"]
 put "=" into tQueryA["operator"]
+
+#Set up the input array
 put tQueryA into tInputA["query"]
-put "users" into tInputA["cdbTableName"]
+put "clients" into tInputA["cdbTableName"]
+
+#recordData output format
 put "recordData" into tInputA["resultFormat"]
-get cdb_QueryCloud(tInputA) 
--- array of all records with firstName 'Kevin' located in the "users" table
+#OR
+#recordList output format
+put "recordList" into tInputA["resultFormat"]
+
+put cdb_QueryCloud(tInputA) into tOutputA
+
+#recordData Output: tOutputA[123456abcdef]["cdb"] - metadata
+					  	       ["firstName"] - value
+					  		   ["lastName"] - value
+					  		   ["age"] - value
+					  		   ["income"] - value
+						  
+#recordList Output: 123456abcdef
 ```
