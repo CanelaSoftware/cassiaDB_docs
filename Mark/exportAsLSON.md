@@ -1,4 +1,4 @@
-# command cdb_exportAsLSON
+# command cdb_exportAsLSON pInputA
 ---
 ## Summary:
 This command exports a complete table as individual documents for each record in LSON (LiveCode array encoded) format in a folder on the desktop.

@@ -1,4 +1,4 @@
-# command cdb_exportAsJSON
+# command cdb_exportAsJSON pInputA
 ---
 ## Summary:
 This command exports a complete table as individual documents for each record in JSON format in a folder on the desktop.
