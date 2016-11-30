@@ -16,7 +16,7 @@ This function reads local record/s and returns only the keys requested from a re
 (Array) – Containing a partial record with only the keys as defined by the input. 
 
 ## API Version:
-* `0.3` - Introduced
+* `0.3.2` - Introduced
 
 ## Examples:
 ```
