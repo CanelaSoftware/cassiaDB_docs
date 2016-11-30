@@ -19,7 +19,7 @@ This API call requires internet access.
 local tInputA
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 #A single cdbRecordID: 123456abcdef
 
 put "clients" into tInputA["cdbTableName"]

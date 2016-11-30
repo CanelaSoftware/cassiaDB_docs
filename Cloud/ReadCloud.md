@@ -22,6 +22,7 @@ This API call requires internet access.
 local tInputA, tDataA
 
 #Table name: clients
+#Keys: firstName, lastName, age, income
 #A single cdbRecordID: 123456abcdef
 
 put "123456abcdef" into tInputA["cdbRecordID"]

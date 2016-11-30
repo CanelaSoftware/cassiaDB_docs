@@ -38,7 +38,7 @@ This API call requires internet access.
 local tQueryA, tInputA, tOutputA
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 
 #Construct "query" array
 put "firstName" into tQueryA["key"]

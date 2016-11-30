@@ -18,7 +18,7 @@ This command makes changes to a local record, without making changes to the corr
 local tInputA
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 
 #Set up
 put "clients" into tInputA["cdbTableName"]     

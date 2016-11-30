@@ -16,7 +16,7 @@ This command deletes one or more record(s) from the local table (but not from th
 local tInputA
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 #A single cdbRecordID: 123456abcdef
 
 put "clients" into tInputA["cdbTableName"]

@@ -23,7 +23,7 @@ This API call requires internet access.
 ## Examples:
 ```
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 
 put "John" into tInputA["firstName"]
 put "Doe" into tInputA["lastName"]

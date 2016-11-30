@@ -22,7 +22,7 @@ This function allocates a new cdbRecordID for a record locally (but not in the c
 local tInputA, tRecordID
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 
 put "John" into tInputA["firstName"]
 put "Doe" into tInputA["lastName"]

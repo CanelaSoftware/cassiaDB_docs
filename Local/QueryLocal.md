@@ -35,7 +35,7 @@ This function searches the specified local table, and returns the subset that ma
 local tQueryA, tInputA, tOutputA
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 
 #Construct "query" array
 put "firstName" into tQueryA["key"]

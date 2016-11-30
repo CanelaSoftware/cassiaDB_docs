@@ -19,7 +19,7 @@ This function reads one ore more local records and returns the records' contents
 local tInputA, tDataA
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 #A single cdbRecordID: 123456abcdef
 
 put "123456abcdef" into tInputA["cdbRecordID"]
