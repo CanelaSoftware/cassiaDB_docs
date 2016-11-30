@@ -1,24 +1,21 @@
-# cdb_batchUpdateLocal
+# command cdb_batchUpdateLocal pInputA
 ---
-```
-command cdb_batchUpdateLocal pInputA
-```
 ## Summary:
 This command makes changes to a number of local records, without making changes to the corresponding cloud records.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returns the table's unique UID. There must be at least one table UID key in this array.
-    * `[`*`tableID 1`*`]` *(Key)* - key that is the first table's UID, which maps to another array of arbitrary record keys. There must be at least one record key in this sub-array.
-    	* `[`*`indexKey 1`*`]` *(Key)* - An arbritrary user-defined key for a record. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UID of *tableID 1*. Each recordKey maps to a sub-array of keys where each key is a key for the actual data to store in a record. There must be at least one key name in this sub array. 
-    		* `[`*`keyName 1`*`]` *(Key)* - User-defined keyname, where *keyName 1* is an arbitrary key name. Each keyname maps to the actual user data to update. User must provide at least one self-defined keyname.
+    * `[tableID 1]` *(Key)* - key that is the first table's UID, which maps to another array of arbitrary record keys. There must be at least one record key in this sub-array.
+    	* `[cdbRecordID 1]` *(Key)* - key that is the record UUID for the first record wanting to be updated. 
+    		* `[keyName 1]` *(Key)* - User-defined keyname, where *keyName 1* is an arbitrary key name. Each keyname maps to the actual user data to update. User must provide at least one self-defined keyname.
     			*  `yourData` *(String)* - the actual data the user wants to update in this keyname in this record in this table.
-    		* `*[`*`keyName N`*`]` *(Key)* - The nth user-defined keyname. Repeat *keyName 1*'s sublevel structure.
-    	* `*[`*`indexKey N`*`]` *(Key)* - The nth record key. Repeat *recordKey 1*'s sublevel structure.
-    * `*[`*`tableID N`*`]` *(Key)* - key that is the nth table's UID. Repeat *tableID 1*'s sublevel structure.
+    		* `*[keyName N]` *(Key)* - The nth user-defined keyname. Repeat *keyName 1*'s sublevel structure.
+    	* `*[cdbRecordID N]` *(Key)* - The nth record key. Repeat *recordKey 1*'s sublevel structure.
+    * `*[tableID N]` *(Key)* - key that is the nth table's UID. Repeat *tableID 1*'s sublevel structure.
 
 > _*optional parameter._
 
-> Note: for each record, one of its keyNames must be "cdbRecordID" and it must contain the record ID for that record to be updated.
+
 
 ![Update Input Diagram](../chartimages/updateInput.png)
 ## API Version:
@@ -26,19 +23,43 @@ This command makes changes to a number of local records, without making changes 
 
 ## Examples:
 ```
-local tInputA, tTableID
+local tInputA, tClientsTableID, tOfficeTableID
      
-put cdb_getTableID("clients") into tTableID
-          
-put fld "firstName" into tInputA[tTableID][1]["firstName"]
-put fld "lastName" into tInputA[tTableID][1]["lastName"]
-put fld "age" into tInputA[tTableID][1]["age"]
-put fld "income" into tInputA[tTableID][1]["income"]
+#Table name: clients											   #Table name: office
+#keys: firstName, lastName, age, income							#Keys: name, address
+#Record: 
+#[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"	  #[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
+									   ["lastName"] - "Smith"						 					["address"] - "123 officeRoad"
+                                       ["age"] - "47"
+                                       ["income"] - "100000"
+ [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+									   ["lastName"] - "Smith"
+                                       ["age"] - "47"
+                                       ["income"] - "100000"
+                                       
+put cdb_getTableID("clients") into tClientsTableID                                       
+put cdb_getTableID("office") into tOfficeTableID
 
-put fld "firstName2" into tInputA[tTableID][2]["firstName"]
-put fld "lastName2" into tInputA[tTableID][2]["lastName"]
-put fld "age2" into tInputA[tTableID][2]["age"]
-put fld "income2" into tInputA[tTableID][2]["income"]
+##Update John's record
+put "48" into tInputA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["age"]
 
-cdb_batchUpdateLocal tInputA
+##Update Jenny's record
+put "46" into tInputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["age"]
+put "99999" into tInputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["income"]
+
+##Update Smith's Tech's record
+put "1234 office road" into tInputA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"]
+
+cdb_batchUpdateCloud tInputA
+
+#The tables now look like this:
+#Table name: clients											   #Table name: office
+#[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"	  #[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
+									   ["lastName"] - "Smith"						 					["address"] - "1234 officeRoad"
+                                       ["age"] - "48"
+                                       ["income"] - "100000"
+ [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+									   ["lastName"] - "Smith"
+                                       ["age"] - "46"
+                                       ["income"] - "99999"
 ```
