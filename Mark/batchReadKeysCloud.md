@@ -1,5 +1,5 @@
 # function cdb_batchReadKeysCloud(pInputA)
-
+---
 ## Summary:
 This function reads cloud record/s and returns only the keys requested from a record’s contents. Function may access 1 to N records in one or more tables in the same call.
 
