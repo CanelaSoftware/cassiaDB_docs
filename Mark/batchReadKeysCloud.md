@@ -1,7 +1,7 @@
 # function cdb_batchReadKeysCloud(pInputA)
 
 ## Summary:
-This function reads cloud record/s and returns only the keys requested from a record’s contents. Function may access 1 to N records in more than one table in the same call.
+This function reads cloud record/s and returns only the keys requested from a record’s contents. Function may access 1 to N records in one or more tables in the same call.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UUID that maps to another array of keys. This table UUID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returning the table's unique UUID. There must be at least one table UID key in the array.
