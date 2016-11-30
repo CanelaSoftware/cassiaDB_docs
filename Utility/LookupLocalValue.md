@@ -1,13 +1,10 @@
-# cdb_lookUpLocalValue
+# function cdb_lookUpLocalValue(pInputA)
 ---
-```
-function cdb_lookUpLocalValue tInputA
-```
 ## Summary:
 This function returns the value associated with a given key for a given local record.
 
 ## Inputs:
-* **`tInputA`** *(Array)* - An array of keys containing data per the following format:
+* **`pInputA`** *(Array)* - An array of keys containing data per the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
     * `["cdbRecordID"]` *(String)* - The record ID of the specified record.
     * `["key"]` *(String)* - The key to retrieve.
@@ -16,15 +13,21 @@ This function returns the value associated with a given key for a given local re
 *(String)* – Contains the value of the given key for the specified record.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
-local tInputA 
+local tInputA, tValue 
 
-put fld "workingTableName data" into tInputA["cdbTableName"]
-put line 1 of fld "recordID data" into tInputA["cdbRecordID"]
+#Table name: clients
+#Keys: firstName, lastName, age, income
+#Assuming there is 1 record in the clients table with firstName John
+
+put "clients" into tInputA["cdbTableName"]
+put "123456abcdef" into tInputA["cdbRecordID"]
 put "firstName" into tInputA["key"]
      
 put cdb_lookUpLocalValue(tInputA) into tValue
+
+#Output: John
 ```

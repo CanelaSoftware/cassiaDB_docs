@@ -1,8 +1,5 @@
-# cdb_getTableNames
+# function cdb_getTableNames()
 ---
-```
-function cdb_getTableNames
-```
 ## Summary:
 This function returns all table names.
 
@@ -10,11 +7,15 @@ This function returns all table names.
 *(String)* – A line-delimited list of all table names.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
 ```
-local tTableName
+local tTableNames
      
-put cdb_getTableNames into tTableName
+put cdb_getTableNames() into tTableNames
+
+#Output: clients
+		 orders
+		 employees
 ```
