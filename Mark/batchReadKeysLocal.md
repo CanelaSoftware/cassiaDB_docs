@@ -23,7 +23,7 @@ This function reads local record/s and returns only the keys requested from a re
 local tInputA, tOutputA, tTableID, tRecordIDs
 
 #Table name: clients
-#Schema: firstName, lastName, age, income
+#Keys: firstName, lastName, age, income
 #TableID: 701bf5f3-8080-444c-b287-2f8dddc7e268
 #RecordIDs (line delimited list): 8b3af158-af3a-4d92-9363-87756711f771
 
