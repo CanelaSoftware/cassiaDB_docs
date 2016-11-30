@@ -46,7 +46,7 @@ This function searches the specified local table(s), and returns the subset that
 #keys: firstName, lastName, age, income							#Keys: name, address
 #Record: 
 #[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"	  #[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-									   ["lastName"] - "Smith"						 					["address"] - "123 office Road"
+									   ["lastName"] - "Smith"						 					 ["address"] - "123 office Road"
                                        ["age"] - "47"
                                        ["income"] - "100000"
  [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
@@ -102,9 +102,9 @@ put "logicalAND" into tInputA["settings"]["mode"]
 put cdb_BatchQueryLocal(tInputA) into tOutputA
 
 #output array: tOutputA[tClientsTableID][1]["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"	 
-									    										 ["lastName"] - "Smith"						 					
-                                       										  ["age"] - "47"
-                                       										  ["income"] - "100000"
+									    										   ["lastName"] - "Smith"						 					
+                                       										       ["age"] - "47"
+                                       										       ["income"] - "100000"
                        [tOfficeTableID][1]["45678123-abcd-1234-cdef-1234567890ab"]["name"] - "Smith's Tech"
-                       														   ["address"] - "123 office Road"
+                       														      ["address"] - "123 office Road"
 ```

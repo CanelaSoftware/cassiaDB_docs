@@ -24,7 +24,7 @@ local tInputA, tOutputA, tClientsTableID, tOfficeTableID
      
 #Table name: clients											   #Table name: office				
 #RecordIDs: 
-#12345678-abcd-1234-cdef-1234567890ab	   					   #45678123-abcd-1234-cdef-1234567890ab
+#12345678-abcd-1234-cdef-1234567890ab	   					       #45678123-abcd-1234-cdef-1234567890ab
  87654321-abcd-1234-cdef-1234567890ab
 
 put cdb_getTableID("clients") into tClientsTableID                                       

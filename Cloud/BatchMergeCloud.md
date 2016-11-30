@@ -33,7 +33,7 @@ local tInputA, tClientsTableID, tOfficeTableID
 #keys: firstName, lastName, age, income							#Keys: name, address
 #Record: 
 #[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"	  #[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-									   ["lastName"] - "Smith"						 					["address"] - "123 office Road"
+									   ["lastName"] - "Smith"						 					 ["address"] - "123 office Road"
                                        ["age"] - "47"
                                        ["income"] - "100000"
 
@@ -55,7 +55,7 @@ cdb_batchMergeCloud tInputA
 #The tables now look like this:
 #Table name: clients											   #Table name: office
 #[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"	  #[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-									   ["lastName"] - "Smith"						 					["address"] - "1234 office"
+									   ["lastName"] - "Smith"						 					 ["address"] - "1234 office"
                                        ["age"] - "48"
                                        ["income"] - "100000"
 
