@@ -1,8 +1,5 @@
-# cdb_getTableID
+# function cdb_getTableID(pTableName)
 ---
-```
-function cdb_getTableID(tTableName)
-```
 
 ## Summary:
 This function takes a table name and returns the ID of that table.
@@ -14,9 +11,13 @@ This function takes a table name and returns the ID of that table.
 (String) - The Table ID of the specified table.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Introduced
 
 ## Examples:
-```  
-put cdb_getTableID("customers") into tTableID
+```
+#Table "customers" which has tableID "72a88e4f-c6ba-4fda-9381-2f0b0ca220bd"
+
+put cdb_getTableID("customers")
+
+#outputs "72a88e4f-c6ba-4fda-9381-2f0b0ca220bd"
 ``` 
