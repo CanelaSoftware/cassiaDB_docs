@@ -1,8 +1,6 @@
-# cdb_deleteTable
+# command cdb_deleteTable tInputA
 ---
-```
-command cdb_deleteTable tInputA
-```
+### *** DEPRECATED -- THIS API IS NOW DEPRECATED. PLEASE USE [cdb_removeTable](./removeTable.md) INSTEAD ***
 
 ## Summary:
 This command will delete a table.
@@ -12,7 +10,7 @@ This command will delete a table.
     * `["cdbTableName"]` *(String)* - The specified table name to be deleted.
 
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3` - Deprecated
 
 ## Examples:
 ```
