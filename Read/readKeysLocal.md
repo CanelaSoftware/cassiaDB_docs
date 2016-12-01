@@ -1,7 +1,7 @@
 # function cdb_readKeysLocal(pInputA)
 ---
 ## Summary:
-This function reads local record/s and returns only the keys requested from a record’s contents. Function may access 1 to N records from one table.
+This function reads local records and returns only the keys requested from a record’s contents. Function may access 1 to N records from one table.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - An array of keys containing data per the following format:
