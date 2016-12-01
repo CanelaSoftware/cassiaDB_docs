@@ -25,14 +25,16 @@ n/a
 ## Examples:
 ```
  local tInputA
- 
- #Table name: clients
+
+#Table name: clients
+#Source: cloud or local
+#PreserveTarget: true or false
      
-     put "clients" into tInputA["cdbTableName"]
-     put "cloud" into tInputA["settings"]["source"]
-     put true into tInputA["settings"]["preserveTarget"]
+put "clients" into tInputA["cdbTableName"]
+put "cloud" into tInputA["settings"]["source"]
+put true into tInputA["settings"]["preserveTarget"]
      
-     cdb_syncEvery tInputA
+cdb_syncEvery tInputA
      
 #Output: n/a
 
