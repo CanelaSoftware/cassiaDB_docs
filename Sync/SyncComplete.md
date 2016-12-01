@@ -12,9 +12,6 @@ This command will sync a specified table bi-directionally between cloud and loca
 ## Outputs:
 n/a
 
-## Additional Requirements:
-This API call requires internet access.
-
 ## API Version:
 * `0.3.3` - Introduced
 

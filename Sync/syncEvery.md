@@ -15,10 +15,6 @@ This command will sync a specified table in one direction between cloud and loca
    * `["settings"]` *(Key)* - Sync's records from cloud down to local. Default case if no master is specified.
     	    
     	* `["preserveTarget"]` *(Boolean)* - 'True' or 'False'. A value of 'true' would preserve any records that do not have a matching cdbRecordID in the source. Records with a matching cdbRecordID in both source and target will have their cdbRecordVersion considered. The newer record will be synced from source to target. A value of 'false' will force the target to match the source records perfectly. Unique records in the target will be deleted.
-    	
-        
-## Additional Requirements:
-This API call requires internet access.
 
 ## API Version:
 * `0.3.3` - Introduced
