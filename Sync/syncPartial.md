@@ -21,7 +21,7 @@ This command sync's any amount of specified records from a single table in a sin
 n/a
 	
 ## API Version:
-* `0.3.1` - Introduced
+* `0.3.3` - Introduced
 
 ## Examples:
 ```
