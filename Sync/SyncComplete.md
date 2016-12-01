@@ -2,7 +2,7 @@
 ---
 
 ## Summary:
-This command will sync a specified table bi-directionally between cloud and local. The end result will be a perfect match between cloud and local. New records and records with the same cdbRecordID will by synced both directions.
+This command will sync a specified table bi-directionally between cloud and local. The end result will be a perfect match between cloud and local. Unique records are synced to the target. Records with the same cdbRecordID will have their cdbRecordVersion compared. The newer version will be synced to the target.
 
 ## Inputs:
 * **`tInputA`** *(Array)* - An array that specifies which table to sync.
