@@ -8,7 +8,6 @@ This command will sync a specified table bi-directionally between cloud and loca
 * **`tInputA`** *(Array)* - An array that specifies which table to sync.
     * `["cdbTableName"]` *(String)* - The specified table to be synced.
   	
-
 ## Outputs:
 n/a
 
