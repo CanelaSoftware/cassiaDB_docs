@@ -1,13 +1,13 @@
 # command cdb_syncPartial pInputA
 ---
 ## Summary:
-This command sync's any amount of specified records from any number of tables in the cloud to local direction, the local to cloud direction, or bi-directional.
+This command sync's any amount of specified records from a single table in a single direction.
 
 ## Inputs:
 * **`tInputA`** *(Array)* - An array that specifies which table to sync and how to sync that table.
     * `["cdbTableName"]` *(String)* - The specified table to be synced.
     
-    * `["cdbRecordID"]` *(Key)* - Sync's records from cloud down to local. Default case if no master is specified.
+    * `["cdbRecordID"]` *(Key)* - A line delimted list of recordIDs.
 
     * `["settings"]` *(Key)* - Key that maps to type of setting.
         
