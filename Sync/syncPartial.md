@@ -1,8 +1,5 @@
 # command cdb_syncPartial pInputA
 ---
-```
-command cdb_syncList tInputA
-```
 ## Summary:
 This command sync's any amount of specified records from any number of tables in the cloud to local direction, the local to cloud direction, or bi-directional.
 
