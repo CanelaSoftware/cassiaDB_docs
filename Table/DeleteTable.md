@@ -6,7 +6,7 @@ This command will remove a table from the database. It will also delete all data
 
 ## Inputs:
 * **`pInputA`** *(Array)* - An array containing the following:
-    * `["tableName"]` *(String)* - The specified table name to be deleted.
+    * `["cdbTableName"]` *(String)* - The specified table name to be deleted.
     * `["email"]` *(String)* - The email for the owner of the table.
     * `["password"]` *(String)* - The password for the owner of the table.
 

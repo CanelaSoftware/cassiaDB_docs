@@ -1,19 +1,21 @@
-# command cdb_createTable pInputA
+# function cdb_createTable(pInputA)
 ---
 
 ## Summary:
-This command will create a table with specified keys.
+This command will create a table with specified keys, returning the table ID.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - An array containing the following:
-    * `["tableName"]` *(String)* - The table name to be created
+    * `["cdbTableName"]` *(String)* - The table name to be created
     * `["keys"]` *(String)* - The keys for the table
     * `["email"]` *(String)* - User's email
     * `["password"]` *(String)* - User's password
 
+## Output:
+(String) - The TableID, or empty if it failed.
 
 ## API Version:
-* `0.3` - Introduced
+* `0.3.1` - Introduced
 
 ## Examples:
 ```
