@@ -1,11 +1,12 @@
-# function cdb_readCloud(pInputA)
+# function cdb_read(pInputA)
 ---
 ## Summary:
-This function downloads one or more cloud records, and returns them as an array without updating the local record.
+This function reads one or more records from either local or cloud, and returns them as an array.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - An array with the following format:
     * `["cdbTableName"]` *(String)* - The specified table name
+    * `["cdbTarget"]` *(String)* - The place to access the records, either `"cloud"` or `"local"`.
     * `["cdbRecordID"]` *(String)* - A single record ID or a line-delimited list of record IDs, or `"*"` for all records
     
 ## Outputs:
@@ -27,8 +28,9 @@ local tInputA, tDataA
 
 put "123456abcdef" into tInputA["cdbRecordID"]
 put "clients" into tInputA["cdbTableName"]
+put "cloud" into tInputA["cdbTarget"]
     
-put cdb_readCloud(tInputA) into tDataA
+put cdb_read(tInputA) into tDataA
 #Output: tDataA["123456abcdef"]["cdb"] - metadata
 							   ["firstName"] - value
 							   ["lastName"] - value

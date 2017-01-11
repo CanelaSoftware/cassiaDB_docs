@@ -1,4 +1,4 @@
-# function cdb_listLocal(pInputA)
+# function cdb_list(pInputA)
 ---
 ## Summary:
 This function returns a line-delimited list of the values of the requested key.
@@ -7,6 +7,7 @@ This function returns a line-delimited list of the values of the requested key.
 * **`pInputA`** *(Array)* - An array with the following format:
     * `*["key"]` *(String)* - The key whose values will be listed. Default is the cdbRecordID.
     * `["cdbTableName"]` *(String)* - The name of the table to access.
+    * `["cdbTarget"]` *(String)* - The place to access the records, either `"cloud"` or `"local"`.
     
 > _*optional parameter._
 
@@ -25,8 +26,9 @@ local tInputA, tOutputA
 
 put empty into tInputA["key"]
 put "clients" into tInputA["cdbTableName"]
+put "cloud" into tInputA["cdbTarget"]
 
-put cdb_listLocal(tInputA) into tOutputA
+put cdb_list(tInputA) into tOutputA
 
 #Output: 123456abcdef
 ```

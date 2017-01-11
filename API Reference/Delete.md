@@ -1,11 +1,12 @@
-# command cdb_deleteCloud pInputA
+# command cdb_delete pInputA
 ---
 ## Summary:
-This command deletes one or more records from the cloud table (but not from local).
+This command deletes one or more records from the table.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - An array with the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
+    * `["cdbTarget"]` *(String)* - The place to delete the record from, either `"cloud"` or `"local"`.
     * `["cdbRecordID"]` *(String)* - A single cdbRecordID or a line delimited list of cdbRecordIDs to be deleted, or `"*"` to delete all records in a table. 
 
 ## Additional Requirements:
@@ -24,6 +25,7 @@ local tInputA
 
 put "clients" into tInputA["cdbTableName"]
 put "123456abcdef" into tInputA["cdbRecordID"]
+put "cloud" into tInputA["cdbTarget"]
      
-cdb_deleteCloud tInputA
+cdb_delete tInputA
 ```

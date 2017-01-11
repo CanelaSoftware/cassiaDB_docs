@@ -1,10 +1,11 @@
-# function cdb_batchReadLocal(pInputA)
+# function cdb_batchRead(pInputA)
 ---
 ## Summary:
-This function reads a list of local records and returns those records' contents. It takes the input array and essentially fills the empty contents of each cdbRecordID key.
+This function reads a list of records and returns those records' contents. It takes the input array and fills the empty contents of each cdbRecordID key.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
+    * `["cdbTarget"]` *(String)* - place to read records, either `"cloud"` or `"local"`
     * `[tableID 1]` *(Key)* - Key is the first table's ID, maps to subarray of record IDs.
     	* `[cdbRecordID 1]` *(Key)* - Key that is the record ID for the first record to be read, or `"*"` to read all records in a table. 
     		* `empty` - There must be an empty element child to each record ID
@@ -16,12 +17,14 @@ This function reads a list of local records and returns those records' contents.
 
 > Note: To read all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
-![BatchRead input diagram](../chartimages/deleteReadInput.png)
+![BatchRead input diagram] (../chartimages/deleteReadInput.png)
 ## Outputs:
-(Aray) -- This output array is essentially the same as the input array but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.
+(Aray) -- This output array is essentially the same as the input array, but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.
 
 ![BatchRead output diagram](../chartimages/readOutput.png)
 
+## Additional Requirements:
+This API call requires internet access.
 
 ## API Version:
 * `0.3.0` - Introduced
@@ -40,8 +43,10 @@ put cdb_getTableID("office") into tOfficeTableID
      
 put empty into tInputA[tClientsTableID]["*"]
 put empty into tInputA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]
+
+put "cloud" into tInputA["cdbTarget"]
      
-put cdb_batchReadLocal(tInputA) into tOutputA
+put cdb_batchRead(tInputA) into tOutputA
 
 #output array: tOutputA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"
 																				["lastName"] - "smith"

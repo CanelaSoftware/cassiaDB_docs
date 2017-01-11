@@ -1,10 +1,11 @@
-# command cdb_batchUpdateLocal pInputA
+# command cdb_batchUpdate pInputA
 ---
 ## Summary:
-This command makes changes to a number of local records, without making changes to the corresponding cloud records.
+This command makes changes to a number of records. It can access multiple tables.
 
 ## Inputs:
 * **`pInputA`** *(Array)* - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function *cdb_getTableID* and passing in the table name, returns the table's unique UID. There must be at least one table UID key in this array.
+    * `["cdbTarget"]` *(String)* - place to update records, either `"cloud"` or `"local"`
     * `[tableID 1]` *(Key)* - key that is the first table's UID, which maps to another array of arbitrary record keys. There must be at least one record key in this sub-array.
     	* `[cdbRecordID 1]` *(Key)* - key that is the record UUID for the first record wanting to be updated. 
     		* `[keyName 1]` *(Key)* - User-defined keyname, where *keyName 1* is an arbitrary key name. Each keyname maps to the actual user data to update. User must provide at least one self-defined keyname.
@@ -18,6 +19,8 @@ This command makes changes to a number of local records, without making changes 
 
 
 ![Update Input Diagram](../chartimages/updateInput.png)
+## Additional Requirements:
+This API call requires internet access.
 ## API Version:
 * `0.3.1` - Introduced
 
@@ -50,7 +53,9 @@ put "99999" into tInputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"
 ##Update Smith's Tech's record
 put "1234 office road" into tInputA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"]
 
-cdb_batchUpdateCloud tInputA
+put "cloud" into tInputA["cdbTarget"]
+
+cdb_batchUpdate tInputA
 
 #The tables now look like this:
 #Table name: clients											   #Table name: office
@@ -62,4 +67,5 @@ cdb_batchUpdateCloud tInputA
 									   ["lastName"] - "Smith"
                                        ["age"] - "46"
                                        ["income"] - "99999"
+```
 ```

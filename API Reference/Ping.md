@@ -1,7 +1,7 @@
 # function cdb_ping()
 ---
 ## Summary:
-Pings the server and returns the response time in milliseconds.
+Pings the cloud server and returns the response time in milliseconds.
 
 ## Inputs:
 None

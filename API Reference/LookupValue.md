@@ -1,4 +1,4 @@
-# function cdb_lookUpCloudValue(pInputA)
+# function cdb_lookUpValue(pInputA)
 ---
 ## Summary:
 This function returns the value associated with a given key for a given cloud record.
@@ -7,6 +7,7 @@ This function returns the value associated with a given key for a given cloud re
 * **`pInputA`** *(Array)* - An array with the following format:
     * `["cdbTableName"]` *(String)* - The specified table name.
     * `["cdbRecordID"]` *(String)* - The record ID of the specified record.
+    * `["cdbTarget"]` *(String)* - The place to lookup the record, either `"cloud"` or `"local"`.
     * `["key"]` *(String)* - The key to retrieve.
 
 ## Outputs:
@@ -25,9 +26,10 @@ local tInputA, tValue
 
 put "clients" into tInputA["cdbTableName"]
 put "123456abcdef" into tInputA["cdbRecordID"]
+put "cloud" into tInputA["cdbTarget"]
 put "firstName" into tInputA["key"]
      
-put cdb_lookUpCloudValue(tInputA) into tValue
+put cdb_lookUpValue(tInputA) into tValue
 
 #Output: John
 ```
