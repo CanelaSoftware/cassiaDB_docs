@@ -124,8 +124,8 @@
 <li><strong><code>pInputA</code></strong> <em>(Array)</em> - An array with the following format:<ul>
 <li><code>["cdbTableName"]</code> <em>(String)</em> - The specified table name.</li>
 <li><code>["cdbTarget"]</code> <em>(String)</em> - The place to create the record, either <code>"cloud"</code> or <code>"local"</code>.</li>
-<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#cdb_GetTableKeys">see getTableKeys</a>). User must provide at least one key.</li>
-<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#cdb_GetTableKeys">see getTableKeys</a>).</li></ul></li>
+<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#GetTableKeys">see getTableKeys</a>). User must provide at least one key.</li>
+<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#GetTableKeys">see getTableKeys</a>).</li></ul></li>
 </ul>
 <blockquote>
   <p><em>*optional parameter or key.</em></p>
@@ -274,8 +274,8 @@ put cdb_read(tInputA) into tDataA
 <li><code>["cdbTableName"]</code> <em>(String)</em> - The specified table name.</li>
 <li><code>["cdbTarget"]</code> <em>(String)</em> - The place to update the record, either <code>"cloud"</code> or <code>"local"</code>.</li>
 <li><code>["cdbRecordID"]</code> <em>(String)</em> - A single cdbRecordID.</li>
-<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#cdb_GetTableKeys">see getTableKeys</a>). User must provide at least one key.</li>
-<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#cdb_GetTableKeys">see getTableKeys</a>).</li></ul></li>
+<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#GetTableKeys">see getTableKeys</a>). User must provide at least one key.</li>
+<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="#GetTableKeys">see getTableKeys</a>).</li></ul></li>
 </ul>
 <h3>Additional Requirements:</h3>
 <ul>
