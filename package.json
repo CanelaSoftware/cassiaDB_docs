@@ -1,0 +1,29 @@
+{
+  "name": "cassiadb_docs",
+  "version": "1.0.0",
+  "description": "Github pages web readable version of cassiaDB docs",
+  "main": "index.html",
+  "dependencies": {
+    "showdown": "^1.6.0"
+  },
+  "devDependencies": {
+    "showdown": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanelaSoftware/cassiaDB_docs.git"
+  },
+  "keywords": [
+    "CassiaDB",
+    "Livecode"
+  ],
+  "author": "Canela Software",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/CanelaSoftware/cassiaDB_docs/issues"
+  },
+  "homepage": "https://github.com/CanelaSoftware/cassiaDB_docs#readme"
+}

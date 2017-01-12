@@ -1,0 +1,16 @@
+.side-nav {
+	position: fixed;
+	padding: 50px 0;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+h2 {
+	color: #255;
+	text-decoration: underline;
+}
+.api {
+	padding-bottom: 5px;
+	border-bottom: 1px solid grey;
+	margin-bottom: 20px;
+}

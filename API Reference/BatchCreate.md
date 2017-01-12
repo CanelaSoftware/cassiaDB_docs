@@ -1,4 +1,4 @@
-# function cdb_batchCreate(pInputA)
+#function cdb_batchCreate(pInputA)
 ---
 ## Summary:
 This function allocates new cdbRecordIDs and stores provided data for a batch of records across one or more tables.
