@@ -1,8 +1,6 @@
 site_name: CassiaDB Docs
 pages:
   - Home: index.md
-  - About: about.md
-  - LiveCache: Livecache.md
   - Read/Write:
     - Create: Create.md
     - Read: Read.md
@@ -38,4 +36,5 @@ pages:
     - BatchQuery: BatchQuery.md
     - BatchRead: BatchRead.md
     - BatchReadKeys: BatchReadKeys.md
+  - LiveCache: Livecache.md
 theme: mkdocs
