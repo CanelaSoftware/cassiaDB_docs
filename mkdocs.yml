@@ -1,0 +1,41 @@
+site_name: CassiaDB Docs
+pages:
+  - Home: index.md
+  - About: about.md
+  - LiveCache: Livecache.md
+  - Read/Write:
+    - Create: Create.md
+    - Read: Read.md
+    - LookupValue: LookupValue.md
+    - ReadKeys: ReadKeys.md
+    - Update: Update.md
+    - Delete: Delete.md
+  - Query:
+    - Query: Query.md
+    - Query Operators: QueryOperators.md
+  - Utility:
+    - Count: Count.md
+    - List: List.md
+    - Ping: Ping.md
+    - Result: Result.md
+    - GetTableID: GetTableID.md
+    - GetTableKeys: GetTableKeys.md
+    - GetTableNames: GetTableNames.md
+    - LoadTable: LoadTable.md
+    - UnloadTable: UnloadTable.md
+    - GetTeamID: GetTeamID.md
+  - Sync:
+    - SyncPartial: SyncPartial.md
+    - SyncEvery: SyncEvery.md
+    - SyncComplete: SyncComplete.md
+  - Export:
+    - ExportAsJSON: ExportAsJSON.md
+    - ExportAsLSON: ExportAsLSON.md
+  - Batch:
+    - BatchCreate: BatchCreate.md
+    - BatchUpdate: BatchUpdate.md
+    - BatchDelete: BatchDelete.md
+    - BatchQuery: BatchQuery.md
+    - BatchRead: BatchRead.md
+    - BatchReadKeys: BatchReadKeys.md
+theme: mkdocs
