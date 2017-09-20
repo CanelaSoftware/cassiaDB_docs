@@ -10,22 +10,6 @@
     
 
     
-    <url>
-     <loc>/about/</loc>
-     <lastmod>2017-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/Livecache/</loc>
-     <lastmod>2017-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
         
     <url>
      <loc>/Create/</loc>
@@ -221,6 +205,14 @@
      <changefreq>daily</changefreq>
     </url>
         
+    
+
+    
+    <url>
+     <loc>/Livecache/</loc>
+     <lastmod>2017-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     
 
 </urlset>
