@@ -1,0 +1,1099 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "CassiaDB Documentation\n\n\nBasics of CassiaDB Documentation\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#cassiadb-documentation", 
+            "text": "Basics of CassiaDB Documentation", 
+            "title": "CassiaDB Documentation"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "What is CassiaDB?\n\n\nArchitecture\n\n\nLorem markdownum Orion, in religata et terram calcitrat quod: negat sint\nperpetimur? Vinctum postquam quem removi iterum Marte crudelis ipse turba, quem\nbello moriens operique. Alis nitidum claudit partem, vitiataque spes Cynthia\nfratres Neritius inde fallunt navigat, domum mittere genitas Corinthiaci. Neque\nmaris stant fessos dissipat, pectore nullo aut ad. Sol innecte; os ille, \nadfore\ntimor recentes\n undique, et tigres, \nnec utilis\n.\n\n\n\n\nVitiatis illis abiit pactaque curis mundus deducit ego tutela cum ille\nperemptum! Altera germana, sunt urguet consequitur caput, et est mortale Haec,\nes fregit \nPhilippi patriamque\n nomen coacervatos tamen. Forcipe orbi,\nluctus bellicus futuri metalla, hoc ad adpositis \npronos Aetnaea quid\n.\nDeprendit metum nondum Phoebeis et ausi simulat acumine cum degeneras admissum\nhoc sed Sisyphio mactata quoniam mecum, ligavit utilis. Et pecorumque vix ubi\nfulmina forte.\n\n\n\n\nExtimuit caudice, vana sidera, tenebant. Ab nec spumis Cipe, illic ferro\ncernunt; alimentaque arcum; prospicit \nlacrimas media\n duobus aliquemque\nignes: pluma. Agrestes Iovis quacumque amplexus faciunt; natura, habent Iason.\nSed nostras fugio, fraxinus tempore esse; non forma onus quis discedite vimque\nos anili non. Mandata laeta montis.\n\n\nLiveCloud\n\n\nLivecloud\n is the cloud hosting service that runs CassiaDB. Livecloud provides cloud architecture, along with tools to use CassiaDB in your application.\n\n\nOur Team\n\n\nElisi de placet et cava iamque si demittit me Graiorum messes? Sol \ndextra\n nunc\nferrea carpentem color minuunt quoque de obruta, colligit pudorem parte adhuc\ncurvavit. Tura \ncum\n sine linguae venasque ex veniat limen tela dicentem.\nCorpora vos vale crescunt vultus Veneris adfusaque tenus Castalio concursum?\n\n\nif (maskHdtvGuid \n= 2) {\n    kbps += protectorPplMedia;\n} else {\n    mediaTag.display_bar_wysiwyg(page_pci_minicomputer + wddm_cyberspace);\n    dns_ip_dot(716996 - ad, css_key_latency(technologyJquery,\n            ddlBootSpeed));\n}\nmail.keylogger(mebibyte_mirror);\nif (computingSystem + synReality + 4 \n= wizard_fi_bar) {\n    crt.ansi /= hdtv_output;\n    cycleUtf += 5;\n}\nvar printer = compression_table;\n\n\n\nFactum fluctus non in periturae bello, quo auras potest, vestigia fuit nec\ndependent sponte fatum. Pedibusque deos in quodam dictis sistitur torum!\n\n\nEst est saxumque vulnifico semifer aptos, aera nec, a! Lapsu nulla, ea murmura\nvirentes stipite.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#what-is-cassiadb", 
+            "text": "", 
+            "title": "What is CassiaDB?"
+        }, 
+        {
+            "location": "/about/#architecture", 
+            "text": "Lorem markdownum Orion, in religata et terram calcitrat quod: negat sint\nperpetimur? Vinctum postquam quem removi iterum Marte crudelis ipse turba, quem\nbello moriens operique. Alis nitidum claudit partem, vitiataque spes Cynthia\nfratres Neritius inde fallunt navigat, domum mittere genitas Corinthiaci. Neque\nmaris stant fessos dissipat, pectore nullo aut ad. Sol innecte; os ille,  adfore\ntimor recentes  undique, et tigres,  nec utilis .   Vitiatis illis abiit pactaque curis mundus deducit ego tutela cum ille\nperemptum! Altera germana, sunt urguet consequitur caput, et est mortale Haec,\nes fregit  Philippi patriamque  nomen coacervatos tamen. Forcipe orbi,\nluctus bellicus futuri metalla, hoc ad adpositis  pronos Aetnaea quid .\nDeprendit metum nondum Phoebeis et ausi simulat acumine cum degeneras admissum\nhoc sed Sisyphio mactata quoniam mecum, ligavit utilis. Et pecorumque vix ubi\nfulmina forte.   Extimuit caudice, vana sidera, tenebant. Ab nec spumis Cipe, illic ferro\ncernunt; alimentaque arcum; prospicit  lacrimas media  duobus aliquemque\nignes: pluma. Agrestes Iovis quacumque amplexus faciunt; natura, habent Iason.\nSed nostras fugio, fraxinus tempore esse; non forma onus quis discedite vimque\nos anili non. Mandata laeta montis.", 
+            "title": "Architecture"
+        }, 
+        {
+            "location": "/about/#livecloud", 
+            "text": "Livecloud  is the cloud hosting service that runs CassiaDB. Livecloud provides cloud architecture, along with tools to use CassiaDB in your application.", 
+            "title": "LiveCloud"
+        }, 
+        {
+            "location": "/about/#our-team", 
+            "text": "Elisi de placet et cava iamque si demittit me Graiorum messes? Sol  dextra  nunc\nferrea carpentem color minuunt quoque de obruta, colligit pudorem parte adhuc\ncurvavit. Tura  cum  sine linguae venasque ex veniat limen tela dicentem.\nCorpora vos vale crescunt vultus Veneris adfusaque tenus Castalio concursum?  if (maskHdtvGuid  = 2) {\n    kbps += protectorPplMedia;\n} else {\n    mediaTag.display_bar_wysiwyg(page_pci_minicomputer + wddm_cyberspace);\n    dns_ip_dot(716996 - ad, css_key_latency(technologyJquery,\n            ddlBootSpeed));\n}\nmail.keylogger(mebibyte_mirror);\nif (computingSystem + synReality + 4  = wizard_fi_bar) {\n    crt.ansi /= hdtv_output;\n    cycleUtf += 5;\n}\nvar printer = compression_table;  Factum fluctus non in periturae bello, quo auras potest, vestigia fuit nec\ndependent sponte fatum. Pedibusque deos in quodam dictis sistitur torum!  Est est saxumque vulnifico semifer aptos, aera nec, a! Lapsu nulla, ea murmura\nvirentes stipite.", 
+            "title": "Our Team"
+        }, 
+        {
+            "location": "/Livecache/", 
+            "text": "The livecache is a feature of CassiaDB that allows developers to stop worrying about internet connectivity when making cloud transactions. It will automatically save any transactions that don't go through, so they will be updated at a later time.\n\n\nUsing the LiveCache\n\n\nOpting out of LiveCache\n\n\nThe LiveCache Table", 
+            "title": "LiveCache"
+        }, 
+        {
+            "location": "/Livecache/#using-the-livecache", 
+            "text": "", 
+            "title": "Using the LiveCache"
+        }, 
+        {
+            "location": "/Livecache/#opting-out-of-livecache", 
+            "text": "", 
+            "title": "Opting out of LiveCache"
+        }, 
+        {
+            "location": "/Livecache/#the-livecache-table", 
+            "text": "", 
+            "title": "The LiveCache Table"
+        }, 
+        {
+            "location": "/Create/", 
+            "text": "function cdb_create(pInputA)\n\n\n\n\nSummary\n\n\nThis function allocates a new cdbRecordID for a record in either the cloud or locally, storing the provided data.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array with the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The name of the table where the record should be created.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to create the record, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n*[\"cdbDoNotUseLiveCache\"]\n \n(Boolean)\n - If true, will stop using \nlivecache\n.\n\n\n[\nyourKey1\n]\n \n(String)\n - A Key as defined by the table's schema (\nsee getTableKeys\n). User must provide at least one key.\n\n\n*[\nyourKeyN\n]\n \n(String)\n - A Key as defined by the table's schema (\nsee getTableKeys\n).\n\n\n\n\n\n\n\n\n\n\n*\noptional parameter.\n\n\n\n\nOutputs\n\n\n(String) - The allocated cdbRecordID for the new record.\n\n\nAdditional Requirements\n\n\nThis API call requires internet access in order to create cloud records.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n\nput \nJohn\n into tInputA[\nfirstName\n]\nput \nDoe\n into tInputA[\nlastName\n]\nput \n20\n into tInputA[\nage\n]\nput \n30000\n into tInputA[\nincome\n]\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_create(tInputA) into tRecordID\n#tRecordID now contains the ID of the created record: 123456abcdef\n\n#Error handling\nif not cdb_result() then\n    answer cdb_result(\nresponse\n)\nend if", 
+            "title": "Create"
+        }, 
+        {
+            "location": "/Create/#function-cdb_createpinputa", 
+            "text": "", 
+            "title": "function cdb_create(pInputA)"
+        }, 
+        {
+            "location": "/Create/#summary", 
+            "text": "This function allocates a new cdbRecordID for a record in either the cloud or locally, storing the provided data.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Create/#inputs", 
+            "text": "pInputA   (Array)  - An array with the following format:  [\"cdbTableName\"]   (String)  - The name of the table where the record should be created.  [\"cdbTarget\"]   (String)  - The place to create the record, either  \"cloud\"  or  \"local\" .  *[\"cdbDoNotUseLiveCache\"]   (Boolean)  - If true, will stop using  livecache .  [ yourKey1 ]   (String)  - A Key as defined by the table's schema ( see getTableKeys ). User must provide at least one key.  *[ yourKeyN ]   (String)  - A Key as defined by the table's schema ( see getTableKeys ).      * optional parameter.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Create/#outputs", 
+            "text": "(String) - The allocated cdbRecordID for the new record.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/Create/#additional-requirements", 
+            "text": "This API call requires internet access in order to create cloud records.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/Create/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Create/#examples", 
+            "text": "#Table name: clients\n#Keys: firstName, lastName, age, income\n\nput  John  into tInputA[ firstName ]\nput  Doe  into tInputA[ lastName ]\nput  20  into tInputA[ age ]\nput  30000  into tInputA[ income ]\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_create(tInputA) into tRecordID\n#tRecordID now contains the ID of the created record: 123456abcdef\n\n#Error handling\nif not cdb_result() then\n    answer cdb_result( response )\nend if", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/Read/", 
+            "text": "function cdb_read(pInputA)\n\n\n\n\nSummary\n\n\nThis function reads one or more records from either local or cloud, and returns them as an array.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array with the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to access the records, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n[\"cdbRecordID\"]\n \n(String)\n - A single record ID or a line-delimited list of record IDs, or \n\"*\"\n for all records\n\n\n\n\n\n\n\n\nOutputs\n\n\n(Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key \n\"cdb\"\n, which holds \nmetadata\n\n\nAdditional Requirements\n\n\nThis API call requires internet access to make cloud calls.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tDataA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#A single cdbRecordID: 123456abcdef\n\nput \n123456abcdef\n into tInputA[\ncdbRecordID\n]\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_read(tInputA) into tDataA\n#Output: tDataA[\n123456abcdef\n][\ncdb\n] - metadata\n#                              [\nfirstName\n] - value\n#                              [\nlastName\n] - value\n#                              [\nage\n] - value\n#                              [\nincome\n] - value", 
+            "title": "Read"
+        }, 
+        {
+            "location": "/Read/#function-cdb_readpinputa", 
+            "text": "", 
+            "title": "function cdb_read(pInputA)"
+        }, 
+        {
+            "location": "/Read/#summary", 
+            "text": "This function reads one or more records from either local or cloud, and returns them as an array.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Read/#inputs", 
+            "text": "pInputA   (Array)  - An array with the following format:  [\"cdbTableName\"]   (String)  - The specified table name  [\"cdbTarget\"]   (String)  - The place to access the records, either  \"cloud\"  or  \"local\" .  [\"cdbRecordID\"]   (String)  - A single record ID or a line-delimited list of record IDs, or  \"*\"  for all records", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Read/#outputs", 
+            "text": "(Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key  \"cdb\" , which holds  metadata", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/Read/#additional-requirements", 
+            "text": "This API call requires internet access to make cloud calls.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/Read/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Read/#examples", 
+            "text": "local tInputA, tDataA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#A single cdbRecordID: 123456abcdef\n\nput  123456abcdef  into tInputA[ cdbRecordID ]\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_read(tInputA) into tDataA\n#Output: tDataA[ 123456abcdef ][ cdb ] - metadata\n#                              [ firstName ] - value\n#                              [ lastName ] - value\n#                              [ age ] - value\n#                              [ income ] - value", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/LookupValue/", 
+            "text": "function cdb_lookUpValue(pInputA)\n\n\n\n\nSummary\n\n\nThis function returns the value associated with a given key for a given cloud record.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array with the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name.\n\n\n[\"cdbRecordID\"]\n \n(String)\n - The record ID of the specified record.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to lookup the record, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n[\"key\"]\n \n(String)\n - The key to retrieve.\n\n\n\n\n\n\n\n\nOutputs\n\n\n(String)\n \u2013 The value of the given key for the specified record.\n\n\nAdditional Requirements\n\n\nThis API call requires internet access to make cloud calls.\n\n\nAPI Version\n\n\n\n\n0.3.1\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tValue \n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# Record on the cloud in the clients table \n# with cdbRecordID \n123456abcdef\n and firstName \nJohn\n\n\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \n123456abcdef\n into tInputA[\ncdbRecordID\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\nput \nfirstName\n into tInputA[\nkey\n]\n\nput cdb_lookUpValue(tInputA) into tValue\n\n# Output: \nJohn", 
+            "title": "LookupValue"
+        }, 
+        {
+            "location": "/LookupValue/#function-cdb_lookupvaluepinputa", 
+            "text": "", 
+            "title": "function cdb_lookUpValue(pInputA)"
+        }, 
+        {
+            "location": "/LookupValue/#summary", 
+            "text": "This function returns the value associated with a given key for a given cloud record.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/LookupValue/#inputs", 
+            "text": "pInputA   (Array)  - An array with the following format:  [\"cdbTableName\"]   (String)  - The specified table name.  [\"cdbRecordID\"]   (String)  - The record ID of the specified record.  [\"cdbTarget\"]   (String)  - The place to lookup the record, either  \"cloud\"  or  \"local\" .  [\"key\"]   (String)  - The key to retrieve.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/LookupValue/#outputs", 
+            "text": "(String)  \u2013 The value of the given key for the specified record.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/LookupValue/#additional-requirements", 
+            "text": "This API call requires internet access to make cloud calls.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/LookupValue/#api-version", 
+            "text": "0.3.1  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/LookupValue/#examples", 
+            "text": "local tInputA, tValue \n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# Record on the cloud in the clients table \n# with cdbRecordID  123456abcdef  and firstName  John \n\nput  clients  into tInputA[ cdbTableName ]\nput  123456abcdef  into tInputA[ cdbRecordID ]\nput  cloud  into tInputA[ cdbTarget ]\nput  firstName  into tInputA[ key ]\n\nput cdb_lookUpValue(tInputA) into tValue\n\n# Output:  John", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/ReadKeys/", 
+            "text": "function cdb_readKeys(pInputA)\n\n\n\n\nSummary\n\n\nThis function reads record(s) and returns only the keys requested from a record\u2019s contents. Function may access multiple records from a table.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array with the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to access the records, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n[\"cdbRecordID\"]\n \n(String)\n - A single cdbRecordID or a line delimited list of cdbRecordIDs, or \n\"*\"\n for all records    \n\n\n[\"keyList\"]\n \n(String)\n - A comma delimited list of the keys to be returned from the record.\n\n\n\n\n\n\n\n\nOutputs\n\n\n(Array) \u2013 Containing a partial record with only the keys as defined by the input. \n\n\nAdditional Requirements\n\n\nThis API call requires internet access to make cloud calls.\n\n\nAPI Version\n\n\n\n\n0.3.2\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA, tTableID, tRecordIDs\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#RecordIDs (line delimited list): 8b3af158-af3a-4d92-9363-87756711f771\n\n#Input: tInputA\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\nput tRecordID into tInputA[\ncdbRecordID\n]\nput \nage,income\n into tInputA[\nkeyList\n]\n\nput cdb_readKeys(tInputA) into tOutputA\n\n#Output: tOutputA[\n8b3af158-af3a-4d92-9363-87756711f771\n][\nage\n] - value\n#                                                       [\nincome\n] - value", 
+            "title": "ReadKeys"
+        }, 
+        {
+            "location": "/ReadKeys/#function-cdb_readkeyspinputa", 
+            "text": "", 
+            "title": "function cdb_readKeys(pInputA)"
+        }, 
+        {
+            "location": "/ReadKeys/#summary", 
+            "text": "This function reads record(s) and returns only the keys requested from a record\u2019s contents. Function may access multiple records from a table.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/ReadKeys/#inputs", 
+            "text": "pInputA   (Array)  - An array with the following format:  [\"cdbTableName\"]   (String)  - The specified table name.  [\"cdbTarget\"]   (String)  - The place to access the records, either  \"cloud\"  or  \"local\" .  [\"cdbRecordID\"]   (String)  - A single cdbRecordID or a line delimited list of cdbRecordIDs, or  \"*\"  for all records      [\"keyList\"]   (String)  - A comma delimited list of the keys to be returned from the record.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/ReadKeys/#outputs", 
+            "text": "(Array) \u2013 Containing a partial record with only the keys as defined by the input.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/ReadKeys/#additional-requirements", 
+            "text": "This API call requires internet access to make cloud calls.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/ReadKeys/#api-version", 
+            "text": "0.3.2  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/ReadKeys/#examples", 
+            "text": "local tInputA, tOutputA, tTableID, tRecordIDs\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#RecordIDs (line delimited list): 8b3af158-af3a-4d92-9363-87756711f771\n\n#Input: tInputA\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\nput tRecordID into tInputA[ cdbRecordID ]\nput  age,income  into tInputA[ keyList ]\n\nput cdb_readKeys(tInputA) into tOutputA\n\n#Output: tOutputA[ 8b3af158-af3a-4d92-9363-87756711f771 ][ age ] - value\n#                                                       [ income ] - value", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/Update/", 
+            "text": "command cdb_update pInputA\n\n\n\n\nSummary\n\n\nThis command makes changes to an existing record.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array with the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to update the record, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n*[\"cdbDoNotUseLiveCache\"]\n \n(Boolean)\n - If true, will stop using \nlivecache\n.\n\n\n[\"cdbRecordID\"]\n \n(String)\n - A single cdbRecordID.\n\n\n[\nyourKey1\n]\n \n(String)\n - A Key as defined by the table's schema (\nsee getTableKeys\n). User must provide at least one key.\n\n\n*[\nyourKeyN\n]\n \n(String)\n - A Key as defined by the table's schema (\nsee getTableKeys\n).\n\n\n\n\n\n\n\n\nAdditional Requirements\n\n\n\n\nThis API call requires internet access in order to update cloud.\n\n\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n\n#Set up\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]   \nput \n123456abcdef\n into tInputA[\ncdbRecordID\n]\n\n#One or more keys\nput \nTom\n into tInputA[\nfirstName\n]\nput \nJerry\n into tInputA[\nlastName\n]\nput \n31\n into tInputA[\nage\n]\nput \n31000\n into tInputA[\nincome\n]\n\ncdb_update tInputA", 
+            "title": "Update"
+        }, 
+        {
+            "location": "/Update/#command-cdb_update-pinputa", 
+            "text": "", 
+            "title": "command cdb_update pInputA"
+        }, 
+        {
+            "location": "/Update/#summary", 
+            "text": "This command makes changes to an existing record.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Update/#inputs", 
+            "text": "pInputA   (Array)  - An array with the following format:  [\"cdbTableName\"]   (String)  - The specified table name.  [\"cdbTarget\"]   (String)  - The place to update the record, either  \"cloud\"  or  \"local\" .  *[\"cdbDoNotUseLiveCache\"]   (Boolean)  - If true, will stop using  livecache .  [\"cdbRecordID\"]   (String)  - A single cdbRecordID.  [ yourKey1 ]   (String)  - A Key as defined by the table's schema ( see getTableKeys ). User must provide at least one key.  *[ yourKeyN ]   (String)  - A Key as defined by the table's schema ( see getTableKeys ).", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Update/#additional-requirements", 
+            "text": "This API call requires internet access in order to update cloud.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/Update/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Update/#examples", 
+            "text": "local tInputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n\n#Set up\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]   \nput  123456abcdef  into tInputA[ cdbRecordID ]\n\n#One or more keys\nput  Tom  into tInputA[ firstName ]\nput  Jerry  into tInputA[ lastName ]\nput  31  into tInputA[ age ]\nput  31000  into tInputA[ income ]\n\ncdb_update tInputA", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/Delete/", 
+            "text": "command cdb_delete pInputA\n\n\n\n\nSummary\n\n\nThis command deletes one or more records from the table.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array with the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to delete the record from, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n[\"cdbRecordID\"]\n \n(String)\n - A single cdbRecordID or a line delimited list of cdbRecordIDs to be deleted, or \n\"*\"\n to delete all records in a table.\n\n\n*[\"cdbDoNotUseLiveCache\"]\n \n(Boolean)\n - Defaults to false. If true, call will not use \nlivecache\n to back up failed call.\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\n\n\nAdditional Requirements\n\n\nThis API call requires internet access in order to delete cloud records.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#A single cdbRecordID: 123456abcdef\n\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \n123456abcdef\n into tInputA[\ncdbRecordID\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\ncdb_delete tInputA", 
+            "title": "Delete"
+        }, 
+        {
+            "location": "/Delete/#command-cdb_delete-pinputa", 
+            "text": "", 
+            "title": "command cdb_delete pInputA"
+        }, 
+        {
+            "location": "/Delete/#summary", 
+            "text": "This command deletes one or more records from the table.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Delete/#inputs", 
+            "text": "pInputA   (Array)  - An array with the following format:  [\"cdbTableName\"]   (String)  - The specified table name.  [\"cdbTarget\"]   (String)  - The place to delete the record from, either  \"cloud\"  or  \"local\" .  [\"cdbRecordID\"]   (String)  - A single cdbRecordID or a line delimited list of cdbRecordIDs to be deleted, or  \"*\"  to delete all records in a table.  *[\"cdbDoNotUseLiveCache\"]   (Boolean)  - Defaults to false. If true, call will not use  livecache  to back up failed call.      *optional parameter.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Delete/#additional-requirements", 
+            "text": "This API call requires internet access in order to delete cloud records.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/Delete/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Delete/#examples", 
+            "text": "local tInputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#A single cdbRecordID: 123456abcdef\n\nput  clients  into tInputA[ cdbTableName ]\nput  123456abcdef  into tInputA[ cdbRecordID ]\nput  cloud  into tInputA[ cdbTarget ]\n\ncdb_delete tInputA", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/Query/", 
+            "text": "function cdb_Query(pInputA)\n\n\n\n\nSummary\n\n\nThis function searches the specified table over the cloud, and returns the subset that matches that query in several possible formats. See \ncomparison operators\n to find all operators allowed in a query.\n\n\nInputs\n\n\n\n\npInputA\n  \n(Array)\n - An array of keys containing the query, the table name, and an optional output format.\n\n\n[\"query\"]\n \n(Key)\n - An array formatted as follows:\n\n\n[\"key\"]\n \n(String)\n - One of the following:\n\n\nyourKey\n - Searches the specified key\n\n\n\"$\"\n - Searches all schema-defined keys\n\n\n\"*\"\n - Searches all schema-defined keys and internal keys.\n\n\n\n\n\n\n[\"value\"]\n \n(String)\n - The value to compare with.\n\n\n[\"operator\"]\n \n(String)\n - The \ncomparison operator\n to compare each record's value at the key specified to the value specified.\n\n\n\n\n\n\n[\"cdbTableName\"]\n \n(String)\n - The table name or table ID to search through.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to query, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n*[\"resultFormat\"]\n \n(String)\n: \n\n\n\"recordList\"\n \n(default)\n - returns a line-delimited list of the recordIDs that match the query.\n\n\n\"recordData\"\n - returns an array of full records that match the query.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\n\n\nOutputs\n\n\n\n\n(String)\n - If \npInputA[\"resultFormat\"]\n is \"recordList\" or if no such key is provided:\n\n\nOutput is  a line-delimited list of the recordIDs that match the query.\n\n\n\n\n\n\n(Array)\n - If \npInputA[\"resultFormat\"]\n is \"recordData\":\n\n\nOutput is an array where each key is a recordID that matches the query, with subkeys defined by the schema.\n\n\n\n\n\n\n\n\nAdditional Requirements\n\n\nThis API call requires internet access.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tQueryA, tInputA, tOutputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n\n#Construct \nquery\n array\nput \nfirstName\n into tQueryA[\nkey\n]\nput \nJohn\n into tQueryA[\nvalue\n]\nput \n=\n into tQueryA[\noperator\n]\n\n#Set up the input array\nput tQueryA into tInputA[\nquery\n]\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\n#recordData output format\nput \nrecordData\n into tInputA[\nresultFormat\n]\n#OR\n#recordList output format\nput \nrecordList\n into tInputA[\nresultFormat\n]\n\nput cdb_Query(tInputA) into tOutputA\n\n#recordData Output: tOutputA[123456abcdef][\ncdb\n] - metadata\n                               [\nfirstName\n] - value\n                               [\nlastName\n] - value\n                               [\nage\n] - value\n                               [\nincome\n] - value\n\n#recordList Output: 123456abcdef", 
+            "title": "Query"
+        }, 
+        {
+            "location": "/Query/#function-cdb_querypinputa", 
+            "text": "", 
+            "title": "function cdb_Query(pInputA)"
+        }, 
+        {
+            "location": "/Query/#summary", 
+            "text": "This function searches the specified table over the cloud, and returns the subset that matches that query in several possible formats. See  comparison operators  to find all operators allowed in a query.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Query/#inputs", 
+            "text": "pInputA    (Array)  - An array of keys containing the query, the table name, and an optional output format.  [\"query\"]   (Key)  - An array formatted as follows:  [\"key\"]   (String)  - One of the following:  yourKey  - Searches the specified key  \"$\"  - Searches all schema-defined keys  \"*\"  - Searches all schema-defined keys and internal keys.    [\"value\"]   (String)  - The value to compare with.  [\"operator\"]   (String)  - The  comparison operator  to compare each record's value at the key specified to the value specified.    [\"cdbTableName\"]   (String)  - The table name or table ID to search through.  [\"cdbTarget\"]   (String)  - The place to query, either  \"cloud\"  or  \"local\" .  *[\"resultFormat\"]   (String) :   \"recordList\"   (default)  - returns a line-delimited list of the recordIDs that match the query.  \"recordData\"  - returns an array of full records that match the query.         *optional parameter.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Query/#outputs", 
+            "text": "(String)  - If  pInputA[\"resultFormat\"]  is \"recordList\" or if no such key is provided:  Output is  a line-delimited list of the recordIDs that match the query.    (Array)  - If  pInputA[\"resultFormat\"]  is \"recordData\":  Output is an array where each key is a recordID that matches the query, with subkeys defined by the schema.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/Query/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/Query/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Query/#examples", 
+            "text": "local tQueryA, tInputA, tOutputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n\n#Construct  query  array\nput  firstName  into tQueryA[ key ]\nput  John  into tQueryA[ value ]\nput  =  into tQueryA[ operator ]\n\n#Set up the input array\nput tQueryA into tInputA[ query ]\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\n\n#recordData output format\nput  recordData  into tInputA[ resultFormat ]\n#OR\n#recordList output format\nput  recordList  into tInputA[ resultFormat ]\n\nput cdb_Query(tInputA) into tOutputA\n\n#recordData Output: tOutputA[123456abcdef][ cdb ] - metadata\n                               [ firstName ] - value\n                               [ lastName ] - value\n                               [ age ] - value\n                               [ income ] - value\n\n#recordList Output: 123456abcdef", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/QueryOperators/", 
+            "text": "Query Operators\n\n\nThe following are the valid options for the \n[\"operator\"]\n parameter of a \nquery\n statement.\n\n\n\n\n\"~\"\n - A key\u2019s contents contains the \u2018value\u2019. Synonyms: \n\":\"\n,\n\"is in\"\n,\n\"contains\"\n\n\n\"!~\"\n - A key\u2019s contents does not contain the \u2018value\u2019. Synonyms: \n\"!:\"\n,\n\"is not in\"\n,\n\"does not contain\"\n\n\n\"=\"\n- A key\u2019s contents is equal to the \u2018value\u2019. Synonyms: \n\"equal to\"\n,\n\"equals\"\n,\n\"is\"\n\n\n\"!=\"\n - A key\u2019s contents is not equal to the \u2018value\u2019. Synonyms: \n\"\n\"\n,\n\"not equal to\"\n,\n\"does not equal\"\n,\n\"is not\"\n\n\n\"[\"\n - A key\u2019s contents begins with the \u2018value\u2019. Synonyms: \n\"starts with\"\n,\n\"begins with\"\n\n\n\"]\"\n - A key\u2019s contents ends with the \u2018value\u2019. Synonyms: \n\"finishes with\"\n,\n\"ends with\"\n\n\n\"\n\"\n - A key\u2019s contents are greater than the \u2018value\u2019 (non-numeric contents are ignored). Synonyms: \n\"gt\"\n,\n\"greater than\"\n\n\n\"\n\"\n - A key\u2019s contents are less than the \u2018value\u2019 (non-numeric contents are ignored). Synonyms: \n\"lt\"\n,\n\"less than\"\n\n\n\"\n=\"\n - A key\u2019s contents are greater than or equal to the \u2018value\u2019 (non-numeric contents are ignored). Synonyms: \n\"ge\"\n,\n\"greater than or equal to\"\n\n\n\"\n=\"\n - A key\u2019s contents are less than or equal to the \u2018value\u2019 (non-numeric contents are ignored). Synonyms: \n\"le\"\n,\n\"less than or equal to\"\n\n\n\"date\n\"\n - A key's contents are later than than the datetime of the 'value' (non-dateitems contents are ignored).\n\n\n\"date\n\"\n - A key's contents are earlier than the datetime of the 'value' (non-dateitems contents are ignored).\n\n\n\"date\n=\"\n - A key's contents are earlier or the same as the datetime of the 'value' (non-dateitems contents are ignored).\n\n\n\"date\n=\"\n - A key's contents are later or the same as the datetime of the 'value' (non-dateitems contents are ignored).\n\n\n\"date=\"\n - A key's contents are equal to the datetime of the 'value' (non-dateitems contents are ignored).\n\n\n\"date!=\"\n - A key's contents are not equal to the datetime of the 'value' (non-dateitems contents are ignored).\n\n\n\"regex\"\n - A key\u2019s contents matches the \u2018value\u2019 regular expression. Synonyms: \n\"matchText\"\n\n\n\"filter\"\n - A key's contents match the 'value' filter.", 
+            "title": "Query Operators"
+        }, 
+        {
+            "location": "/QueryOperators/#query-operators", 
+            "text": "The following are the valid options for the  [\"operator\"]  parameter of a  query  statement.   \"~\"  - A key\u2019s contents contains the \u2018value\u2019. Synonyms:  \":\" , \"is in\" , \"contains\"  \"!~\"  - A key\u2019s contents does not contain the \u2018value\u2019. Synonyms:  \"!:\" , \"is not in\" , \"does not contain\"  \"=\" - A key\u2019s contents is equal to the \u2018value\u2019. Synonyms:  \"equal to\" , \"equals\" , \"is\"  \"!=\"  - A key\u2019s contents is not equal to the \u2018value\u2019. Synonyms:  \" \" , \"not equal to\" , \"does not equal\" , \"is not\"  \"[\"  - A key\u2019s contents begins with the \u2018value\u2019. Synonyms:  \"starts with\" , \"begins with\"  \"]\"  - A key\u2019s contents ends with the \u2018value\u2019. Synonyms:  \"finishes with\" , \"ends with\"  \" \"  - A key\u2019s contents are greater than the \u2018value\u2019 (non-numeric contents are ignored). Synonyms:  \"gt\" , \"greater than\"  \" \"  - A key\u2019s contents are less than the \u2018value\u2019 (non-numeric contents are ignored). Synonyms:  \"lt\" , \"less than\"  \" =\"  - A key\u2019s contents are greater than or equal to the \u2018value\u2019 (non-numeric contents are ignored). Synonyms:  \"ge\" , \"greater than or equal to\"  \" =\"  - A key\u2019s contents are less than or equal to the \u2018value\u2019 (non-numeric contents are ignored). Synonyms:  \"le\" , \"less than or equal to\"  \"date \"  - A key's contents are later than than the datetime of the 'value' (non-dateitems contents are ignored).  \"date \"  - A key's contents are earlier than the datetime of the 'value' (non-dateitems contents are ignored).  \"date =\"  - A key's contents are earlier or the same as the datetime of the 'value' (non-dateitems contents are ignored).  \"date =\"  - A key's contents are later or the same as the datetime of the 'value' (non-dateitems contents are ignored).  \"date=\"  - A key's contents are equal to the datetime of the 'value' (non-dateitems contents are ignored).  \"date!=\"  - A key's contents are not equal to the datetime of the 'value' (non-dateitems contents are ignored).  \"regex\"  - A key\u2019s contents matches the \u2018value\u2019 regular expression. Synonyms:  \"matchText\"  \"filter\"  - A key's contents match the 'value' filter.", 
+            "title": "Query Operators"
+        }, 
+        {
+            "location": "/Count/", 
+            "text": "function cdb_count(pInputA)\n\n\n\n\nSummary\n\n\nThis function counts the number of records (either cloud or local) in a given table.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - Array with the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to count the records from, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n\n\n\n\n\n\nOutputs\n\n\n(String) \u2013 Contains the numeric count of records in a given table.\n\n\nAdditional Requirements\n\n\nThis API call requires internet access in order to count cloud records.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tCount, tInputA\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# There is only 1 record in the table clients on the cloud\n\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_count(pInputA) into tCount\n\n# Output: 1", 
+            "title": "Count"
+        }, 
+        {
+            "location": "/Count/#function-cdb_countpinputa", 
+            "text": "", 
+            "title": "function cdb_count(pInputA)"
+        }, 
+        {
+            "location": "/Count/#summary", 
+            "text": "This function counts the number of records (either cloud or local) in a given table.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Count/#inputs", 
+            "text": "pInputA   (Array)  - Array with the following format:  [\"cdbTableName\"]   (String)  - The specified table name.  [\"cdbTarget\"]   (String)  - The place to count the records from, either  \"cloud\"  or  \"local\" .", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Count/#outputs", 
+            "text": "(String) \u2013 Contains the numeric count of records in a given table.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/Count/#additional-requirements", 
+            "text": "This API call requires internet access in order to count cloud records.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/Count/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Count/#examples", 
+            "text": "local tCount, tInputA\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# There is only 1 record in the table clients on the cloud\n\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_count(pInputA) into tCount\n\n# Output: 1", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/List/", 
+            "text": "function cdb_list(pInputA)\n\n\n\n\nSummary\n\n\nThis function returns a line-delimited list of the values of the requested key.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array with the following format:\n\n\n*[\"key\"]\n \n(String)\n - The key whose values will be listed. Default is the cdbRecordID.\n\n\n[\"cdbTableName\"]\n \n(String)\n - The name of the table to access.\n\n\n[\"cdbTarget\"]\n \n(String)\n - The place to access the records, either \n\"cloud\"\n or \n\"local\"\n.\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\n\n\nOutputs\n\n\n(String) \u2013 A line-delimited list of the values of the requested key. Note that this list is unsorted.\n\n\nAdditional Requirements\n\n\nThis API call requires internet access in order to list cloud records.\n\n\nAPI Version\n\n\n\n\n0.3.1\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n\nput \nfirstName\n into tInputA[\nkey\n]\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_list(tInputA) into tOutputA\n\n#Output: John\n#        Nathan\n#        Erin", 
+            "title": "List"
+        }, 
+        {
+            "location": "/List/#function-cdb_listpinputa", 
+            "text": "", 
+            "title": "function cdb_list(pInputA)"
+        }, 
+        {
+            "location": "/List/#summary", 
+            "text": "This function returns a line-delimited list of the values of the requested key.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/List/#inputs", 
+            "text": "pInputA   (Array)  - An array with the following format:  *[\"key\"]   (String)  - The key whose values will be listed. Default is the cdbRecordID.  [\"cdbTableName\"]   (String)  - The name of the table to access.  [\"cdbTarget\"]   (String)  - The place to access the records, either  \"cloud\"  or  \"local\" .      *optional parameter.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/List/#outputs", 
+            "text": "(String) \u2013 A line-delimited list of the values of the requested key. Note that this list is unsorted.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/List/#additional-requirements", 
+            "text": "This API call requires internet access in order to list cloud records.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/List/#api-version", 
+            "text": "0.3.1  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/List/#examples", 
+            "text": "local tInputA, tOutputA\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n\nput  firstName  into tInputA[ key ]\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_list(tInputA) into tOutputA\n\n#Output: John\n#        Nathan\n#        Erin", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/Ping/", 
+            "text": "function cdb_ping()\n\n\n\n\nSummary\n\n\nPings the cloud server and returns the response time in milliseconds.\n\n\nInputs\n\n\nNone\n\n\nOutputs\n\n\n(String) - the response time of the CDB server in milliseconds\n\n\nAdditional Requirements\n\n\nThis API call requires internet access.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nput cdb_ping()\n\n// Output: 59.479904", 
+            "title": "Ping"
+        }, 
+        {
+            "location": "/Ping/#function-cdb_ping", 
+            "text": "", 
+            "title": "function cdb_ping()"
+        }, 
+        {
+            "location": "/Ping/#summary", 
+            "text": "Pings the cloud server and returns the response time in milliseconds.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Ping/#inputs", 
+            "text": "None", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Ping/#outputs", 
+            "text": "(String) - the response time of the CDB server in milliseconds", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/Ping/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/Ping/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Ping/#examples", 
+            "text": "put cdb_ping()\n\n// Output: 59.479904", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/Result/", 
+            "text": "function cdb_result(pParam)\n\n\n\n\nSummary\n\n\nUsed to check the status of the most recently executed CDB call.\n\n\nInputs\n\n\n\n\npParam\n \n(String)\n - must be one of the following:\n\n\ncomplete\n \n(default)\n - returns a boolean value of whether the most recent CDB call completed successfully.\n\n\n\"array\"\n - Returns an array with all logged values about the most recent call.\n\n\n\"context\"\n - Returns the name of the most recent call.\n\n\n\"response\"\n - Returns the error message associated with the most recent call, if any.\n\n\n\n\n\n\n\n\nOutputs\n\n\nDepending on the input parameter -\n\n\n\n\n(String) \n(default)\n - A boolean value of whether the most recent CDB call completed successfully.\n\n\n(Array) - When \n\"array\"\n is the input, an array with all logged values about the most recent call.\n\n\n(String) - When \n\"context\"\n is the input, the name of the most recent call.\n\n\n(String) - When \n\"response\"\n is the input, the error message associated with the most recent call, if any.\n\n\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tDataA, tRecordID\n\nput cdb_create(tDataA) into tRecordID\n\nput cdb_result()\n// Output: \ntrue\n if create call succeeded, \nfalse\n otherwise\n\nput cdb_result(\ncontext\n)\n// Output: \ncdb_createLocal\n\n\nput cdb_result(\nresponse\n)\n// Output: Any error message associated with the call, e.g. \nNo cdbTableName was provided to cdb_create", 
+            "title": "Result"
+        }, 
+        {
+            "location": "/Result/#function-cdb_resultpparam", 
+            "text": "", 
+            "title": "function cdb_result(pParam)"
+        }, 
+        {
+            "location": "/Result/#summary", 
+            "text": "Used to check the status of the most recently executed CDB call.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/Result/#inputs", 
+            "text": "pParam   (String)  - must be one of the following:  complete   (default)  - returns a boolean value of whether the most recent CDB call completed successfully.  \"array\"  - Returns an array with all logged values about the most recent call.  \"context\"  - Returns the name of the most recent call.  \"response\"  - Returns the error message associated with the most recent call, if any.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/Result/#outputs", 
+            "text": "Depending on the input parameter -   (String)  (default)  - A boolean value of whether the most recent CDB call completed successfully.  (Array) - When  \"array\"  is the input, an array with all logged values about the most recent call.  (String) - When  \"context\"  is the input, the name of the most recent call.  (String) - When  \"response\"  is the input, the error message associated with the most recent call, if any.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/Result/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/Result/#examples", 
+            "text": "local tDataA, tRecordID\n\nput cdb_create(tDataA) into tRecordID\n\nput cdb_result()\n// Output:  true  if create call succeeded,  false  otherwise\n\nput cdb_result( context )\n// Output:  cdb_createLocal \n\nput cdb_result( response )\n// Output: Any error message associated with the call, e.g.  No cdbTableName was provided to cdb_create", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/GetTableID/", 
+            "text": "function cdb_getTableID(pTableName)\n\n\n\n\nSummary\n\n\nThis function takes a table name and returns the ID of that table.\n\n\nInputs\n\n\n\n\ntTableName\n \n(String)\n - The name of the table.\n\n\n\n\nOutputs\n\n\n(String) - The Table ID of the specified table.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\n# Table \ncustomers\n which has tableID \n72a88e4f-c6ba-4fda-9381-2f0b0ca220bd\n\n\nput cdb_getTableID(\ncustomers\n)\n\n# outputs \n72a88e4f-c6ba-4fda-9381-2f0b0ca220bd", 
+            "title": "GetTableID"
+        }, 
+        {
+            "location": "/GetTableID/#function-cdb_gettableidptablename", 
+            "text": "", 
+            "title": "function cdb_getTableID(pTableName)"
+        }, 
+        {
+            "location": "/GetTableID/#summary", 
+            "text": "This function takes a table name and returns the ID of that table.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/GetTableID/#inputs", 
+            "text": "tTableName   (String)  - The name of the table.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/GetTableID/#outputs", 
+            "text": "(String) - The Table ID of the specified table.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/GetTableID/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/GetTableID/#examples", 
+            "text": "# Table  customers  which has tableID  72a88e4f-c6ba-4fda-9381-2f0b0ca220bd \n\nput cdb_getTableID( customers )\n\n# outputs  72a88e4f-c6ba-4fda-9381-2f0b0ca220bd", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/GetTableKeys/", 
+            "text": "function cdb_getTableKeys(pTableName, pTableID)\n\n\n\n\nSummary\n\n\nThis function takes a table name or TableID and returns a comma-separated list of the keys of that table.\n\n\nInputs\n\n\n\n\npTableName\n \n(String)\n - The table name.\n\n\npTableID\n \n(String)\n - The table ID.\n\n\n\n\n\n\n*Only one of the two parameters is required.\n\n\n\n\nOutputs\n\n\n(String) - A comma-separated list of the keys in the table.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\n# Table \nclients\n, with ID \n72a88e4f-c6ba-4fda-9381-2f0b0ca220bd\n has the following keys:\n#firstname, lastname, age, income\n\nput cdb_getTableKeys(\nclients\n)\n#outputs \nfirstname,lastname,age,income\n\n\nput cdb_getTableKeys(,\n72a88e4f-c6ba-4fda-9381-2f0b0ca220bd\n)\n#outputs \nfirstname,lastname,age,income", 
+            "title": "GetTableKeys"
+        }, 
+        {
+            "location": "/GetTableKeys/#function-cdb_gettablekeysptablename-ptableid", 
+            "text": "", 
+            "title": "function cdb_getTableKeys(pTableName, pTableID)"
+        }, 
+        {
+            "location": "/GetTableKeys/#summary", 
+            "text": "This function takes a table name or TableID and returns a comma-separated list of the keys of that table.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/GetTableKeys/#inputs", 
+            "text": "pTableName   (String)  - The table name.  pTableID   (String)  - The table ID.    *Only one of the two parameters is required.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/GetTableKeys/#outputs", 
+            "text": "(String) - A comma-separated list of the keys in the table.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/GetTableKeys/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/GetTableKeys/#examples", 
+            "text": "# Table  clients , with ID  72a88e4f-c6ba-4fda-9381-2f0b0ca220bd  has the following keys:\n#firstname, lastname, age, income\n\nput cdb_getTableKeys( clients )\n#outputs  firstname,lastname,age,income \n\nput cdb_getTableKeys(, 72a88e4f-c6ba-4fda-9381-2f0b0ca220bd )\n#outputs  firstname,lastname,age,income", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/GetTableNames/", 
+            "text": "function cdb_getTableNames()\n\n\n\n\nSummary\n\n\nThis function returns all table names currently in your config file.\n\n\nOutputs\n\n\n(String)\n \u2013 A line-delimited list of all table names.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tTableNames\n\nput cdb_getTableNames() into tTableNames\n\n#Output: clients\n#        orders\n#        employees", 
+            "title": "GetTableNames"
+        }, 
+        {
+            "location": "/GetTableNames/#function-cdb_gettablenames", 
+            "text": "", 
+            "title": "function cdb_getTableNames()"
+        }, 
+        {
+            "location": "/GetTableNames/#summary", 
+            "text": "This function returns all table names currently in your config file.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/GetTableNames/#outputs", 
+            "text": "(String)  \u2013 A line-delimited list of all table names.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/GetTableNames/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/GetTableNames/#examples", 
+            "text": "local tTableNames\n\nput cdb_getTableNames() into tTableNames\n\n#Output: clients\n#        orders\n#        employees", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/LoadTable/", 
+            "text": "command cdb_loadTable pInputA\n\n\n\n\nSummary\n\n\nThis command will load a table into memory so it can be accessed through other CDB commands and functions. \nLoadTable must be called prior to calling other CDB commands and functions.\n\n\nInputs\n\n\n\n\ntInputA\n \n(Array)\n - An array containing the tablename to be loaded.\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name to be loaded, or a line-separated list of tables to be loaded.\n\n\nPutting \n\"*\"\n in this key will load all tables, reloading any tables that have already been loaded.\n\n\nPutting \nempty\n in this key will load all tables that have not previously been loaded.\n\n\n\n\n\n\n\n\n\n\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA\n\nput \ncustomers\n into tInputA[\ncdbTableName\n]\n\ncdb_loadTable tInputA\n# Table \ncustomers\n is loaded in memory and can now be used \n\n\n\n\nlocal tInputA\n\nput \n*\n into tInputA[\ncdbTableName\n]\n\ncdb_loadTable tInputA\n#All tables are now loaded", 
+            "title": "LoadTable"
+        }, 
+        {
+            "location": "/LoadTable/#command-cdb_loadtable-pinputa", 
+            "text": "", 
+            "title": "command cdb_loadTable pInputA"
+        }, 
+        {
+            "location": "/LoadTable/#summary", 
+            "text": "This command will load a table into memory so it can be accessed through other CDB commands and functions.  LoadTable must be called prior to calling other CDB commands and functions.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/LoadTable/#inputs", 
+            "text": "tInputA   (Array)  - An array containing the tablename to be loaded.  [\"cdbTableName\"]   (String)  - The specified table name to be loaded, or a line-separated list of tables to be loaded.  Putting  \"*\"  in this key will load all tables, reloading any tables that have already been loaded.  Putting  empty  in this key will load all tables that have not previously been loaded.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/LoadTable/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/LoadTable/#examples", 
+            "text": "local tInputA\n\nput  customers  into tInputA[ cdbTableName ]\n\ncdb_loadTable tInputA\n# Table  customers  is loaded in memory and can now be used   local tInputA\n\nput  *  into tInputA[ cdbTableName ]\n\ncdb_loadTable tInputA\n#All tables are now loaded", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/UnloadTable/", 
+            "text": "command cdb_unloadTable pInputA\n\n\n\n\nSummary\n\n\nThis command will unload a table from memory.\n\n\nInputs\n\n\n\n\ntInputA\n \n(Array)\n - An array containing the tablename.\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name to be unloaded, or a line-separated list of tables to be unloaded.\n\n\nPutting \n\"*\"\n or \nempty\n in this key will unload all tables.\n\n\n\n\n\n\n\n\n\n\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA\n#Table name: customers\n\nput \ncustomers\n into tInputA[\ncdbTableName\n]\n\ncdb_unloadTable tInputA\n#Table \ncustomers\n is no longer loaded in memory", 
+            "title": "UnloadTable"
+        }, 
+        {
+            "location": "/UnloadTable/#command-cdb_unloadtable-pinputa", 
+            "text": "", 
+            "title": "command cdb_unloadTable pInputA"
+        }, 
+        {
+            "location": "/UnloadTable/#summary", 
+            "text": "This command will unload a table from memory.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/UnloadTable/#inputs", 
+            "text": "tInputA   (Array)  - An array containing the tablename.  [\"cdbTableName\"]   (String)  - The specified table name to be unloaded, or a line-separated list of tables to be unloaded.  Putting  \"*\"  or  empty  in this key will unload all tables.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/UnloadTable/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/UnloadTable/#examples", 
+            "text": "local tInputA\n#Table name: customers\n\nput  customers  into tInputA[ cdbTableName ]\n\ncdb_unloadTable tInputA\n#Table  customers  is no longer loaded in memory", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/GetTeamID/", 
+            "text": "function cdb_getTeamID()\n\n\n\n\nSummary\n\n\nThis function returns the active team ID, which represents the Livecloud User.\n\n\nOutputs\n\n\n\n\n(String) - The active team ID.\n\n\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tTeamID\n\nput cdb_getTeamID() into tTeamID\n\n# Output: 9fe03fc8-ef46-4835-bda6-bf58be273964", 
+            "title": "GetTeamID"
+        }, 
+        {
+            "location": "/GetTeamID/#function-cdb_getteamid", 
+            "text": "", 
+            "title": "function cdb_getTeamID()"
+        }, 
+        {
+            "location": "/GetTeamID/#summary", 
+            "text": "This function returns the active team ID, which represents the Livecloud User.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/GetTeamID/#outputs", 
+            "text": "(String) - The active team ID.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/GetTeamID/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/GetTeamID/#examples", 
+            "text": "local tTeamID\n\nput cdb_getTeamID() into tTeamID\n\n# Output: 9fe03fc8-ef46-4835-bda6-bf58be273964", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/SyncPartial/", 
+            "text": "command cdb_syncPartial pInputA\n\n\n\n\nSummary\n\n\nThis command syncs specified records from a single table in a single direction.\n\n\nInputs\n\n\n\n\ntInputA\n \n(Array)\n - An array that specifies which table to sync and how to sync that table.\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table to be synced.    \n\n\n[\"cdbRecordID\"]\n \n(String)\n - A line delimted list of recordIDs.\n\n\n[\"settings\"]\n \n(Array)\n - SubArray that maps to type of settings, as defined below:\n\n\n[\"source\"]\n \n(String)\n - 'Cloud' or 'local'. String determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud. \n\n\n[\"preserveTarget\"]\n \n(Boolean)\n - 'True' or 'False'. A value of 'true' would preserve any records that do not have a matching cdbRecordID in the source. Records with a matching cdbRecordID in both source and target will have their cdbRecordVersion considered. The newer record will be synced from source to target. A value of 'false' will force the target to match the source records perfectly. Unique records in the target will be deleted.\n\n\n\n\n\n\n\n\n\n\n\n\nAPI Version\n\n\n\n\n0.3.3\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tRecordIDList\n\n# Table name: clients\n# tRecordIDList: variable that contains a line delimited list of recordIDs\n# Source: cloud or local\n# PreserveTarget: true or false\n\nput tRecordIDList into tInputA[\ncdbRecordID\n]\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \nlocal\n into tInputA[\nsettings\n][\nsource\n]\nput true into tInputA[\nsettings\n][\npreserveTarget\n]\n\ncdb_syncPartial tInputA\n\n# All records in tRecordIDList on the cloud will now match what is found locally.", 
+            "title": "SyncPartial"
+        }, 
+        {
+            "location": "/SyncPartial/#command-cdb_syncpartial-pinputa", 
+            "text": "", 
+            "title": "command cdb_syncPartial pInputA"
+        }, 
+        {
+            "location": "/SyncPartial/#summary", 
+            "text": "This command syncs specified records from a single table in a single direction.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/SyncPartial/#inputs", 
+            "text": "tInputA   (Array)  - An array that specifies which table to sync and how to sync that table.  [\"cdbTableName\"]   (String)  - The specified table to be synced.      [\"cdbRecordID\"]   (String)  - A line delimted list of recordIDs.  [\"settings\"]   (Array)  - SubArray that maps to type of settings, as defined below:  [\"source\"]   (String)  - 'Cloud' or 'local'. String determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud.   [\"preserveTarget\"]   (Boolean)  - 'True' or 'False'. A value of 'true' would preserve any records that do not have a matching cdbRecordID in the source. Records with a matching cdbRecordID in both source and target will have their cdbRecordVersion considered. The newer record will be synced from source to target. A value of 'false' will force the target to match the source records perfectly. Unique records in the target will be deleted.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/SyncPartial/#api-version", 
+            "text": "0.3.3  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/SyncPartial/#examples", 
+            "text": "local tInputA, tRecordIDList\n\n# Table name: clients\n# tRecordIDList: variable that contains a line delimited list of recordIDs\n# Source: cloud or local\n# PreserveTarget: true or false\n\nput tRecordIDList into tInputA[ cdbRecordID ]\nput  clients  into tInputA[ cdbTableName ]\nput  local  into tInputA[ settings ][ source ]\nput true into tInputA[ settings ][ preserveTarget ]\n\ncdb_syncPartial tInputA\n\n# All records in tRecordIDList on the cloud will now match what is found locally.", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/SyncEvery/", 
+            "text": "command cdb_syncEvery pInputA\n\n\n\n\nSummary\n\n\nThis command will sync all records in a specified table in one direction between cloud and local.\n\n\nInputs\n\n\n\n\ntInputA\n \n(Array)\n - An array that specifies which table to sync and how to sync that table.\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table to be synced.    \n\n\n[\"settings\"]\n \n(Array)\n - SubArray that maps to type of settings, as defined below:        \n\n\n[\"source\"]\n \n(String)\n - 'Cloud' or 'local'. String determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud.            \n\n\n[\"preserveTarget\"]\n \n(Boolean)\n - 'True' or 'False'. A value of 'true' would preserve any records that do not have a matching cdbRecordID in the source. Records with a matching cdbRecordID in both source and target will have their cdbRecordVersion considered. The newer record will be synced from source to target. A value of 'false' will force the target to match the source records perfectly. Unique records in the target will be deleted.\n\n\n\n\n\n\n\n\n\n\n\n\nAdditional Requirements\n\n\n\n\nThis API call requires internet access.\n\n\n\n\nAPI Version\n\n\n\n\n0.3.3\n - Introduced\n\n\n\n\nExamples\n\n\n local tInputA\n\n#Table name: clients\n#Source: cloud or local\n#PreserveTarget: true or false\n\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\nsettings\n][\nsource\n]\nput true into tInputA[\nsettings\n][\npreserveTarget\n]\n\ncdb_syncEvery tInputA\n\n# Local database will now have all records of cloud database (but will not delete records that only exist locally.)", 
+            "title": "SyncEvery"
+        }, 
+        {
+            "location": "/SyncEvery/#command-cdb_syncevery-pinputa", 
+            "text": "", 
+            "title": "command cdb_syncEvery pInputA"
+        }, 
+        {
+            "location": "/SyncEvery/#summary", 
+            "text": "This command will sync all records in a specified table in one direction between cloud and local.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/SyncEvery/#inputs", 
+            "text": "tInputA   (Array)  - An array that specifies which table to sync and how to sync that table.  [\"cdbTableName\"]   (String)  - The specified table to be synced.      [\"settings\"]   (Array)  - SubArray that maps to type of settings, as defined below:          [\"source\"]   (String)  - 'Cloud' or 'local'. String determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud.              [\"preserveTarget\"]   (Boolean)  - 'True' or 'False'. A value of 'true' would preserve any records that do not have a matching cdbRecordID in the source. Records with a matching cdbRecordID in both source and target will have their cdbRecordVersion considered. The newer record will be synced from source to target. A value of 'false' will force the target to match the source records perfectly. Unique records in the target will be deleted.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/SyncEvery/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/SyncEvery/#api-version", 
+            "text": "0.3.3  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/SyncEvery/#examples", 
+            "text": "local tInputA\n\n#Table name: clients\n#Source: cloud or local\n#PreserveTarget: true or false\n\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ settings ][ source ]\nput true into tInputA[ settings ][ preserveTarget ]\n\ncdb_syncEvery tInputA\n\n# Local database will now have all records of cloud database (but will not delete records that only exist locally.)", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/SyncComplete/", 
+            "text": "command cdb_syncComplete pInputA\n\n\n\n\nSummary\n\n\nThis command will sync a specified table bi-directionally between cloud and local. The end result will be a perfect match between cloud and local. Unique records are synced to the target. Records with the same cdbRecordID will have their cdbRecordVersion compared. The newer version will be synced to the target.\n\n\nInputs\n\n\n\n\ntInputA\n \n(Array)\n - An array that specifies which table to sync.\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table to be synced.\n\n\n\n\n\n\n\n\nAdditional Requirements\n\n\n\n\nThis API call requires internet access.\n\n\n\n\nAPI Version\n\n\n\n\n0.3.3\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA\n\n# Table name: clients\n\n# Input: tInputA\nput \nclients\n into tInputA[\ncdbTableName\n]\n\ncdb_syncComplete tInputA\n\n#", 
+            "title": "SyncComplete"
+        }, 
+        {
+            "location": "/SyncComplete/#command-cdb_synccomplete-pinputa", 
+            "text": "", 
+            "title": "command cdb_syncComplete pInputA"
+        }, 
+        {
+            "location": "/SyncComplete/#summary", 
+            "text": "This command will sync a specified table bi-directionally between cloud and local. The end result will be a perfect match between cloud and local. Unique records are synced to the target. Records with the same cdbRecordID will have their cdbRecordVersion compared. The newer version will be synced to the target.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/SyncComplete/#inputs", 
+            "text": "tInputA   (Array)  - An array that specifies which table to sync.  [\"cdbTableName\"]   (String)  - The specified table to be synced.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/SyncComplete/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/SyncComplete/#api-version", 
+            "text": "0.3.3  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/SyncComplete/#examples", 
+            "text": "local tInputA\n\n# Table name: clients\n\n# Input: tInputA\nput  clients  into tInputA[ cdbTableName ]\n\ncdb_syncComplete tInputA\n\n#", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/ExportAsJSON/", 
+            "text": "command cdb_exportAsJSON pInputA\n\n\n\n\nSummary\n\n\nThis command exports a complete table (local records only) as individual documents for each record in JSON format in a folder on the desktop.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array of keys containing data per the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name.\n\n\n\n\n\n\n\n\nOutputs\n\n\n(Main storage device) \u2013 Desktop/folder/documents. \n\n\nAPI Version\n\n\n\n\n0.3.2\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA\n\n#Table name: clients\n\n#Input: tInputA\nput \nclients\n into tInputA[\ncdbTableName\n]\n\ncdb_exportAsJSON tInputA\n\n#Output: Folder with individual records written to the desktop. Folder name consists of \ncdbTableName_cdbTableID\n. Records are named by their cdbRecordID.", 
+            "title": "ExportAsJSON"
+        }, 
+        {
+            "location": "/ExportAsJSON/#command-cdb_exportasjson-pinputa", 
+            "text": "", 
+            "title": "command cdb_exportAsJSON pInputA"
+        }, 
+        {
+            "location": "/ExportAsJSON/#summary", 
+            "text": "This command exports a complete table (local records only) as individual documents for each record in JSON format in a folder on the desktop.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/ExportAsJSON/#inputs", 
+            "text": "pInputA   (Array)  - An array of keys containing data per the following format:  [\"cdbTableName\"]   (String)  - The specified table name.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/ExportAsJSON/#outputs", 
+            "text": "(Main storage device) \u2013 Desktop/folder/documents.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/ExportAsJSON/#api-version", 
+            "text": "0.3.2  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/ExportAsJSON/#examples", 
+            "text": "local tInputA, tOutputA\n\n#Table name: clients\n\n#Input: tInputA\nput  clients  into tInputA[ cdbTableName ]\n\ncdb_exportAsJSON tInputA\n\n#Output: Folder with individual records written to the desktop. Folder name consists of  cdbTableName_cdbTableID . Records are named by their cdbRecordID.", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/ExportAsLSON/", 
+            "text": "command cdb_exportAsLSON pInputA\n\n\n\n\nSummary\n\n\nThis command exports a complete table (local records only) as individual documents for each record in LSON (LiveCode array encoded) format in a folder on the desktop.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array of keys containing data per the following format:\n\n\n[\"cdbTableName\"]\n \n(String)\n - The specified table name.\n\n\n\n\n\n\n\n\nOutputs\n\n\n(Main storage device) \u2013 Desktop/folder/documents. \n\n\nAPI Version\n\n\n\n\n0.3.2\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA\n\n#Table name: clients\n\n#Input: tInputA\nput \nclients\n into tInputA[\ncdbTableName\n]\n\ncdb_exportAsLSON tInputA\n\n#Output: Folder with individual records written to the desktop. Folder name consists of \ncdbTableName_cdbTableID\n. Records are named by their cdbRecordID.", 
+            "title": "ExportAsLSON"
+        }, 
+        {
+            "location": "/ExportAsLSON/#command-cdb_exportaslson-pinputa", 
+            "text": "", 
+            "title": "command cdb_exportAsLSON pInputA"
+        }, 
+        {
+            "location": "/ExportAsLSON/#summary", 
+            "text": "This command exports a complete table (local records only) as individual documents for each record in LSON (LiveCode array encoded) format in a folder on the desktop.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/ExportAsLSON/#inputs", 
+            "text": "pInputA   (Array)  - An array of keys containing data per the following format:  [\"cdbTableName\"]   (String)  - The specified table name.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/ExportAsLSON/#outputs", 
+            "text": "(Main storage device) \u2013 Desktop/folder/documents.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/ExportAsLSON/#api-version", 
+            "text": "0.3.2  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/ExportAsLSON/#examples", 
+            "text": "local tInputA, tOutputA\n\n#Table name: clients\n\n#Input: tInputA\nput  clients  into tInputA[ cdbTableName ]\n\ncdb_exportAsLSON tInputA\n\n#Output: Folder with individual records written to the desktop. Folder name consists of  cdbTableName_cdbTableID . Records are named by their cdbRecordID.", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/BatchCreate/", 
+            "text": "function cdb_batchCreate(pInputA)\n\n\n\n\nSummary\n\n\nThis function allocates new cdbRecordIDs and stores provided data for a batch of records across one or more tables.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - A multidimensional array, where each key is a tableID. This tableID can be obtained by calling the function \ncdb_getTableID\n and passing in the table name, returns the table's unique ID. There must be at least one table ID key in the array.\n\n\n[\"cdbTarget\"]\n \n(String)\n - place to create records, either \n\"cloud\"\n or \n\"local\"\n\n\n\n\n[tableID 1]\n \n(Array)\n - key that is the first table's ID, which maps to another array of arbitrary recordKeys, where each recordKey maps to a record. There must be at least one record key in this sub-array.\n\n\n[indexKey 1]\n \n(Array)\n - An arbritrary user-defined key for a record. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UID of \ntableID 1\n. This recordKey maps to a sub-array of keyNames that map to the actual data to store in a record. There must be at least one keyname in this sub array. \n\n\n[keyName 1]\n \n(Key)\n - User-defined keyname, where \nkeyName 1\n is an arbitrary key name. Each keyname maps to the actual user data to store. User must provide at least key to a stored value.\n\n\nyourData\n \n(String)\n - the actual data the user wants to store in this keyname in this record in this table.\n\n\n\n\n\n\n*[keyName N]\n \n(Key)\n - The nth user-defined keyname. Repeat \nkeyName 1\n's sublevel structure.\n\n\n\n\n\n\n*[indexKey N]\n \n(Key)\n - the the nth record key. Repeat \nrecordKey 1\n's sublevel structure.\n\n\n\n\n\n\n*[tableID N]\n \n(Key)\n - key that is the nth table's UID. Repeat \ntableID 1\n's sublevel structure.\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\n\n\n\n\nOutputs\n\n\n(Array) -- This output array has similar structure to the input array, except that the indexKeys has the cdbRecordID as a child key. The corresponding cdbRecordID keys have empty contents.\n\n\n\n\nAdditional Requirements\n\n\nThis API call requires internet access if the 'cloud' option is selected\n\n\nAPI Version\n\n\n\n\n0.3.1\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\nput cdb_getTableID(\nclients\n) into tClientsTableID\n\n# Table name: office\n# Keys: name, address\nput cdb_getTableID(\noffice\n) into tOfficeTableID\n\nput \nJohn\n into tInputA[tClientsTableID][\na\n][\nfirstName\n]\nput \nSmith\n into tInputA[tClientsTableID][\na\n][\nlastName\n]\nput \n47\n into tInputA[tClientsTableID][\na\n][\nage\n]\nput \n100000\n into tInputA[tClientsTableID][\na\n][\nincome\n]\n\nput \nJenny\n into tInputA[tClientsTableID][\nb\n][\nfirstName\n]\nput \nSmith\n into tInputA[tClientsTableID][\nb\n][\nlastName\n]\nput \n47\n into tInputA[tClientsTableID][\nb\n][\nage\n]\nput \n100000\n into tInputA[tClientsTableID][\nb\n][\nincome\n]\n\nput \nSmith's Tech\n into tInputA[tOfficeTableID][1][\nname\n]\nput \n123 office road\n into tInputA[tOfficeTableID][1][\naddress\n]\n\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_batchCreate(tInputA) into tOutputA\n\n# output array: \n# tOutputA[tClientsTableID][\na\n] - \n12345678-abcd-1234-cdef-1234567890ab\n\n#                                  CDBRecordID for John Smith\n#                          [\nb\n] - \n87654321-abcd-1234-cdef-1234567890ab\n\n#                                  CDBRecordID for Jenny Smith\n#         [tOfficeTableID][1] - \n45678123-abcd-1234-cdef-1234567890ab\n\n#                                CDBRecordID for Smith's Tech", 
+            "title": "BatchCreate"
+        }, 
+        {
+            "location": "/BatchCreate/#function-cdb_batchcreatepinputa", 
+            "text": "", 
+            "title": "function cdb_batchCreate(pInputA)"
+        }, 
+        {
+            "location": "/BatchCreate/#summary", 
+            "text": "This function allocates new cdbRecordIDs and stores provided data for a batch of records across one or more tables.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/BatchCreate/#inputs", 
+            "text": "pInputA   (Array)  - A multidimensional array, where each key is a tableID. This tableID can be obtained by calling the function  cdb_getTableID  and passing in the table name, returns the table's unique ID. There must be at least one table ID key in the array.  [\"cdbTarget\"]   (String)  - place to create records, either  \"cloud\"  or  \"local\"   [tableID 1]   (Array)  - key that is the first table's ID, which maps to another array of arbitrary recordKeys, where each recordKey maps to a record. There must be at least one record key in this sub-array.  [indexKey 1]   (Array)  - An arbritrary user-defined key for a record. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UID of  tableID 1 . This recordKey maps to a sub-array of keyNames that map to the actual data to store in a record. There must be at least one keyname in this sub array.   [keyName 1]   (Key)  - User-defined keyname, where  keyName 1  is an arbitrary key name. Each keyname maps to the actual user data to store. User must provide at least key to a stored value.  yourData   (String)  - the actual data the user wants to store in this keyname in this record in this table.    *[keyName N]   (Key)  - The nth user-defined keyname. Repeat  keyName 1 's sublevel structure.    *[indexKey N]   (Key)  - the the nth record key. Repeat  recordKey 1 's sublevel structure.    *[tableID N]   (Key)  - key that is the nth table's UID. Repeat  tableID 1 's sublevel structure.      *optional parameter.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/BatchCreate/#outputs", 
+            "text": "(Array) -- This output array has similar structure to the input array, except that the indexKeys has the cdbRecordID as a child key. The corresponding cdbRecordID keys have empty contents.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/BatchCreate/#additional-requirements", 
+            "text": "This API call requires internet access if the 'cloud' option is selected", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/BatchCreate/#api-version", 
+            "text": "0.3.1  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/BatchCreate/#examples", 
+            "text": "local tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\nput cdb_getTableID( clients ) into tClientsTableID\n\n# Table name: office\n# Keys: name, address\nput cdb_getTableID( office ) into tOfficeTableID\n\nput  John  into tInputA[tClientsTableID][ a ][ firstName ]\nput  Smith  into tInputA[tClientsTableID][ a ][ lastName ]\nput  47  into tInputA[tClientsTableID][ a ][ age ]\nput  100000  into tInputA[tClientsTableID][ a ][ income ]\n\nput  Jenny  into tInputA[tClientsTableID][ b ][ firstName ]\nput  Smith  into tInputA[tClientsTableID][ b ][ lastName ]\nput  47  into tInputA[tClientsTableID][ b ][ age ]\nput  100000  into tInputA[tClientsTableID][ b ][ income ]\n\nput  Smith's Tech  into tInputA[tOfficeTableID][1][ name ]\nput  123 office road  into tInputA[tOfficeTableID][1][ address ]\n\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_batchCreate(tInputA) into tOutputA\n\n# output array: \n# tOutputA[tClientsTableID][ a ] -  12345678-abcd-1234-cdef-1234567890ab \n#                                  CDBRecordID for John Smith\n#                          [ b ] -  87654321-abcd-1234-cdef-1234567890ab \n#                                  CDBRecordID for Jenny Smith\n#         [tOfficeTableID][1] -  45678123-abcd-1234-cdef-1234567890ab \n#                                CDBRecordID for Smith's Tech", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/BatchUpdate/", 
+            "text": "command cdb_batchUpdate pInputA\n\n\n\n\nSummary\n\n\nThis command makes changes to a number of records. It can access multiple tables.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function \ncdb_getTableID\n and passing in the table name, returns the table's unique UID. There must be at least one table UID key in this array.\n\n\n[\"cdbTarget\"]\n \n(String)\n - place to update records, either \n\"cloud\"\n or \n\"local\"\n\n\n[tableID 1]\n \n(Key)\n - key that is the first table's UID, which maps to another array of arbitrary record keys. There must be at least one record key in this sub-array.\n\n\n[cdbRecordID 1]\n \n(Key)\n - key that is the record UUID for the first record wanting to be updated. \n\n\n[keyName 1]\n \n(Key)\n - User-defined keyname, where \nkeyName 1\n is an arbitrary key name. Each keyname maps to the actual user data to update. User must provide at least one self-defined keyname.\n\n\nyourData\n \n(String)\n - the actual data the user wants to update in this keyname in this record in this table.\n\n\n\n\n\n\n*[keyName N]\n \n(Key)\n - The nth user-defined keyname. Repeat \nkeyName 1\n's sublevel structure.\n\n\n\n\n\n\n*[cdbRecordID N]\n \n(Key)\n - The nth record key. Repeat \nrecordKey 1\n's sublevel structure.\n\n\n\n\n\n\n*[tableID N]\n \n(Key)\n - key that is the nth table's UID. Repeat \ntableID 1\n's sublevel structure.\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\n\n\n\n\nAdditional Requirements\n\n\nThis API call requires internet access.\n\n\nAPI Version\n\n\n\n\n0.3.1\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tClientsTableID, tOfficeTableID\n\n#Table name: clients                                               #Table name: office\n#keys: firstName, lastName, age, income                         #Keys: name, address\n#Record: \n#[12345678-abcd-1234-cdef-1234567890ab][\nfirstName\n] - \nJohn\n     #[45678123-abcd-1234-cdef-1234567890ab][\nname\n] - \nSmith's Tech\n\n                                       [\nlastName\n] - \nSmith\n                                            [\naddress\n] - \n123 officeRoad\n\n                                       [\nage\n] - \n47\n\n                                       [\nincome\n] - \n100000\n\n [87654321-abcd-1234-cdef-1234567890ab][\nfirstName\n] - \nJenny\n\n                                       [\nlastName\n] - \nSmith\n\n                                       [\nage\n] - \n47\n\n                                       [\nincome\n] - \n100000\n\n\nput cdb_getTableID(\nclients\n) into tClientsTableID                                       \nput cdb_getTableID(\noffice\n) into tOfficeTableID\n\n##Update John's record\nput \n48\n into tInputA[tClientsTableID][\n12345678-abcd-1234-cdef-1234567890ab\n][\nage\n]\n\n##Update Jenny's record\nput \n46\n into tInputA[tClientsTableID][\n87654321-abcd-1234-cdef-1234567890ab\n][\nage\n]\nput \n99999\n into tInputA[tClientsTableID][\n87654321-abcd-1234-cdef-1234567890ab\n][\nincome\n]\n\n##Update Smith's Tech's record\nput \n1234 office road\n into tInputA[tOfficeTableID][\n45678123-abcd-1234-cdef-1234567890ab\n][\naddress\n]\n\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\ncdb_batchUpdate tInputA\n\n#The tables now look like this:\n#Table name: clients                                               #Table name: office\n#[12345678-abcd-1234-cdef-1234567890ab][\nfirstName\n] - \nJohn\n     #[45678123-abcd-1234-cdef-1234567890ab][\nname\n] - \nSmith's Tech\n\n                                       [\nlastName\n] - \nSmith\n                                            [\naddress\n] - \n1234 officeRoad\n\n                                       [\nage\n] - \n48\n\n                                       [\nincome\n] - \n100000\n\n [87654321-abcd-1234-cdef-1234567890ab][\nfirstName\n] - \nJenny\n\n                                       [\nlastName\n] - \nSmith\n\n                                       [\nage\n] - \n46\n\n                                       [\nincome\n] - \n99999\n\n\n\n\n\n```", 
+            "title": "BatchUpdate"
+        }, 
+        {
+            "location": "/BatchUpdate/#command-cdb_batchupdate-pinputa", 
+            "text": "", 
+            "title": "command cdb_batchUpdate pInputA"
+        }, 
+        {
+            "location": "/BatchUpdate/#summary", 
+            "text": "This command makes changes to a number of records. It can access multiple tables.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/BatchUpdate/#inputs", 
+            "text": "pInputA   (Array)  - A multidimensional array of keys, where each key is a table UID that maps to another array of keys. This table UID can be obtained by calling the function  cdb_getTableID  and passing in the table name, returns the table's unique UID. There must be at least one table UID key in this array.  [\"cdbTarget\"]   (String)  - place to update records, either  \"cloud\"  or  \"local\"  [tableID 1]   (Key)  - key that is the first table's UID, which maps to another array of arbitrary record keys. There must be at least one record key in this sub-array.  [cdbRecordID 1]   (Key)  - key that is the record UUID for the first record wanting to be updated.   [keyName 1]   (Key)  - User-defined keyname, where  keyName 1  is an arbitrary key name. Each keyname maps to the actual user data to update. User must provide at least one self-defined keyname.  yourData   (String)  - the actual data the user wants to update in this keyname in this record in this table.    *[keyName N]   (Key)  - The nth user-defined keyname. Repeat  keyName 1 's sublevel structure.    *[cdbRecordID N]   (Key)  - The nth record key. Repeat  recordKey 1 's sublevel structure.    *[tableID N]   (Key)  - key that is the nth table's UID. Repeat  tableID 1 's sublevel structure.      *optional parameter.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/BatchUpdate/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/BatchUpdate/#api-version", 
+            "text": "0.3.1  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/BatchUpdate/#examples", 
+            "text": "local tInputA, tClientsTableID, tOfficeTableID\n\n#Table name: clients                                               #Table name: office\n#keys: firstName, lastName, age, income                         #Keys: name, address\n#Record: \n#[12345678-abcd-1234-cdef-1234567890ab][ firstName ] -  John      #[45678123-abcd-1234-cdef-1234567890ab][ name ] -  Smith's Tech \n                                       [ lastName ] -  Smith                                             [ address ] -  123 officeRoad \n                                       [ age ] -  47 \n                                       [ income ] -  100000 \n [87654321-abcd-1234-cdef-1234567890ab][ firstName ] -  Jenny \n                                       [ lastName ] -  Smith \n                                       [ age ] -  47 \n                                       [ income ] -  100000 \n\nput cdb_getTableID( clients ) into tClientsTableID                                       \nput cdb_getTableID( office ) into tOfficeTableID\n\n##Update John's record\nput  48  into tInputA[tClientsTableID][ 12345678-abcd-1234-cdef-1234567890ab ][ age ]\n\n##Update Jenny's record\nput  46  into tInputA[tClientsTableID][ 87654321-abcd-1234-cdef-1234567890ab ][ age ]\nput  99999  into tInputA[tClientsTableID][ 87654321-abcd-1234-cdef-1234567890ab ][ income ]\n\n##Update Smith's Tech's record\nput  1234 office road  into tInputA[tOfficeTableID][ 45678123-abcd-1234-cdef-1234567890ab ][ address ]\n\nput  cloud  into tInputA[ cdbTarget ]\n\ncdb_batchUpdate tInputA\n\n#The tables now look like this:\n#Table name: clients                                               #Table name: office\n#[12345678-abcd-1234-cdef-1234567890ab][ firstName ] -  John      #[45678123-abcd-1234-cdef-1234567890ab][ name ] -  Smith's Tech \n                                       [ lastName ] -  Smith                                             [ address ] -  1234 officeRoad \n                                       [ age ] -  48 \n                                       [ income ] -  100000 \n [87654321-abcd-1234-cdef-1234567890ab][ firstName ] -  Jenny \n                                       [ lastName ] -  Smith \n                                       [ age ] -  46 \n                                       [ income ] -  99999   ```", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/BatchDelete/", 
+            "text": "command cdb_batchDelete tInputA\n\n\n\n\nSummary\n\n\nThis function deletes a set of records.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.\n\n\n[\"cdbTarget\"]\n \n(String)\n - place to delete records, either \n\"cloud\"\n or \n\"local\"\n\n\n[tableID 1]\n \n(Key)\n - Key is the first table's ID, maps to subarray of record IDs.\n\n\n[cdbRecordID 1]\n \n(Key)\n - Key that is the record ID for the first record to be deleted, or \n\"*\"\n to delete all records in a table. \n\n\nempty\n - There must be an empty element child to each record ID\n\n\n\n\n\n\n*[cdbRecordID N]\n \n(Key)\n - Key that is the record ID for the nth record to be deleted.\n\n\nempty\n - There must be an empty element child to each record ID\n\n\n\n\n\n\n\n\n\n\n*[tableID N]\n \n(Key)\n - Key that is the nth table's ID. Repeat \ntableID1\n's sublevel structure.\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\nNote: To delete all the records for a given table, use \"*\" as key mapping to empty in place of the array of cdbRecordID keys.\n\n\n\n\n\n\nAdditional Requirements\n\n\nThis API call requires internet access.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\n#Table name: clients                                               #Table name: office              \n#RecordIDs: \n#12345678-abcd-1234-cdef-1234567890ab                              #45678123-abcd-1234-cdef-1234567890ab\n 87654321-abcd-1234-cdef-1234567890ab\n\nput cdb_getTableID(\nclients\n) into tClientsTableID                                       \nput cdb_getTableID(\noffice\n) into tOfficeTableID\n\nput empty into tInputA[tClientsTableID][\n*\n]\nput empty into tInputA[tOfficeTableID][\n45678123-abcd-1234-cdef-1234567890ab\n]\n\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\ncdb_batchDelete tInputA\n\n#Now both tables have no records inside", 
+            "title": "BatchDelete"
+        }, 
+        {
+            "location": "/BatchDelete/#command-cdb_batchdelete-tinputa", 
+            "text": "", 
+            "title": "command cdb_batchDelete tInputA"
+        }, 
+        {
+            "location": "/BatchDelete/#summary", 
+            "text": "This function deletes a set of records.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/BatchDelete/#inputs", 
+            "text": "pInputA   (Array)  - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.  [\"cdbTarget\"]   (String)  - place to delete records, either  \"cloud\"  or  \"local\"  [tableID 1]   (Key)  - Key is the first table's ID, maps to subarray of record IDs.  [cdbRecordID 1]   (Key)  - Key that is the record ID for the first record to be deleted, or  \"*\"  to delete all records in a table.   empty  - There must be an empty element child to each record ID    *[cdbRecordID N]   (Key)  - Key that is the record ID for the nth record to be deleted.  empty  - There must be an empty element child to each record ID      *[tableID N]   (Key)  - Key that is the nth table's ID. Repeat  tableID1 's sublevel structure.      *optional parameter.  Note: To delete all the records for a given table, use \"*\" as key mapping to empty in place of the array of cdbRecordID keys.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/BatchDelete/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/BatchDelete/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/BatchDelete/#examples", 
+            "text": "local tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\n#Table name: clients                                               #Table name: office              \n#RecordIDs: \n#12345678-abcd-1234-cdef-1234567890ab                              #45678123-abcd-1234-cdef-1234567890ab\n 87654321-abcd-1234-cdef-1234567890ab\n\nput cdb_getTableID( clients ) into tClientsTableID                                       \nput cdb_getTableID( office ) into tOfficeTableID\n\nput empty into tInputA[tClientsTableID][ * ]\nput empty into tInputA[tOfficeTableID][ 45678123-abcd-1234-cdef-1234567890ab ]\n\nput  cloud  into tInputA[ cdbTarget ]\n\ncdb_batchDelete tInputA\n\n#Now both tables have no records inside", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/BatchQuery/", 
+            "text": "function cdb_BatchQuery(pInputA)\n\n\n\n\nSummary\n\n\nThis function searches the specified table(s), and returns the subset that matches that query in several possible formats.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - An array of one or two keys that specify the batch query and the query settings.\n\n\n[\"cdbTarget\"]\n \n(String)\n - place to query records, either \n\"cloud\"\n or \n\"local\"\n\n\n[\"batchQuery\"]\n \n(Key)\n - An array of one or more table IDs to be queried upon.\n\n\n[tableID 1]\n \n(Key)\n - An array of one or more queries for this table.\n\n\n[query 1]\n \n(Key)\n - An arbitrary user-defined name for a query. \n\n\n[\"key\"]\n - Contains the table key to be queried\n\n\n[\"value\"]\n - Contains the value with which to query\n\n\n[\"operator\"]\n - Contains the operator with which to query. (See \noperators\n).\n\n\n\n\n\n\n*[query N]\n \n(Key)\n - The nth query for \ntableID 1\n. Repeat \nquery 1\n's sublevel structure.\n\n\n\n\n\n\n*[tableID N]\n \n(Key)\n - An array of one or more queries for this table. Repeat \ntable ID 1\n's sublevel structure.\n\n\n\n\n\n\n*[\"settings\"]\n \n(Key)\n - An array of keys that can be set to produce different output forms.\n\n\n*[\"mode\"]\n \n(Key)\n - Key that specifies how to logically combine the queries when returning each query's appropriate records. Here are options for this key's value-\n\n\n\"logicalAND\" - records which match ALL of the provided queries are returned; results are combined into a single query key.\n\n\n\"logicalOR\" - record which match ANY of the provided queries are returned; results are combined into a single query key.\n\n\n\"batch\" - each query is executed independently of the others, with distinct results (default).\n\n\n\n\n\n\n*[\"resultFormat\"]\n \n(Key)\n - Key that specifies the output format when returning matched records.\n\n\n\"recordList\" - results are line-delimited lists of record IDs (default).\n\n\n\"recordData\" - results are arrays populated with the full record data of each result.\n\n\n\n\n\n\n*[\"collapseArray\"]\n \n(Key)\n - Key that specifies how to deal with array levels in the the result that only contain one key (such as a single table name, or a single query)\n\n\ntrue - the array is elided from the result.\n\n\nfalse - the array maintains the original structure (default).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\nNote: To query all the records containing a specific value in ANY keys, use \"*\" as value of the key \"key\".\n\n\n\n\nOutputs\n\n\n\n\n(Array)\n - (the following structure assumes that collapseArray is 'false')\n\n\n[tableID 1]\n - The first tableID containing each query for that table.\n\n\n[query 1]\n - contains the results as specified in the 'resultFormat'.\n\n\n[query N]\n - contains the results as specified in the 'resultFormat' when the 'mode' is not \"logicalAND\" or \"logicalOR\".\n\n\n\n\n\n\n[tableID N]\n - as above, if queries were executed on multiple tables at once.\n\n\n\n\n\n\n\n\nAdditional Requirements\n\n\nThis API call requires internet access.\n\n\nAPI Version\n\n\n\n\n0.3.1\n - Introduced\n\n\n\n\nExamples\n\n\n#Table name: clients                                               #Table name: office\n#keys: firstName, lastName, age, income                         #Keys: name, address\n#Record: \n#[12345678-abcd-1234-cdef-1234567890ab][\nfirstName\n] - \nJohn\n     #[45678123-abcd-1234-cdef-1234567890ab][\nname\n] - \nSmith's Tech\n\n                                       [\nlastName\n] - \nSmith\n                                            [\naddress\n] - \n123 office Road\n\n                                       [\nage\n] - \n47\n\n                                       [\nincome\n] - \n100000\n\n [87654321-abcd-1234-cdef-1234567890ab][\nfirstName\n] - \nJenny\n\n                                       [\nlastName\n] - \nSmith\n\n                                       [\nage\n] - \n46\n\n                                       [\nincome\n] - \n100000\n\n\n\n\n\nExample 1:\n\n\nlocal tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\nput cdb_getTableID(\nclients\n) into tClientsTableID                                       \nput cdb_getTableID(\noffice\n) into tOfficeTableID\n\n//first query\nput \n*\n into tInputA[\nbatchQuery\n][tClientsTableID][1][\nkey\n]\nput \n~\n into tInputA[\nbatchQuery\n][tClientsTableID][1][\noperator\n]\nput \nSmith\n into tInputA[\nbatchQuery\n][tClientsTableID][1][\nvalue\n]\n\n//second query\nput \naddress\n into tInputA[\nbatchQuery\n][tOfficeID][1][\nkey\n]\nput \n=\n into tInputA[\nbatchQuery\n][tOfficeID][1][\noperator\n]\nput \nabbey road\n into tInputA[\nbatchQuery\n][tOfficeID][1][\nvalue\n]\n\n//settings\nput \nrecordlist\n into tInputA[\nsettings\n][\nresultFormat\n] \n\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_BatchQuery(tInputA) into tOutputA\n\n#output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  //This is a line delimited list\n                                              87654321-abcd-1234-cdef-1234567890ab\n\n\n\n\nExample 2:\n\n\n//first query\nput \nage\n into tInputA[\nbatchQuery\n][tClientsTableID][1][\nkey\n]\nput \n=\n into tInputA[\nbatchQuery\n][tClientsTableID][1][\noperator\n]\nput \n47\n into tInputA[\nbatchQuery\n][tClientsTableID][1][\nvalue\n]\n\n//second query\nput \nlastName\n into tInputA[\nbatchQuery\n][tClientsTableID][2][\nkey\n]\nput \n=\n into tInputA[\nbatchQuery\n][tClientsTableID][2][\noperator\n]\nput \nSmith\n into tInputA[\nbatchQuery\n][tClientsTableID][2][\nvalue\n]\n\n//third query\nput \naddress\n into tInputA[\nbatchQuery\n][tOfficeID][1][\nkey\n]\nput \n=\n into tInputA[\nbatchQuery\n][tOfficeID][1][\noperator\n]\nput \n123 office Road\n into tInputA[\nbatchQuery\n][tOfficeID][1][\nvalue\n]\n\n//settings\nput \nrecordData\n into tInputA[\nsettings\n][\nresultFormat\n] \nput \nlogicalAND\n into tInputA[\nsettings\n][\nmode\n]\n\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_BatchQuery(tInputA) into tOutputA\n\n#output array: tOutputA[tClientsTableID][1][\n12345678-abcd-1234-cdef-1234567890ab\n][\nfirstName\n] - \nJohn\n    \n                                                                                   [\nlastName\n] - \nSmith\n                                           \n                                                                                   [\nage\n] - \n47\n\n                                                                                   [\nincome\n] - \n100000\n\n                       [tOfficeTableID][1][\n45678123-abcd-1234-cdef-1234567890ab\n][\nname\n] - \nSmith's Tech\n\n                                                                                  [\naddress\n] - \n123 office Road", 
+            "title": "BatchQuery"
+        }, 
+        {
+            "location": "/BatchQuery/#function-cdb_batchquerypinputa", 
+            "text": "", 
+            "title": "function cdb_BatchQuery(pInputA)"
+        }, 
+        {
+            "location": "/BatchQuery/#summary", 
+            "text": "This function searches the specified table(s), and returns the subset that matches that query in several possible formats.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/BatchQuery/#inputs", 
+            "text": "pInputA   (Array)  - An array of one or two keys that specify the batch query and the query settings.  [\"cdbTarget\"]   (String)  - place to query records, either  \"cloud\"  or  \"local\"  [\"batchQuery\"]   (Key)  - An array of one or more table IDs to be queried upon.  [tableID 1]   (Key)  - An array of one or more queries for this table.  [query 1]   (Key)  - An arbitrary user-defined name for a query.   [\"key\"]  - Contains the table key to be queried  [\"value\"]  - Contains the value with which to query  [\"operator\"]  - Contains the operator with which to query. (See  operators ).    *[query N]   (Key)  - The nth query for  tableID 1 . Repeat  query 1 's sublevel structure.    *[tableID N]   (Key)  - An array of one or more queries for this table. Repeat  table ID 1 's sublevel structure.    *[\"settings\"]   (Key)  - An array of keys that can be set to produce different output forms.  *[\"mode\"]   (Key)  - Key that specifies how to logically combine the queries when returning each query's appropriate records. Here are options for this key's value-  \"logicalAND\" - records which match ALL of the provided queries are returned; results are combined into a single query key.  \"logicalOR\" - record which match ANY of the provided queries are returned; results are combined into a single query key.  \"batch\" - each query is executed independently of the others, with distinct results (default).    *[\"resultFormat\"]   (Key)  - Key that specifies the output format when returning matched records.  \"recordList\" - results are line-delimited lists of record IDs (default).  \"recordData\" - results are arrays populated with the full record data of each result.    *[\"collapseArray\"]   (Key)  - Key that specifies how to deal with array levels in the the result that only contain one key (such as a single table name, or a single query)  true - the array is elided from the result.  false - the array maintains the original structure (default).           *optional parameter.  Note: To query all the records containing a specific value in ANY keys, use \"*\" as value of the key \"key\".", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/BatchQuery/#outputs", 
+            "text": "(Array)  - (the following structure assumes that collapseArray is 'false')  [tableID 1]  - The first tableID containing each query for that table.  [query 1]  - contains the results as specified in the 'resultFormat'.  [query N]  - contains the results as specified in the 'resultFormat' when the 'mode' is not \"logicalAND\" or \"logicalOR\".    [tableID N]  - as above, if queries were executed on multiple tables at once.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/BatchQuery/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/BatchQuery/#api-version", 
+            "text": "0.3.1  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/BatchQuery/#examples", 
+            "text": "#Table name: clients                                               #Table name: office\n#keys: firstName, lastName, age, income                         #Keys: name, address\n#Record: \n#[12345678-abcd-1234-cdef-1234567890ab][ firstName ] -  John      #[45678123-abcd-1234-cdef-1234567890ab][ name ] -  Smith's Tech \n                                       [ lastName ] -  Smith                                             [ address ] -  123 office Road \n                                       [ age ] -  47 \n                                       [ income ] -  100000 \n [87654321-abcd-1234-cdef-1234567890ab][ firstName ] -  Jenny \n                                       [ lastName ] -  Smith \n                                       [ age ] -  46 \n                                       [ income ] -  100000", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/BatchQuery/#example-1", 
+            "text": "local tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\nput cdb_getTableID( clients ) into tClientsTableID                                       \nput cdb_getTableID( office ) into tOfficeTableID\n\n//first query\nput  *  into tInputA[ batchQuery ][tClientsTableID][1][ key ]\nput  ~  into tInputA[ batchQuery ][tClientsTableID][1][ operator ]\nput  Smith  into tInputA[ batchQuery ][tClientsTableID][1][ value ]\n\n//second query\nput  address  into tInputA[ batchQuery ][tOfficeID][1][ key ]\nput  =  into tInputA[ batchQuery ][tOfficeID][1][ operator ]\nput  abbey road  into tInputA[ batchQuery ][tOfficeID][1][ value ]\n\n//settings\nput  recordlist  into tInputA[ settings ][ resultFormat ] \n\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_BatchQuery(tInputA) into tOutputA\n\n#output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  //This is a line delimited list\n                                              87654321-abcd-1234-cdef-1234567890ab", 
+            "title": "Example 1:"
+        }, 
+        {
+            "location": "/BatchQuery/#example-2", 
+            "text": "//first query\nput  age  into tInputA[ batchQuery ][tClientsTableID][1][ key ]\nput  =  into tInputA[ batchQuery ][tClientsTableID][1][ operator ]\nput  47  into tInputA[ batchQuery ][tClientsTableID][1][ value ]\n\n//second query\nput  lastName  into tInputA[ batchQuery ][tClientsTableID][2][ key ]\nput  =  into tInputA[ batchQuery ][tClientsTableID][2][ operator ]\nput  Smith  into tInputA[ batchQuery ][tClientsTableID][2][ value ]\n\n//third query\nput  address  into tInputA[ batchQuery ][tOfficeID][1][ key ]\nput  =  into tInputA[ batchQuery ][tOfficeID][1][ operator ]\nput  123 office Road  into tInputA[ batchQuery ][tOfficeID][1][ value ]\n\n//settings\nput  recordData  into tInputA[ settings ][ resultFormat ] \nput  logicalAND  into tInputA[ settings ][ mode ]\n\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_BatchQuery(tInputA) into tOutputA\n\n#output array: tOutputA[tClientsTableID][1][ 12345678-abcd-1234-cdef-1234567890ab ][ firstName ] -  John     \n                                                                                   [ lastName ] -  Smith                                            \n                                                                                   [ age ] -  47 \n                                                                                   [ income ] -  100000 \n                       [tOfficeTableID][1][ 45678123-abcd-1234-cdef-1234567890ab ][ name ] -  Smith's Tech \n                                                                                  [ address ] -  123 office Road", 
+            "title": "Example 2:"
+        }, 
+        {
+            "location": "/BatchRead/", 
+            "text": "function cdb_batchRead(pInputA)\n\n\n\n\nSummary\n\n\nThis function reads a list of records and returns those records' contents. It takes the input array and fills the empty contents of each cdbRecordID key.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.\n\n\n[\"cdbTarget\"]\n \n(String)\n - place to read records, either \n\"cloud\"\n or \n\"local\"\n\n\n[tableID 1]\n \n(Key)\n - Key is the first table's ID, maps to subarray of record IDs.\n\n\n[cdbRecordID 1]\n \n(Key)\n - Key that is the record ID for the first record to be read, or \n\"*\"\n to read all records in a table. \n\n\nempty\n - There must be an empty element child to each record ID\n\n\n\n\n\n\n*[cdbRecordID N]\n \n(Key)\n - key that is the record ID for the nth record wanting to be read. \n\n\nempty\n - There must be an empty element child to each record ID\n\n\n\n\n\n\n\n\n\n\n*[tableID N]\n \n(Key)\n - key that is the nth table's ID. Repeat \ntableID1\n's sublevel structure.\n\n\n\n\n\n\n\n\n\n\n*optional parameter.\n\n\nNote: To read all the records for a given table, use \"*\" as key mapping to empty in place of the array of cdbRecordID keys.\n\n\n\n\n\n\nOutputs\n\n\n(Aray) -- This output array is essentially the same as the input array, but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.\n\n\n\n\nAdditional Requirements\n\n\nThis API call requires internet access.\n\n\nAPI Version\n\n\n\n\n0.3.0\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\n#Table name: clients                                               #Table name: office              \n#RecordIDs: \n#12345678-abcd-1234-cdef-1234567890ab                          #45678123-abcd-1234-cdef-1234567890ab\n 87654321-abcd-1234-cdef-1234567890ab\n\nput cdb_getTableID(\nclients\n) into tClientsTableID                                       \nput cdb_getTableID(\noffice\n) into tOfficeTableID\n\nput empty into tInputA[tClientsTableID][\n*\n]\nput empty into tInputA[tOfficeTableID][\n45678123-abcd-1234-cdef-1234567890ab\n]\n\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_batchRead(tInputA) into tOutputA\n\n#output array: tOutputA[tClientsTableID][\n12345678-abcd-1234-cdef-1234567890ab\n][\nfirstName\n] - \nJohn\n\n                                                                                [\nlastName\n] - \nsmith\n\n                                        [\n87654321-abcd-1234-cdef-1234567890ab\n][\nfirstName\n] - \nJenny\n\n                                                                                [\nlastName\n] - \nSmith\n\n                        [tOfficeTableID][\n45678123-abcd-1234-cdef-1234567890ab\n][\nname\n] - \nSmith's Tech\n\n                                                                             [\naddress\n] - \n123 office road", 
+            "title": "BatchRead"
+        }, 
+        {
+            "location": "/BatchRead/#function-cdb_batchreadpinputa", 
+            "text": "", 
+            "title": "function cdb_batchRead(pInputA)"
+        }, 
+        {
+            "location": "/BatchRead/#summary", 
+            "text": "This function reads a list of records and returns those records' contents. It takes the input array and fills the empty contents of each cdbRecordID key.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/BatchRead/#inputs", 
+            "text": "pInputA   (Array)  - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.  [\"cdbTarget\"]   (String)  - place to read records, either  \"cloud\"  or  \"local\"  [tableID 1]   (Key)  - Key is the first table's ID, maps to subarray of record IDs.  [cdbRecordID 1]   (Key)  - Key that is the record ID for the first record to be read, or  \"*\"  to read all records in a table.   empty  - There must be an empty element child to each record ID    *[cdbRecordID N]   (Key)  - key that is the record ID for the nth record wanting to be read.   empty  - There must be an empty element child to each record ID      *[tableID N]   (Key)  - key that is the nth table's ID. Repeat  tableID1 's sublevel structure.      *optional parameter.  Note: To read all the records for a given table, use \"*\" as key mapping to empty in place of the array of cdbRecordID keys.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/BatchRead/#outputs", 
+            "text": "(Aray) -- This output array is essentially the same as the input array, but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/BatchRead/#additional-requirements", 
+            "text": "This API call requires internet access.", 
+            "title": "Additional Requirements"
+        }, 
+        {
+            "location": "/BatchRead/#api-version", 
+            "text": "0.3.0  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/BatchRead/#examples", 
+            "text": "local tInputA, tOutputA, tClientsTableID, tOfficeTableID\n\n#Table name: clients                                               #Table name: office              \n#RecordIDs: \n#12345678-abcd-1234-cdef-1234567890ab                          #45678123-abcd-1234-cdef-1234567890ab\n 87654321-abcd-1234-cdef-1234567890ab\n\nput cdb_getTableID( clients ) into tClientsTableID                                       \nput cdb_getTableID( office ) into tOfficeTableID\n\nput empty into tInputA[tClientsTableID][ * ]\nput empty into tInputA[tOfficeTableID][ 45678123-abcd-1234-cdef-1234567890ab ]\n\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_batchRead(tInputA) into tOutputA\n\n#output array: tOutputA[tClientsTableID][ 12345678-abcd-1234-cdef-1234567890ab ][ firstName ] -  John \n                                                                                [ lastName ] -  smith \n                                        [ 87654321-abcd-1234-cdef-1234567890ab ][ firstName ] -  Jenny \n                                                                                [ lastName ] -  Smith \n                        [tOfficeTableID][ 45678123-abcd-1234-cdef-1234567890ab ][ name ] -  Smith's Tech \n                                                                             [ address ] -  123 office road", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/BatchReadKeys/", 
+            "text": "function cdb_batchReadKeys(pInputA)\n\n\n\n\nSummary\n\n\nThis function reads records and returns only the keys requested from each record\u2019s contents. Function may access records from multiple tables in the same call.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.\n\n\n[\"cdbTarget\"]\n \n(String)\n - place to read records, either \n\"cloud\"\n or \n\"local\"\n\n\n[tableID 1]\n \n(Key)\n - Key is the first table's ID, maps to subarray of record IDs.\n\n\n[cdbRecordID 1]\n \n(Key)\n - Key that is the record ID for the first record to be read, or \n\"*\"\n to read all records in a table.\n\n\n[keyName 1]\n \n(Key)\n - Key that is the keyName for the first record to be read\n\n\nempty\n - There must be an empty element child to each keyName\n\n\n\n\n\n\n*[keyName N]\n \n(Key)\n - Key that is the keyName for the nth record to be read\n\n\nempty\n - There must be an empty element child to each keyName\n\n\n\n\n\n\n\n\n\n\n*[cdbRecordID N]\n \n(Key)\n - key that is the record ID for the nth record wanting to be read. Repeat \ncdbRecordID 1\n's subarray structure\n\n\n\n\n\n\n*[tableID N]\n \n(Key)\n - key that is the nth table's ID. Repeat \ntableID 1\n's subarray structure.\n\n\n\n\n\n\n\n\nOutputs\n\n\n(Array) \u2013 Containing a partial record with only the keys as defined by the input. \n\n\nAPI Version\n\n\n\n\n0.3.1\n - Introduced\n\n\n\n\nExamples\n\n\nlocal tInputA, tOutputA, tTableID, tRecordIDs\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#TableID: 701bf5f3-8080-444c-b287-2f8dddc7e268\n#RecordIDs (line delimited list): 8b3af158-af3a-4d92-9363-87756711f771\n\nput cdb_getTableID(\nclients\n) into tTableID\n\n#Input: tInputA\nrepeat for each line xRecordID in tRecordIDs\n    put empty into tInputA[tTableID][xRecordID][\nage,income\n]\nend repeat\n\nput \ncloud\n into tInputsA[\ncdbTarget\n]\n\nput cdb_batchReadKeys(tInputA) into tOutputA\n\n#Output: tOutputA[\n701bf5f3-8080-444c-b287-2f8dddc7e268\n][\n8b3af158-af3a-4d92-9363-87756711f771\n][\nage\n] - value\n#                                                                                             [\nincome\n] - value", 
+            "title": "BatchReadKeys"
+        }, 
+        {
+            "location": "/BatchReadKeys/#function-cdb_batchreadkeyspinputa", 
+            "text": "", 
+            "title": "function cdb_batchReadKeys(pInputA)"
+        }, 
+        {
+            "location": "/BatchReadKeys/#summary", 
+            "text": "This function reads records and returns only the keys requested from each record\u2019s contents. Function may access records from multiple tables in the same call.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/BatchReadKeys/#inputs", 
+            "text": "pInputA   (Array)  - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.  [\"cdbTarget\"]   (String)  - place to read records, either  \"cloud\"  or  \"local\"  [tableID 1]   (Key)  - Key is the first table's ID, maps to subarray of record IDs.  [cdbRecordID 1]   (Key)  - Key that is the record ID for the first record to be read, or  \"*\"  to read all records in a table.  [keyName 1]   (Key)  - Key that is the keyName for the first record to be read  empty  - There must be an empty element child to each keyName    *[keyName N]   (Key)  - Key that is the keyName for the nth record to be read  empty  - There must be an empty element child to each keyName      *[cdbRecordID N]   (Key)  - key that is the record ID for the nth record wanting to be read. Repeat  cdbRecordID 1 's subarray structure    *[tableID N]   (Key)  - key that is the nth table's ID. Repeat  tableID 1 's subarray structure.", 
+            "title": "Inputs"
+        }, 
+        {
+            "location": "/BatchReadKeys/#outputs", 
+            "text": "(Array) \u2013 Containing a partial record with only the keys as defined by the input.", 
+            "title": "Outputs"
+        }, 
+        {
+            "location": "/BatchReadKeys/#api-version", 
+            "text": "0.3.1  - Introduced", 
+            "title": "API Version"
+        }, 
+        {
+            "location": "/BatchReadKeys/#examples", 
+            "text": "local tInputA, tOutputA, tTableID, tRecordIDs\n\n#Table name: clients\n#Keys: firstName, lastName, age, income\n#TableID: 701bf5f3-8080-444c-b287-2f8dddc7e268\n#RecordIDs (line delimited list): 8b3af158-af3a-4d92-9363-87756711f771\n\nput cdb_getTableID( clients ) into tTableID\n\n#Input: tInputA\nrepeat for each line xRecordID in tRecordIDs\n    put empty into tInputA[tTableID][xRecordID][ age,income ]\nend repeat\n\nput  cloud  into tInputsA[ cdbTarget ]\n\nput cdb_batchReadKeys(tInputA) into tOutputA\n\n#Output: tOutputA[ 701bf5f3-8080-444c-b287-2f8dddc7e268 ][ 8b3af158-af3a-4d92-9363-87756711f771 ][ age ] - value\n#                                                                                             [ income ] - value", 
+            "title": "Examples"
+        }
+    ]
+}
