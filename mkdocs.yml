@@ -1,40 +1,43 @@
 site_name: CassiaDB Docs
 pages:
   - Home: index.md
-  - Read/Write:
-    - Create: Create.md
-    - Read: Read.md
-    - LookupValue: LookupValue.md
-    - ReadKeys: ReadKeys.md
-    - Update: Update.md
-    - Delete: Delete.md
-  - Query:
-    - Query: Query.md
-    - Query Operators: QueryOperators.md
-  - Utility:
-    - Count: Count.md
-    - List: List.md
-    - Ping: Ping.md
-    - Result: Result.md
-    - GetTableID: GetTableID.md
-    - GetTableKeys: GetTableKeys.md
-    - GetTableNames: GetTableNames.md
-    - LoadTable: LoadTable.md
-    - UnloadTable: UnloadTable.md
-    - GetTeamID: GetTeamID.md
-  - Sync:
-    - SyncPartial: SyncPartial.md
-    - SyncEvery: SyncEvery.md
-    - SyncComplete: SyncComplete.md
-  - Export:
-    - ExportAsJSON: ExportAsJSON.md
-    - ExportAsLSON: ExportAsLSON.md
-  - Batch:
-    - BatchCreate: BatchCreate.md
-    - BatchUpdate: BatchUpdate.md
-    - BatchDelete: BatchDelete.md
-    - BatchQuery: BatchQuery.md
-    - BatchRead: BatchRead.md
-    - BatchReadKeys: BatchReadKeys.md
-  - LiveCache: Livecache.md
+  - API:
+    - Read/Write:
+      - Create.md
+      - Read.md
+      - LookupValue.md
+      - ReadKeys.md
+      - Update.md
+      - Delete.md
+    - Query:
+      - Query.md
+    - Utility:
+      - Count.md
+      - List.md
+      - Ping.md
+      - Result.md
+      - GetTableID.md
+      - GetTableKeys.md
+      - GetTableNames.md
+      - LoadTable.md
+      - UnloadTable.md
+      - GetTeamID.md
+    - Sync:
+      - SyncPartial.md
+      - SyncEvery.md
+      - SyncComplete.md
+    - Export:
+      - ExportAsJSON.md
+      - ExportAsLSON.md
+    - Batch:
+      - BatchCreate.md
+      - BatchUpdate.md
+      - BatchDelete.md
+      - BatchQuery.md
+      - BatchRead.md
+      - BatchReadKeys.md
+  - Other Info:
+    - Livecache.md
+    - Metadata.md
+    - QueryOperators.md
 theme: mkdocs

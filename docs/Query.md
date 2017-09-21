@@ -18,9 +18,10 @@ This function searches the specified table over the cloud, and returns the subse
     	-  `"recordList"` *(default)* - returns a line-delimited list of the recordIDs that match the query.
     	- `"recordData"` - returns an array of full records that match the query.
 
-![Query input diagram](images/queryInput.svg)
-
 > _*optional parameter._
+
+![Query input diagram](images/QueryInput.svg)
+
 
 ## Outputs
 * *(String)* - If *pInputA["resultFormat"]* is "recordList" or if no such key is provided:
