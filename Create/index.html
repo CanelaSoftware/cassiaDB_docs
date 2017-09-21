@@ -265,8 +265,8 @@
 <li><code>["cdbTableName"]</code> <em>(String)</em> - The name of the table where the record should be created.</li>
 <li><code>["cdbTarget"]</code> <em>(String)</em> - The place to create the record, either <code>"cloud"</code> or <code>"local"</code>.</li>
 <li><code>*["cdbDoNotUseLiveCache"]</code> <em>(Boolean)</em> - If true, will stop using <a href="../Livecache/">livecache</a>.</li>
-<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="../GetTableKeys/">see getTableKeys</a>). User must provide at least one key.</li>
-<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="../GetTableKeys/">see getTableKeys</a>).</li>
+<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - The value for one of the new record's keys. <em><code>yourKey1</code></em> must be one of the table's keys. (<a href="../GetTableKeys/">see getTableKeys</a>). At least one key must be provided.</li>
+<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - The value for the new record's <em><code>yourKeyN</code></em> key.</li>
 </ul>
 </li>
 </ul>
