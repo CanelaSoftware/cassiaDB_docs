@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>QueryOperators - CassiaDB Docs</title>
+        <title>Metadata - CassiaDB Docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -209,12 +209,12 @@
     <a href="../Livecache/">Livecache</a>
 </li>
                             
-<li >
-    <a href="../Metadata/">Metadata</a>
+<li class="active">
+    <a href="./">Metadata</a>
 </li>
                             
-<li class="active">
-    <a href="./">QueryOperators</a>
+<li >
+    <a href="../QueryOperators/">QueryOperators</a>
 </li>
                         </ul>
                     </li>
@@ -227,12 +227,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../Metadata/">
+                        <a rel="next" href="../Livecache/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../QueryOperators/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -244,33 +244,17 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#query-operators">Query Operators</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="query-operators">Query Operators</h2>
-<p>The following are the valid options for the <code>["operator"]</code> parameter of a <a href="../Query/">query</a> statement.</p>
-<ul>
-<li><code>"~"</code> - A key’s contents contains the ‘value’. Synonyms: <code>":"</code>,<code>"is in"</code>,<code>"contains"</code></li>
-<li><code>"!~"</code> - A key’s contents does not contain the ‘value’. Synonyms: <code>"!:"</code>,<code>"is not in"</code>,<code>"does not contain"</code></li>
-<li><code>"="</code>- A key’s contents is equal to the ‘value’. Synonyms: <code>"equal to"</code>,<code>"equals"</code>,<code>"is"</code></li>
-<li><code>"!="</code> - A key’s contents is not equal to the ‘value’. Synonyms: <code>"&lt;&gt;"</code>,<code>"not equal to"</code>,<code>"does not equal"</code>,<code>"is not"</code></li>
-<li><code>"["</code> - A key’s contents begins with the ‘value’. Synonyms: <code>"starts with"</code>,<code>"begins with"</code></li>
-<li><code>"]"</code> - A key’s contents ends with the ‘value’. Synonyms: <code>"finishes with"</code>,<code>"ends with"</code></li>
-<li><code>"&gt;"</code> - A key’s contents are greater than the ‘value’ (non-numeric contents are ignored). Synonyms: <code>"gt"</code>,<code>"greater than"</code></li>
-<li><code>"&lt;"</code> - A key’s contents are less than the ‘value’ (non-numeric contents are ignored). Synonyms: <code>"lt"</code>,<code>"less than"</code></li>
-<li><code>"&gt;="</code> - A key’s contents are greater than or equal to the ‘value’ (non-numeric contents are ignored). Synonyms: <code>"ge"</code>,<code>"greater than or equal to"</code></li>
-<li><code>"&lt;="</code> - A key’s contents are less than or equal to the ‘value’ (non-numeric contents are ignored). Synonyms: <code>"le"</code>,<code>"less than or equal to"</code></li>
-<li><code>"date&gt;"</code> - A key's contents are later than than the datetime of the 'value' (non-dateitems contents are ignored).</li>
-<li><code>"date&lt;"</code> - A key's contents are earlier than the datetime of the 'value' (non-dateitems contents are ignored).</li>
-<li><code>"date&lt;="</code> - A key's contents are earlier or the same as the datetime of the 'value' (non-dateitems contents are ignored).</li>
-<li><code>"date&gt;="</code> - A key's contents are later or the same as the datetime of the 'value' (non-dateitems contents are ignored).</li>
-<li><code>"date="</code> - A key's contents are equal to the datetime of the 'value' (non-dateitems contents are ignored).</li>
-<li><code>"date!="</code> - A key's contents are not equal to the datetime of the 'value' (non-dateitems contents are ignored).</li>
-<li><code>"regex"</code> - A key’s contents matches the ‘value’ regular expression. Synonyms: <code>"matchText"</code></li>
-<li><code>"filter"</code> - A key's contents match the 'value' filter.</li>
-</ul></div>
+<p>MetaData in CassiaDB is stored in each record under the "CDB" key. The following sub-keys are used:</p>
+<p>cdbDateCreated - The unix time when the record was created
+cdbDateModified - The unix time when the record was last modified
+cdbRecordID - The record ID
+cdbRecordVersion - The version number of the record (ticks up every time the record is modified).
+cdbTableID - The table ID
+cdbTableName - The table Name</p></div>
         </div>
 
         <footer class="col-md-12">

@@ -10,7 +10,7 @@ This function reads one or more records from either local or cloud, and returns 
     * `["cdbRecordID"]` *(String)* - A single record ID or a line-delimited list of record IDs, or `"*"` for all records
     
 ## Outputs
-(Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key `"cdb"`, which holds [metadata](metadata.md)
+(Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key `"cdb"`, which holds [metadata](Metadata.md)
 
 ## Additional Requirements
 This API call requires internet access to make cloud calls.
