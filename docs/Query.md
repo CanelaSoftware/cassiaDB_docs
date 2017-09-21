@@ -28,6 +28,7 @@ This function searches the specified table over the cloud, and returns the subse
 	* Output is  a line-delimited list of the recordIDs that match the query.
 * *(Array)* - If *pInputA["resultFormat"]* is "recordData":
 	* Output is an array where each key is a recordID that matches the query, with subkeys defined by the schema.
+![Record Data Output](images/BasicOutput.svg)
 
 ## Additional Requirements
 This API call requires internet access.

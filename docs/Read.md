@@ -12,6 +12,8 @@ This function reads one or more records from either local or cloud, and returns 
 ## Outputs
 (Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key `"cdb"`, which holds [metadata](Metadata.md)
 
+![ReadOutput](images/BasicOutput.svg)
+
 ## Additional Requirements
 This API call requires internet access to make cloud calls.
 
