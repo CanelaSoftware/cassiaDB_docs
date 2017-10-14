@@ -251,7 +251,6 @@
             <li><a href="#additional-requirements">Additional Requirements</a></li>
             <li><a href="#api-version">API Version</a></li>
             <li><a href="#examples">Examples</a></li>
-        <li class="main "><a href="#output-array-toutputatclientstableid1-12345678-abcd-1234-cdef-1234567890ab">output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -403,31 +402,38 @@ put cdb_BatchQuery(tInputA) into tOutputA
 </code></pre>
 
 <h3 id="example-3-advanced">Example 3 (Advanced):</h3>
-<p>```
-local tInputA, tOutputA, tClientsTableID</p>
-<p>put cdb_getTableID("clients") into tClientsTableID</p>
-<p>//first query
-put "firstName" into tInputA["batchQuery"][tClientsTableID]["fname"]["key"]
-put "=" into tInputA["batchQuery"][tClientsTableID]["fname"]["operator"]
-put "John" into tInputA["batchQuery"][tClientsTableID]["fname"]["value"]</p>
-<p>//second query
-put "lastName" into tInputA["batchQuery"][tClientsTableID]["last_s"]["key"]
-put "begins with" into tInputA["batchQuery"][tClientsTableID]["last_s"]["operator"]
-put "s" into tInputA["batchQuery"][tClientsTableID]["last_s"]["value"]</p>
-<p>//third query
-put "lastName" into tInputA["batchQuery"][tClientsTableID]["last_t"]["key"]
-put "begins with" into tInputA["batchQuery"][tClientsTableID]["last_t"]["operator"]
-put "t" into tInputA["batchQuery"][tClientsTableID]["last_t"]["value"]</p>
-<p>//settings
-put "recordlist" into tInputA["settings"]["resultFormat"] 
-put "advanced" into tInputA["settings"]["mode"]
-put "cloud" into tInputA["cdbTarget"]</p>
-<p>//logic map
-put "fname and (last_s or last_t)" into tInputA["settings"]["logicMap"]</p>
-<p>put cdb_BatchQuery(tInputA) into tOutputA</p>
-<h1 id="output-array-toutputatclientstableid1-12345678-abcd-1234-cdef-1234567890ab">output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab</h1>
-<pre><code>                    87654321-abcd-1234-cdef-1234567890ab
-                    //This is a line delimited list containing all record with first name "John" and last name beginning with "s" or "t"
+<pre><code>local tInputA, tOutputA, tClientsTableID
+
+put cdb_getTableID(&quot;clients&quot;) into tClientsTableID
+
+//first query
+put &quot;firstName&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;fname&quot;][&quot;key&quot;]
+put &quot;=&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;fname&quot;][&quot;operator&quot;]
+put &quot;John&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;fname&quot;][&quot;value&quot;]
+
+//second query
+put &quot;lastName&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;last_s&quot;][&quot;key&quot;]
+put &quot;begins with&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;last_s&quot;][&quot;operator&quot;]
+put &quot;s&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;last_s&quot;][&quot;value&quot;]
+
+//third query
+put &quot;lastName&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;last_t&quot;][&quot;key&quot;]
+put &quot;begins with&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;last_t&quot;][&quot;operator&quot;]
+put &quot;t&quot; into tInputA[&quot;batchQuery&quot;][tClientsTableID][&quot;last_t&quot;][&quot;value&quot;]
+
+//settings
+put &quot;recordlist&quot; into tInputA[&quot;settings&quot;][&quot;resultFormat&quot;] 
+put &quot;advanced&quot; into tInputA[&quot;settings&quot;][&quot;mode&quot;]
+put &quot;cloud&quot; into tInputA[&quot;cdbTarget&quot;]
+
+//logic map
+put &quot;fname and (last_s or last_t)&quot; into tInputA[&quot;settings&quot;][&quot;logicMap&quot;]
+
+put cdb_BatchQuery(tInputA) into tOutputA
+
+#output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  
+                        87654321-abcd-1234-cdef-1234567890ab
+                        //This is a line delimited list containing all record with first name &quot;John&quot; and last name beginning with &quot;s&quot; or &quot;t&quot;
 </code></pre></div>
         </div>
 
