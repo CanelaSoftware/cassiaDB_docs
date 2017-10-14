@@ -7,7 +7,7 @@ This function returns all table names currently in your config file.
 *(String)* – A line-delimited list of all table names.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

@@ -7,7 +7,7 @@ This function returns the active team ID, which represents the Livecloud User.
  * (String) - The active team ID.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

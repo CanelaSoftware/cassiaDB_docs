@@ -13,7 +13,7 @@ None
 This API call requires internet access.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

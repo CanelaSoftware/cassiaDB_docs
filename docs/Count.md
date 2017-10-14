@@ -4,9 +4,9 @@
 This function counts the number of records (either cloud or local) in a given table.
 
 ## Inputs
-* **`pInputA`** *(Array)* - Array with the following format:
-	* `["cdbTableName"]` *(String)* - The specified table name.
-    * `["cdbTarget"]` *(String)* - The place to count the records from, either `"cloud"` or `"local"`.
+* **pInputA** *(Array)* - Array with the following format:
+	* ["cdbTableName"] *(String)* - The specified table name.
+    * ["cdbTarget"] *(String)* - The place to count the records from, either "cloud" or "local".
 
 ## Outputs
 (String) – Contains the numeric count of records in a given table.
@@ -15,7 +15,7 @@ This function counts the number of records (either cloud or local) in a given ta
 This API call requires internet access in order to count cloud records.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

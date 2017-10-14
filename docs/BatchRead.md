@@ -4,14 +4,14 @@
 This function reads a list of records and returns those records' contents. It takes the input array and fills the empty contents of each cdbRecordID key.
 
 ## Inputs
-* **`pInputA`** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
-    * `["cdbTarget"]` *(String)* - place to read records, either `"cloud"` or `"local"`
-    * `[tableID 1]` *(Key)* - Key is the first table's ID, maps to subarray of record IDs.
-    	* `[cdbRecordID 1]` *(Key)* - Key that is the record ID for the first record to be read, or `"*"` to read all records in a table. 
-    		* `empty` - There must be an empty element child to each record ID
-    	* `*[cdbRecordID N]` *(Key)* - key that is the record ID for the nth record wanting to be read. 
-    		* `empty` - There must be an empty element child to each record ID
-    * `*[tableID N]` *(Key)* - key that is the nth table's ID. Repeat *tableID1*'s sublevel structure.
+* **pInputA** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
+    * ["cdbTarget"] *(String)* - place to read records, either "cloud" or "local"
+    * [tableID 1] *(Key)* - Key is the first table's ID, maps to subarray of record IDs.
+    	* [cdbRecordID 1] *(Key)* - Key that is the record ID for the first record to be read, or "*" to read all records in a table. 
+    		* empty - There must be an empty element child to each record ID
+    	* *[cdbRecordID N] *(Key)* - key that is the record ID for the nth record wanting to be read. 
+    		* empty - There must be an empty element child to each record ID
+    * *[tableID N] *(Key)* - key that is the nth table's ID. Repeat *tableID1*'s sublevel structure.
 
 > _*optional parameter._
 
@@ -27,7 +27,7 @@ This function reads a list of records and returns those records' contents. It ta
 This API call requires internet access.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

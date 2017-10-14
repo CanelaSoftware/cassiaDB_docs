@@ -4,12 +4,12 @@
 This function allocates a new cdbRecordID for a record in either the cloud or locally, storing the provided data.
 
 ## Inputs
-* **`pInputA`** *(Array)* - An array with the following format:
-    * `["cdbTableName"]` *(String)* - The name of the table where the record should be created.
-    * `["cdbTarget"]` *(String)* - The place to create the record, either `"cloud"` or `"local"`.
-    * `*["cdbDoNotUseLiveCache"]` *(Boolean)* - If true, will stop using [livecache](Livecache.md).
-    * `[`*`yourKey1`*`]` *(String)* - The value for one of the new record's keys. *`yourKey1`* must be one of the table's keys. ([see getTableKeys](GetTableKeys.md)). At least one key must be provided.
-    * `*[`*`yourKeyN`*`]` *(String)* - The value for the new record's *`yourKeyN`* key.
+* **pInputA** *(Array)* - An array with the following format:
+    * ["cdbTableName"] *(String)* - The name of the table where the record should be created.
+    * ["cdbTarget"] *(String)* - The place to create the record, either "cloud" or "local".
+    * \*["cdbDoNotUseLiveCache"] *(Boolean)* - If true, will stop using [livecache](Livecache.md).
+    * [*yourKey1*] *(String)* - The value for one of the new record's keys. *yourKey1* must be one of the table's keys. ([see getTableKeys](GetTableKeys.md)). At least one key must be provided.
+    * \*[*yourKeyN*] *(String)* - The value for the new record's *yourKeyN* key.
 
 > *_optional parameter._
 
@@ -21,7 +21,7 @@ This function allocates a new cdbRecordID for a record in either the cloud or lo
 This API call requires internet access in order to create cloud records.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

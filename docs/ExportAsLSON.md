@@ -4,14 +4,14 @@
 This command exports a complete table (local records only) as individual documents for each record in LSON (LiveCode array encoded) format in a folder on the desktop.
 
 ## Inputs
-* **`pInputA`** *(Array)* - An array of keys containing data per the following format:
-    * `["cdbTableName"]` *(String)* - The specified table name.
+* **pInputA** *(Array)* - An array of keys containing data per the following format:
+    * ["cdbTableName"] *(String)* - The specified table name.
 
 ## Outputs
 (Main storage device) – Desktop/folder/documents. 
 
 ## API Version
-* `0.3.2` - Introduced
+* 0.3.2 - Introduced
 
 ## Examples
 ```

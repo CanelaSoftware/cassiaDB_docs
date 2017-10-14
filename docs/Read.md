@@ -4,13 +4,13 @@
 This function reads one or more records from either local or cloud, and returns them as an array.
 
 ## Inputs
-* **`pInputA`** *(Array)* - An array with the following format:
-    * `["cdbTableName"]` *(String)* - The specified table name
-    * `["cdbTarget"]` *(String)* - The place to access the records, either `"cloud"` or `"local"`.
-    * `["cdbRecordID"]` *(String)* - A single record ID or a line-delimited list of record IDs, or `"*"` for all records
+* **pInputA** *(Array)* - An array with the following format:
+    * ["cdbTableName"] *(String)* - The specified table name
+    * ["cdbTarget"] *(String)* - The place to access the records, either "cloud" or "local".
+    * ["cdbRecordID"] *(String)* - A single record ID or a line-delimited list of record IDs, or "*" for all records
     
 ## Outputs
-(Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key `"cdb"`, which holds [metadata](Metadata.md)
+(Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key "cdb", which holds [metadata](Metadata.md)
 
 ![ReadOutput](images/BasicOutput.svg)
 
@@ -18,7 +18,7 @@ This function reads one or more records from either local or cloud, and returns 
 This API call requires internet access to make cloud calls.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

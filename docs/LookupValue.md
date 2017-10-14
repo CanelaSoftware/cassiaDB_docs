@@ -4,11 +4,11 @@
 This function returns the value associated with a given key for a given cloud record.
 
 ## Inputs
-* **`pInputA`** *(Array)* - An array with the following format:
-    * `["cdbTableName"]` *(String)* - The specified table name.
-    * `["cdbRecordID"]` *(String)* - The record ID of the specified record.
-    * `["cdbTarget"]` *(String)* - The place to lookup the record, either `"cloud"` or `"local"`.
-    * `["key"]` *(String)* - The key to retrieve.
+* **pInputA** *(Array)* - An array with the following format:
+    * ["cdbTableName"] *(String)* - The specified table name.
+    * ["cdbRecordID"] *(String)* - The record ID of the specified record.
+    * ["cdbTarget"] *(String)* - The place to lookup the record, either "cloud" or "local".
+    * ["key"] *(String)* - The key to retrieve.
 
 ## Outputs
 *(String)* – The value of the given key for the specified record.
@@ -17,7 +17,7 @@ This function returns the value associated with a given key for a given cloud re
 This API call requires internet access to make cloud calls.
 
 ## API Version
-* `0.3.1` - Introduced
+* 0.3.1 - Introduced
 
 ## Examples
 ```

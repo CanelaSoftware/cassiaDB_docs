@@ -4,10 +4,10 @@
 This function returns a line-delimited list of the values of the requested key.
 
 ## Inputs
-* **`pInputA`** *(Array)* - An array with the following format:
-    * `*["key"]` *(String)* - The key whose values will be listed. Default is the cdbRecordID.
-    * `["cdbTableName"]` *(String)* - The name of the table to access.
-    * `["cdbTarget"]` *(String)* - The place to access the records, either `"cloud"` or `"local"`.
+* **pInputA** *(Array)* - An array with the following format:
+    * *["key"] *(String)* - The key whose values will be listed. Default is the cdbRecordID.
+    * ["cdbTableName"] *(String)* - The name of the table to access.
+    * ["cdbTarget"] *(String)* - The place to access the records, either "cloud" or "local".
     
 > _*optional parameter._
 
@@ -18,7 +18,7 @@ This function returns a line-delimited list of the values of the requested key.
 This API call requires internet access in order to list cloud records.
 
 ## API Version
-* `0.3.1` - Introduced
+* 0.3.1 - Introduced
 
 ## Examples
 ```

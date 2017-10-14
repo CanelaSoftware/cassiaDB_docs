@@ -4,19 +4,21 @@
 This command makes changes to an existing record.
 
 ## Inputs
-* **`pInputA`** *(Array)* - An array with the following format:
-    * `["cdbTableName"]` *(String)* - The specified table name.
-    * `["cdbTarget"]` *(String)* - The place to update the record, either `"cloud"` or `"local"`.
-    * `*["cdbDoNotUseLiveCache"]` *(Boolean)* - If true, will stop using [livecache](Livecache.md).
-    * `["cdbRecordID"]` *(String)* - A single cdbRecordID.
-    * `[`*`yourKey1`*`]` *(String)* - A Key as defined by the table's schema ([see getTableKeys](./GetTableKeys.md)). User must provide at least one key.
-    * `*[`*`yourKeyN`*`]` *(String)* - A Key as defined by the table's schema ([see getTableKeys](./GetTableKeys.md)).
+* **pInputA** *(Array)* - An array with the following format:
+    * ["cdbTableName"] *(String)* - The specified table name.
+    * ["cdbTarget"] *(String)* - The place to update the record, either "cloud" or "local".
+    * \*["cdbDoNotUseLiveCache"] *(Boolean)* - If true, will stop using [livecache](Livecache.md).
+    * ["cdbRecordID"] *(String)* - A single cdbRecordID.
+    * [*yourKey1*] *(String)* - A Key as defined by the table's schema ([see getTableKeys](./GetTableKeys.md)). User must provide at least one key.
+    * \*[*yourKeyN*] *(String)* - A Key as defined by the table's schema ([see getTableKeys](./GetTableKeys.md)).
+
+> \* optional parameter.
 
 ## Additional Requirements
 * This API call requires internet access in order to update cloud.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

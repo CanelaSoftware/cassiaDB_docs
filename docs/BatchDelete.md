@@ -4,14 +4,14 @@
 This function deletes a set of records.
 
 ## Inputs
-* **`pInputA`** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
-	* `["cdbTarget"]` *(String)* - place to delete records, either `"cloud"` or `"local"`
-    * `[tableID 1]` *(Key)* - Key is the first table's ID, maps to subarray of record IDs.
-    	* `[cdbRecordID 1]` *(Key)* - Key that is the record ID for the first record to be deleted, or `"*"` to delete all records in a table. 
-    		* `empty` - There must be an empty element child to each record ID
-    	* `*[cdbRecordID N]` *(Key)* - Key that is the record ID for the nth record to be deleted.
-    		* `empty` - There must be an empty element child to each record ID
-    * `*[tableID N]` *(Key)* - Key that is the nth table's ID. Repeat *tableID1*'s sublevel structure.
+* **pInputA** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
+	* ["cdbTarget"] *(String)* - place to delete records, either "cloud" or "local"
+    * [tableID 1] *(Array)* - Key is the first table's ID, maps to subarray of record IDs.
+    	* [cdbRecordID 1] *(Empty)* - Key that is the record ID for the first record to be deleted, or "*" to delete all records in a table. 
+    		* empty - There must be an empty element in each record ID
+    	* *[cdbRecordID N] *(Empty)* - Key that is the record ID for the nth record to be deleted.
+    		* empty - There must be an empty element in each record ID
+    * *[tableID N] *(Array)* - Key that is the nth table's ID. Repeat *tableID1*'s sublevel structure.
 
 > _*optional parameter._
 
@@ -23,7 +23,7 @@ This function deletes a set of records.
 This API call requires internet access.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

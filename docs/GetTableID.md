@@ -5,13 +5,13 @@
 This function takes a table name and returns the ID of that table.
 
 ## Inputs
-* **`tTableName`** *(String)* - The name of the table.
+* **tTableName** *(String)* - The name of the table.
 
 ## Outputs
 (String) - The Table ID of the specified table.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

@@ -4,19 +4,19 @@
 This function searches the specified table over the cloud, and returns the subset that matches that query in several possible formats. See [comparison operators](./QueryOperators.md) to find all operators allowed in a query.
 
 ## Inputs
-* **`pInputA`**  *(Array)* - An array of keys containing the query, the table name, and an optional output format.
-	* `["query"]` *(Key)* - An array formatted as follows:
-    	* `["key"]` *(String)* - One of the following:
-    		- *`yourKey`* - Searches the specified key
-    		- `"$"` - Searches all schema-defined keys
-    		- `"*"` - Searches all schema-defined keys and internal keys.
-    	* `["value"]` *(String)* - The value to compare with.
-    	* `["operator"]` *(String)* - The [comparison operator](./QueryOperators.md) to compare each record's value at the key specified to the value specified.
-    - `["cdbTableName"]` *(String)* - The table name or table ID to search through.
-    - `["cdbTarget"]` *(String)* - The place to query, either `"cloud"` or `"local"`.
-    - `*["resultFormat"]` *(String)*: 
-    	-  `"recordList"` *(default)* - returns a line-delimited list of the recordIDs that match the query.
-    	- `"recordData"` - returns an array of full records that match the query.
+* **pInputA**  *(Array)* - An array of keys containing the query, the table name, and an optional output format.
+	* ["query"] *(Key)* - An array formatted as follows:
+    	* ["key"] *(String)* - One of the following:
+    		- *yourKey* - Searches the specified key
+    		- "$" - Searches all schema-defined keys
+    		- "*" - Searches all schema-defined keys and internal keys.
+    	* ["value"] *(String)* - The value to compare with.
+    	* ["operator"] *(String)* - The [comparison operator](./QueryOperators.md) to compare each record's value at the key specified to the value specified.
+    - ["cdbTableName"] *(String)* - The table name or table ID to search through.
+    - ["cdbTarget"] *(String)* - The place to query, either "cloud" or "local".
+    - *["resultFormat"] *(String)*: 
+    	-  "recordList" *(default)* - returns a line-delimited list of the recordIDs that match the query.
+    	- "recordData" - returns an array of full records that match the query.
 
 > _*optional parameter._
 
@@ -34,7 +34,7 @@ This function searches the specified table over the cloud, and returns the subse
 This API call requires internet access.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

@@ -5,8 +5,8 @@
 This function takes a table name or TableID and returns a comma-separated list of the keys of that table.
 
 ## Inputs
-* **`pTableName`** *(String)* - The table name.
-* **`pTableID`** *(String)* - The table ID.
+* **pTableName** *(String)* - The table name.
+* **pTableID** *(String)* - The table ID.
 
 > _*Only one of the two parameters is required._
 
@@ -14,7 +14,7 @@ This function takes a table name or TableID and returns a comma-separated list o
 (String) - A comma-separated list of the keys in the table.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```

@@ -8,4 +8,4 @@ Livecaching is turned ON by default. This means that any time a cloud write tran
 
 ### Opting out of LiveCache
 
-If you don't want to use the Livecache (i.e. you want to handle cloud failures manually), you can pass the `"cdbDoNotUseLiveCache"` key in your input arrays to prevent the livecache from keeping track of your cloud transactions.
+If you don't want to use the Livecache (i.e. you want to handle cloud failures manually), you can pass the "cdbDoNotUseLiveCache" key in your input arrays to prevent the livecache from keeping track of your cloud transactions.

@@ -6,12 +6,12 @@
 This command will unload a table from memory.
 
 ## Inputs
-* **`tInputA`** *(Array)* - An array containing the tablename.
-    * `["cdbTableName"]` *(String)* - The specified table name to be unloaded, or a line-separated list of tables to be unloaded.
-    	* Putting `"*"` or `empty` in this key will unload all tables.
+* **tInputA** *(Array)* - An array containing the tablename.
+    * ["cdbTableName"] *(String)* - The specified table name to be unloaded, or a line-separated list of tables to be unloaded.
+    	* Putting "*" or empty in this key will unload all tables.
 
 ## API Version
-* `0.3.0` - Introduced
+* 0.3.0 - Introduced
 
 ## Examples
 ```
