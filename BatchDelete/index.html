@@ -260,20 +260,20 @@
 <p>This function deletes a set of records.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong> <em>(Array)</em> - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.<ul>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - place to delete records, either <code>"cloud"</code> or <code>"local"</code></li>
-<li><code>[tableID 1]</code> <em>(Key)</em> - Key is the first table's ID, maps to subarray of record IDs.<ul>
-<li><code>[cdbRecordID 1]</code> <em>(Key)</em> - Key that is the record ID for the first record to be deleted, or <code>"*"</code> to delete all records in a table. <ul>
-<li><code>empty</code> - There must be an empty element child to each record ID</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.<ul>
+<li>["cdbTarget"] <em>(String)</em> - place to delete records, either "cloud" or "local"</li>
+<li>[tableID 1] <em>(Array)</em> - Key is the first table's ID, maps to subarray of record IDs.<ul>
+<li>[cdbRecordID 1] <em>(Empty)</em> - Key that is the record ID for the first record to be deleted, or "*" to delete all records in a table. <ul>
+<li>empty - There must be an empty element in each record ID</li>
 </ul>
 </li>
-<li><code>*[cdbRecordID N]</code> <em>(Key)</em> - Key that is the record ID for the nth record to be deleted.<ul>
-<li><code>empty</code> - There must be an empty element child to each record ID</li>
+<li><em>[cdbRecordID N] </em>(Empty)* - Key that is the record ID for the nth record to be deleted.<ul>
+<li>empty - There must be an empty element in each record ID</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><code>*[tableID N]</code> <em>(Key)</em> - Key that is the nth table's ID. Repeat <em>tableID1</em>'s sublevel structure.</li>
+<li><em>[tableID N] </em>(Array)<em> - Key that is the nth table's ID. Repeat </em>tableID1*'s sublevel structure.</li>
 </ul>
 </li>
 </ul>
@@ -286,7 +286,7 @@
 <p>This API call requires internet access.</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.0</code> - Introduced</li>
+<li>0.3.0 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tInputA, tOutputA, tClientsTableID, tOfficeTableID

@@ -261,12 +261,12 @@
 <p>This function allocates a new cdbRecordID for a record in either the cloud or locally, storing the provided data.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong> <em>(Array)</em> - An array with the following format:<ul>
-<li><code>["cdbTableName"]</code> <em>(String)</em> - The name of the table where the record should be created.</li>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - The place to create the record, either <code>"cloud"</code> or <code>"local"</code>.</li>
-<li><code>*["cdbDoNotUseLiveCache"]</code> <em>(Boolean)</em> - If true, will stop using <a href="../Livecache/">livecache</a>.</li>
-<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - The value for one of the new record's keys. <em><code>yourKey1</code></em> must be one of the table's keys. (<a href="../GetTableKeys/">see getTableKeys</a>). At least one key must be provided.</li>
-<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - The value for the new record's <em><code>yourKeyN</code></em> key.</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - An array with the following format:<ul>
+<li>["cdbTableName"] <em>(String)</em> - The name of the table where the record should be created.</li>
+<li>["cdbTarget"] <em>(String)</em> - The place to create the record, either "cloud" or "local".</li>
+<li>*["cdbDoNotUseLiveCache"] <em>(Boolean)</em> - If true, will stop using <a href="../Livecache/">livecache</a>.</li>
+<li>[<em>yourKey1</em>] <em>(String)</em> - The value for one of the new record's keys. <em>yourKey1</em> must be one of the table's keys. (<a href="../GetTableKeys/">see getTableKeys</a>). At least one key must be provided.</li>
+<li>*[<em>yourKeyN</em>] <em>(String)</em> - The value for the new record's <em>yourKeyN</em> key.</li>
 </ul>
 </li>
 </ul>
@@ -279,7 +279,7 @@
 <p>This API call requires internet access in order to create cloud records.</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.0</code> - Introduced</li>
+<li>0.3.0 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>#Table name: clients

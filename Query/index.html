@@ -261,23 +261,23 @@
 <p>This function searches the specified table over the cloud, and returns the subset that matches that query in several possible formats. See <a href="../QueryOperators/">comparison operators</a> to find all operators allowed in a query.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong>  <em>(Array)</em> - An array of keys containing the query, the table name, and an optional output format.<ul>
-<li><code>["query"]</code> <em>(Key)</em> - An array formatted as follows:<ul>
-<li><code>["key"]</code> <em>(String)</em> - One of the following:<ul>
-<li><em><code>yourKey</code></em> - Searches the specified key</li>
-<li><code>"$"</code> - Searches all schema-defined keys</li>
-<li><code>"*"</code> - Searches all schema-defined keys and internal keys.</li>
+<li><strong>pInputA</strong>  <em>(Array)</em> - An array of keys containing the query, the table name, and an optional output format.<ul>
+<li>["query"] <em>(Key)</em> - An array formatted as follows:<ul>
+<li>["key"] <em>(String)</em> - One of the following:<ul>
+<li><em>yourKey</em> - Searches the specified key</li>
+<li>"$" - Searches all schema-defined keys</li>
+<li>"*" - Searches all schema-defined keys and internal keys.</li>
 </ul>
 </li>
-<li><code>["value"]</code> <em>(String)</em> - The value to compare with.</li>
-<li><code>["operator"]</code> <em>(String)</em> - The <a href="../QueryOperators/">comparison operator</a> to compare each record's value at the key specified to the value specified.</li>
+<li>["value"] <em>(String)</em> - The value to compare with.</li>
+<li>["operator"] <em>(String)</em> - The <a href="../QueryOperators/">comparison operator</a> to compare each record's value at the key specified to the value specified.</li>
 </ul>
 </li>
-<li><code>["cdbTableName"]</code> <em>(String)</em> - The table name or table ID to search through.</li>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - The place to query, either <code>"cloud"</code> or <code>"local"</code>.</li>
-<li><code>*["resultFormat"]</code> <em>(String)</em>: <ul>
-<li><code>"recordList"</code> <em>(default)</em> - returns a line-delimited list of the recordIDs that match the query.</li>
-<li><code>"recordData"</code> - returns an array of full records that match the query.</li>
+<li>["cdbTableName"] <em>(String)</em> - The table name or table ID to search through.</li>
+<li>["cdbTarget"] <em>(String)</em> - The place to query, either "cloud" or "local".</li>
+<li><em>["resultFormat"] </em>(String)*: <ul>
+<li>"recordList" <em>(default)</em> - returns a line-delimited list of the recordIDs that match the query.</li>
+<li>"recordData" - returns an array of full records that match the query.</li>
 </ul>
 </li>
 </ul>
@@ -303,7 +303,7 @@
 <p>This API call requires internet access.</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.0</code> - Introduced</li>
+<li>0.3.0 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tQueryA, tInputA, tOutputA

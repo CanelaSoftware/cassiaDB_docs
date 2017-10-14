@@ -259,10 +259,10 @@
 <p>This command will load a table into memory so it can be accessed through other CDB commands and functions. <strong>LoadTable must be called prior to calling other CDB commands and functions.</strong></p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>tInputA</code></strong> <em>(Array)</em> - An array containing the tablename to be loaded.<ul>
-<li><code>["cdbTableName"]</code> <em>(String)</em> - The specified table name to be loaded, or a line-separated list of tables to be loaded.<ul>
-<li>Putting <code>"*"</code> in this key will load all tables, reloading any tables that have already been loaded.</li>
-<li>Putting <code>empty</code> in this key will load all tables that have not previously been loaded.</li>
+<li><strong>tInputA</strong> <em>(Array)</em> - An array containing the tablename to be loaded.<ul>
+<li>["cdbTableName"] <em>(String)</em> - The specified table name to be loaded, or a line-separated list of tables to be loaded.<ul>
+<li>Putting "*" in this key will load all tables, reloading any tables that have already been loaded.</li>
+<li>Putting empty in this key will load all tables that have not previously been loaded.</li>
 </ul>
 </li>
 </ul>
@@ -270,7 +270,7 @@
 </ul>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.0</code> - Introduced</li>
+<li>0.3.0 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tInputA

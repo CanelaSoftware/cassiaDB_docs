@@ -260,11 +260,11 @@
 <p>This command will sync all records in a specified table in one direction between cloud and local.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>tInputA</code></strong> <em>(Array)</em> - An array that specifies which table to sync and how to sync that table.<ul>
-<li><code>["cdbTableName"]</code> <em>(String)</em> - The specified table to be synced.    </li>
-<li><code>["settings"]</code> <em>(Array)</em> - SubArray that maps to type of settings, as defined below:        <ul>
-<li><code>["source"]</code> <em>(String)</em> - 'Cloud' or 'local'. String determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud.            </li>
-<li><code>["preserveTarget"]</code> <em>(Boolean)</em> - 'True' or 'False'. A value of 'true' would preserve any records that do not have a matching cdbRecordID in the source. Records with a matching cdbRecordID in both source and target will have their cdbRecordVersion considered. The newer record will be synced from source to target. A value of 'false' will force the target to match the source records perfectly. Unique records in the target will be deleted.</li>
+<li><strong>tInputA</strong> <em>(Array)</em> - An array that specifies which table to sync and how to sync that table.<ul>
+<li>["cdbTableName"] <em>(String)</em> - The specified table to be synced.    </li>
+<li>["settings"] <em>(Array)</em> - SubArray that maps to type of settings, as defined below:        <ul>
+<li>["source"] <em>(String)</em> - 'Cloud' or 'local'. String determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud.          </li>
+<li>["preserveTarget"] <em>(Boolean)</em> - 'True' or 'False'. A value of 'true' would preserve any records that do not have a matching cdbRecordID in the source. Records with a matching cdbRecordID in both source and target will have their cdbRecordVersion considered. The newer record will be synced from source to target. A value of 'false' will force the target to match the source records perfectly. Unique records in the target will be deleted.</li>
 </ul>
 </li>
 </ul>
@@ -276,7 +276,7 @@
 </ul>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.3</code> - Introduced</li>
+<li>0.3.3 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code> local tInputA

@@ -256,7 +256,7 @@
 <h3 id="using-the-livecache">Using the LiveCache</h3>
 <p>Livecaching is turned ON by default. This means that any time a cloud write transaction (Create, Update, Delete, Merge) fails, CassiaDB will cache this transaction, and attempt the transaction again the next time it has internet connectivity. This persists even if the application shuts down, so you never have to worry about missing your cloud calls.</p>
 <h3 id="opting-out-of-livecache">Opting out of LiveCache</h3>
-<p>If you don't want to use the Livecache (i.e. you want to handle cloud failures manually), you can pass the <code>"cdbDoNotUseLiveCache"</code> key in your input arrays to prevent the livecache from keeping track of your cloud transactions.</p></div>
+<p>If you don't want to use the Livecache (i.e. you want to handle cloud failures manually), you can pass the "cdbDoNotUseLiveCache" key in your input arrays to prevent the livecache from keeping track of your cloud transactions.</p></div>
         </div>
 
         <footer class="col-md-12">

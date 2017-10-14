@@ -261,11 +261,11 @@
 <p>This function reads record(s) and returns only the keys requested from a record’s contents. Function may access multiple records from a table.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong> <em>(Array)</em> - An array with the following format:<ul>
-<li><code>["cdbTableName"]</code> <em>(String)</em> - The specified table name.</li>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - The place to access the records, either <code>"cloud"</code> or <code>"local"</code>.</li>
-<li><code>["cdbRecordID"]</code> <em>(String)</em> - A single cdbRecordID or a line delimited list of cdbRecordIDs, or <code>"*"</code> for all records    </li>
-<li><code>["keyList"]</code> <em>(String)</em> - A comma delimited list of the keys to be returned from the record.</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - An array with the following format:<ul>
+<li>["cdbTableName"] <em>(String)</em> - The specified table name.</li>
+<li>["cdbTarget"] <em>(String)</em> - The place to access the records, either "cloud" or "local".</li>
+<li>["cdbRecordID"] <em>(String)</em> - A single cdbRecordID or a line delimited list of cdbRecordIDs, or "*" for all records    </li>
+<li>["keyList"] <em>(String)</em> - A comma delimited list of the keys to be returned from the record.</li>
 </ul>
 </li>
 </ul>
@@ -275,7 +275,7 @@
 <p>This API call requires internet access to make cloud calls.</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.2</code> - Introduced</li>
+<li>0.3.2 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tInputA, tOutputA, tTableID, tRecordIDs

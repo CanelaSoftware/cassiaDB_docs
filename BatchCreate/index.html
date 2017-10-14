@@ -261,22 +261,18 @@
 <p>This function allocates new cdbRecordIDs and stores provided data for a batch of records across one or more tables.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong> <em>(Array)</em> - A multidimensional array, where each key is a tableID. This tableID can be obtained by calling the function <em>cdb_getTableID</em> and passing in the table name, returns the table's unique ID. There must be at least one table ID key in the array.<ul>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - place to create records, either <code>"cloud"</code> or <code>"local"</code></li>
-<li></li>
-<li><code>[tableID 1]</code> <em>(Array)</em> - key that is the first table's ID, which maps to another array of arbitrary recordKeys, where each recordKey maps to a record. There must be at least one record key in this sub-array.<ul>
-<li><code>[indexKey 1]</code> <em>(Array)</em> - An arbritrary user-defined key for a record. Recommended keys are 1, 2, ..., N, where N is the number of stored records in the table with a UID of <em>tableID 1</em>. This recordKey maps to a sub-array of keyNames that map to the actual data to store in a record. There must be at least one keyname in this sub array. <ul>
-<li><code>[keyName 1]</code> <em>(Key)</em> - User-defined keyname, where <em>keyName 1</em> is an arbitrary key name. Each keyname maps to the actual user data to store. User must provide at least key to a stored value.<ul>
-<li><code>yourData</code> <em>(String)</em> - the actual data the user wants to store in this keyname in this record in this table.</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - A multidimensional array, where each key is a tableID. This tableID can be obtained by calling the function <em>cdb_getTableID</em> and passing in the table name, returns the table's unique ID. There must be at least one table ID key in the array.<ul>
+<li>["cdbTarget"] <em>(String)</em> - place to create records, either "cloud" or "local"</li>
+<li>[tableID 1] <em>(Array)</em> - key that is the first table's ID, which maps to another array of arbitrary recordKeys, where each recordKey maps to a record. There must be at least one record key in this sub-array.<ul>
+<li>[indexKey 1] <em>(Array)</em> - An arbritrary user-defined name for a record. Recommended names are 1, 2, ..., N. This key maps to a sub-array of keys with data.
+        * [keyName 1] <em>(String)</em> - The data the user wants to store in this keyname in this record in this table.
+        * <em>[keyName N] </em>(String)* - The data the user wants to store in this keyname.<ul>
+<li><em>[indexKey N] </em>(Array)<em> - The nth record. Repeat </em>indexKey 1*'s sublevel structure.</li>
 </ul>
 </li>
-<li><code>*[keyName N]</code> <em>(Key)</em> - The nth user-defined keyname. Repeat <em>keyName 1</em>'s sublevel structure.</li>
 </ul>
 </li>
-<li><code>*[indexKey N]</code> <em>(Key)</em> - the the nth record key. Repeat <em>recordKey 1</em>'s sublevel structure.</li>
-</ul>
-</li>
-<li><code>*[tableID N]</code> <em>(Key)</em> - key that is the nth table's UID. Repeat <em>tableID 1</em>'s sublevel structure.</li>
+<li><em>[tableID N] </em>(Array)<em> - Nth table to create records in. Repeat </em>tableID 1*'s sublevel structure.</li>
 </ul>
 </li>
 </ul>
@@ -291,7 +287,7 @@
 <p>This API call requires internet access if the 'cloud' option is selected</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.1</code> - Introduced</li>
+<li>0.3.1 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tInputA, tOutputA, tClientsTableID, tOfficeTableID

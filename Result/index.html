@@ -260,11 +260,11 @@
 <p>Used to check the status of the most recently executed CDB call.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><code>pParam</code> <em>(String)</em> - must be one of the following:<ul>
-<li><code>complete</code> <em>(default)</em> - returns a boolean value of whether the most recent CDB call completed successfully.</li>
-<li><code>"array"</code> - Returns an array with all logged values about the most recent call.</li>
-<li><code>"context"</code> - Returns the name of the most recent call.</li>
-<li><code>"response"</code> - Returns the error message associated with the most recent call, if any.</li>
+<li>pParam <em>(String)</em> - must be one of the following:<ul>
+<li>complete <em>(default)</em> - returns a boolean value of whether the most recent CDB call completed successfully.</li>
+<li>"array" - Returns an array with all logged values about the most recent call.</li>
+<li>"context" - Returns the name of the most recent call.</li>
+<li>"response" - Returns the error message associated with the most recent call, if any.</li>
 </ul>
 </li>
 </ul>
@@ -272,13 +272,13 @@
 <p>Depending on the input parameter -</p>
 <ul>
 <li>(String) <em>(default)</em> - A boolean value of whether the most recent CDB call completed successfully.</li>
-<li>(Array) - When <code>"array"</code> is the input, an array with all logged values about the most recent call.</li>
-<li>(String) - When <code>"context"</code> is the input, the name of the most recent call.</li>
-<li>(String) - When <code>"response"</code> is the input, the error message associated with the most recent call, if any.</li>
+<li>(Array) - When "array" is the input, an array with all logged values about the most recent call.</li>
+<li>(String) - When "context" is the input, the name of the most recent call.</li>
+<li>(String) - When "response" is the input, the error message associated with the most recent call, if any.</li>
 </ul>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.0</code> - Introduced</li>
+<li>0.3.0 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tDataA, tRecordID

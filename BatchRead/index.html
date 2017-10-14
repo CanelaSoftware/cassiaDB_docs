@@ -261,20 +261,20 @@
 <p>This function reads a list of records and returns those records' contents. It takes the input array and fills the empty contents of each cdbRecordID key.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong> <em>(Array)</em> - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.<ul>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - place to read records, either <code>"cloud"</code> or <code>"local"</code></li>
-<li><code>[tableID 1]</code> <em>(Key)</em> - Key is the first table's ID, maps to subarray of record IDs.<ul>
-<li><code>[cdbRecordID 1]</code> <em>(Key)</em> - Key that is the record ID for the first record to be read, or <code>"*"</code> to read all records in a table. <ul>
-<li><code>empty</code> - There must be an empty element child to each record ID</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.<ul>
+<li>["cdbTarget"] <em>(String)</em> - place to read records, either "cloud" or "local"</li>
+<li>[tableID 1] <em>(Key)</em> - Key is the first table's ID, maps to subarray of record IDs.<ul>
+<li>[cdbRecordID 1] <em>(Key)</em> - Key that is the record ID for the first record to be read, or "*" to read all records in a table. <ul>
+<li>empty - There must be an empty element child to each record ID</li>
 </ul>
 </li>
-<li><code>*[cdbRecordID N]</code> <em>(Key)</em> - key that is the record ID for the nth record wanting to be read. <ul>
-<li><code>empty</code> - There must be an empty element child to each record ID</li>
+<li><em>[cdbRecordID N] </em>(Key)* - key that is the record ID for the nth record wanting to be read. <ul>
+<li>empty - There must be an empty element child to each record ID</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><code>*[tableID N]</code> <em>(Key)</em> - key that is the nth table's ID. Repeat <em>tableID1</em>'s sublevel structure.</li>
+<li><em>[tableID N] </em>(Key)<em> - key that is the nth table's ID. Repeat </em>tableID1*'s sublevel structure.</li>
 </ul>
 </li>
 </ul>
@@ -290,7 +290,7 @@
 <p>This API call requires internet access.</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.0</code> - Introduced</li>
+<li>0.3.0 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tInputA, tOutputA, tClientsTableID, tOfficeTableID

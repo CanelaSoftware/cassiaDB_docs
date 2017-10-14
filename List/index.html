@@ -261,10 +261,10 @@
 <p>This function returns a line-delimited list of the values of the requested key.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong> <em>(Array)</em> - An array with the following format:<ul>
-<li><code>*["key"]</code> <em>(String)</em> - The key whose values will be listed. Default is the cdbRecordID.</li>
-<li><code>["cdbTableName"]</code> <em>(String)</em> - The name of the table to access.</li>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - The place to access the records, either <code>"cloud"</code> or <code>"local"</code>.</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - An array with the following format:<ul>
+<li><em>["key"] </em>(String)* - The key whose values will be listed. Default is the cdbRecordID.</li>
+<li>["cdbTableName"] <em>(String)</em> - The name of the table to access.</li>
+<li>["cdbTarget"] <em>(String)</em> - The place to access the records, either "cloud" or "local".</li>
 </ul>
 </li>
 </ul>
@@ -277,7 +277,7 @@
 <p>This API call requires internet access in order to list cloud records.</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.1</code> - Introduced</li>
+<li>0.3.1 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tInputA, tOutputA

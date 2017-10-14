@@ -260,23 +260,26 @@
 <p>This command makes changes to an existing record.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong><code>pInputA</code></strong> <em>(Array)</em> - An array with the following format:<ul>
-<li><code>["cdbTableName"]</code> <em>(String)</em> - The specified table name.</li>
-<li><code>["cdbTarget"]</code> <em>(String)</em> - The place to update the record, either <code>"cloud"</code> or <code>"local"</code>.</li>
-<li><code>*["cdbDoNotUseLiveCache"]</code> <em>(Boolean)</em> - If true, will stop using <a href="../Livecache/">livecache</a>.</li>
-<li><code>["cdbRecordID"]</code> <em>(String)</em> - A single cdbRecordID.</li>
-<li><code>[</code><em><code>yourKey1</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="../GetTableKeys/">see getTableKeys</a>). User must provide at least one key.</li>
-<li><code>*[</code><em><code>yourKeyN</code></em><code>]</code> <em>(String)</em> - A Key as defined by the table's schema (<a href="../GetTableKeys/">see getTableKeys</a>).</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - An array with the following format:<ul>
+<li>["cdbTableName"] <em>(String)</em> - The specified table name.</li>
+<li>["cdbTarget"] <em>(String)</em> - The place to update the record, either "cloud" or "local".</li>
+<li>*["cdbDoNotUseLiveCache"] <em>(Boolean)</em> - If true, will stop using <a href="../Livecache/">livecache</a>.</li>
+<li>["cdbRecordID"] <em>(String)</em> - A single cdbRecordID.</li>
+<li>[<em>yourKey1</em>] <em>(String)</em> - A Key as defined by the table's schema (<a href="../GetTableKeys/">see getTableKeys</a>). User must provide at least one key.</li>
+<li>*[<em>yourKeyN</em>] <em>(String)</em> - A Key as defined by the table's schema (<a href="../GetTableKeys/">see getTableKeys</a>).</li>
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>* optional parameter.</p>
+</blockquote>
 <h2 id="additional-requirements">Additional Requirements</h2>
 <ul>
 <li>This API call requires internet access in order to update cloud.</li>
 </ul>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li><code>0.3.0</code> - Introduced</li>
+<li>0.3.0 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <pre><code>local tInputA
