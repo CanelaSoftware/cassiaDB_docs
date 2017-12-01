@@ -157,3 +157,4 @@ put cdb_BatchQuery(tInputA) into tOutputA
 #output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  
                         87654321-abcd-1234-cdef-1234567890ab
                         //This is a line delimited list containing all record with first name "John" and last name beginning with "s" or "t"
+```
