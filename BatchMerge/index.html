@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>GetTableID - CassiaDB Docs</title>
+        <title>BatchMerge - CassiaDB Docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -112,8 +112,8 @@
     <a href="../Result/">Result</a>
 </li>
             
-<li class="active">
-    <a href="./">GetTableID</a>
+<li >
+    <a href="../GetTableID/">GetTableID</a>
 </li>
             
 <li >
@@ -198,8 +198,8 @@
     <a href="../BatchReadKeys/">BatchReadKeys</a>
 </li>
             
-<li >
-    <a href="../BatchMerge/">BatchMerge</a>
+<li class="active">
+    <a href="./">BatchMerge</a>
 </li>
     </ul>
   </li>
@@ -231,12 +231,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../Result/">
+                        <a rel="next" href="../BatchReadKeys/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../GetTableKeys/">
+                        <a rel="prev" href="../Livecache/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -248,37 +248,85 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#function-cdb_gettableidptablename">function cdb_getTableID(pTableName)</a></li>
+        <li class="main active"><a href="#command-cdb_batchmerge-pinputa">command cdb_batchMerge pInputA</a></li>
             <li><a href="#summary">Summary</a></li>
             <li><a href="#inputs">Inputs</a></li>
-            <li><a href="#outputs">Outputs</a></li>
+            <li><a href="#additional-requirements">Additional Requirements</a></li>
             <li><a href="#api-version">API Version</a></li>
             <li><a href="#examples">Examples</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="function-cdb_gettableidptablename">function cdb_getTableID(pTableName)</h1>
+<h1 id="command-cdb_batchmerge-pinputa">command cdb_batchMerge pInputA</h1>
 <hr />
 <h2 id="summary">Summary</h2>
-<p>This function takes a table name and returns the ID of that table.</p>
+<p>This command allows for the modification of a record key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong>tTableName</strong> <em>(String)</em> - The name of the table.</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - An array of one or more keys that are the table IDs of the tables being used in the merge.</li>
+<li>["cdbTarget"] <em>(String)</em> - place to merge records, either "cloud" or "local"</li>
+<li>[tableID 1] <em>(Array)</em> - The key is the table ID, containing an array of one or more records for this table.
+        * [recordID 1] <em>(Array)</em> - The key record ID of the first record being modified on this first table.
+            * [yourKey 1] <em>(Array)</em> - The key to be modified. Contains a sub-array with 
+                * ["value"] <em>(String)</em> - the value to compare against <em>yourKey 1</em>'s value.
+                * ["operator"] <em>(String)</em> - Options for this key's value are: "is", "is in", "is not", "is not in". These are operators to compare "value"'s data to <em>yourKey 1</em>'s data to perform the merge.
+                    - "is" - the data in the "value" key will overwrite the data in the record's <em>yourKey</em> key.
+                    - "is in" - Checks the data in <em>yourKey</em> seperated by the delimiter to make sure that the data in "value" is somewhere in the data in <em>yourKey</em>, otherwise it will append it with the delimiter.
+                    - "is not" - makes sure the data in <em>yourKey</em> <em>is not</em> the data in "value", otherwise it will put empty into the key. 
+                    - "is not in" - Checks the data in <em>yourKey</em> seperated by the delimiter to make sure that the data in "value" is not anywhere in the data in <em>yourKey</em>, otherwise it removes it with the delimiter.
+                * ["delimiter"] <em>(String)</em> - The delimiter used to separate data inside the data in <em>yourKey</em>. Recomendations are "," or lf.
+            * [yourKey N] <em>(Key)</em> - Repeat <em>yourKey 1's</em> sublevel structure.
+        * [recordID N] <em>(Key)</em> - Repeat <em>recordID 1</em>'s sublevel structure.<ul>
+<li>[tableID N] <em>(Key)</em> - Repeat <em>table ID 1</em>'s sublevel structure.</li>
 </ul>
-<h2 id="outputs">Outputs</h2>
-<p>(String) - The Table ID of the specified table.</p>
+</li>
+</ul>
+<p><img alt="BatchMerge input diagram" src="../images/BatchMergeInput.svg" /></p>
+<h2 id="additional-requirements">Additional Requirements</h2>
+<p>This API call requires internet access.</p>
 <h2 id="api-version">API Version</h2>
 <ul>
-<li>0.3.0 - Introduced</li>
+<li>0.3.1 - Introduced</li>
 </ul>
 <h2 id="examples">Examples</h2>
-<pre><code># Table &quot;customers&quot; which has tableID &quot;72a88e4f-c6ba-4fda-9381-2f0b0ca220bd&quot;
+<pre><code>local tInputA, tClientsTableID, tOfficeTableID
 
-put cdb_getTableID(&quot;customers&quot;)
+#Table name: clients                                               #Table name: office
+#keys: firstName, lastName, age, income                         #Keys: name, address
+#Record: 
+#[12345678-abcd-1234-cdef-1234567890ab][&quot;firstName&quot;] - &quot;John&quot;     #[45678123-abcd-1234-cdef-1234567890ab][&quot;name&quot;] - &quot;Smith's Tech&quot;
+                                       [&quot;lastName&quot;] - &quot;Smith&quot;                                            [&quot;address&quot;] - &quot;123 office Road&quot;
+                                       [&quot;age&quot;] - &quot;47&quot;
+                                       [&quot;income&quot;] - &quot;100000&quot;
 
-# outputs &quot;72a88e4f-c6ba-4fda-9381-2f0b0ca220bd&quot;
-</code></pre></div>
+
+put cdb_getTableID(&quot;clients&quot;) into tClientsTableID                                       
+put cdb_getTableID(&quot;office&quot;) into tOfficeTableID
+
+##Update John's record
+put &quot;48&quot; into tInputA[tClientsTableID][&quot;12345678-abcd-1234-cdef-1234567890ab&quot;][&quot;age&quot;][&quot;value&quot;]
+put &quot;is in&quot; into tInputA[tClientsTableID][&quot;12345678-abcd-1234-cdef-1234567890ab&quot;][&quot;age&quot;][&quot;operator&quot;]
+
+##Update Smith's Tech's record
+put &quot;road&quot; into tInputA[tOfficeTableID][&quot;45678123-abcd-1234-cdef-1234567890ab&quot;][&quot;address&quot;][&quot;value&quot;]
+put &quot;is not in&quot; into tInputA[tOfficeTableID][&quot;45678123-abcd-1234-cdef-1234567890ab&quot;][&quot;address&quot;][&quot;operator&quot;]
+put &quot; &quot; into tInputA[tOfficeTableID][&quot;45678123-abcd-1234-cdef-1234567890ab&quot;][&quot;address&quot;][&quot;delimiter&quot;]
+
+put &quot;cloud&quot; into tInputA[&quot;cdbTarget&quot;]
+
+cdb_batchMerge tInputA
+
+#The tables now look like this:
+#Table name: clients                                               #Table name: office
+#[12345678-abcd-1234-cdef-1234567890ab][&quot;firstName&quot;] - &quot;John&quot;     #[45678123-abcd-1234-cdef-1234567890ab][&quot;name&quot;] - &quot;Smith's Tech&quot;
+                                       [&quot;lastName&quot;] - &quot;Smith&quot;                                            [&quot;address&quot;] - &quot;1234 office&quot;
+                                       [&quot;age&quot;] - &quot;48&quot;
+                                       [&quot;income&quot;] - &quot;100000&quot;
+
+</code></pre>
+
+<p>```</p></div>
         </div>
 
         <footer class="col-md-12">
