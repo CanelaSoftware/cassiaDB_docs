@@ -36,6 +36,7 @@ pages:
       - BatchQuery.md
       - BatchRead.md
       - BatchReadKeys.md
+      - BatchMerge.md
   - Other Info:
     - Livecache.md
     - Metadata.md
