@@ -6,6 +6,6 @@ CassiaDB is compatible with the same platforms LiveCode supports. Thus, you can 
 
 These are the steps to setting up your CassiaDB SDK (cSDK). Working with the cSDK requires a commercial edition of LiveCode. LiveCode needs to be running at all times when interacting with the cSDK.
 
-- Download your LiveCloud Manager Application.
+- Download your LiveCloud Manager Application (livecloud.io).
 - Create a new Project, with the tables that you need.
 - Open your newly created project stack.
