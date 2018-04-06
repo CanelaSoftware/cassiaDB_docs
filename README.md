@@ -1,6 +1,5 @@
-CassiaDB API Documentation
+## CassiaDB API Documentation
 =========
-
 
 This project is designed to give a detailed overview of the API calls available in the CassiaDB database and related cloud service (LiveCloud).
 
@@ -8,3 +7,6 @@ You can view the API docs online here:
 [http://canelasoftware.github.io/cassiaDB_docs/](http://canelasoftware.github.io/cassiaDB_docs/)
 
 The API can also be found in Markdown format in the "docs" Folder.
+
+## Editing the project
+This project is build using [MKDocs](http://www.mkdocs.org/). To make doc modifications, you will need to have [mkdocs installed](http://www.mkdocs.org/#installation). Then, checkout master branch, make updates to .md files (under "docs"), and commit. To view locally, use `mkdocs build`. To deploy, use `mkdocs gh-deploy` (see http://www.mkdocs.org/user-guide/deploying-your-docs/) .
