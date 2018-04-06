@@ -265,32 +265,26 @@
 <p>This function searches the specified table(s), and returns the subset that matches that query in several possible formats.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong>pInputA</strong> <em>(Array)</em> - An array that specify the batch query and the query settings.</li>
-<li>["cdbTarget"] <em>(String)</em> - place to query records, either "cloud" or "local"<ul>
-<li>["batchQuery"] <em>(Array)</em> - A sub-array, with keys being the one or more table IDs to be queried upon.<ul>
-<li>[tableID 1] <em>(Array)</em> - The key is the table ID, containing an array of one or more queries for this table.<ul>
-<li>[query 1] <em>(Array)</em> - An arbitrary user-defined name for a query. <ul>
-<li>["key"] <em>(String)</em>- Contains the table key to be queried</li>
-<li>["value"] <em>(String)</em>- Contains the value with which to query</li>
-<li>["operator"] <em>(String)</em>- Contains the operator with which to query. (See <a href="../QueryOperators/">operators</a>).</li>
-</ul>
-</li>
-<li><em>[query N] </em>(Array)<em> - The nth query for </em>tableID 1<em>. Repeat </em>query 1*'s sublevel structure.</li>
-</ul>
-</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - An array that specify the batch query and the query settings.<ul>
+<li>["cdbTarget"] <em>(String)</em> - place to query records, either "cloud" or "local"</li>
+<li>["batchQuery"] <em>(Array)</em> - A sub-array, with keys being the one or more table IDs to be queried upon.
+        * [tableID 1] <em>(Array)</em> - The key is the table ID, containing an array of one or more queries for this table.
+            * [query 1] <em>(Array)</em> - An arbitrary user-defined name for a query. 
+                * ["key"] <em>(String)</em>- Contains the table key to be queried
+                * ["value"] <em>(String)</em>- Contains the value with which to query
+                * ["operator"] <em>(String)</em>- Contains the operator with which to query. (See <a href="../QueryOperators/">operators</a>).
+            * <em>[query N] </em>(Array)<em> - The nth query for </em>tableID 1<em>. Repeat </em>query 1*'s sublevel structure.<ul>
 <li><em>[tableID N] </em>(Array)<em> - An array of one or more queries for this table. Repeat </em>table ID 1*'s sublevel structure.</li>
 </ul>
 </li>
 <li><em>["settings"] </em>(Array)* - An array of keys that can be set to produce different output forms.<ul>
-<li><em>["mode"] </em>(String)* - Specifies how to logically combine the queries when returning each query's appropriate records. Here are options for this-<ul>
+<li><em>["mode"] </em>(String)* - Specifies how to logically combine the queries when returning each query's appropriate records. Here are options for this:<ul>
 <li>"logicalAND" - records which match ALL of the provided queries are returned; results are combined into a single query per table.</li>
 <li>"logicalOR" - record which match ANY of the provided queries are returned; results are combined into a single query per table.</li>
+<li>"advanced" - records match a mix of ANDs and ORs per provided logic map (see below); results are combined into a single query table</li>
+<li>"batch" - each query is executed independently of the others, with distinct results (default).</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>"advanced" - records match a mix of ANDs and ORs per provided logic map (see below); results are combined into a single query table
-        - "batch" - each query is executed independently of the others, with distinct results (default).<ul>
 <li><em>["resultFormat"] </em>(String)* - specifies the output format when returning matched records.<ul>
 <li>"recordList" - results are line-delimited lists of record IDs (default).</li>
 <li>"recordData" - results are arrays populated with the full record data of each result.</li>
@@ -301,11 +295,13 @@
 <li>false - the array maintains the original structure (default).</li>
 </ul>
 </li>
-</ul>
-</li>
-<li><em>["logicMap"] </em>(Array)* - <em>Only used for "advanced" queries.</em> Defines the logic map used for all tables</li>
+<li><em>["logicMap"] </em>(Array)* - <em>Only used for "advanced" queries.</em> Defines the logic map used for all tables<ul>
 <li>[tableID 1] <em>(String)</em> - A Logic map for the first table. This contains the names of the queries with AND, OR between them.</li>
 <li>[tableID N] <em>(String)</em> - A Logic map for the nth table.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -337,13 +333,13 @@
 #keys: firstName, lastName, age, income                         #Keys: name, address
 #Record: 
 #[12345678-abcd-1234-cdef-1234567890ab][&quot;firstName&quot;] - &quot;John&quot;     #[45678123-abcd-1234-cdef-1234567890ab][&quot;name&quot;] - &quot;Smith's Tech&quot;
-                                       [&quot;lastName&quot;] - &quot;Smith&quot;                                            [&quot;address&quot;] - &quot;123 office Road&quot;
-                                       [&quot;age&quot;] - &quot;47&quot;
-                                       [&quot;income&quot;] - &quot;100000&quot;
+                                         [&quot;lastName&quot;] - &quot;Smith&quot;                                          [&quot;address&quot;] - &quot;123 office Road&quot;
+                                                                             [&quot;age&quot;] - &quot;47&quot;
+                                                                             [&quot;income&quot;] - &quot;100000&quot;
  [87654321-abcd-1234-cdef-1234567890ab][&quot;firstName&quot;] - &quot;Jenny&quot;
-                                       [&quot;lastName&quot;] - &quot;Smith&quot;
-                                       [&quot;age&quot;] - &quot;46&quot;
-                                       [&quot;income&quot;] - &quot;100000&quot;
+                                         [&quot;lastName&quot;] - &quot;Smith&quot;
+                                                                             [&quot;age&quot;] - &quot;46&quot;
+                                                                             [&quot;income&quot;] - &quot;100000&quot;
 </code></pre>
 
 <h3 id="example-1">Example 1:</h3>
@@ -370,7 +366,7 @@ put &quot;cloud&quot; into tInputA[&quot;cdbTarget&quot;]
 put cdb_BatchQuery(tInputA) into tOutputA
 
 #output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  //This is a line delimited list
-                                              87654321-abcd-1234-cdef-1234567890ab
+                                                87654321-abcd-1234-cdef-1234567890ab
 </code></pre>
 
 <h3 id="example-2">Example 2:</h3>
@@ -398,11 +394,11 @@ put &quot;cloud&quot; into tInputA[&quot;cdbTarget&quot;]
 put cdb_BatchQuery(tInputA) into tOutputA
 
 #output array: tOutputA[tClientsTableID][1][&quot;12345678-abcd-1234-cdef-1234567890ab&quot;][&quot;firstName&quot;] - &quot;John&quot;    
-                                                                                   [&quot;lastName&quot;] - &quot;Smith&quot;                                           
-                                                                                   [&quot;age&quot;] - &quot;47&quot;
-                                                                                   [&quot;income&quot;] - &quot;100000&quot;
-                       [tOfficeTableID][1][&quot;45678123-abcd-1234-cdef-1234567890ab&quot;][&quot;name&quot;] - &quot;Smith's Tech&quot;
-                                                                                  [&quot;address&quot;] - &quot;123 office Road&quot;
+                                                                                         [&quot;lastName&quot;] - &quot;Smith&quot;                                         
+                                                                                                                                 [&quot;age&quot;] - &quot;47&quot;
+                                                                                                                                     [&quot;income&quot;] - &quot;100000&quot;
+                                             [tOfficeTableID][1][&quot;45678123-abcd-1234-cdef-1234567890ab&quot;][&quot;name&quot;] - &quot;Smith's Tech&quot;
+                                                                                                                [&quot;address&quot;] - &quot;123 office Road&quot;
 </code></pre>
 
 <h3 id="example-3-advanced">Example 3 (Advanced):</h3>
@@ -436,8 +432,8 @@ put &quot;fname and (last_s or last_t)&quot; into tInputA[&quot;settings&quot;][
 put cdb_BatchQuery(tInputA) into tOutputA
 
 #output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  
-                        87654321-abcd-1234-cdef-1234567890ab
-                        //This is a line delimited list containing all record with first name &quot;John&quot; and last name beginning with &quot;s&quot; or &quot;t&quot;
+                                                87654321-abcd-1234-cdef-1234567890ab
+                                                //This is a line delimited list containing all record with first name &quot;John&quot; and last name beginning with &quot;s&quot; or &quot;t&quot;
 </code></pre></div>
         </div>
 

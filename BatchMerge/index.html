@@ -264,20 +264,28 @@
 <p>This command allows for the modification of a record key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables.</p>
 <h2 id="inputs">Inputs</h2>
 <ul>
-<li><strong>pInputA</strong> <em>(Array)</em> - An array of one or more keys that are the table IDs of the tables being used in the merge.</li>
+<li><strong>pInputA</strong> <em>(Array)</em> - An array of one or more keys that are the table IDs of the tables being used in the merge.<ul>
 <li>["cdbTarget"] <em>(String)</em> - place to merge records, either "cloud" or "local"</li>
-<li>[tableID 1] <em>(Array)</em> - The key is the table ID, containing an array of one or more records for this table.
-        * [recordID 1] <em>(Array)</em> - The key record ID of the first record being modified on this first table.
-            * [yourKey 1] <em>(Array)</em> - The key to be modified. Contains a sub-array with 
-                * ["value"] <em>(String)</em> - the value to compare against <em>yourKey 1</em>'s value.
-                * ["operator"] <em>(String)</em> - Options for this key's value are: "is", "is in", "is not", "is not in". These are operators to compare "value"'s data to <em>yourKey 1</em>'s data to perform the merge.
-                    - "is" - the data in the "value" key will overwrite the data in the record's <em>yourKey</em> key.
-                    - "is in" - Checks the data in <em>yourKey</em> seperated by the delimiter to make sure that the data in "value" is somewhere in the data in <em>yourKey</em>, otherwise it will append it with the delimiter.
-                    - "is not" - makes sure the data in <em>yourKey</em> <em>is not</em> the data in "value", otherwise it will put empty into the key. 
-                    - "is not in" - Checks the data in <em>yourKey</em> seperated by the delimiter to make sure that the data in "value" is not anywhere in the data in <em>yourKey</em>, otherwise it removes it with the delimiter.
-                * ["delimiter"] <em>(String)</em> - The delimiter used to separate data inside the data in <em>yourKey</em>. Recomendations are "," or lf.
-            * [yourKey N] <em>(Key)</em> - Repeat <em>yourKey 1's</em> sublevel structure.
-        * [recordID N] <em>(Key)</em> - Repeat <em>recordID 1</em>'s sublevel structure.<ul>
+<li>[tableID 1] <em>(Array)</em> - The key is the table ID, containing an array of one or more records for this table.<ul>
+<li>[recordID 1] <em>(Array)</em> - The key record ID of the first record being modified on this first table.<ul>
+<li>[yourKey 1] <em>(Array)</em> - The key to be modified. Contains a sub-array with <ul>
+<li>["value"] <em>(String)</em> - the value to compare against <em>yourKey 1</em>'s value.</li>
+<li>["operator"] <em>(String)</em> - Options for this key's value are: "is", "is in", "is not", "is not in". These are operators to compare "value"'s data to <em>yourKey 1</em>'s data to perform the merge.<ul>
+<li><strong>"is"</strong> - the data in the "value" key will overwrite the data in the record's <em>yourKey</em> key.</li>
+<li><strong>"is in"</strong> - Checks the data in <em>yourKey</em> seperated by the delimiter to make sure that the data in "value" is somewhere in the data in <em>yourKey</em>, otherwise it will append it with the delimiter.</li>
+<li><strong>"is not"</strong> - makes sure the data in <em>yourKey</em> <em>is not</em> the data in "value", otherwise it will put empty into the key. </li>
+<li><strong>"is not in"</strong> - Checks the data in <em>yourKey</em> seperated by the delimiter to make sure that the data in "value" is not anywhere in the data in <em>yourKey</em>, otherwise it removes it with the delimiter.</li>
+</ul>
+</li>
+<li>["delimiter"] <em>(String)</em> - The delimiter used to separate data inside the data in <em>yourKey</em>. Recomendations are "," or lf.</li>
+</ul>
+</li>
+<li>[yourKey N] <em>(Key)</em> - Repeat <em>yourKey 1's</em> sublevel structure.</li>
+</ul>
+</li>
+<li>[recordID N] <em>(Key)</em> - Repeat <em>recordID 1</em>'s sublevel structure.</li>
+</ul>
+</li>
 <li>[tableID N] <em>(Key)</em> - Repeat <em>table ID 1</em>'s sublevel structure.</li>
 </ul>
 </li>
