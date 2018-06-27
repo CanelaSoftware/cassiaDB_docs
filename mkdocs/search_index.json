@@ -282,7 +282,7 @@
         }, 
         {
             "location": "/Count/", 
-            "text": "function cdb_count(pInputA)\n\n\n\n\nSummary\n\n\nThis function counts the number of records (either cloud or local) in a given table.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - Array with the following format:\n\n\n[\"cdbTableName\"] \n(String)\n - The specified table name.\n\n\n[\"cdbTarget\"] \n(String)\n - The place to count the records from, either \"cloud\" or \"local\".\n\n\n\n\n\n\n\n\nOutputs\n\n\n(String) \u2013 Contains the numeric count of records in a given table.\n\n\nAdditional Requirements\n\n\nThis API call requires internet access in order to count cloud records.\n\n\nAPI Version\n\n\n\n\n0.3.0 - Introduced\n\n\n\n\nExamples\n\n\nlocal tCount, tInputA\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# There is only 1 record in the table clients on the cloud\n\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_count(pInputA) into tCount\n\n# Output: 1", 
+            "text": "function cdb_count(pInputA)\n\n\n\n\nSummary\n\n\nThis function counts the number of records (either cloud or local) in a given table.\n\n\nInputs\n\n\n\n\npInputA\n \n(Array)\n - Array with the following format:\n\n\n[\"cdbTableName\"] \n(String)\n - The specified table name.\n\n\n[\"cdbTarget\"] \n(String)\n - The place to count the records from, either \"cloud\" or \"local\".\n\n\n\n\n\n\n\n\nOutputs\n\n\n(String) \u2013 Contains the numeric count of records in a given table.\n\n\nAdditional Requirements\n\n\nThis API call requires internet access in order to count cloud records.\n\n\nAPI Version\n\n\n\n\n0.3.0 - Introduced\n\n\n\n\nExamples\n\n\nlocal tCount, tInputA\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# There is only 1 record in the table clients on the cloud\n\nput \nclients\n into tInputA[\ncdbTableName\n]\nput \ncloud\n into tInputA[\ncdbTarget\n]\n\nput cdb_count(tInputA) into tCount\n\n# Output: 1", 
             "title": "Count"
         }, 
         {
@@ -317,7 +317,7 @@
         }, 
         {
             "location": "/Count/#examples", 
-            "text": "local tCount, tInputA\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# There is only 1 record in the table clients on the cloud\n\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_count(pInputA) into tCount\n\n# Output: 1", 
+            "text": "local tCount, tInputA\n\n# Table name: clients\n# Keys: firstName, lastName, age, income\n# There is only 1 record in the table clients on the cloud\n\nput  clients  into tInputA[ cdbTableName ]\nput  cloud  into tInputA[ cdbTarget ]\n\nput cdb_count(tInputA) into tCount\n\n# Output: 1", 
             "title": "Examples"
         }, 
         {
