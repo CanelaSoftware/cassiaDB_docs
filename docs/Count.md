@@ -28,7 +28,7 @@ local tCount, tInputA
 put "clients" into tInputA["cdbTableName"]
 put "cloud" into tInputA["cdbTarget"]
 
-put cdb_count(pInputA) into tCount
+put cdb_count(tInputA) into tCount
 
 # Output: 1
 ```
