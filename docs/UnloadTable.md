@@ -1,25 +1,22 @@
-# command cdb_unloadTable pInputA
+# command cdb_unloadTable pTableL
 ---
 
-
 ## Summary
-This command will unload a table from memory.
+This command will unload table(s) from memory.
 
 ## Inputs
-* **tInputA** *(Array)* - An array containing the tablename.
-    * ["cdbTableName"] *(String)* - The specified table name to be unloaded, or a line-separated list of tables to be unloaded.
-    	* Putting "*" or empty in this key will unload all tables.
-
-## API Version
-* 0.3.0 - Introduced
+* **pTableL** *(String)* - The specified table name to be unloaded, or a line-separated list of tables to be unloaded.
+	* Passing **"\*"** or **_empty_** will unload all tables.
 
 ## Examples
 ```
-local tInputA
-#Table name: customers
-     
-put "customers" into tInputA["cdbTableName"]
-     
-cdb_unloadTable tInputA
+
+#"Customers" and "Office" tables are currently loaded and in memory
+
+cdb_unloadTable "customers"
+
 #Table "customers" is no longer loaded in memory
+
+put cdb_list("customers","local")
+# This will give an error because the "customers" table is not loaded.
 ``` 

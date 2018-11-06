@@ -2,7 +2,10 @@
 ---
 
 ## Summary
-This command will check whether the client is connected to the internet, and set a global variable for the network status. It will attempt to connect to https://caneladb.com -- if this domain is blocked, the internet status will be set to "false"
+This command will check whether the client is connected to the internet, and set a global variable for the network status. It will attempt to connect to **_https://caneladb.com_**.
+
+* If the domain can be successfully reached, the internet status will be set to **true**.
+* If this domain is unreachable, the internet status will be set to **false**.
 
 ## Inputs
 None
@@ -21,6 +24,7 @@ cdb_checkInternetStatus
 cdb_checkInternetStatus
 
 # gCSInetworkstatusA["status"] will be set to false
-# Network calls (i.e., cloud calls) may not be attempted; Cloud writes will be cached until the internet is available again.
+# Network calls (i.e., cloud calls) may not be attempted.
+# Cloud writes will be cached until the internet is available again.
 
 ``` 
