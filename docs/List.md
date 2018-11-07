@@ -1,15 +1,12 @@
-# function cdb_list(pInputA)
+# function cdb_list(pTable, pKeys, pTarget)
 ---
 ## Summary
 This function returns a line-delimited list of the values of the requested key.
 
 ## Inputs
-* **pInputA** *(Array)* - An array with the following format:
-    * *["key"] *(String)* - The key whose values will be listed. Default is the cdbRecordID.
-    * ["cdbTableName"] *(String)* - The name of the table to access.
-    * ["cdbTarget"] *(String)* - The place to access the records, either "cloud" or "local".
-    
-> _*optional parameter._
+* pTable *(String)* - The specified table ID or table name.
+* pKeys *(String)* - The comma-delimited list of keys whose values will be listed.
+* pTarget *(String)* - The place to access the records, either "cloud" or "local".
 
 ## Outputs
 (String) – A line-delimited list of the values of the requested key. Note that this list is unsorted.
@@ -17,19 +14,16 @@ This function returns a line-delimited list of the values of the requested key.
 ## Additional Requirements
 This API call requires internet access in order to list cloud records.
 
-## API Version
-* 0.3.1 - Introduced
-
 ## Examples
 ```
-local tInputA, tOutputA
+local tTable, tKeys, tTarget
 
 #Table name: clients
 #Keys: firstName, lastName, age, income
 
-put "firstName" into tInputA["key"]
-put "clients" into tInputA["cdbTableName"]
-put "cloud" into tInputA["cdbTarget"]
+put "clients" into tTable
+put "firstName" into tKeys
+put "cloud" into tTarget
 
 put cdb_list(tInputA) into tOutputA
 
