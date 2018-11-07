@@ -1,17 +1,18 @@
-# function cdb_batchRead(pInputA)
+# function cdb_batchRead(pDataA,pTarget)
 ---
 ## Summary
-This function reads a list of records and returns those records' contents. It takes the input array and fills the empty contents of each cdbRecordID key.
+This function reads a list of records and returns those records' contents.
 
 ## Inputs
-* **pInputA** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
-    * ["cdbTarget"] *(String)* - place to read records, either "cloud" or "local"
+* **pDataA** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
     * [tableID 1] *(Key)* - Key is the first table's ID, maps to subarray of record IDs.
-    	* [cdbRecordID 1] *(Key)* - Key that is the record ID for the first record to be read, or "*" to read all records in a table. 
-    		* empty - There must be an empty element child to each record ID
-    	* *[cdbRecordID N] *(Key)* - key that is the record ID for the nth record wanting to be read. 
-    		* empty - There must be an empty element child to each record ID
+    	* [cdbRecordID 1] *(Key)* - Key that is the cdbRecordID of the first record to be read, or "*" to read all records in a table. 
+    		* empty - The value of the corresponding key must be empty.
+    	* *[cdbRecordID N] *(Key)* - Key that is the cdbRecordID of the nth record to be read. 
+    		* empty - The value of the corresponding key must be empty.
     * *[tableID N] *(Key)* - key that is the nth table's ID. Repeat *tableID1*'s sublevel structure.
+
+* **pTarget** *(String)* - The place to create the record(s), either "cloud" or "local".
 
 > _*optional parameter._
 
@@ -19,40 +20,49 @@ This function reads a list of records and returns those records' contents. It ta
 
 ![BatchRead input diagram] (images/BatchReadInput.svg)
 ## Outputs
-(Aray) -- This output array is essentially the same as the input array, but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys maps to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.
+(Aray) - A multidimensional array with the same structure as the input array. The empty values for each cdbRecordID have been replaced with the keys and values of the corresponding record.
 
 ![BatchRead output diagram](images/BatchReadOutput_withMeta.svg)
 
 ## Additional Requirements
 This API call requires internet access.
 
-## API Version
-* 0.3.0 - Introduced
 
 ## Examples
 ```
-local tInputA, tOutputA, tClientsTableID, tOfficeTableID
+local tDataA, tTarget, tOutputA, tClientsTableID, tOfficeTableID
 
-#Table name: clients											   #Table name: office				
-#RecordIDs: 
-#12345678-abcd-1234-cdef-1234567890ab	   					   #45678123-abcd-1234-cdef-1234567890ab
- 87654321-abcd-1234-cdef-1234567890ab
+# Table name: clients	   			
+# cdbRecordIDs: 
+# 12345678-abcd-1234-cdef-1234567890ab	   
+# 87654321-abcd-1234-cdef-1234567890ab
+ 
+# Table name: office
+# cdbRecordIDs:
+# 45678123-abcd-1234-cdef-1234567890ab
+
 
 put cdb_getTableID("clients") into tClientsTableID                                       
 put cdb_getTableID("office") into tOfficeTableID
      
-put empty into tInputA[tClientsTableID]["*"]
-put empty into tInputA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]
+put empty into tDataA[tClientsTableID]["*"]
+put empty into tDataA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]
 
-put "cloud" into tInputA["cdbTarget"]
+put "cloud" into tTarget
      
-put cdb_batchRead(tInputA) into tOutputA
+put cdb_batchRead(tDataA,tTarget) into tOutputA
 
-#output array: tOutputA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"
-																				["lastName"] - "smith"
-                                        ["87654321-abcd-1234-cdef-1234567890ab"]["firstName"] - "Jenny"
-                                        										["lastName"] - "Smith"
-                        [tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["name"] - "Smith's Tech"
-                       														 ["address"] - "123 office road"
-                                                                             
+# Output Array:
+# tOutputA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"
+# tOutputA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["lastName"] - "Smith"
+# tOutputA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["age"] - "47"
+# tOutputA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["income"] - "100000"
+
+# tOutputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["firstName"] - "Jenny"
+# tOutputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["lastName"] - "Smith"
+# tOutputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["age"] - "46"
+# tOutputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["income"] - "100000"
+                        
+# tOutputA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["name"] - "Smith's Tech"
+# tOutputA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"] - "123 office road"                                                                   
 ```

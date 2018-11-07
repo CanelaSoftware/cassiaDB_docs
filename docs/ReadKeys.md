@@ -1,41 +1,39 @@
-# function cdb_readKeys(pInputA)
+# function cdb_readKeys(pTable,pKeys,pRecordIDs,pTarget)
 ---
 ## Summary
 This function reads record(s) and returns only the keys requested from a record’s contents. Function may access multiple records from a table.
 
 ## Inputs
-* **pInputA** *(Array)* - An array with the following format:
-    * ["cdbTableName"] *(String)* - The specified table name.
-    * ["cdbTarget"] *(String)* - The place to access the records, either "cloud" or "local".
-    * ["cdbRecordID"] *(String)* - A single cdbRecordID or a line delimited list of cdbRecordIDs, or "*" for all records	
-    * ["keyList"] *(String)* - A comma delimited list of the keys to be returned from the record.
+* **pTable** *(String)* - The name or tableID of the specified table.
+
+* **pKeys** *(String)* - A comma delimited string where each item is a requested key of the record. (**Do not include spaces between keys**)
+
+* **pRecordIDs** *(String)* - A line delimited string where each line is the cdbRecordID of a record in the specified table.
+
+* **pTarget** *(String)* - The place to create the record, either "cloud" or "local".
 
 ## Outputs
-(Array) – Containing a partial record with only the keys as defined by the input. 
+(Array) – One or more cdbRecordIDs containing a partial record with only the keys requested in the input.
 
 ## Additional Requirements
 This API call requires internet access to make cloud calls.
 
-## API Version
-* 0.3.2 - Introduced
-
 ## Examples
 ```
-local tInputA, tOutputA, tTableID, tRecordIDs
+local tTable, tKeys, tRecordIDs, tTarget, tOutputA
 
-#Table name: clients
-#Keys: firstName, lastName, age, income
-#RecordIDs (line delimited list): 8b3af158-af3a-4d92-9363-87756711f771
+# Table name: clients
+# Keys: firstName, lastName, age, income
+# cdbRecordID: 87654321-abcd-1234-cdef-1234567890ab
 
-#Input: tInputA
-put "clients" into tInputA["cdbTableName"]
-put "cloud" into tInputA["cdbTarget"]
-put tRecordID into tInputA["cdbRecordID"]
-put "age,income" into tInputA["keyList"]
+put "clients" into tTable
+put "age,income" into tKeys
+put "87654321-abcd-1234-cdef-1234567890ab" into tRecordIDs
+put "cloud" into tTarget
      
-put cdb_readKeys(tInputA) into tOutputA
+put cdb_readKeys(tTable,tKeys,tRecordIDs,tTarget) into tOutputA
 
-#Output: tOutputA["8b3af158-af3a-4d92-9363-87756711f771"]["age"] - value
-#												        ["income"] - value
-							  
+# Output Array:
+# tOutputA["87654321-abcd-1234-cdef-1234567890ab"]["age"] - 46
+# tOutputA["87654321-abcd-1234-cdef-1234567890ab"]["income"] - 100000
 ```

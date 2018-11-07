@@ -1,34 +1,29 @@
-# command cdb_delete pInputA
+# command cdb_delete pTable,pRecordIDs,pTarget
 ---
 ## Summary
 This command deletes one or more records from the table.
 
 ## Inputs
-* **pInputA** *(Array)* - An array with the following format:
-    * ["cdbTableName"] *(String)* - The specified table name.
-    * ["cdbTarget"] *(String)* - The place to delete the record from, either "cloud" or "local".
-    * ["cdbRecordID"] *(String)* - A single cdbRecordID or a line delimited list of cdbRecordIDs to be deleted, or "*" to delete all records in a table.
-    * *["cdbDoNotUseLiveCache"] *(Boolean)* - Defaults to false. If true, call will not use [livecache](Livecache.md) to back up failed call.
+* **pTable** *(String)* - The name or tableID of the specified table.
 
-> _*optional parameter._
+* **pRecordIDs** *(String)* - A line delimited string where each line is the cdbRecordID of a record to be deleted in the specified table
+
+* **pTarget** *(String)* - The place to delete the record, either "cloud" or "local".
 
 ## Additional Requirements
 This API call requires internet access in order to delete cloud records.
 
-## API Version
-* 0.3.0 - Introduced
-
 ## Examples
 ```
-local tInputA
+local tTable, tRecordIDs, tTarget
 
-#Table name: clients
-#Keys: firstName, lastName, age, income
-#A single cdbRecordID: 123456abcdef
+# Table name: clients
+# Keys: firstName, lastName, age, income
+# cdbRecordID: 123456abcdef
 
-put "clients" into tInputA["cdbTableName"]
-put "123456abcdef" into tInputA["cdbRecordID"]
-put "cloud" into tInputA["cdbTarget"]
+put "clients" into tTable
+put "123456abcdef" into tRecordIDs
+put "cloud" into tTarget
      
-cdb_delete tInputA
+cdb_delete tTable,tRecordIDs,tTarget
 ```

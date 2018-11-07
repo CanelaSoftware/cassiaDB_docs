@@ -1,41 +1,41 @@
-# function cdb_read(pInputA)
+# function cdb_read(pTable,pRecordIDs,pTarget)
 ---
 ## Summary
 This function reads one or more records from either local or cloud, and returns them as an array.
 
 ## Inputs
-* **pInputA** *(Array)* - An array with the following format:
-    * ["cdbTableName"] *(String)* - The specified table name
-    * ["cdbTarget"] *(String)* - The place to access the records, either "cloud" or "local".
-    * ["cdbRecordID"] *(String)* - A single record ID or a line-delimited list of record IDs, or "*" for all records
-    
+* **pTable** *(String)* - The name or tableID of the specified table.
+
+* **pRecordIDs** *(String)* - A line delimited string where each line is the cdbRecordID of a record in the specified table.
+
+* **pTarget** *(String)* - The place to read the record, either "cloud" or "local".
+       
 ## Outputs
-(Array) - One or more records with keys as defined by the schema of the accessed database. This includes a key "cdb", which holds [metadata](Metadata.md)
+(Array) - One or more cdbRecordIDs with keys of the specified table. This includes a key "cdb", which holds [metadata](Metadata.md).
 
 ![ReadOutput](images/BasicOutput.svg)
 
 ## Additional Requirements
 This API call requires internet access to make cloud calls.
 
-## API Version
-* 0.3.0 - Introduced
-
 ## Examples
 ```
-local tInputA, tDataA
+local tTable, tRecordIDs, tTarget, tOutputA
 
-#Table name: clients
-#Keys: firstName, lastName, age, income
-#A single cdbRecordID: 123456abcdef
+# Table name: clients
+# Keys: firstName, lastName, age, income
+# cdbRecordID: 123456abcdef
 
-put "123456abcdef" into tInputA["cdbRecordID"]
-put "clients" into tInputA["cdbTableName"]
-put "cloud" into tInputA["cdbTarget"]
+put "123456abcdef" into tRecordIDs
+put "clients" into tTable
+put "cloud" into tTarget
     
-put cdb_read(tInputA) into tDataA
-#Output: tDataA["123456abcdef"]["cdb"] - metadata
-#							   ["firstName"] - value
-#							   ["lastName"] - value
-#							   ["age"] - value
-#							   ["income"] - value
+put cdb_read(tTable,tRecordIDs,tTarget) into tOutputA
+
+# Output Array: 
+# tOutputA["123456abcdef"]["cdb"] - metadata
+#						  ["firstName"] - value
+#						  ["lastName"] - value
+#						  ["age"] - value
+#						  ["income"] - value
 ```

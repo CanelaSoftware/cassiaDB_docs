@@ -1,28 +1,28 @@
-# command cdb_exportAsJSON pInputA
+# command cdb_exportAsJSON pTable,pPath
 ---
 ## Summary
-This command exports a complete table (local records only) as individual documents for each record in JSON format in a folder on the desktop.
+This command exports a complete table (local records only) as individual documents for each record in JSON format in a folder.
 
 ## Inputs
-* **pInputA** *(Array)* - An array of keys containing data per the following format:
-    * ["cdbTableName"] *(String)* - The specified table name.
+* **pTable** *(String)* - The name or tableID of the specified table.
+
+* \***pPath** *(String)* - The location of the exported table. (Desktop is chosen by default if no path is provided)
+
+> _*optional parameter._
 
 ## Outputs
-(Main storage device) – Desktop/folder/documents. 
-
-## API Version
-* 0.3.2 - Introduced
+(Main storage device) – A folder in the specified location (or desktop by default) that contains JSON files for each record in the exported table.
 
 ## Examples
 ```
-local tInputA, tOutputA
+local tTable, tPath
 
-#Table name: clients
+# Table name: clients
 
-#Input: tInputA
-put "clients" into tInputA["cdbTableName"]
+put "clients" into tTable
      
-cdb_exportAsJSON tInputA
+cdb_exportAsJSON tTable
 
-#Output: Folder with individual records written to the desktop. Folder name consists of "cdbTableName_cdbTableID". Records are named by their cdbRecordID.				  
+# Output: 
+# Folder with individual records written to the desktop. Folder name consists of "cdbTableName_cdbTableID". Records are named by their cdbRecordID.
 ```
