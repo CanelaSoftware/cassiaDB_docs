@@ -1,39 +1,46 @@
 # function cdb_result(pParam)
 ---
 ## Summary
-Used to check the status of the most recently executed CDB call.
+Used to see if the most recently executed CDB call was successful or not.
 
 ## Inputs
-* pParam *(String)* - must be one of the following:
-	* complete *(default)* - returns a boolean value of whether the most recent CDB call completed successfully.
-	* "array" - Returns an array with all logged values about the most recent call.
-	* "context" - Returns the name of the most recent call.
-	* "response" - Returns the error message associated with the most recent call, if any.
+* \* **pParam** *(String)* - must be one of the following, or **empty**:
+	* **"completed"** *(default)* - returns a boolean value of whether the most recent CDB call completed successfully.
+	* **"context"** - Returns the name of the CDB function of the most recent call.
+	* **"response"** - Returns the error message associated with the most recent call, if any.
+	* **"date"** - Returns the datetime of the most recent call.
+	* **"recent"** - Returns an array with all of the above data.
+	* **"log"** - Returns a log of recent CDB function calls.
 
+> \* _optional_
 	
 ## Outputs
-Depending on the input parameter -
+Depending on the input parameter:
+* (Boolean) - if **"completed"** or **empty** is passed.
+* (String) - if **"context"**, **"response"**, **"date"**, or **"log"** is passed.
+* (Array) - if **"recent"** is passed.
 
-* (String) *(default)* - A boolean value of whether the most recent CDB call completed successfully.
-* (Array) - When "array" is the input, an array with all logged values about the most recent call.
-* (String) - When "context" is the input, the name of the most recent call.
-* (String) - When "response" is the input, the error message associated with the most recent call, if any.
-
-## API Version
-* 0.3.0 - Introduced
 
 ## Examples
 ```
-local tDataA, tRecordID
+# Table "clients" exists
 
-put cdb_create(tDataA) into tRecordID
+put cdb_read("clients","00000000-0000-0000-0000-000000000000") into tRecordID
 
 put cdb_result()
-// Output: "true" if create call succeeded, "false" otherwise
+# Output: "false"
 
 put cdb_result("context")
-// Output: "cdb_createLocal"
+# Output: "cdb_create"
 
 put cdb_result("response")
-// Output: Any error message associated with the call, e.g. "No cdbTableName was provided to cdb_create"
+# Output: "You must provide either 'local' or 'cloud' as the parameter pTarget."
+
+put cdb_read("clients","00000000-0000-0000-0000-000000000000","local") into tRecordID
+
+put cdb_result()
+# Output: "true"
+
+put cdb_result("response")
+# Output: empty
 ```
