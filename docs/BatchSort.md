@@ -22,7 +22,7 @@ This function sorts the given list of record IDs based on a specified table key,
 
 * **pTarget** *(String)* - The place to count the records from, either "cloud" or "local". 
 
-> _*optional parameter._
+> \* _optional parameter_
  
 > Note: To sort all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 

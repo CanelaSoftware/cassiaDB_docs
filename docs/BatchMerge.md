@@ -21,7 +21,7 @@ This command allows for the modification of a record key's value through compari
 
 * **pTarget** *(String)* - The place to merge, either "cloud" or "local".
 
-> _*optional parameter._
+> \* _optional parameter_
 
 ![BatchMergeInput](images/BatchMergeInput.svg)
 
