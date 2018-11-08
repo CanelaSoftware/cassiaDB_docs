@@ -4,7 +4,7 @@
 This command allows for the modification of a record key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables.
 
 ## Inputs
-* **pInputA** *(Array)* - An array of one or more keys that are the table IDs of the tables being used in the merge.
+* **pDataA** *(Array)* - An array of one or more keys that are the table IDs of the tables being used in the merge.
 	* [tableID 1] *(Array)* - The key is the table ID, containing an array of one or more records for this table.
 		* [recordID 1] *(Array)* - The key record ID of the first record being modified on this first table.
 			* [keyName 1] *(Array)* - The key to be modified. Contains a sub-array with 
@@ -23,7 +23,7 @@ This command allows for the modification of a record key's value through compari
 
 > _*optional parameter._
 
-![BatchMerge input diagram](images/BatchMergeInput.svg)
+![BatchMergeInput](images/BatchMergeInput.svg)
 
 ## Additional Requirements
 This API call requires internet access.
