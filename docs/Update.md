@@ -19,6 +19,8 @@ This command makes changes to an existing record.
 
 > \* optional parameter.
 
+![UpdateInput](images/UpdateInput.svg)
+
 ## Additional Requirements
 * This API call requires internet access in order to update cloud.
 
