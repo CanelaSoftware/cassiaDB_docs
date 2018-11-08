@@ -27,6 +27,7 @@ This function searches the specified table, and returns the subset that matches 
 	* Output is  a line-delimited list of the recordIDs that match the query.
 * *(Array)* - If *pResultFormat* is "recordData":
 	* Output is an array where each key is a recordID of a record in the specified table that matches the query, with subkeys defined by the schema.
+
 ![Record Data Output](images/BasicOutput.svg)
 
 ## Additional Requirements
