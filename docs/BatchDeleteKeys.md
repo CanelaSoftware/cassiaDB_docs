@@ -18,6 +18,8 @@ This function deletes specified keys for a batch of records across one or more t
 
 > _*optional parameter._
 
+![BatchDeleteKeys input diagram](images/BatchDeleteKeysInput.svg)
+
 ## Additional Requirements
 This API call requires internet access to make cloud calls.
 

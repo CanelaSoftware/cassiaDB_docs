@@ -21,7 +21,7 @@ This function deletes a set of records.
 ![BatchDelete input diagram](images/BatchDeleteInput.svg)
 
 ## Additional Requirements
-This API call requires internet access.
+This API call requires internet access for "cloud".
 
 ## Examples
 ```
