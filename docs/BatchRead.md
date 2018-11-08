@@ -22,7 +22,7 @@ This function reads a list of records and returns those records' contents.
 ## Outputs
 (Aray) - A multidimensional array with the same structure as the input array. The empty values for each cdbRecordID have been replaced with the keys and values of the corresponding record.
 
-![BatchRead output diagram](images/BatchReadOutput_withMeta.svg)
+![BatchRead output diagram](images/BatchReadOutput.svg)
 
 ## Additional Requirements
 This API call requires internet access.

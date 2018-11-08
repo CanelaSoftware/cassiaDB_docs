@@ -15,6 +15,8 @@ This function allocates a new cdbRecordID for a record in either the cloud or lo
 
 * **pTarget** *(String)* - The place to create the record, either "cloud" or "local".
 
+![Create input diagram](images/CreateInput.svg)
+
 ## Outputs
 (String) - The allocated cdbRecordID for the new record.
 
