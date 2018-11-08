@@ -12,7 +12,7 @@ Used to see if the most recently executed CDB call was successful or not.
 	* **"recent"** - Returns an array with all of the above data.
 	* **"log"** - Returns a log of recent CDB function calls.
 
-> \* _optional_
+> \* _optional parameter_
 	
 ## Outputs
 Depending on the input parameter:
