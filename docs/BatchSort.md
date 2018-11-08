@@ -29,7 +29,9 @@ This function sorts the given list of record IDs based on a specified table key,
 ![BatchSortInput](images/BatchSortInput.svg)
 
 ## Outputs
-(Array) – This output array is essentially the same as the input array, but with the contents of the cdbRecordID keys filling with the appropriate information for that record. The cdbRecordID keys map to an array of keys that are the keyNames for that record. Each keyName maps to the stored data that corresponds to that keyname.
+(Array) – This output array consists of the table IDs as keys whose values are record IDs in line-delimited strings.
+
+![BatchSortOutput](images/BatchSortOutput.svg)
 
 ## Additional Requirements
 This API call requires internet access in order to sort cloud records.
