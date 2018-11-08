@@ -1,4 +1,4 @@
-# function cdb_create(pDataA,pTable,pTarget)
+# function cdb_create(pDataA, pTable, pTarget)
 ---
 ## Summary
 This function allocates a new cdbRecordID for a record in either the cloud or locally, storing the provided data.

@@ -7,7 +7,8 @@ This function counts the number of records (either cloud or local) in multiple t
 * **pDataA** *(Array)* - Array with the following format:
 	* [table ID 1] *(Key)* - Key is the first table's ID.
 	* *[table ID N] *(Key)* - Key that is the nth table's ID.
-* pTarget *(String)* - The place to count the records from, either "cloud" or "local".
+
+* **pTarget** *(String)* - The place to count the records from, either "cloud" or "local".
 
 > _*optional parameter._
 

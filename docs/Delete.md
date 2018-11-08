@@ -1,4 +1,4 @@
-# command cdb_delete pTable,pRecordIDs,pTarget
+# command cdb_delete pTable, pRecordIDs, pTarget
 ---
 ## Summary
 This command deletes one or more records from the table.

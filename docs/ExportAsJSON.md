@@ -1,4 +1,4 @@
-# command cdb_exportAsJSON pTable,pPath
+# command cdb_exportAsJSON pTable, *pPath*
 ---
 ## Summary
 This command exports a complete table (local records only) as individual documents for each record in JSON format in a folder.

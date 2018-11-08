@@ -4,7 +4,7 @@
 Used to see when your CDB libraries were built. Can be used to see if you are out of date.
 
 ## Inputs
-None.
+None
 	
 ## Outputs
 * (String) - The DateTime that the libraries were built.

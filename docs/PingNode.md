@@ -1,10 +1,10 @@
-# function cdb_pingNode(pTable)
+# function cdb_pingNode(*pTable*)
 ---
 ## Summary
 Pings the cloud server where the table is located and returns the response time in milliseconds. This function is NOT processed by the CDB cloud server, so it only checks if the server is reachable from the client, not if the CDB cloud server is actually running. PingNode uses shell command "ping". As such, the response will be shorter than the cdb_ping() response.
 
 ## Inputs
-* * **pTable** (String) - The table name or table ID whose server will be pinged. If a table is not specified, then a table will be chosen by the library.
+* \* **pTable** *(String)* - The table name or table ID whose server will be pinged. If a table is not specified, then a table will be chosen by the library.
 
 > \* _Optional Parameter_
 

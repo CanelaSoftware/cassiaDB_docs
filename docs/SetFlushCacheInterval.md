@@ -5,7 +5,7 @@
 This command will set the retry interval for the cdbCache. (See [CDBCache](CDBCache.md) for more information). Whenever the cdbCache is not empty, a *cdb_flushCache* message will be resent in **flushCacheInterval** milliseconds.
 
 ## Inputs
-* **pInterval** (number) - The interval to flush the cdbCache in milliseconds. 
+* **pInterval** *(number)* - The interval to flush the cdbCache in milliseconds. 
 	* "0" will turn off autoflushing of the cache. [*cdb_flushCache*](FlushCache.md) will need to be manually called.
 
 

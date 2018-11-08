@@ -1,10 +1,10 @@
-# function cdb_ping(pTable)
+# function cdb_ping(*pTable*)
 ---
 ## Summary
 Pings the cloud server where the table is located and returns the response time. This function will be processed by the CDB Server, so a response indicates that the server is running and is processing requests.
 
 ## Inputs
-* * **pTable** (String) - The table name or table ID to ping. If a table is not specified, then a table will be chosen at random.
+* \* **pTable** *(String)* - The table name or table ID to ping. If a table is not specified, then a table will be chosen at random.
 
 > \* _Optional Parameter_
 

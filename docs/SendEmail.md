@@ -1,4 +1,4 @@
-# command cdb_sendEmail pToI,pFrom,pSubject,pHTMLBody,pTextBody,pAttachmentName,pAttachementContent
+# command cdb_sendEmail pToI, pFrom, pSubject, pHTMLBody, pTextBody, pAttachmentName, pAttachementContent
 ---
 
 ## Summary
@@ -6,14 +6,20 @@ This command will send an email with the specified parameters
 
 ## Inputs
 * **pToI** *(String)* - Comma-delimited list of email address(es) to send emails to. 
-* **pFrom** *(String)* - Email address to put send email from.
-* **pSubject** *(String)* - Subject of the email
-* \* **pHTMLBody** *(String)* - HTML content of email
-* \* **pTextBody** *(String)* - Text content of email (multipart is used, so this can be used as a fallback if HTML fails/is empty)
-* \* **pAttachmentName** - If we have an attachment, the name of the attachment
-* \* **pAttachmentContent** - If we have an attachment, the content of the attachment
 
-> \* _optional_
+* **pFrom** *(String)* - Email address to put send email from.
+
+* **pSubject** *(String)* - Subject of the email
+
+* \* **pHTMLBody** *(String)* - HTML content of email
+
+* \* **pTextBody** *(String)* - Text content of email (multipart is used, so this can be used as a fallback if HTML fails/is empty)
+
+* \* **pAttachmentName** *(String)* - If we have an attachment, the name of the attachment
+
+* \* **pAttachmentContent** *(Data)*- If we have an attachment, the content of the attachment
+
+> \* _optional parameter_
 
 ## Additional Requirements
 This API call requires internet access.

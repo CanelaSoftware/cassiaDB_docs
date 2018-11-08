@@ -1,10 +1,10 @@
-# command cdb_createProject(pProject)
+# command cdb_createProject pProject
 ---
 ## Summary
 This command creates a new project.
 
 ## Inputs
-* pProject *(String)* - The specified project name.s
+* **pProject** *(String)* - The specified project name.s
 
 ## Additional Requirements
 This API call requires internet access in order to create a project in cloud records.

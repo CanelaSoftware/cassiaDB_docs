@@ -7,13 +7,17 @@ This function will sync all records in a specified table between local and cloud
 ## Inputs
 * **pRecordIDL** *(String)* - A line-delimited list of records to be synced
 	* If "**\***" is passed, all records will be synced. 
+
 * **pTable** *(String)* - The specified table name or table ID to be synced.    
+
 * **pSource** *(Enum)* - Must be either 'Cloud' or 'local'. **pSource** determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud.    	    
+
 * **pAllowDeletes** *(Boolean)* - 'True' or 'False'. A value of 'true' means any recordIDs passed that are empty in the source (i.e. the record does not exist in the source) will be deleted in the target. A value of 'false' means that no deletions will occur -- recordIDs that don't exist in the source will be ignored in the target.
+
 * **pDetectCollisions** *(Boolean)* - 'True' or 'False'. A value of 'true' means that the record versions between each record will be compared. Any time the source has a lower version (i.e. when the target record has been updated after the last time the source and target were in sync), the record will not be overwritten. Instead, the record will be listed in the response as a collision. A value of 'false' means that records will not be compared for versions, and that all source records will overwrite all target records.
 
 ## Output
-* **tResultA** (Array) - An array with two keys: 
+(Array) - An array with two keys: 
 	* **["sync"]** - A line-delimited list of records that were successfully synced.
 	* **["collisions"]** - A line-delimited list of records that had collisions, and were therefore NOT synced. (This will always be empty if **pDetectCollisions** is false).
 

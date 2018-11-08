@@ -1,4 +1,4 @@
-# command cdb_batchDelete pDataA,pTarget
+# command cdb_batchDelete pDataA, pTarget
 ---
 ## Summary
 This function deletes a set of records.

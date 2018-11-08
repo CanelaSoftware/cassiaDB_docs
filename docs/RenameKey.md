@@ -1,15 +1,17 @@
-# command cdb_renameKey(pTable, pKey, pNewName)
+# command cdb_renameKey pTable, pKey, pNewName
 ---
 ## Summary
 This command renames a key from a specific table.
 
 ## Inputs
-* pTable *(String)* - The specified table ID or table name.
-* pKey *(String)* - The current name of the key that will be renamed.
-* pNewName *(String)* - The new name that the key will be renamed to.
+* **pTable** *(String)* - The specified table ID or table name.
+
+* **pKey** *(String)* - The current name of the key that will be renamed.
+
+* **pNewName** *(String)* - The new name that the key will be renamed to.
 
 ## Additional Requirements
-This API call requires internet access in order to rename a key from a table in cloud records.
+This API call requires internet access.
 
 ## Examples
 ```

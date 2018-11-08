@@ -1,4 +1,4 @@
-# function cdb_readKeys(pTable,pKeys,pRecordIDs,pTarget)
+# function cdb_readKeys(pTable, pKeys, pRecordIDs, pTarget)
 ---
 ## Summary
 This function reads record(s) and returns only the keys requested from a record’s contents. Function may access multiple records from a table.

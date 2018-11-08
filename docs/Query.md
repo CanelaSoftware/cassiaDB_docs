@@ -1,4 +1,4 @@
-# function cdb_Query(pKey,pOperator,pValue,pTable,pTarget,pResultFormat)
+# function cdb_Query(pKey, pOperator, pValue, pTable, pTarget, pResultFormat)
 ---
 ## Summary
 This function searches the specified table, and returns the subset that matches the query in several possible formats.
@@ -16,8 +16,8 @@ This function searches the specified table, and returns the subset that matches 
 
 * **pResultFormat** *(String)*:
 
-	* "recordList" *(default)* - returns a line-delimited list of the recordIDs that match the query.
-    * "recordData" - returns an array of full records that match the query.
+	* "recordList" **(default)** - returns a line-delimited list of the recordIDs that match the query.
+	* "recordData" - returns an array of full records that match the query.
 
 > _*optional parameter._
 

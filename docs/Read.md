@@ -1,4 +1,4 @@
-# function cdb_read(pTable,pRecordIDs,pTarget)
+# function cdb_read(pTable, pRecordIDs, pTarget)
 ---
 ## Summary
 This function reads one or more records from either local or cloud, and returns them as an array.

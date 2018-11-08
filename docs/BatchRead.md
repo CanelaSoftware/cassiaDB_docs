@@ -1,4 +1,4 @@
-# function cdb_batchRead(pDataA,pTarget)
+# function cdb_batchRead(pDataA, pTarget)
 ---
 ## Summary
 This function reads a list of records and returns those records' contents.
@@ -14,11 +14,11 @@ This function reads a list of records and returns those records' contents.
 
 * **pTarget** *(String)* - The place to create the record(s), either "cloud" or "local".
 
-> _*optional parameter._
+> _\* optional parameter._
 
 > Note: To read all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
-![BatchRead input diagram] (images/BatchReadInput.svg)
+![BatchRead input diagram](images/BatchReadInput.svg)
 ## Outputs
 (Aray) - A multidimensional array with the same structure as the input array. The empty values for each cdbRecordID have been replaced with the keys and values of the corresponding record.
 

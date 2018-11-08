@@ -1,4 +1,4 @@
-# function cdb_result(pParam)
+# function cdb_result(*pParam*)
 ---
 ## Summary
 Used to see if the most recently executed CDB call was successful or not.

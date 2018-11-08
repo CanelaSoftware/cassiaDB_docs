@@ -1,4 +1,4 @@
-# command cdb_batchMerge pDataA,pTarget
+# command cdb_batchMerge pDataA, pTarget
 ---
 ## Summary
 This command allows for the modification of a record key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables.

@@ -1,4 +1,4 @@
-# command cdb_deleteKeys pTable,pKeys,pRecordIDs,pTarget
+# command cdb_deleteKeys pTable, pKeys, pRecordIDs, pTarget
 ---
 ## Summary
 This command deletes specified keys from a record’s contents. Function may access multiple records from a table.

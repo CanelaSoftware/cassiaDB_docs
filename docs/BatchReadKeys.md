@@ -1,4 +1,4 @@
-# function cdb_batchReadKeys(pDataA,pTarget)
+# function cdb_batchReadKeys(pDataA, pTarget)
 ---
 ## Summary
 This function reads records for a batch of records across one or more tables and returns only the keys requested from each record’s contents.

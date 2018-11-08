@@ -20,7 +20,7 @@ This function sorts the given list of record IDs based on a specified table key,
 			* empty - The value of the corresponding key must be empty.
 	* *[table ID N] *(Key)* - Key that is the nth table's ID. Repeat *tableID1*'s sublevel culture.
 
-* pTarget *(String)* - The place to count the records from, either "cloud" or "local". 
+* **pTarget** *(String)* - The place to count the records from, either "cloud" or "local". 
 
 > _*optional parameter._
  

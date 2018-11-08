@@ -1,4 +1,4 @@
-# command cdb_batchUpdate pDataA,pTarget
+# command cdb_batchUpdate pDataA, pTarget
 ---
 ## Summary
 This command makes changes to a number of records. It can access multiple tables.

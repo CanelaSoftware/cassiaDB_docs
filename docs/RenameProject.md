@@ -1,14 +1,15 @@
-# command cdb_renameProject(pProject, pNewName)
+# command cdb_renameProject pProject, pNewName
 ---
 ## Summary
 This command changes the name of a specific project.
 
 ## Inputs
-* pProject *(String)* - The current name of the project.
-* pNewName *(String)* - The new name that the project will be changed to.
+* **pProject** *(String)* - The current name of the project.
+
+* **pNewName** *(String)* - The new name that the project will be changed to.
 
 ## Additional Requirements
-This API call requires internet access in order to rename a project in cloud records.
+This API call requires internet access.
 
 ## Examples
 ```

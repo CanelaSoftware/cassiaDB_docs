@@ -6,10 +6,10 @@ This function returns the team ID that owns a given table. Team IDs representing
 ## Inputs
 * \* **pTable** *(String)* - the table name or table ID. If this is empty, your active team ID will be returned.
 
-> \* _optional_
+> \* _optional parameter_
 
 ## Outputs
- * (String) - The team ID.
+(String) - The team ID.
 
 ## Examples
 ```

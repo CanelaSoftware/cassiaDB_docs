@@ -1,11 +1,20 @@
 ## What is the CDBCache?
 
-The CDBCache is a feature of CassiaDB that allows developers to stop worrying about internet connectivity when making cloud transactions. It will automatically save any cloud writeable transactions that don't go through, so they will be updated at a later time.
+The CDBCache allows developers to stop worrying about internet connectivity when making cloud transactions. It will automatically save any cloud-write transactions that fail, and those transactions will be processed once the user has reconnected to the internet. This means that any time your users lose their internet connection, CassiaDB will cache this transaction. The transactions are saved even if the application shuts down, so you never have to worry about missing your cloud calls.
 
 ### Using the CDBCache
 
-The CDBCache is turned ON by default. This means that any time a cloud write transaction (Create, Update, Delete, Merge) fails, CassiaDB will cache this transaction, and attempt the transaction again the next time it has internet connectivity. This persists even if the application shuts down, so you never have to worry about missing your cloud calls.
+The CDBCache is turned ON by default. If you don't want to use the CDBCache (i.e. you want to handle cloud failures manually), you can set the global variable gCache to "false".
 
-### Opting out of CDBCache
+### What Transactions are saved in the CDBCache?
 
-If you don't want to use the CDBCache (i.e. you want to handle cloud failures manually), you can pass the "cdbDoNotUseCDBCache" key in your input arrays to prevent the CDBCache from keeping track of your cloud transactions.
+- [cdb_create](Create.md)
+- [cdb_batchCreate](BatchCreate.md)
+- [cdb_delete](Delete.md)
+- [cdb_batchDelete](BatchDelete.md)
+- [cdb_deleteKeys](DeleteKeys.md)
+- [cdb_batchDeleteKeys](BatchDeleteKeys.md)
+- [cdb_update](Update.md)
+- [cdb_batchUpdate](BatchUpdate.md)
+- [cdb_batchMerge](BatchMerge.md)
+- [cdb_sync](Sync.md)

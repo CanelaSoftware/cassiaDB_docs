@@ -1,14 +1,14 @@
-# command cdb_updateTableSchemaMode(pTable, pSchemaless)
+# command cdb_updateTableSchemaMode pTable, pSchemaless
 ---
 ## Summary
 This command changes the schema mode of tables.
 
 ## Inputs
-* pTable *(String)* - The name of the specified table ID or table name.
-* pSchemaless *(Bool)* - Determines whether table is schemaless or not.
+* **pTable** *(String)* - The name of the specified table ID or table name.
+* **pSchemaless** *(Bool)* - Determines whether table is schemaless or not.
 
 ## Additional Requirements
-This API call requires internet access in order to remove a table from a project in cloud records.
+This API call requires internet access.
 
 ## Examples
 ```

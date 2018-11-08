@@ -17,7 +17,7 @@ This command makes changes to an existing record.
 
 * **pTarget** *(String)* - The place to udpate the record, either "cloud" or "local".
 
-> \* optional parameter.
+> \* _optional parameter_.
 
 ![UpdateInput](images/UpdateInput.svg)
 

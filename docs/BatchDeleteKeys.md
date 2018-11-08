@@ -1,4 +1,4 @@
-# command cdb_batchDeleteKeys pDataA,pTarget
+# command cdb_batchDeleteKeys pDataA, pTarget
 ---
 ## Summary
 This function deletes specified keys for a batch of records across one or more tables.
