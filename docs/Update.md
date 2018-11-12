@@ -5,7 +5,7 @@ This command makes changes to an existing record.
 
 ## Inputs
 * **pDataA** *(Array)* - An array with the following format:
-    * [*keyName 1*] *(String)* - A key as defined by the table's schema ([see getTableKeys](./GetTableKeys.md)). User must provide at least one key.
+    * [*keyName 1*] *(String)* - A key as defined by the table's schema ([see TableKeys](./TableKeys.md)). User must provide at least one key.
 		* value - The new value for the corresponding key.
     
     * \*[*keyName N*] *(String)* - A key as defined by the table's schema.
