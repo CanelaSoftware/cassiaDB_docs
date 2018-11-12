@@ -2,43 +2,69 @@ site_name: CassiaDB Docs
 pages:
   - Home: index.md
   - API:
-    - Read/Write:
-      - Create.md
+    - Main:
       - Read.md
+      - BatchRead.md
       - LookupValue.md
       - ReadKeys.md
-      - Update.md
-      - Delete.md
-    - Query:
-      - Query.md
-    - Utility:
-      - Count.md
-      - List.md
-      - Ping.md
-      - Result.md
-      - GetTableID.md
-      - GetTableKeys.md
-      - GetTableNames.md
-      - LoadTable.md
-      - UnloadTable.md
-      - GetTeamID.md
-    - Sync:
-      - SyncPartial.md
-      - SyncEvery.md
-      - SyncComplete.md
-    - Export:
-      - ExportAsJSON.md
-      - ExportAsLSON.md
-    - Batch:
-      - BatchCreate.md
-      - BatchUpdate.md
-      - BatchDelete.md
-      - BatchQuery.md
-      - BatchRead.md
       - BatchReadKeys.md
       - BatchMerge.md
+      - Create.md
+      - BatchCreate.md
+      - Update.md
+      - BatchUpdate.md
+      - Delete.md
+      - BatchDelete.md
+      - DeleteKeys.md
+      - BatchDeleteKeys.md
+      - Sort.md
+      - BatchSort.md
+      - ReadBlob.md
+      - CreateBlob.md
+      - DeleteBlob.md
+      - Query.md
+      - BatchQuery.md
+      - Count.md
+      - BatchCount.md
+      - List.md
+      - SendEmail.md
+      - SetLogMode.md
+      - SDK.md
+      - LoadTable.md
+      - UnloadTable.md
+      - SdkBuild.md
+      - Ping.md
+      - PingNode.md
+      - CheckInternetStatus.md
+      - FlushCache.md
+      - SetFlushCacheInterval.md
+      - SetCloudTolerance.md
+      - Result.md
+      - Sync.md
+      - ExportAsJSON.md
+      - ExportAsLSON.md
+    - Auth:
+      - Auth.md
+    - Table Manipulation:
+      - CreateTable.md
+      - DeleteTable.md
+      - RenameTable.md
+      - TableID.md
+      - TableKeys.md
+      - TableNames.md
+      - AddKeys.md
+      - RenameKey.md
+      - RemoveKeys.md
+      - UpdateTableSchemaMode.md
+    - Project Manipulation:
+      - CreateProject.md
+      - DeleteProject.md
+      - RenameProject.md
+      - AddTableToProject.md
+      - RemoveTableFromProject.md
+      - TeamID.md
   - Other Info:
-    - Livecache.md
+    - CDBCache.md
     - Metadata.md
     - QueryOperators.md
-theme: mkdocs
+theme: readthedocs
