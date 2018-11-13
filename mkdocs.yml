@@ -1,70 +1,78 @@
 site_name: CassiaDB Docs
+site_url: https://docs.livecloud.io
+site_description: CassiaDB Documentation site - Part of LiveCloud Backend
+site_author: Canela Software
 copyright: © 2018, Canela Software, Inc.
 pages:
-  - Home: index.md
-  - API:
-    - Read.md
-    - BatchRead.md
-    - LookupValue.md
-    - ReadKeys.md
-    - BatchReadKeys.md
-    - BatchMerge.md
-    - Create.md
-    - BatchCreate.md
-    - Update.md
-    - BatchUpdate.md
-    - Delete.md
-    - BatchDelete.md
-    - DeleteKeys.md
-    - BatchDeleteKeys.md
-    - Sort.md
-    - BatchSort.md
-    - ReadBlob.md
-    - CreateBlob.md
-    - DeleteBlob.md
-    - Query.md
-    - BatchQuery.md
-    - Count.md
-    - BatchCount.md
-    - List.md
-    - SendEmail.md
-    - SetLogMode.md
-    - SDK.md
-    - LoadTable.md
-    - UnloadTable.md
-    - SdkBuild.md
-    - Ping.md
-    - PingNode.md
-    - CheckInternetStatus.md
-    - FlushCache.md
-    - SetFlushCacheInterval.md
-    - SetCloudTolerance.md
-    - Result.md
-    - Sync.md
-    - ExportAsJSON.md
-    - ExportAsLSON.md
-    - Auth.md
-    - CreateTable.md
-    - DeleteTable.md
-    - RenameTable.md
-    - TableID.md
-    - TableKeys.md
-    - TableNames.md
-    - AddKeys.md
-    - RenameKey.md
-    - RemoveKeys.md
-    - UpdateTableSchemaMode.md
-    - CreateProject.md
-    - DeleteProject.md
-    - RenameProject.md
-    - AddTableToProject.md
-    - RemoveTableFromProject.md
-    - TeamID.md
-  - Other Info:
-    - CDBCache.md
-    - Metadata.md
-    - QueryOperators.md
+  - Home: 'index.md'
+  - About CassiaDB:
+    - CDBCache: 'CDBCache.md'
+    - Metadata: 'Metadata.md'
+    - QueryOperators: 'QueryOperators.md'
+  - API Reference:
+    - AddKeys: 'AddKeys.md'
+    - AddTableToProject: 'AddTableToProject.md'
+    - Auth: 'Auth.md'
+    - BatchCount: 'BatchCount.md'
+    - BatchCreate: 'BatchCreate.md'
+    - BatchDelete: 'BatchDelete.md'
+    - BatchDeleteKeys: 'BatchDeleteKeys.md'
+    - BatchMerge: 'BatchMerge.md'
+    - BatchQuery: 'BatchQuery.md'
+    - BatchRead: 'BatchRead.md'
+    - BatchReadKeys: 'BatchReadKeys.md'
+    - BatchSort: 'BatchSort.md'
+    - BatchUpdate: 'BatchUpdate.md'
+    - CheckInternetStatus: 'CheckInternetStatus.md'
+    - Count: 'Count.md'
+    - Create: 'Create.md'
+    - CreateBlob: 'CreateBlob.md'
+    - CreateProject: 'CreateProject.md'
+    - CreateTable: 'CreateTable.md'
+    - Delete: 'Delete.md'
+    - DeleteBlob: 'DeleteBlob.md'
+    - DeleteKeys: 'DeleteKeys.md'
+    - DeleteProject: 'DeleteProject.md'
+    - DeleteTable: 'DeleteTable.md'
+    - ExportAsJSON: 'ExportAsJSON.md'
+    - ExportAsLSON: 'ExportAsLSON.md'
+    - FlushCache: 'FlushCache.md'
+    - List: 'List.md'
+    - LoadTable: 'LoadTable.md'
+    - LookupValue: 'LookupValue.md'
+    - Ping: 'Ping.md'
+    - PingNode: 'PingNode.md'
+    - Query: 'Query.md'
+    - Read: 'Read.md'
+    - ReadBlob: 'ReadBlob.md'
+    - ReadKeys: 'ReadKeys.md'
+    - RemoveKeys: 'RemoveKeys.md'
+    - RemoveTableFromProject: 'RemoveTableFromProject.md'
+    - RenameKey: 'RenameKey.md'
+    - RenameProject: 'RenameProject.md'
+    - RenameTable: 'RenameTable.md'
+    - Result: 'Result.md'
+    - SDK: 'SDK.md'
+    - SdkBuild: 'SdkBuild.md'
+    - SendEmail: 'SendEmail.md'
+    - SetCloudTolerance: 'SetCloudTolerance.md'
+    - SetFlushCacheInterval: 'SetFlushCacheInterval.md'
+    - SetLogMode: 'SetLogMode.md'
+    - Sort: 'Sort.md'
+    - Sync: 'Sync.md'
+    - TableID: 'TableID.md'
+    - TableKeys: 'TableKeys.md'
+    - TableNames: 'TableNames.md'
+    - TeamID: 'TeamID.md'
+    - UnloadTable: 'UnloadTable.md'
+    - Update: 'Update.md'
+    - UpdateTableSchemaMode: 'UpdateTableSchemaMode.md'
+markdown_extensions:
+  - toc
 theme:
     name: readthedocs
     titles_only: true
     custom_dir: theme_customizations/
+    hljs_style: a11y-dark
+    hljs_languages:
+      - livecodeserver
