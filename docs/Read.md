@@ -24,16 +24,16 @@ local tTable, tRecordIDs, tTarget, tOutputA
 
 # Table name: clients
 # Keys: firstName, lastName, age, income
-# cdbRecordID: 123456abcdef
+# cdbRecordID: 12345678-abcd-1234-cdef-1234567890ab
 
-put "123456abcdef" into tRecordIDs
+put "12345678-abcd-1234-cdef-1234567890ab" into tRecordIDs
 put "clients" into tTable
 put "cloud" into tTarget
     
 put cdb_read(tTable,tRecordIDs,tTarget) into tOutputA
 
 # Output Array: 
-# tOutputA["123456abcdef"]["cdb"] - metadata
+# tOutputA["12345678-abcd-1234-cdef-1234567890ab"]["cdb"] - metadata
 #						  ["firstName"] - value
 #						  ["lastName"] - value
 #						  ["age"] - value

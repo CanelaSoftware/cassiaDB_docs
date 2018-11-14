@@ -19,10 +19,10 @@ local tTable, tRecordIDs, tTarget
 
 # Table name: clients
 # Keys: firstName, lastName, age, income
-# cdbRecordID: 123456abcdef
+# cdbRecordID: 12345678-abcd-1234-cdef-1234567890ab
 
 put "clients" into tTable
-put "123456abcdef" into tRecordIDs
+put "12345678-abcd-1234-cdef-1234567890ab" into tRecordIDs
 put "cloud" into tTarget
      
 cdb_delete tTable,tRecordIDs,tTarget

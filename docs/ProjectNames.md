@@ -1,4 +1,4 @@
-# function cdb_getProjectNames()
+# function cdb_projectNames()
 ---
 ## Summary
 This function returns a list of project names.
@@ -13,7 +13,7 @@ This API call requires internet access in order to get project names from cloud 
 ```
 local tProjects
 
-put cdb_getProjectNames() into tProjects
+put cdb_projectNames() into tProjects
 
 # Output: meetings, organizations
 ```

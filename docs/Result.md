@@ -25,7 +25,7 @@ Depending on the input parameter:
 ```
 # Table "clients" exists
 
-put cdb_read("clients","00000000-0000-0000-0000-000000000000") into tRecordID
+put cdb_read("clients","12345678-abcd-1234-cdef-1234567890ab") into tRecordID
 
 put cdb_result()
 # Output: "false"
@@ -36,7 +36,7 @@ put cdb_result("context")
 put cdb_result("response")
 # Output: "You must provide either 'local' or 'cloud' as the parameter pTarget."
 
-put cdb_read("clients","00000000-0000-0000-0000-000000000000","local") into tRecordID
+put cdb_read("clients","12345678-abcd-1234-cdef-1234567890ab","local") into tRecordID
 
 put cdb_result()
 # Output: "true"
