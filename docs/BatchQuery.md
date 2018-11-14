@@ -52,63 +52,76 @@ This API call requires internet access.
 ## Examples
 
 ```livecodeserver
-#Table name: clients											   #Table name: office
-#keys: firstName, lastName, age, income							#Keys: name, address
-#Record: 
-#[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"	  #[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-										 ["lastName"] - "Smith"						 					 ["address"] - "123 office Road"
-																			 ["age"] - "47"
-																			 ["income"] - "100000"
- [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
-										 ["lastName"] - "Smith"
-																			 ["age"] - "46"
-																			 ["income"] - "100000"
+/*
+Table name: clients
+Keys: firstName, lastName, age, income
+
+
+Records: 
+[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
+							    ["lastName"] - "Smith"					 					
+							    ["age"] - "47"
+							    ["income"] - "100000"
+
+[87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+							   ["lastName"] - "Smith"
+							   ["age"] - "46"
+							   ["income"] - "100000"
+
+
+Table name: office
+Keys: name, address
+Records:
+[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
+						 	["address"] - "123 office Road"
+*/
 ```
 ###Example 1:
-```
+```livecodeserver
 local tInputA, tOutputA, tClientsTableID, tOfficeTableID
 																			 
 put cdb_getTableID("clients") into tClientsTableID                                       
 put cdb_getTableID("office") into tOfficeTableID
 
-//first query
+# first query
 put "*" into tInputA["batchQuery"][tClientsTableID][1]["key"]
 put "~" into tInputA["batchQuery"][tClientsTableID][1]["operator"]
 put "Smith" into tInputA["batchQuery"][tClientsTableID][1]["value"]
 
-//second query
+# second query
 put "address" into tInputA["batchQuery"][tOfficeID][1]["key"]
 put "=" into tInputA["batchQuery"][tOfficeID][1]["operator"]
 put "abbey road" into tInputA["batchQuery"][tOfficeID][1]["value"]
 
-//settings
+# settings
 put "recordlist" into tInputA["settings"]["resultFormat"] 
 
 put "cloud" into tInputA["cdbTarget"]
 
 put cdb_BatchQuery(tInputA) into tOutputA
 
-#output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  //This is a line delimited list
-												87654321-abcd-1234-cdef-1234567890ab
+# output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab
+									 87654321-abcd-1234-cdef-1234567890ab
+									 //This is a line delimited list
 ```
 ### Example 2:
-```
-//first query
+```livecodeserver
+# first query
 put "age" into tInputA["batchQuery"][tClientsTableID][1]["key"]
 put ">=" into tInputA["batchQuery"][tClientsTableID][1]["operator"]
 put "47" into tInputA["batchQuery"][tClientsTableID][1]["value"]
 
-//second query
+# second query
 put "lastName" into tInputA["batchQuery"][tClientsTableID][2]["key"]
 put "=" into tInputA["batchQuery"][tClientsTableID][2]["operator"]
 put "Smith" into tInputA["batchQuery"][tClientsTableID][2]["value"]
 
-//third query
+# third query
 put "address" into tInputA["batchQuery"][tOfficeID][1]["key"]
 put "=" into tInputA["batchQuery"][tOfficeID][1]["operator"]
 put "123 office Road" into tInputA["batchQuery"][tOfficeID][1]["value"]
 
-//settings
+# settings
 put "recordData" into tInputA["settings"]["resultFormat"] 
 put "logicalAND" into tInputA["settings"]["mode"]
 
@@ -116,45 +129,45 @@ put "cloud" into tInputA["cdbTarget"]
 
 put cdb_BatchQuery(tInputA) into tOutputA
 
-#output array: tOutputA[tClientsTableID][1]["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"	 
-																						 ["lastName"] - "Smith"						 					
-																																 ["age"] - "47"
-																																	 ["income"] - "100000"
-											 [tOfficeTableID][1]["45678123-abcd-1234-cdef-1234567890ab"]["name"] - "Smith's Tech"
-																												["address"] - "123 office Road"
+# output array: tOutputA[tClientsTableID][1]["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"	 
+																   ["lastName"] - "Smith"						 					
+																   ["age"] - "47"
+																   ["income"] - "100000"
+				   [tOfficeTableID][1]["45678123-abcd-1234-cdef-1234567890ab"]["name"] - "Smith's Tech"
+																  ["address"] - "123 office Road"
 ```
 ###Example 3 (Advanced):
-```
+```livecodeserver
 local tInputA, tOutputA, tClientsTableID
 																			 
 put cdb_getTableID("clients") into tClientsTableID
 
-//first query
+# first query
 put "firstName" into tInputA["batchQuery"][tClientsTableID]["fname"]["key"]
 put "=" into tInputA["batchQuery"][tClientsTableID]["fname"]["operator"]
 put "John" into tInputA["batchQuery"][tClientsTableID]["fname"]["value"]
 
-//second query
+# second query
 put "lastName" into tInputA["batchQuery"][tClientsTableID]["last_s"]["key"]
 put "begins with" into tInputA["batchQuery"][tClientsTableID]["last_s"]["operator"]
 put "s" into tInputA["batchQuery"][tClientsTableID]["last_s"]["value"]
 
-//third query
+# third query
 put "lastName" into tInputA["batchQuery"][tClientsTableID]["last_t"]["key"]
 put "begins with" into tInputA["batchQuery"][tClientsTableID]["last_t"]["operator"]
 put "t" into tInputA["batchQuery"][tClientsTableID]["last_t"]["value"]
 
-//settings
+# settings
 put "recordlist" into tInputA["settings"]["resultFormat"] 
 put "advanced" into tInputA["settings"]["mode"]
 put "cloud" into tInputA["cdbTarget"]
 
-//logic map
+# logic map
 put "fname and (last_s or last_t)" into tInputA["settings"]["logicMap"]
 
 put cdb_BatchQuery(tInputA) into tOutputA
 
-#output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  
-												87654321-abcd-1234-cdef-1234567890ab
-												//This is a line delimited list containing all record with first name "John" and last name beginning with "s" or "t"
+# output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  
+									 87654321-abcd-1234-cdef-1234567890ab
+# This is a line delimited list containing all record with first name "John" and last name beginning with "s" or "t"
 ```

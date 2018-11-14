@@ -6,7 +6,7 @@ This function deletes specified keys for a batch of records across one or more t
 ## Inputs
 * **pDataA** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are table keys with empty values. There must be at least one tableID key in the array.
     * [tableID 1] *(Key)* - Key is the first table's ID, maps to subarray of record IDs.
-    	* [cdbRecordID 1] *(Key)* - Key that is the record ID for the first record to delete keys from, or "*" to read all records in a table.
+    	* [cdbRecordID 1] *(Key)* - Key that is the record ID for the first record to delete keys from, or "\*" to delete keys from all records in a table.
 	    	* [keyName 1] *(Key)* - Key that is the keyName for the first record to have this key deleted
 				* empty - The value of the corresponding key must be empty.
 			* \*[keyName N] *(Key)* - Key that is the keyName for the nth record to have this key deleted

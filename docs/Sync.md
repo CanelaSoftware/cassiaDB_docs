@@ -1,4 +1,4 @@
-# function cdb_sync(pRecordIDL,pTable,pSource,pAllowDeletes,pDetectCollisions)
+# function cdb_sync(pRecordIDL, pTable, pSource, pAllowDeletes, pDetectCollisions)
 ---
 
 ## Summary
@@ -17,12 +17,13 @@ This function will sync all records in a specified table between local and cloud
 * **pDetectCollisions** *(Boolean)* - 'True' or 'False'. A value of 'true' means that the record versions between each record will be compared. Any time the source has a lower version (i.e. when the target record has been updated after the last time the source and target were in sync), the record will not be overwritten. Instead, the record will be listed in the response as a collision. A value of 'false' means that records will not be compared for versions, and that all source records will overwrite all target records.
 
 ## Output
-(Array) - An array with two keys: 
-	* **["sync"]** - A line-delimited list of records that were successfully synced.
-	* **["collisions"]** - A line-delimited list of records that had collisions, and were therefore NOT synced. (This will always be empty if **pDetectCollisions** is false).
+(Array): An array with two keys:
+
+* **["sync"]** - A line-delimited list of records that were successfully synced.
+* **["collisions"]** - A line-delimited list of records that had collisions, and were therefore NOT synced. (This will always be empty if **pDetectCollisions** is false).
 
 ## Additional Requirements
-* This API call requires internet access.
+This API call requires internet access.
 
 ## Examples
 ```livecodeserver
