@@ -29,7 +29,7 @@ This command allows for the modification of a record key's value through compari
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tTarget, tClientsTableID, tOfficeTableID
      
 # Table name: clients						   

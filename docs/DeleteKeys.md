@@ -16,7 +16,7 @@ This command deletes specified keys from a record’s contents. Function may acc
 This API call requires internet access to make cloud calls.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tKeys, tRecordIDs, tTarget
 
 # Table name: clients

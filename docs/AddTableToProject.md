@@ -12,7 +12,7 @@ This command links a specific table to a project.
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tProject, tTable
 
 put "meeting" into tProject

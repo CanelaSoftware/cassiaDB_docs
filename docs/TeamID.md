@@ -12,7 +12,7 @@ This function returns the team ID that owns a given table. Team IDs representing
 (String) - The team ID.
 
 ## Examples
-```
+```livecodeserver
 put cdb_teamID()
 
 # Output: 9fe03fc8-ef46-4835-bda6-bf58be273964

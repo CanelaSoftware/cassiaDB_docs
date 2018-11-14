@@ -15,7 +15,7 @@ This function counts the number of records (either cloud or local) in a given ta
 This API call requires internet access in order to count cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tCount, tTable, tTarget
 
 # Table name: clients

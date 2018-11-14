@@ -7,7 +7,7 @@ This function returns all table names in the application. This list is generated
 (String) – A alphabetical, line-delimited list of all table names.
 
 ## Examples
-```
+```livecodeserver
 put cdb_getTableNames()
 
 #Output: clients

@@ -22,7 +22,7 @@ This function reads records for a batch of records across one or more tables and
 (Array) – A multidimensional array with the same structure as the input array. The empty values for each key have been replaced with their corresponding value.
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tOutputA, tTableID, tRecordIDs, tTarget
 
 # Table name: clients

@@ -14,7 +14,7 @@ This command exports a complete table (local records only) as individual documen
 (Main storage device) – A folder in the specified location (or desktop by default) that contains LSON files for each record in the exported table.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tPath
 
 # Table name: clients

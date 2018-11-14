@@ -10,7 +10,7 @@ This command deletes a table.
 This API call requires internet access in order to delete a table in cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tTable
 
 # Table name: clients

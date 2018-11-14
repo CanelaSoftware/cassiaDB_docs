@@ -16,7 +16,7 @@ This API call requires internet access.
 
 
 ## Examples
-```
+```livecodeserver
 put cdb_ping()
 
 # Output: 59.479904

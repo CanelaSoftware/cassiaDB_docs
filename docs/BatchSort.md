@@ -37,7 +37,7 @@ This function sorts the given list of record IDs based on a specified table key,
 This API call requires internet access in order to sort cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tClientsTableID, tRecordIDs, tTarget, tOutputA
 
 #Table name: clients						

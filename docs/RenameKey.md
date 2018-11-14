@@ -14,7 +14,7 @@ This command renames a key from a specific table.
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tKey, tNewName
 
 # Table name: clients

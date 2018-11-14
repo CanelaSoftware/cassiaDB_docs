@@ -9,7 +9,7 @@ This command will unload table(s) from memory.
 	* Passing **"\*"** or **_empty_** will unload all tables.
 
 ## Examples
-```
+```livecodeserver
 
 #"Customers" and "Office" tables are currently loaded and in memory
 

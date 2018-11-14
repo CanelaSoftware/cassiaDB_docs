@@ -15,7 +15,7 @@ This function loads the config(s) for the specified project(s).
 (String) - A message to the message box, while in the IDE, if pMode is not "silent".
 
 ## Examples
-```
+```livecodeserver
 # Project "meeting"
 
 get cdb_SDK("meeting")

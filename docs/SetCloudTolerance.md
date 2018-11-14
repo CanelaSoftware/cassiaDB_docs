@@ -10,7 +10,7 @@ This command will set the intervals for cloud calls -- the Timeout interval (i.e
 * **pCheckInternetInterval** *(number)* - The interval that CDB will attempt to go back online once it is offline (due to an internet call failing) in milliseconds.
 
 ## Examples
-```
+```livecodeserver
 cdb_setCloudTolerance 5000,10000
 
 # If an internet call takes longer than 5000 milliseconds, it will fail.

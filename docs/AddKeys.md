@@ -12,7 +12,7 @@ This command adds new keys to a specific table.
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tKeys
 
 # Table name: clients

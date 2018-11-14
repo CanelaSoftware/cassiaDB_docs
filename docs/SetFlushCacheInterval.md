@@ -10,7 +10,7 @@ This command will set the retry interval for the cdbCache. (See [CDBCache](CDBCa
 
 
 ## Examples
-```
+```livecodeserver
 cdb_setFlushCacheInterval 3000
 
 # cdb_flushCache will be called every 3000 milliseconds, as needed.

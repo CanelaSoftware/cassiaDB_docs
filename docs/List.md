@@ -17,7 +17,7 @@ This function returns a line-delimited list of the values of the requested key.
 This API call requires internet access in order to list cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tKeys, tTarget
 
 #Table name: clients

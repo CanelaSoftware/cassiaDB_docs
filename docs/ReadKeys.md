@@ -19,7 +19,7 @@ This function reads record(s) and returns only the keys requested from a recordâ
 This API call requires internet access to make cloud calls.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tKeys, tRecordIDs, tTarget, tOutputA
 
 # Table name: clients

@@ -34,7 +34,7 @@ This function searches the specified table, and returns the subset that matches 
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tKey, tOperator, tValue, tTable, tTarget, tResultFormat, tOutputA
 
 # Table name: clients

@@ -19,7 +19,7 @@ This function returns the value associated with a given key for a given record.
 This API call requires internet access to make cloud calls.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tRecordID, tKey, tTarget, tValue 
 
 # Table name: clients

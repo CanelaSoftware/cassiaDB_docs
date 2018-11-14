@@ -11,7 +11,7 @@ This command changes the schema mode of tables.
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tSchemaless
 
 put "clients" into tTable

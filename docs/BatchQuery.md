@@ -51,7 +51,7 @@ This API call requires internet access.
 
 ## Examples
 
-```
+```livecodeserver
 #Table name: clients											   #Table name: office
 #keys: firstName, lastName, age, income							#Keys: name, address
 #Record: 

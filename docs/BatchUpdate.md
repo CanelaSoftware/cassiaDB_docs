@@ -23,7 +23,7 @@ This command makes changes to a number of records. It can access multiple tables
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tTarget, tClientsTableID, tOfficeTableID
      
 # Table name: clients						

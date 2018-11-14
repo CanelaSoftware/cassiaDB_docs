@@ -10,7 +10,7 @@ This command will delete a specified project and its tables unless the tables ar
 This API call requires internet access in order to delete a project in cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tProject
 
 # Project name: meeting

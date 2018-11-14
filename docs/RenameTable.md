@@ -12,7 +12,7 @@ This command changes the name of a specific table.
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tNewName
 
 # Table name: clients

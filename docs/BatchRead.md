@@ -29,7 +29,7 @@ This API call requires internet access.
 
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tTarget, tOutputA, tClientsTableID, tOfficeTableID
 
 # Table name: clients	   			

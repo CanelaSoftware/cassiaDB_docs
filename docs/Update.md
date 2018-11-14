@@ -25,7 +25,7 @@ This command makes changes to an existing record.
 * This API call requires internet access in order to update cloud.
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tTable, tRecordID, tTarget
 
 # Table name: clients

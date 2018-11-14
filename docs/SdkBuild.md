@@ -10,7 +10,7 @@ None
 * (String) - The DateTime that the libraries were built.
 
 ## Examples
-```
+```livecodeserver
 put cdb_sdkBuild()
 # Output: 2018-12-12 14:12:54.818
 ```

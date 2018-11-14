@@ -22,7 +22,7 @@ Depending on the input parameter:
 
 
 ## Examples
-```
+```livecodeserver
 # Table "clients" exists
 
 put cdb_read("clients","12345678-abcd-1234-cdef-1234567890ab") into tRecordID

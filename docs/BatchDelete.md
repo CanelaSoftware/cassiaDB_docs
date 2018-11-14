@@ -24,7 +24,7 @@ This function deletes a set of records.
 This API call requires internet access for "cloud".
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tTarget, tClientsTableID, tOfficeTableID
      
 # Table name: clients				   		

@@ -14,7 +14,7 @@ This command deletes one or more records from the table.
 This API call requires internet access in order to delete cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tRecordIDs, tTarget
 
 # Table name: clients

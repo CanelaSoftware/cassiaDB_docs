@@ -10,7 +10,7 @@ This function returns a list of project names.
 This API call requires internet access in order to get project names from cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tProjects
 
 put cdb_projectNames() into tProjects

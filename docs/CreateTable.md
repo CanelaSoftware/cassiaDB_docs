@@ -25,7 +25,7 @@ This function creates a new table with keys and adds the table to a specified pr
 This API call requires internet access in order to create a table in cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tProject, tTable, tKeys
 
 # Project name: meeting

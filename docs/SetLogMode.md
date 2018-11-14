@@ -11,11 +11,11 @@ This command will set the logging mode of the CDB libraries.
 	* **"ignore"** - Will not log.
 
 ## Examples
-```
+```livecodeserver
 cdb_setLogMode "ignore"
 # errors and other CDB messages will not be logged.
 ```
-```
+```livecodeserver
 cdb_setLogMode "message box"
 
 put cdb_read("clients","*") into tRecordsA

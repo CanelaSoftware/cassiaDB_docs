@@ -24,7 +24,7 @@ This function allocates a new cdbRecordID for a record in either the cloud or lo
 This API call requires internet access in order to create cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tTable, tTarget
 
 # Table name: clients

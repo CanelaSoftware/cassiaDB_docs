@@ -12,7 +12,7 @@ This command changes the name of a specific project.
 This API call requires internet access.
 
 ## Examples
-```
+```livecodeserver
 local tProject, tNewName
 
 # Project name: meeting

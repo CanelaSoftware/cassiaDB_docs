@@ -13,7 +13,7 @@ None
 * (Boolean) - **true** if the internet is available, **false** if the internet is unreachable.
 
 ## Examples
-```
+```livecodeserver
 # While Online
 
 put cdb_checkInternetStatus()

@@ -10,7 +10,7 @@ This command creates a new project.
 This API call requires internet access in order to create a project in cloud records.
 
 ## Examples
-```
+```livecodeserver
 local tProject
 
 put "meeting" into tProject

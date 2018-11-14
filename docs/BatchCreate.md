@@ -31,7 +31,7 @@ This function allocates new cdbRecordIDs and stores provided data for a batch of
 This API call requires internet access if the 'cloud' option is selected
 
 ## Examples
-```
+```livecodeserver
 local tDataA, tTarget, tOutputA, tClientsTableID, tOfficeTableID
      
 # Table name: clients

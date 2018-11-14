@@ -19,7 +19,7 @@ This function reads one or more records from either local or cloud, and returns 
 This API call requires internet access to make cloud calls.
 
 ## Examples
-```
+```livecodeserver
 local tTable, tRecordIDs, tTarget, tOutputA
 
 # Table name: clients
