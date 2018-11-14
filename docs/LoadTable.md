@@ -1,11 +1,11 @@
-# command cdb_loadTable pTableL, *pCallbackControl*, *pCallbackHandler*
+# command cdb_loadTable *pTableL*, *pCallbackControl*, *pCallbackHandler*
 ---
 
 ## Summary
 This command will load table(s) into memory so they can be accessed through other CDB commands and functions. **LoadTable must be called prior to calling other CDB commands and functions.**
 
 ## Inputs
-* **pTableL** *(String)* - The specified TableName/TableID to be loaded, or a line-delimited list of tables to be loaded.
+* \* **pTableL** *(String)* - The specified TableName/TableID to be loaded, or a line-delimited list of tables to be loaded.
     * Passing **"\*"** will load all tables, reloading any tables that have already been loaded.
     * Passing **_empty_** will load all tables that have not previously been loaded.
 

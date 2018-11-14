@@ -17,11 +17,13 @@ This function searches the specified table using a specified logic and returns r
 	- "recordList" - results are line-delimited lists of record IDs (default).
 	- "recordData" - results are arrays populated with the full record data of each result.
 
-![AdvancedQuery input diagram](images/AdvancedQueryInput.svg)
-
 > _*optional parameter._
 
 > Note: To query all the records containing a specific value in ANY keys, use "\*" as value of the key "key".
+
+![AdvancedQuery input diagram](images/AdvancedQueryInput.svg)
+
+
 
 ## Outputs
 * *(String)* - If *pResultFormat* is "recordList" or if no such key is provided:
@@ -34,7 +36,8 @@ This API call requires internet access to query data on the cloud.
 	
 ## Example
 ```livecodeserver
-# We want to find all clients that have first name "John" and a last name that starts with "s" or "t"
+# We want to find all clients that have first name "John" 
+# and a last name that starts with "s" or "t"
 
 local tQueryA, tLogicMap
 
@@ -58,8 +61,9 @@ put "fname and (last_s or last_t)" into tLogicMap
 
 put cdb_BatchQuery("clients",tQueryA,tLogicMap,"cloud","recordList")
 
-#outputs: 12345678-abcd-1234-cdef-1234567890ab  
-	     87654321-abcd-1234-cdef-1234567890ab
+# outputs: 12345678-abcd-1234-cdef-1234567890ab  
+# 	      87654321-abcd-1234-cdef-1234567890ab
 
-//This is a line delimited list containing all record IDs with first name "John" and last name beginning with "s" or "t"
+#This is a line delimited list containing all record IDs with first name "John"
+# and last name beginning with "s" or "t"
 ```

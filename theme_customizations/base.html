@@ -87,14 +87,15 @@
         {%- set navlevel = 1 %}
         {%- for nav_item in nav %}
             {%- if nav_item.is_section %}
-                <p class="caption"><span class="caption-text">{{ nav_item.title }}</span></p>
-                <ul{% if nav_item.active %} class="current"{% endif %}>
-                    {%- for nav_item in nav_item.children %}
-                    <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
-                        {%- include 'nav.html' %}
-                    </li>
-                    {%- endfor %}
-                </ul>
+                <div class="section-heading"><span class="section-heading-text">{{ nav_item.title }}</span>
+                  <ul{% if nav_item.active %} class="current"{% endif %}>
+                      {%- for nav_item in nav_item.children %}
+                      <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
+                          {%- include 'nav.html' %}
+                      </li>
+                      {%- endfor %}
+                  </ul>
+                </div>
             {%- elif config.theme.include_homepage_in_sidebar or (not nav_item == nav.homepage) %}
                 <ul{% if nav_item.active %} class="current"{% endif %}>
                     <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
