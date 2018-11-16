@@ -3,7 +3,7 @@ site_url: https://docs.livecloud.io
 site_description: LiveCloud Documentation site
 site_author: Canela Software
 copyright: © 2018, Canela Software, Inc.
-pages:
+nav:
   - Home: 'index.md'
   - Tutorials:
     - Setting Up LiveCloud: 'Setup.md'
@@ -72,6 +72,8 @@ pages:
     - UnloadTable: 'UnloadTable.md'
     - Update: 'Update.md'
     - UpdateTableSchemaMode: 'UpdateTableSchemaMode.md'
+  - Other Info:
+    - LiveCloud Homepage: 'https://livecloud.io'
 markdown_extensions:
   - toc
 theme:

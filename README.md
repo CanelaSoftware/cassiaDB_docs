@@ -9,4 +9,6 @@ You can view the API docs online here:
 The API can also be found in Markdown format in the "docs" Folder.
 
 ## Editing the project
-This project is build using [MKDocs](http://www.mkdocs.org/). To make doc modifications, you will need to have [mkdocs installed](http://www.mkdocs.org/#installation). Then, checkout master branch, make updates to .md files (under "docs"), and commit. To view locally, use `mkdocs build`. To deploy, use `mkdocs gh-deploy` (see http://www.mkdocs.org/user-guide/deploying-your-docs/) .
+This project is build using [MKDocs](http://www.mkdocs.org/). To make doc modifications, you will need to have [mkdocs installed](http://www.mkdocs.org/#installation). Then, checkout master branch, make updates to .md files (under "docs"), and commit. To view locally, use `mkdocs serve`. To deploy, use `mkdocs build`. Copy the contents of the "site" folder to /var/www/docs/html/ on livecloud.io server.
+
+(see http://www.mkdocs.org/user-guide/deploying-your-docs/) .
