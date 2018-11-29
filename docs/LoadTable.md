@@ -18,7 +18,7 @@ This command will load table(s) into memory so they can be accessed through othe
     * **recordSubTotal** - The total number of records to load for the current table
     * **loadedSubTotal** - The number of records loaded for the current table
     
-> \* _Optional Parameter_
+> _*optional parameter._
 
 ## Examples
 ```livecodeserver

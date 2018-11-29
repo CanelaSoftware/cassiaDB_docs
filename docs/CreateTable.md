@@ -19,7 +19,7 @@ This function creates a new table with keys and adds the table to a specified pr
 > _*optional parameter._
 
 ## Outputs
-* (String) - The table ID of the newly created table.
+(String) - The table ID of the newly created table.
 
 ## Additional Requirements
 This API call requires internet access in order to create a table in cloud records.
