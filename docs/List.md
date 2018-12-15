@@ -8,7 +8,9 @@ This function returns a line-delimited list of the values of the requested key(s
 
 * **pTarget** *(String)* - The place to access the records, either "cloud" or "local".
 
-* \* **pKeys** *(String)* - The comma-delimited list of keys whose values will be listed.
+* \* **pKeys** *(String)* - The comma-delimited list of keys whose values will be listed. If no value is provided, **CDBRecordID** will be listed.
+
+> \* _Optional Parameter_
 
 ## Outputs
 * (String) – A line-delimited list of the values of the requested key. Note that this list is unsorted.
