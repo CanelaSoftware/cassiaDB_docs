@@ -4,14 +4,13 @@
 This function reads a list of records and returns those records' contents.
 
 ## Inputs
-* **pDataA** *(Array)* - A multidimensional array, where each key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
-    * [tableID 1] *(Key)* - Key is the first table's ID, maps to subarray of record IDs.
+* **pDataA** *(Array)* - A multidimensional array, where the first key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at one tableID key in the array.
+    * [tableID] *(Key)* - Key is the table's ID, maps to subarray of record IDs.
     	* [cdbRecordID 1] *(Key)* - Key that is the cdbRecordID of the first record to be read, or "*" to read all records in a table. 
     		* empty - The value of the corresponding key must be empty.
     	* *[cdbRecordID N] *(Key)* - Key that is the cdbRecordID of the nth record to be read. 
     		* empty - The value of the corresponding key must be empty.
-    * *[tableID N] *(Key)* - key that is the nth table's ID. Repeat *tableID1*'s sublevel structure.
-
+    		
 * **pTarget** *(String)* - The place to create the record(s), either "cloud" or "local".
 
 > _\* optional parameter._
