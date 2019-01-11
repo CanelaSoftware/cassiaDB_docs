@@ -4,7 +4,7 @@
 This command makes changes to a number of records. It can access multiple tables.
 
 ## Inputs
-* **pInputA** *(Array)* - A multidimensional array of keys, where each key is a tableID that maps to another array of keys. There must be at least one tableID key in this array.
+* **pDataA** *(Array)* - A multidimensional array of keys, where each key is a tableID that maps to another array of keys. There must be at least one tableID key in this array.
     * [tableID 1] *(Key)* - Key is the first table's ID, maps to subarray of record IDs. There must be at least one record key in this sub-array.
     	* [cdbRecordID 1] *(Key)* - key that is the cdbRecordID of the first record to be updated. 
     		* [keyName 1] *(Key)* - User-defined keyname corresponding to a value of the record to be udpated. User must provide at least one self-defined keyname.

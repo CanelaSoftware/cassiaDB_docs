@@ -11,7 +11,7 @@ This command makes changes to an existing record.
     * \*[*keyName N*] *(String)* - A key as defined by the table's schema.
     	* value - The new value for the corresponding key.
 
-* **pRecordIDs** *(String)* - The cdbRecordID of the record being updated.
+* **pRecordID** *(String)* - The cdbRecordID of the record being updated.
 
 * **pTable** *(String)* - The name or tableID of the specified table.
 
