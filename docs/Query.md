@@ -1,23 +1,17 @@
-# function cdb_Query(pKey, pOperator, pValue, pTable, pTarget, pResultFormat)
+# function cdb_Query(pKey, pOperator, pValue, pTable, pTarget, *pResultFormat*)
 ---
 ## Summary
 This function searches the specified table, and returns the subset that matches the query in several possible formats.
 
 ## Inputs
 * **pKey**  *(String)* - The key in the table to query on.
-
 * **pOperator**  *(String)* - The [comparison operator](./QueryOperators.md) used when comparing values in the table against the input value.
-
 * **pValue**  *(String)* - The value to compare with.
-
 * **pTable** *(String)* - The name or tableID of the specified table.
-
-* \***pTarget** *(String)* - The place to query for the record, either "cloud" or "local".
-
-* **pResultFormat** *(String)*:
-
-	* "recordList" **(default)** - returns a line-delimited list of the recordIDs that match the query.
-	* "recordData" - returns an array of full records that match the query.
+* **pTarget** *(String)* - The place to query for the record, either "cloud" or "local".
+* \***pResultFormat** *(String)*:
+	* "recordList" **(default)** - Results are line-delimited lists of record IDs.
+	* "recordData" - Results are arrays populated with the full record data of each result.
 
 > _*optional parameter._
 

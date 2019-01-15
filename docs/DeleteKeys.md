@@ -10,7 +10,7 @@ This command deletes specified keys from a record’s contents. Function may acc
 
 * **pRecordIDs** *(String)* - A line delimited string where each line is the cdbRecordID of a record in the specified table.
 
-* **pTarget** *(String)* - The place to create the record, either "cloud" or "local".
+* **pTarget** *(String)* - The place of the record whose keys you want to delete, either "cloud" or "local".
 
 ## Additional Requirements
 This API call requires internet access to make cloud calls.

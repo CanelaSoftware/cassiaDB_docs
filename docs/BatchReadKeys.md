@@ -14,7 +14,7 @@ This function reads records for a batch of records across one or more tables and
     	* \*[cdbRecordID N] *(Key)* - key that is the record ID for the nth record wanting to be read. Repeat *cdbRecordID 1*'s subarray structure
     * \*[tableID N] *(Key)* - key that is the nth table's ID. Repeat *tableID 1*'s subarray structure.
 
-* **pTarget** *(String)* - The place to create the record(s), either "cloud" or "local".
+* **pTarget** *(String)* - The place to read the record(s), either "cloud" or "local".
 
 > _*optional parameter._
 

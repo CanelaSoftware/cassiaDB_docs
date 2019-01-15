@@ -1,4 +1,4 @@
-# function cdb_batchSort(pInputA, pTarget)
+# function cdb_batchSort(pDataA, pTarget)
 ---
 ## Summary
 This function sorts the given list of record IDs based on a specified table key, direction, and sort type.
@@ -20,7 +20,7 @@ This function sorts the given list of record IDs based on a specified table key,
 			* empty - The value of the corresponding key must be empty.
 	* *[table ID N] *(Key)* - Key that is the nth table's ID. Repeat *tableID1*'s sublevel culture.
 
-* **pTarget** *(String)* - The place to count the records from, either "cloud" or "local". 
+* **pTarget** *(String)* - The place to sort the records from, either "cloud" or "local". 
 
 > \* _optional parameter_
  
@@ -36,17 +36,18 @@ This function sorts the given list of record IDs based on a specified table key,
 ## Additional Requirements
 This API call requires internet access in order to sort cloud records.
 
-## Examples
+## Example
 ```livecodeserver
-local tDataA, tClientsTableID, tRecordIDs, tTarget, tOutputA
+local tDataA, tClientsTableID, tTarget, tOutputA
 
-#Table name: clients						
-#keys: firstName, lastName, age, income	
-#Record: 
-#[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
+# Table name: clients						
+# Keys: firstName, lastName, age, income	
+# Records: 
+# [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
 									   ["lastName"] - "Smith"						 				
 									   ["age"] - "47"
 									   ["income"] - "100000"
+									   
  [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
 									   ["lastName"] - "Smith"
 									   ["age"] - "46"
@@ -60,7 +61,7 @@ put "numeric" into tDataA[tClientsTableID]["sortType"]
 put "12345678-abcd-1234-cdef-1234567890ab,87654321-abcd-1234-cdef-1234567890ab" into tDataA[tClientsTableID]["cdbRecordID"]
 put "cloud" into tTarget
 
-put cdb_sort(tDataA,tTarget) into tOutputA
+put cdb_batchSort(tDataA,tTarget) into tOutputA
 
 # tOutput array: tOutputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["firstName"] - "Jenny"
 										 									 	  ["lastName"] - "Smith"

@@ -5,13 +5,11 @@ This function reads one or more records from either local or cloud, and returns 
 
 ## Inputs
 * **pTable** *(String)* - The name or tableID of the specified table.
-
 * **pRecordIDs** *(String)* - A line delimited string where each line is the cdbRecordID of a record in the specified table.
-
 * **pTarget** *(String)* - The place to read the record, either "cloud" or "local".
        
 ## Outputs
-(Array) - One or more cdbRecordIDs with keys of the specified table. This includes a key "cdb", which holds [metadata](metadata.md).
+*(Array)* - One or more cdbRecordIDs with keys of the specified table. This includes a key "cdb", which holds [metadata](metadata.md).
 
 ![ReadOutput](images/BasicOutput.svg)
 

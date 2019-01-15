@@ -1,4 +1,4 @@
-# function cdb_createTable(pProject, pTable, pKeys, *pSchemaless*,*pTableDomain*,*pInstanceName*)
+# function cdb_createTable(pProject, pTable, pKeys, *pSchemaless*, *pTableDomain*, *pInstanceName*)
 ---
 ## Summary
 This function creates a new table with keys and adds the table to a specified project.
@@ -10,11 +10,11 @@ This function creates a new table with keys and adds the table to a specified pr
 
 * **pKeys** *(String)* - The comma-delimited list of names of the keys that will be added to the table.
 
-* \* **pSchemaless** *(Bool)* - Determines whether the table is schemaless or not. Default is false.
+* \***pSchemaless** *(Bool)* - Determines whether the table is schemaless or not. Default is false.
 
-* \* **pTableDomain** *(String)* - Optional parameter specifying which table domain the table will be created in. Default is automatically chosen.
+* \***pTableDomain** *(String)* - Specifies which table domain the table will be created in. Default is automatically chosen.
 
-* \* **pInstanceName** *(String)* - Optional parameter specifing which instance the table will be created in. Default is automatically chosen.
+* \***pInstanceName** *(String)* - Specifies which instance the table will be created in. Default is automatically chosen.
 
 > _*optional parameter._
 

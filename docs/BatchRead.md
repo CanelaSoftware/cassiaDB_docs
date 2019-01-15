@@ -11,7 +11,7 @@ This function reads a list of records and returns those records' contents.
     	* *[cdbRecordID N] *(Key)* - Key that is the cdbRecordID of the nth record to be read. 
     		* empty - The value of the corresponding key must be empty.
     		
-* **pTarget** *(String)* - The place to create the record(s), either "cloud" or "local".
+* **pTarget** *(String)* - The place to read the record(s), either "cloud" or "local".
 
 > _\* optional parameter._
 

@@ -1,15 +1,15 @@
-# function cdb_teamID(pTable)
+# function cdb_teamID(*pTable*)
 ---
 ## Summary
 This function returns the team ID that owns a given table. Team IDs representing your LiveCloud account.
 
 ## Inputs
-* \* **pTable** *(String)* - the table name or table ID. If this is empty, your active team ID will be returned.
+* \***pTable** *(String)* - The table name or table ID. If this is empty, your active team ID will be returned.
 
 > \* _optional parameter_
 
 ## Outputs
-(String) - The team ID.
+*(String)* - The team ID.
 
 ## Examples
 ```livecodeserver

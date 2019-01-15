@@ -1,21 +1,18 @@
-# function cdb_list(pTable, pTarget, pKeys)
+# function cdb_list(pTable, pTarget, *pKeys*)
 ---
 ## Summary
 This function returns a line-delimited list of the values of the requested key(s) or a line-delimited list of the record IDs of all records in the table.
 
 ## Inputs
 * **pTable** *(String)* - The specified table ID or table name.
-
 * **pTarget** *(String)* - The place to access the records, either "cloud" or "local".
+* \***pKeys** *(String)* - The comma-delimited list of keys whose values will be listed. If no value is provided, **CDBRecordID** will be listed.
 
-* \* **pKeys** *(String)* - The comma-delimited list of keys whose values will be listed. If no value is provided, **CDBRecordID** will be listed.
-
-> \* _Optional Parameter_
+> \* _optional parameter_
 
 ## Outputs
-* (String) – A line-delimited list of the values of the requested key. Note that this list is unsorted.
-
-* (String) - A line-delimited list of the record IDs of the records in the table. Note that this list is unsorted.
+* *(String)* – If pKeys is not empty, a line-delimited list of the values of the requested key. Note that this list is unsorted.
+* *(String)* - If pKeys is empty, a line-delimited list of the record IDs of the records in the table. Note that this list is unsorted.
 
 ## Additional Requirements
 This API call requires internet access in order to list cloud records.

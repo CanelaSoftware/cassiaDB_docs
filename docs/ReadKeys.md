@@ -5,15 +5,12 @@ This function reads record(s) and returns only the keys requested from a record�
 
 ## Inputs
 * **pTable** *(String)* - The name or tableID of the specified table.
-
 * **pKeys** *(String)* - A comma delimited string where each item is a requested key of the record. (**Do not include spaces between keys**)
-
 * **pRecordIDs** *(String)* - A line delimited string where each line is the cdbRecordID of a record in the specified table.
-
-* **pTarget** *(String)* - The place to create the record, either "cloud" or "local".
+* **pTarget** *(String)* - The place to read the records, either "cloud" or "local".
 
 ## Outputs
-(Array) – One or more cdbRecordIDs containing a partial record with only the keys requested in the input.
+*(Array)* – One or more cdbRecordIDs containing a partial record with only the keys requested in the input.
 
 ## Additional Requirements
 This API call requires internet access to make cloud calls.
