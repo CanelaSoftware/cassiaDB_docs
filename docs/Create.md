@@ -31,14 +31,14 @@ local tDataA, tTable, tTarget
 # Keys: firstName, lastName, age, income
 
 put "John" into tDataA["firstName"]
-put "Doe" into tDataA["lastName"]
-put "20" into tDataA["age"]
-put "30000" into tDataA["income"]
+put "Smith" into tDataA["lastName"]
+put "47" into tDataA["age"]
+put "100000" into tDataA["income"]
 put "clients" into tTable
 put "cloud" into tTarget
 
 put cdb_create(tDataA,tTable,tTarget) into tRecordID
-# tRecordID now contains the cdbRecordID of the created record: 123456abcdef
+# tRecordID now contains the cdbRecordID of the created record: 12345678-abcd-1234-cdef-1234567890ab
 
 # Error handling
 if not cdb_result() then

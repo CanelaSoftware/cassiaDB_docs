@@ -4,7 +4,7 @@
 This function allocates new cdbRecordIDs and stores provided data for a batch of records across one or more tables.
 
 ## Inputs
-* **pInputA** *(Array)* - A multidimensional array, where each key is a tableID. This tableID can be obtained by calling the function *cdb_tableID*. ([see TableID](TableID.md)). There must be at least one table ID key in the array.
+* **pDataA** *(Array)* - A multidimensional array, where each key is a tableID. This tableID can be obtained by calling the function *cdb_tableID*. ([see TableID](TableID.md)). There must be at least one table ID key in the array.
 	
 	* [tableID 1] *(Array)* - Key that is the first table's ID, which maps to another array of arbitrary recordKeys, where each recordKey maps to a record. There must be at least one record key in this sub-array.
 		

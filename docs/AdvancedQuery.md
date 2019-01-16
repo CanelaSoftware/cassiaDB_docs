@@ -1,7 +1,7 @@
 # function cdb_advancedQuery(pDataA, pAdvancedMap, pTable, pTarget, *pResultFormat*, *pAggregateA*, *pRecordID*)
 ---
 ## Summary
-This function searches the specified table using a specified logic and returns records that matches that query
+This function searches the specified table using a specified logic and returns records that matches that query.
 
 ## Inputs
 * **pDataA** *(Array)* - An array defining the queries.
@@ -31,7 +31,7 @@ This function searches the specified table using a specified logic and returns r
 
 > Note: To query all the records containing a specific value in ANY keys, use "\*" as value of the key "key".
 
-![AdvancedQuery input diagram](images/AdvancedQueryInput.svg)
+![AdvancedQueryInput](images/AdvancedQueryInput.svg)
 
 
 ## Outputs
@@ -43,7 +43,7 @@ This function searches the specified table using a specified logic and returns r
 ## Additional Requirements
 This API call requires internet access to query data on the cloud.
 	
-## Example
+## Examples
 ```livecodeserver
 # We want to find all clients that have last name "Smith" 
 # and a first name that ends with "n" or "y".
