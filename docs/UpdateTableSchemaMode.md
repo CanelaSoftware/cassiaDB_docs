@@ -17,5 +17,5 @@ local tTable, tSchemaless
 put "clients" into tTable
 put true into tSchemaless
 
-cdb_updateTableSchemaMode(tTable,tSchemaless)
+cdb_updateTableSchemaMode tTable,tSchemaless
 ```

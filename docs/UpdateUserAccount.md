@@ -1,4 +1,4 @@
-# command cdb_updateUserAccount(pDataA, pProjectName, pEmail)
+# command cdb_updateUserAccount pDataA, pProjectName, pEmail
 
 ---
 ## Summary

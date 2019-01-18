@@ -21,5 +21,5 @@ local tTable, tKeys
 put "clients" into tTable
 put "occupation,address" into tKeys
 
-cdb_addKeys(tTable,tKeys)
+cdb_addKeys tTable,tKeys
 ```

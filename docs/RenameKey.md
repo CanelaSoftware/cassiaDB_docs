@@ -24,5 +24,5 @@ put "clients" into tTable
 put "income" into tKey
 put "salary" into tNewName
 
-cdb_renameKey(tTable,tKey,tNewName)
+cdb_renameKey tTable,tKey,tNewName
 ```

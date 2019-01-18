@@ -1,4 +1,4 @@
-# command cdb_createUserAccount(pProjectName, pEmail, pPassword, *pFirstName*, *pLastName*)
+# command cdb_createUserAccount pProjectName, pEmail, pPassword, *pFirstName*, *pLastName*
 
 ---
 ## Summary

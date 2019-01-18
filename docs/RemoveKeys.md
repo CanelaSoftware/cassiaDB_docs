@@ -21,5 +21,5 @@ local tTable, tKeys
 put "clients" into tTable
 put "age,income" into tKeys
 
-cdb_removeKeys(tTable,tKeys)
+cdb_removeKeys tTable,tKeys
 ```

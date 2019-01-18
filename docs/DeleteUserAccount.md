@@ -1,4 +1,4 @@
-# command cdb_deleteUserAccount(pProjectName, pEmail, pPassword)
+# command cdb_deleteUserAccount pProjectName, pEmail, pPassword
 
 ---
 ## Summary

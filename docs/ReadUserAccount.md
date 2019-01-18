@@ -1,4 +1,4 @@
-# command cdb_readUserAccount(pProjectName, pEmail)
+# command cdb_readUserAccount pProjectName, pEmail
 
 ---
 ## Summary

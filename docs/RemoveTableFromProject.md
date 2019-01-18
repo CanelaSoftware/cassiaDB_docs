@@ -18,5 +18,5 @@ local tProject, tTable
 put "meeting" into tProject
 put "clients" into tTable
 
-cdb_removeTableFromProject(tProject,tTable)
+cdb_removeTableFromProject tProject,tTable
 ```

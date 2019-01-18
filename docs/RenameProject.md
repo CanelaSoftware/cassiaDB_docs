@@ -20,5 +20,5 @@ local tProject, tNewName
 put "meeting" into tProject
 put "organization" into tNewName
 
-cdb_renameProject(tProject,tNewName)
+cdb_renameProject tProject,tNewName
 ```

@@ -17,5 +17,5 @@ local tProject
 
 put "meeting" into tProject
 
-cdb_deleteProject(tProject)
+cdb_deleteProject tProject
 ```

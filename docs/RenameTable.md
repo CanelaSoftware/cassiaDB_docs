@@ -20,5 +20,5 @@ local tTable, tNewName
 put "clients" into tTable
 put "customers" into tNewName
 
-cdb_renameTable(tTable,tNewName)
+cdb_renameTable tTable,tNewName
 ```

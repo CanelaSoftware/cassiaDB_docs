@@ -17,5 +17,5 @@ local tTable
 
 put "clients" into tTable
 
-cdb_deleteTable(tTable)
+cdb_deleteTable tTable
 ```
