@@ -29,7 +29,7 @@ This function sorts the given list of record IDs based on a specified table key,
 ![BatchSortInput](images/BatchSortInput.svg)
 
 ## Outputs
-(Array) – This output array consists of the table IDs as keys whose values are record IDs in line-delimited strings.
+*(Array)* – This output array consists of the table IDs as keys whose values are record IDs in line-delimited strings.
 
 ![BatchSortOutput](images/BatchSortOutput.svg)
 
@@ -44,14 +44,14 @@ local tDataA, tClientsTableID, tTarget, tOutputA
 # Keys: firstName, lastName, age, income	
 # Records: 
 # [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
-									   ["lastName"] - "Smith"						 				
-									   ["age"] - "47"
-									   ["income"] - "100000"
+#									   ["lastName"] - "Smith"
+#									   ["age"] - "47"
+#									   ["income"] - "100000"
 									   
- [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
-									   ["lastName"] - "Smith"
-									   ["age"] - "46"
-									   ["income"] - "100000"
+# [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+#									   ["lastName"] - "Smith"
+#									   ["age"] - "46"
+#									   ["income"] - "100000"
 
 put cdb_getTableID("clients") into tClientsTableID
 
@@ -64,11 +64,11 @@ put "cloud" into tTarget
 put cdb_batchSort(tDataA,tTarget) into tOutputA
 
 # tOutput array: tOutputA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["firstName"] - "Jenny"
-										 									 	  ["lastName"] - "Smith"
-																			 	  ["age"] - "46"
-																			 	  ["income"] - "100000"
-										  ["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"
-							 	  												  ["lastName"] - "Smith"						 				
-							 	  												  ["age"] - "47"
-																			 	  ["income"] - "100000"
+#										 									 	  ["lastName"] - "Smith"
+#																			 	  ["age"] - "46"
+#																			 	  ["income"] - "100000"
+#										  ["12345678-abcd-1234-cdef-1234567890ab"]["firstName"] - "John"
+#							 	  												  ["lastName"] - "Smith"
+#							 	  												  ["age"] - "47"
+#																			 	  ["income"] - "100000"
 ```

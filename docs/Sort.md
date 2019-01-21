@@ -30,13 +30,13 @@ local tSortKey, tDirection, tSortType, tTable, tRecordIDs, tTarget, tOutput
 # Keys: firstName, lastName, age, income	
 # Record: 
 # [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
-										 ["lastName"] - "Smith"						 				
-																			 ["age"] - "47"
-																			 ["income"] - "100000"
-[87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
-										 ["lastName"] - "Smith"
-																			 ["age"] - "46"
-																			 ["income"] - "100000"
+#										 ["lastName"] - "Smith"
+#										 ["age"] - "47"
+#										 ["income"] - "100000"
+# [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+#										 ["lastName"] - "Smith"
+#										 ["age"] - "46"
+#										 ["income"] - "100000"
 
 put "age" into tSortKey
 put "ascending" into tDirection
@@ -49,6 +49,6 @@ put "cloud" into tTarget
 cdb_sort(tSortKey,tDirection,tSortType,tTable,tRecordIDs,tTarget) into tOutput
 
 # tOutput:
-87654321-abcd-1234-cdef-1234567890ab
-12345678-abcd-1234-cdef-1234567890ab
+# 87654321-abcd-1234-cdef-1234567890ab
+# 12345678-abcd-1234-cdef-1234567890ab
 ```

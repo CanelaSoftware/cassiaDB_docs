@@ -53,14 +53,14 @@ This API call requires internet access to query data on the cloud.
 
 # Records: 
 # [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
-							    ["lastName"] - "Smith"
-							    ["age"] - "47"
-							    ["income"] - "100000"
+#							    ["lastName"] - "Smith"
+#							    ["age"] - "47"
+#							    ["income"] - "100000"
 
-[87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
-							   ["lastName"] - "Smith"
-							   ["age"] - "46"
-							   ["income"] - "100000"
+# [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+#							   ["lastName"] - "Smith"
+#							   ["age"] - "46"
+#							   ["income"] - "100000"
 
 local tDataA, tAdvancedMap, tTable, tTarget, tResultFormat, tOutputA
 
@@ -89,8 +89,8 @@ put "recordList" into tResultFormat
 put cdb_advancedQuery(tDataA,tAdvancedMap,tTable,tTarget,tResultFormat)
 
 # outputs: 12345678-abcd-1234-cdef-1234567890ab  
-# 	      87654321-abcd-1234-cdef-1234567890ab
+# 	       87654321-abcd-1234-cdef-1234567890ab
 
-#This is a line delimited list containing all record IDs with last name "Smith"
+# This is a line delimited list containing all record IDs with last name "Smith"
 # and first name ending with "n" or "y".
 ```

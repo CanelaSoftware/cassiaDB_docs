@@ -13,7 +13,7 @@ None
 ```livecodeserver
 put cdb_getTableNames()
 
-#Output: clients
-#	    employees
-#	    office
+# Output: clients
+#	      employees
+#	      office
 ```

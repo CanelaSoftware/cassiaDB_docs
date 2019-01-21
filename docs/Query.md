@@ -51,10 +51,10 @@ put cdb_Query(tKey,tOperator,tValue,tTable,tTarget,tResultFormat) into tOutputA
 
 # recordData Output: 
 # tOutputA["87654321-abcd-1234-cdef-1234567890ab"]["cdb"] - metadata
-                                                  ["firstName"] - "Jenny"
-                                                  ["lastName"] - "Smith"
-                                                  ["age"] - 46
-                                                  ["income"] - 100000
+#                                                  ["firstName"] - "Jenny"
+#                                                  ["lastName"] - "Smith"
+#                                                  ["age"] - 46
+#                                                  ["income"] - 100000
 						  
 # recordList Output: 
 # 87654321-abcd-1234-cdef-1234567890ab

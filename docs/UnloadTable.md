@@ -10,12 +10,11 @@ This command will unload table(s) from memory.
 
 ## Examples
 ```livecodeserver
-
-#"Customers" and "Office" tables are currently loaded and in memory
+# "Customers" and "Office" tables are currently loaded and in memory
 
 cdb_unloadTable "customers"
 
-#Table "customers" is no longer loaded in memory
+# Table "customers" is no longer loaded in memory
 
 put cdb_list("customers","local")
 # This will give an error because the "customers" table is not loaded.

@@ -11,24 +11,21 @@ This method is for applications that require users to create an account.
 	* last name (optional)
 2. When users proceed to create an account, call [cdb_createUserAccount](https://docs.livecloud.io/CreateUserAccount/) with the necessary parameters. If a user account with the provided email does not exist in the cdbUsers table for the specified project, it will create a new record in the that table.
 
-	```livecodeserver
-	# Required Parameters: 	pProjectName, pEmail, pPassword
-	# Optional Parameters: 	pFirstName, pLastName
+		# Required Parameters: 	pProjectName, pEmail, pPassword
+		# Optional Parameters: 	pFirstName, pLastName
 
-	cdb_createUserAccount pProjectName,pEmail,pPassword,pFirstName,pLastName
-	```
+		cdb_createUserAccount pProjectName,pEmail,pPassword,pFirstName,pLastName
+
 
 ### Universal Account
 This method is for cloud-based applications that do not require users to create accounts.
 
 1. Create a user account for your project with an email and password of your choosing. **Do not use your developer credentials or any personal information.** You will be hardcoding the email and password in your application.
 
-	```livecodeserver
-	# Required Parameters: 	pProjectName, pEmail, pPassword
-	# Optional Parameters: 	pFirstName, pLastName
+		# Required Parameters: 	pProjectName, pEmail, pPassword
+		# Optional Parameters: 	pFirstName, pLastName
 
-	cdb_createUserAccount pProjectName,pEmail,pPassword
-	```
+		cdb_createUserAccount pProjectName,pEmail,pPassword
 
 ## User Authentication
 ### Multiple User Accounts
@@ -38,22 +35,18 @@ This method is for applications that require users to log in.
 
 2. When users proceed to log in, call [cdb_auth](https://docs.livecloud.io/Auth/) with the necessary parameters. Use [cdb_result](https://docs.livecloud.io/Result/) to check if the call was successful.
 
-	```livecodeserver
-	get cdb_auth(pEmail,pPassword,"user")
+		get cdb_auth(pEmail,pPassword,"user")
 	
-	if not cdb_result() then
-		answer "Failed to authenticate user."
-	end if
-	```
+		if not cdb_result() then
+			answer "Failed to authenticate user."
+		end if
 
 ### Universal Account
 This method is for cloud-based applications that do not require users to log in.
 
 1. Call [cdb_auth](https://docs.livecloud.io/Auth/) with the necessary parameters after the call to "initializeCassiaDB" in the "preOpenStack" of the application's stack script. Hardcode the email and password of the user account created in the "Creating User Accounts" section above in your stack script. This will authenticate the user with the hardcoded credentials when the application is opened.
 
-	```livecodeserver
-	on preOpenStack
-     initializeCassiaDB
-     get cdb_auth(pEmail,pPassword,"user")
-	end preOpenStack
-	```
+		on preOpenStack
+     		initializeCassiaDB
+     		get cdb_auth(pEmail,pPassword,"user")
+		end preOpenStack
