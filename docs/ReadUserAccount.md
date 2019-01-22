@@ -33,6 +33,5 @@ put the result into tUserA
 #						  ["hardwareID"] - value
 #						  ["teamID"] - value
 #						  ["projectName"] - value
-#						  ["apiKey"] - value
 #						  ["verified"] - value
 ```

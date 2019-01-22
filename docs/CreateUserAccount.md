@@ -2,7 +2,7 @@
 
 ---
 ## Summary
-This command creates a user account record in the cdbUsers table for a specific project.
+This command creates a user account record in the cdbUsers table of a specific project and sends the user an email to verify their account.
 
 ## Inputs
 * **pProjectName** *(String)* - The name of the project to create the user account for.

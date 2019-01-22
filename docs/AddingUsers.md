@@ -27,6 +27,9 @@ This method is for cloud-based applications that do not require users to create 
 
 		cdb_createUserAccount pProjectName,pEmail,pPassword
 
+## User Account Verification
+The "verified" key in user account records is "false" by default. When the user's account is created, an email with a link to verify the account is sent to the user's email. After the link is clicked, the "verified" key will change to "true".
+
 ## User Authentication
 ### Multiple User Accounts
 This method is for applications that require users to log in.
