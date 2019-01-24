@@ -1,4 +1,4 @@
-# command cdb_update pDataA, pRecordID, pTable, pTarget
+# command cdb_update pDataA, pTable, pRecordID, pTarget
 ---
 ## Summary
 This command makes changes to an existing record.
@@ -9,8 +9,8 @@ This command makes changes to an existing record.
 		* value - The new value for the corresponding key.
     * \*[*keyName N*] *(String)* - A key as defined by the table's schema.
     	* value - The new value for the corresponding key.
-* **pRecordID** *(String)* - The cdbRecordID of the record being updated.
 * **pTable** *(String)* - The name or tableID of the specified table.
+* **pRecordID** *(String)* - The cdbRecordID of the record being updated.
 * **pTarget** *(String)* - The place to update the record, either "cloud" or "local".
 
 > \* _optional parameter_.
@@ -22,7 +22,7 @@ This command makes changes to an existing record.
 
 ## Examples
 ```livecodeserver
-local tDataA, tRecordID, tTable, tTarget
+local tDataA, tTable, tRecordID, tTarget
 
 # Table name: clients
 # Keys: firstName, lastName, age, income
@@ -32,9 +32,9 @@ local tDataA, tRecordID, tTable, tTarget
 put "48" into tDataA["age"]
 put "110000" into tDataA["income"]
 
-put "12345678-abcd-1234-cdef-1234567890ab" into tRecordID
 put "clients" into tTable
+put "12345678-abcd-1234-cdef-1234567890ab" into tRecordID
 put "cloud" into tTarget 
      
-cdb_update tDataA,tRecordID,tTable,tTarget
+cdb_update tDataA,tTable,tRecordID,tTarget
 ```
