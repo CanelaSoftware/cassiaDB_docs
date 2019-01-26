@@ -12,12 +12,13 @@ nav:
   - CassiaDB in Detail:
     - CDBCache: 'CDBCache.md'
     - Metadata: 'metadata.md'
-    - QueryOperators: 'QueryOperators.md'
+    - Query Operators: 'QueryOperators.md'
   - CassiaDB API Reference:
     - AddKeys: 'AddKeys.md'
     - AddTableToProject: 'AddTableToProject.md'
     - AdvancedQuery: 'AdvancedQuery.md'
     - Auth: 'Auth.md'
+    - BatchAdvancedQuery: 'BatchAdvancedQuery.md'
     - BatchCount: 'BatchCount.md'
     - BatchCreate: 'BatchCreate.md'
     - BatchDelete: 'BatchDelete.md'

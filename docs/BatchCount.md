@@ -15,7 +15,7 @@ This function counts the number of records (either cloud or local) in multiple t
 ![BatchCountInput](images/BatchCountInput.svg)
 
 ## Outputs
-(String) – Contains the numeric count of records in a list of given tables.
+*(String)* – Contains the numeric count of records in a list of given tables.
 
 ## Additional Requirements
 This API call requires internet access in order to count cloud records.
@@ -31,8 +31,8 @@ local tCountA, tDataA, tClientsTableID, tOfficeTableID
                                                 
 # There are 24 records in table clients and 12 records in table office on the cloud.
 
-put cdb_getTableID("clients") into tClientsTableID                                       
-put cdb_getTableID("office") into tOfficeTableID
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
 
 put empty into tDataA[tClientsTableID]
 put empty into tDataA[tOfficeTableID]

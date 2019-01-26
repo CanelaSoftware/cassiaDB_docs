@@ -14,7 +14,7 @@ This command allows for the modification of a record key's value through compari
 					- **"is in"** - Checks the data in *keyName* seperated by the delimiter to make sure that the data in "value" is somewhere in the data in *keyName*, otherwise it will append it with the delimiter.
 					- **"is not"** - makes sure the data in *keyName* *is not* the data in "value", otherwise it will put empty into the key. 
 					- **"is not in"** - Checks the data in *keyName* seperated by the delimiter to make sure that the data in "value" is not anywhere in the data in *keyName*, otherwise it removes it with the delimiter.
-				* ["delimiter"] *(String)* - The delimiter used to separate data inside the data in *keyName*. Recomendations are "," or lf.
+				* ["delimiter"] *(String)* - The delimiter used to separate data inside the data in *keyName*. Recomendations are "," or lf. The default delimiter is ",".
 			* \*[keyName N] *(Key)* - Repeat *keyName 1's* sublevel structure.
 		* \*[recordID N] *(Key)* - Repeat *recordID 1*'s sublevel structure.
 	* \*[tableID N] *(Key)* - Repeat *table ID 1*'s sublevel structure.
@@ -46,8 +46,8 @@ local tDataA, tTarget, tClientsTableID, tOfficeTableID
 # [45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
 #                                       ["address"] - "123 office Road"
 
-put cdb_getTableID("clients") into tClientsTableID                                       
-put cdb_getTableID("office") into tOfficeTableID
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
 
 ##Update John's record
 put "48" into tDataA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["age"]["value"]

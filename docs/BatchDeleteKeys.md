@@ -33,7 +33,7 @@ local tDataA, tRecordIDs, tTarget, tTableID
 # 87654321-abcd-1234-cdef-1234567890ab
 # 12345678-abcd-1234-cdef-1234567890ab
 
-put cdb_getTableID("clients") into tTableID
+put cdb_tableID("clients") into tTableID
 
 put "87654321-abcd-1234-cdef-1234567890ab" into tRecordIDs
 put "12345678-abcd-1234-cdef-1234567890ab" into tRecordIDs

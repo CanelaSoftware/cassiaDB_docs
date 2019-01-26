@@ -10,7 +10,7 @@ This function will check whether the client is connected to the internet, and se
 None
 
 ## Outputs
-* (Boolean) - **true** if the internet is available, **false** if the internet is unreachable.
+*(Boolean)* - **True** if the internet is available, **false** if the internet is unreachable.
 
 ## Examples
 ```livecodeserver

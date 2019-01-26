@@ -18,7 +18,7 @@ This function allocates a new cdbRecordID for a record in either the cloud or lo
 ![Create input diagram](images/CreateInput.svg)
 
 ## Outputs
-(String) - The allocated cdbRecordID for the new record.
+*(String)* - The allocated cdbRecordID for the new record.
 
 ## Additional Requirements
 This API call requires internet access in order to create cloud records.

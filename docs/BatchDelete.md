@@ -36,8 +36,8 @@ local tDataA, tTarget, tClientsTableID, tOfficeTableID
 # cdbRecordIDs:
 # 45678123-abcd-1234-cdef-1234567890ab
 
-put cdb_getTableID("clients") into tClientsTableID                                       
-put cdb_getTableID("office") into tOfficeTableID
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
 
 put empty into tDataA[tClientsTableID]["*"]
 put empty into tDataA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]

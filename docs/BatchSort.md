@@ -53,7 +53,7 @@ local tDataA, tClientsTableID, tTarget, tOutputA
 #									   ["age"] - "46"
 #									   ["income"] - "100000"
 
-put cdb_getTableID("clients") into tClientsTableID
+put cdb_tableID("clients") into tClientsTableID
 
 put "age" into tDataA[tClientsTableID]["sortKey"]
 put "ascending" into tDataA[tClientsTableID]["direction"]

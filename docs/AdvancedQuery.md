@@ -1,7 +1,7 @@
 # function cdb_advancedQuery(pDataA, pAdvancedMap, pTable, pTarget, *pResultFormat*, *pAggregateA*, *pRecordID*)
 ---
 ## Summary
-This function searches the specified table using a specified logic and returns records that matches that query.
+This function searches a table using a specified logic map and returns records that match the query.
 
 ## Inputs
 * **pDataA** *(Array)* - An array defining the queries.
@@ -10,7 +10,7 @@ This function searches the specified table using a specified logic and returns r
 		* ["value"] *(String)* - Contains the value with which to query.
 		* ["operator"] *(String)* - Contains the operator with which to query. (See [operators](./QueryOperators.md))
 	* \*[queryID N] *(Array)* - The nth query. Repeat *query 1*'s sublevel structure.
-* **pAdvancedMap** *(String)* - Defines the advanced map used for the total query. This contains the names of the queries with AND/OR between them. Parentheses can be used to specify order of operations. e.g. "(query1 AND query2) OR (query3 AND query4)"
+* **pAdvancedMap** *(String)* - Defines the advanced map used for the total query. This contains the names of the queries with AND/OR/XOR between them. Parentheses can be used to specify order of operations. e.g. "(query1 AND query2) OR (query3 AND query4)"
 * **pTable** *(String)* - The table name or table ID of the table to be queried.
 * **pTarget** *(String)* - The place to query records, either "cloud" or "local".
 * \***pResultFormat** *(String)* - Specifies the output format when returning matched records.

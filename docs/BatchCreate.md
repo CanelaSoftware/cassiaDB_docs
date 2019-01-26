@@ -24,7 +24,7 @@ This function allocates new cdbRecordIDs and stores provided data for a batch of
 
 ![BatchCreate input diagram](images/BatchCreateInput.svg)
 ## Outputs
-(Array) - This output array has similar structure to the input array, except that the indexKeys has the cdbRecordID as a child key. The corresponding cdbRecordID keys have empty contents.
+*(Array)* - This output array has similar structure to the input array, except that the indexKeys has the cdbRecordID as a child key. The corresponding cdbRecordID keys have empty contents.
 
 ![BatchCreate output diagram](images/BatchCreateOutput.svg)
 ## Additional Requirements
@@ -36,11 +36,11 @@ local tDataA, tTarget, tOutputA, tClientsTableID, tOfficeTableID
      
 # Table name: clients
 # Keys: firstName, lastName, age, income
-put cdb_getTableID("clients") into tClientsTableID
+put cdb_tableID("clients") into tClientsTableID
 
 # Table name: office
 # Keys: name, address
-put cdb_getTableID("office") into tOfficeTableID
+put cdb_tableID("office") into tOfficeTableID
 
 put "John" into tDataA[tClientsTableID][1]["firstName"]
 put "Smith" into tDataA[tClientsTableID][1]["lastName"]

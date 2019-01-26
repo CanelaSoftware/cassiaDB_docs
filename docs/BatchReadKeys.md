@@ -19,7 +19,7 @@ This function reads records for a batch of records across one or more tables and
 > _*optional parameter._
 
 ## Outputs
-(Array) – A multidimensional array with the same structure as the input array. The empty values for each key have been replaced with their corresponding value.
+*(Array)* – A multidimensional array with the same structure as the input array. The empty values for each key have been replaced with their corresponding value.
 
 ## Examples
 ```livecodeserver
@@ -30,7 +30,7 @@ local tDataA, tOutputA, tTableID, tRecordIDs, tTarget
 # TableID: 701bf5f3-8080-444c-b287-2f8dddc7e268
 # cdbRecordID: 87654321-abcd-1234-cdef-1234567890ab
 
-put cdb_getTableID("clients") into tTableID
+put cdb_tableID("clients") into tTableID
 put "87654321-abcd-1234-cdef-1234567890ab" into tRecordIDs
 
 repeat for each line xRecordID in tRecordIDs

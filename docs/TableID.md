@@ -8,7 +8,7 @@ This function takes a table name and returns the ID of that table.
 * **pTableName** *(String)* - The name of the table.
 
 ## Outputs
-(String) - The Table ID of the specified table. If the table does not exist, **empty** will be returned.
+*(String)* - The Table ID of the specified table. If the table does not exist, **empty** will be returned.
 
 ## Examples
 ```livecodeserver

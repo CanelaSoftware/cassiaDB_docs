@@ -9,7 +9,7 @@ This function counts the number of records (either cloud or local) in a given ta
 * **pTarget** *(String)* - The place to count the records from, either "cloud" or "local".
 
 ## Outputs
-(String) – Contains the numeric count of records in a given table.
+*(String)* – Contains the numeric count of records in a given table.
 
 ## Additional Requirements
 This API call requires internet access in order to count cloud records.

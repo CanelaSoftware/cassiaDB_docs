@@ -47,8 +47,8 @@ local tDataA, tTarget, tClientsTableID, tOfficeTableID
 # [45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
 # [45678123-abcd-1234-cdef-1234567890ab]["address"] - "123 office road"
                                        
-put cdb_getTableID("clients") into tClientsTableID                                       
-put cdb_getTableID("office") into tOfficeTableID
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
 
 ## Update John's record
 put "48" into tDataA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["age"]

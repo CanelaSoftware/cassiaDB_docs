@@ -75,8 +75,8 @@ Records:
 ```livecodeserver
 local tDataA, tTarget, tMode, tResultFormat, tCollapseArray, tOutputA, tClientsTableID, tOfficeTableID
 
-put cdb_getTableID("clients") into tClientsTableID                                       
-put cdb_getTableID("office") into tOfficeTableID
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
 
 # first query
 put "*" into tDataA[tClientsTableID][1]["key"]
@@ -103,8 +103,8 @@ put cdb_batchQuery(tDataA,tTarget,tMode,tResultFormat,tCollapseArray) into tOutp
 ```livecodeserver
 local tDataA, tTarget, tMode, tResultFormat, tCollapseArray, tOutputA, tClientsTableID, tOfficeTableID
 
-put cdb_getTableID("clients") into tClientsTableID                                       
-put cdb_getTableID("office") into tOfficeTableID
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
 
 # first query
 put "age" into tDataA[tClientsTableID][1]["key"]
@@ -139,7 +139,7 @@ put cdb_batchQuery(tDataA,tTarget,tMode,tResultFormat,tCollapseArray) into tOutp
 ```livecodeserver
 local tDataA, tTarget, tMode, tResultFormat, tCollapseArray, tOutputA, tClientsTableID
 
-put cdb_getTableID("clients") into tClientsTableID                                       
+put cdb_tableID("clients") into tClientsTableID                                       
 
 # first query
 put "firstName" into tDataA[tClientsTableID][1]["key"]
@@ -159,6 +159,6 @@ put "false" into tCollapseArray
 put cdb_batchQuery(tDataA,tTarget,tMode,tResultFormat,tCollapseArray) into tOutputA
 
 # output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab  
-		 							 87654321-abcd-1234-cdef-1234567890ab
+#		 							 87654321-abcd-1234-cdef-1234567890ab
 									 //This is a line delimited list
 ```
