@@ -61,6 +61,7 @@ nav:
     - RenameKey: 'RenameKey.md'
     - RenameProject: 'RenameProject.md'
     - RenameTable: 'RenameTable.md'
+    - ResendVerificationEmail: 'ResendVerificationEmail.md'
     - Result: 'Result.md'
     - SDK: 'SDK.md'
     - SdkBuild: 'SdkBuild.md'
