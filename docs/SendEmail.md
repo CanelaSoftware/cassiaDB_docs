@@ -19,11 +19,13 @@ This command will send an email with the specified parameters
 This API call requires internet access.
 
 ## Examples
+### Example 1:
 ```livecodeserver
 cdb_sendEmail "cora@fakeemail.com","bob@mycompany.com","Hello!","<p>This is the HTML Body!</p>","This is the Text Body."
 
 # Email will be sent from Bob to Cora with subject "Hello!"
 ``` 
+### Example 2:
 ```livecodeserver
 local tAttachment
 

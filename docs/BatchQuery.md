@@ -40,9 +40,6 @@ This function searches the specified table(s), and returns the subset that match
 
 ## Additional Requirements
 This API call requires internet access.
-	
-## API Version
-* 0.3.1 - Introduced
 
 ## Examples
 

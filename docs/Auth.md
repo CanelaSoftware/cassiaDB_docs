@@ -15,6 +15,7 @@ This API call requires internet access.
 
 
 ## Examples
+###Example 1:
 ```livecodeserver
 # We want to authenticate a developer account.
 
@@ -26,6 +27,7 @@ put "developer" into tTarget
 
 get cdb_auth(tEmail,tPassword,tTarget)
 ```
+### Example 2:
 ```livecodeserver
 # We want to authenticate a user account.
 

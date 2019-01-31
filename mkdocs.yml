@@ -47,6 +47,7 @@ nav:
     - FlushCache: 'FlushCache.md'
     - List: 'List.md'
     - LoadTable: 'LoadTable.md'
+    - Logout: 'Logout.md'
     - LookupValue: 'LookupValue.md'
     - Ping: 'Ping.md'
     - PingNode: 'PingNode.md'

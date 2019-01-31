@@ -28,7 +28,7 @@ This function searches across one or more tables using specified logic maps and 
 			* "min" - The minimum value.
 			* "max" - The maximum value.
 			* "sum" - The sum of all the values.
-		* ["groupBy"] *(String)* - The name of the key whose values and their number of occurrences will be returned.
+		* ["groupBy"] *(String)* - The name of the key to sort the query results by. Key is sorted by ascending order.
 	* \*[tableID N] *(Array)* - The nth table. Repeat *tableID 1*'s sublevel structure.
 * \***pRecordIDA** *(Array)* - Defines the records in each table to query on.
 	* [tableID 1] *(String)* - Line-delimited list of record IDs or "*" for the entire table.
@@ -54,29 +54,33 @@ This API call requires internet access to query data on the cloud.
 	
 ## Examples
 ```livecodeserver
+/*
+Table name: clients				   		
+Keys: firstName, lastName, age, income
+
+Records: 
+[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
+							    ["lastName"] - "Smith"
+							    ["age"] - "47"
+							    ["income"] - "100000"
+
+[87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+							    ["lastName"] - "Smith"
+							    ["age"] - "46"
+							    ["income"] - "100000"
+
+Table name: office
+Keys: name, address
+Records:
+[45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
+						 	    ["address"] - "123 office Road"
+*/
+```
+### Example 1:
+```livecodeserver
 # We want to find all clients that have last name "Smith" 
 # and a first name that ends with "n" or "y" and
 # all offices that have "tech" in their name.
-
-# Table name: clients				   		
-# Keys: firstName, lastName, age, income
-
-# Records: 
-# [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
-#							    ["lastName"] - "Smith"
-#							    ["age"] - "47"
-#							    ["income"] - "100000"
-
-# [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
-#							    ["lastName"] - "Smith"
-#							    ["age"] - "46"
-#							    ["income"] - "100000"
-
-# Table name: office
-# Keys: name, address
-# Records:
-# [45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-#						 	    ["address"] - "123 office Road"
 
 local tDataA, tAdvancedMapA, tTarget, tResultFormat, tClientsTableID, tOfficeTableID, tOutputA
 
@@ -116,5 +120,48 @@ put cdb_batchAdvancedQuery(tDataA,tAdvancedMapA,tTarget,tResultFormat) into tOut
 
 # output array: tOutputA[tClientsTableID] - "12345678-abcd-1234-cdef-1234567890ab\87654321-abcd-1234-cdef-1234567890ab" 
 # 	       			[tOfficeTableID] - "45678123-abcd-1234-cdef-1234567890ab"
+```
+### Example 2:
+```livecodeserver
+# We want to find the number of clients that have last name "Smith"
+# and the number of offices that have "tech" in their name. 
 
+local tDataA, tAdvancedMapA, tTarget, tResultFormat, tAggregateA, tClientsTableID, tOfficeTableID, tOutputA
+
+put cdb_tableID("clients") into tClientsTableID
+put cdb_tableID("office") into tOfficeTableID
+
+# first query (clients table)
+put "lastName" into tDataA[tClientsTableID]["lName"]["key"]
+put "=" into tDataA[tClientsTableID]["lName"]["operator"]
+put "Smith" into tDataA[tClientsTableID]["lName"]["value"]
+
+# advanced map (clients table)
+put "lName" into tAdvancedMapA[tClientsTableID]
+
+# aggregation (clients table)
+put "lastName" into tAggregateA[tClientsTableID]["aggregateKey"]
+put "Count" into tAggregateA[tClientsTableID]["aggregateFunction"]
+put empty into tAggregateA[tClientsTableID]["groupby"]
+
+# first query (office table)
+put "name" into tDataA[tOfficeTableID]"name"]["key"]
+put "contains" into tDataA[tOfficeTableID]["name"]["operator"]
+put "tech" into tDataA[tOfficeTableID]["name"]["value"]
+
+# advanced map (office table)
+put "name" into tAdvancedMapA[tOfficeTableID]
+
+# aggregation (office table)
+put "name" into tAggregateA[tOfficeTableID]["aggregateKey"]
+put "Count" into tAggregateA[tOfficeTableID]["aggregateFunction"]
+put empty into tAggregateA[tOfficeTableID]["groupby"]
+
+put "cloud" into tTarget
+put "recordList" into tResultFormat
+
+put cdb_batchAdvancedQuery(tDataA,tAdvancedMapA,tTarget,tResultFormat,tAggregateA) into tOutputA
+
+# output array: tOutputA[tClientsTableID] - "2"
+# 	       			[tOfficeTableID] - "1"
 ```

@@ -21,14 +21,17 @@ This command will load table(s) into memory so they can be accessed through othe
 > _*optional parameter._
 
 ## Examples
+### Example 1:
 ```livecodeserver
 cdb_loadTable "customers"
 # Table "customers" is loaded in memory and can now be used 
 ``` 
+### Example 2:
 ```livecodeserver
 cdb_loadTable "*"
 # All tables are now loaded
 ```
+### Example 3:
 ```livecodeserver
 cdb_loadTable "*",the long id of cd "sample","tableLoaded"
 # All tables are now loaded

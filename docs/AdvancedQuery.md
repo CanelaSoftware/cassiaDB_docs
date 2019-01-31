@@ -24,7 +24,7 @@ This function searches a table using a specified logic map and returns records t
 		* "min" - The minimum value.
 		* "max" - The maximum value.
 		* "sum" - The sum of all the values.
-	* ["groupBy"] *(String)* - The name of the key whose values and their number of occurrences will be returned.
+	* ["groupBy"] *(String)* - The name of the key to sort the query results by. Key is sorted by ascending order.
 * \***pRecordID** *(String)* - Line-delimited list of record IDs or "*" for the entire table.
 
 > _*optional parameter._
@@ -45,42 +45,36 @@ This API call requires internet access to query data on the cloud.
 	
 ## Examples
 ```livecodeserver
-# We want to find all clients that have last name "Smith" 
-# and a first name that ends with "n" or "y".
-
+/*
 # Table name: clients				   		
 # Keys: firstName, lastName, age, income
 
-# Records: 
-# [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
-#							    ["lastName"] - "Smith"
-#							    ["age"] - "47"
-#							    ["income"] - "100000"
+#Records: 
+[12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
+							    ["lastName"] - "Smith"
+							    ["age"] - "47"
+							    ["income"] - "100000"
 
-# [87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
-#							   ["lastName"] - "Smith"
-#							   ["age"] - "46"
-#							   ["income"] - "100000"
+[87654321-abcd-1234-cdef-1234567890ab]["firstName"] - "Jenny"
+							   ["lastName"] - "Smith"
+							   ["age"] - "46"
+							   ["income"] - "100000"
+*/
+```
+### Example 1:
+```livecodeserver
+# We want to find all clients that have last name "Smith" 
+# and a first name that ends with "n" or "y".
 
-local tDataA, tAdvancedMap, tTable, tTarget, tResultFormat, tOutputA
+local tDataA, tAdvancedMap, tTable, tTarget, tResultFormat
 
 # first query
 put "lastName" into tDataA["lName"]["key"]
 put "=" into tDataA["lName"]["operator"]
 put "Smith" into tDataA["lName"]["value"]
 
-# second query
-put "firstName" into tDataA["first_n"]["key"]
-put "ends with" into tDataA["first_n"]["operator"]
-put "n" into tDataA["first_n"]["value"]
-
-# third query
-put "firstName" into tDataA["first_y"]["key"]
-put "ends with" into tDataA["first_y"]["operator"]
-put "y" into tDataA["first_y"]["value"]
-
 # advanced map
-put "LName and (first_n or first_y)" into tAdvancedMap
+put "LName" into tAdvancedMap
 
 put "clients" into tTable
 put "cloud" into tTarget
@@ -93,4 +87,33 @@ put cdb_advancedQuery(tDataA,tAdvancedMap,tTable,tTarget,tResultFormat)
 
 # This is a line delimited list containing all record IDs with last name "Smith"
 # and first name ending with "n" or "y".
+```
+### Example 2:
+```livecodeserver
+# We want to find the ages of clients that have last name "Smith"
+# and the number of clients at each age.
+
+local tDataA, tAdvancedMap, tTable, tTarget, tResultFormat, tAggregateA, tOutputA
+
+# first query
+put "lastName" into tDataA["query1"]["key"]
+put "=" into tDataA["query1"]["operator"]
+put "Smith" into tDataA["query1"]["value"]
+
+# advanced map
+put "query1" into tAdvancedMap
+
+# aggregation
+put empty into tAggregateA["aggregateKey"]
+put "count" into tAggregateA["aggregateFunction"]
+put "age" into tAggregateA["groupby"]
+
+put "clients" into tTable
+put "cloud" into tTarget
+put "recordList" into tResultFormat
+
+put cdb_advancedQuery(tDataA,tAdvancedMap,tTable,tTarget,tResultFormat,tAggregateA) into tOutputA
+
+# output array: tOutputA["46"] - "1"
+# 	       			 ["47"] - "1
 ```

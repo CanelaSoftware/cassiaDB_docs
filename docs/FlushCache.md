@@ -11,6 +11,7 @@ None.
 This API call requires internet access in order to be successful.
 
 ## Examples
+### Example 1:
 ```livecodeserver
 # While connected to the internet
 cdb_flushCache
@@ -18,6 +19,7 @@ cdb_flushCache
 put cdb_result()
 # Outputs true
 ``` 
+### Example 2:
 ```livecodeserver
 # While not connected to the internet
 cdb_flushCache

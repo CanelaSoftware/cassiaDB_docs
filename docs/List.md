@@ -18,6 +18,7 @@ This function returns a line-delimited list of the values of the requested key(s
 This API call requires internet access in order to list cloud records.
 
 ## Examples
+### Example 1:
 ```livecodeserver
 local tTable, tTarget, tKeys, tOutputA
 
@@ -34,6 +35,7 @@ put cdb_list(tTable,tTarget,tKeys) into tOutputA
 #        Nathan
 #        Erin
 ```
+### Example 2:
 ```
 local tTable, tTarget, tOutputA
 

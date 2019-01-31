@@ -22,6 +22,7 @@ This function will sync all records in a specified table between local and cloud
 This API call requires internet access.
 
 ## Examples
+### Example 1:
 ```livecodeserver
 # Table: clients
 ## Example 1: Force our local to match what is on the cloud.
@@ -32,6 +33,7 @@ get cdb_sync("*","clients","cloud",true,false)
 # It will delete any records not on the cloud
 # It will not check if anything local has been updated more recently.
 ```
+### Example 2:
 ```livecodeserver
 ## Example 2: Make our cloud get anything new from our local
 ## But do not overwrite anything that is newer.
@@ -47,6 +49,7 @@ end repeat
 # It will not remove any records that only exist on cloud.
 # It will not overwrite any records that are newer on cloud.
 ```
+### Example 3:
 ```livecodeserver
 ## Example 3: Make our local data sync to what is on cloud
 ## Overwrite everything locally, but keep any records that
@@ -59,6 +62,7 @@ get cdb_sync("*","clients","cloud",false,false)
 # It will overwrite all records, including newer records.
 
 ```
+### Example 4:
 ```livecodeserver
 ## Example 4: Sync certain records from local to cloud
 ## Only overwrite if local is newer
