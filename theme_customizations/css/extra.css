@@ -1,0 +1,9 @@
+.wy-menu-vertical li:not(.current) .subsection-title {
+	color: #b3b3b3;	
+}
+.wy-menu-vertical .subsection-title {
+	font-weight: bold;
+}
+.wy-menu-vertical li ul li a {
+	color: #FFF;
+}

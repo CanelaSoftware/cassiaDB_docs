@@ -21,6 +21,7 @@
 
   <link rel="stylesheet" href="{{ 'css/theme.css'|url }}" type="text/css" />
   <link rel="stylesheet" href="{{ 'css/theme_extra.css'|url }}" type="text/css" />
+  <link rel="stylesheet" href="{{ 'css/extra.css'|url }}" type="text/css" />
   {%- if config.theme.highlightjs %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/{{ config.theme.hljs_style }}.min.css">
   {%- endif %}
@@ -92,7 +93,7 @@
                       {%- for nav_item in nav_item.children %}
                         {%- if nav_item.is_section %}
                           <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
-                            <span class="subsection-text">{{ nav_item.title }}</span>
+                            <span class="subsection-title">{{ nav_item.title }}</span>
                             <ul {% if nav_item.active %} class="current"{% endif %}>
                               {%- for nav_item in nav_item.children %}
                               {%- set navlevel = 2 %}
