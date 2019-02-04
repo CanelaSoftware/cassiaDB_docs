@@ -21,8 +21,8 @@ nav:
         - Read: 'Read.md'
         - BatchRead: 'BatchRead.md'
         - ReadKeys: 'ReadKeys.md'
-        - LookupValue: 'LookupValue.md'
         - BatchReadKeys: 'BatchReadKeys.md'
+        - LookupValue: 'LookupValue.md'
         - Update: 'Update.md'
         - BatchUpdate: 'BatchUpdate.md'
         - BatchMerge: 'BatchMerge.md'
@@ -61,6 +61,7 @@ nav:
         - Sync: 'Sync.md'
         - TableID: 'TableID.md'
         - TeamID: 'TeamID.md'
+        - ProjectID: 'ProjectID.md'
         - LoadTable: 'LoadTable.md'
         - UnloadTable: 'UnloadTable.md'
     - Error Checking:

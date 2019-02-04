@@ -1,4 +1,4 @@
-# function cdb_createTable(pProject, pTable, pKeys, *pSchemaless*, *pTableDomain*, *pInstanceName*)
+# function cdb_createTable(pProject, pTable, pKeys, *pKeysType*, *pSchemaless*, *pTableDomain*, *pInstanceName*)
 ---
 ## Summary
 This function creates a new table with keys and adds the table to a specified project.
@@ -9,6 +9,8 @@ This function creates a new table with keys and adds the table to a specified pr
 * **pTable** *(String)* - The name of the table to be created.
 
 * **pKeys** *(String)* - The comma-delimited list of names of the keys that will be added to the table.
+
+* \***pKeysType** *(Bool)* - An array whose keys are the type and values are the table's keys with that type. The only type currently accepted is "hyperblob".
 
 * \***pSchemaless** *(Bool)* - Determines whether the table is schemaless or not. Default is false.
 
