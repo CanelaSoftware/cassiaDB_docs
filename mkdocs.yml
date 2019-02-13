@@ -37,6 +37,7 @@ nav:
         - BatchAdvancedQuery: 'BatchAdvancedQuery.md'
     - Blob:
         - CreateBlob: 'CreateBlob.md'
+        - BatchCreateBlob: 'BatchCreateBlob.md'
         - DeleteBlob: 'DeleteBlob.md'
         - ReadBlob: 'ReadBlob.md'
         - UpdateBlob: 'UpdateBlob.md'
