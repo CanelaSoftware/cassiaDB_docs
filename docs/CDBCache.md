@@ -2,7 +2,7 @@
 ---
 ## What is the CDBCache?
 
-The CDBCache allows developers to stop worrying about internet connectivity when making cloud transactions. It will automatically save any cloud-write transactions that fail, and those transactions will be processed once the user has reconnected to the internet. This means that any time your users lose their internet connection, CassiaDB will cache this transaction. The transactions are saved even if the application shuts down, so you never have to worry about missing your cloud calls.
+The CDBCache allows developers to stop worrying about internet connectivity when making cloud transactions. It will automatically save any cloud-write transactions that fail, and those transactions will be processed once the user has reconnected to the internet. This means that any time your users lose their internet connection, CanelaDB will cache this transaction. The transactions are saved even if the application shuts down, so you never have to worry about missing your cloud calls.
 
 ### Using the CDBCache
 

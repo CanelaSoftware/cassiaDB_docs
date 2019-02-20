@@ -10,11 +10,11 @@ nav:
     - Setting Up LiveCloud: 'Setup.md'
     - Building Standalones: 'Standalone.md'
     - Authorization and Accounts: 'AddingUsers.md'
-  - CassiaDB in Detail:
+  - CanelaDB in Detail:
     - CDBCache: 'CDBCache.md'
     - Metadata: 'metadata.md'
     - Query Operators: 'QueryOperators.md'
-  - CassiaDB API Reference:
+  - CanelaDB API Reference:
     - CRUD:
         - Create: 'Create.md'
         - BatchCreate: 'BatchCreate.md'        

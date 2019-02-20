@@ -1,6 +1,6 @@
 # Accounts and Authorization
 
-LiveCloud includes a User Auth package, with APIs integrated into the CassiaDB libraries. __Auth is a requirement in order to access the Cloud.__ All your application's users must create an account in order to access your project's cloud data. Fortunately, the setup and coding required for this is straightforward and easy to do.
+LiveCloud includes a User Auth package, with APIs integrated into the CanelaDB libraries. __Auth is a requirement in order to access the Cloud.__ All your application's users must create an account in order to access your project's cloud data. Fortunately, the setup and coding required for this is straightforward and easy to do.
 
 # LiveCloud Accounts
 
@@ -28,10 +28,10 @@ This method is for cloud-based applications that do not require users to create 
 
 ### Authorizing Your App
 
-1. Call [cdb_auth](https://docs.livecloud.io/Auth/) with the necessary parameters after the call to "initializeCassiaDB" in the "preOpenStack" of the application's stack script. Hardcode the email and password of the user account created in the "Creating User Accounts" section above in your stack script. This will authenticate the user with the hardcoded credentials when the application is opened.
+1. Call [cdb_auth](https://docs.livecloud.io/Auth/) with the necessary parameters after the call to "initializeCanelaDB" in the "preOpenStack" of the application's stack script. Hardcode the email and password of the user account created in the "Creating User Accounts" section above in your stack script. This will authenticate the user with the hardcoded credentials when the application is opened.
 
 		on preOpenStack
-     		initializeCassiaDB
+     		initializeCanelaDB
      		get cdb_auth(pEmail,pPassword,"user")
 		end preOpenStack
 

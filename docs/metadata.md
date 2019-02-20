@@ -1,7 +1,7 @@
 # Metadata
 ---
 
-Every record in CassiaDB has certain information stored about the record itself. This metadata can be used to see when a record was created, when it was last changed, how many updates have been made to the record, etc. Metadata in CassiaDB is stored in each record under the "CDB" key. The following sub-keys are used:
+Every record in CanelaDB has certain information stored about the record itself. This metadata can be used to see when a record was created, when it was last changed, how many updates have been made to the record, etc. Metadata in CanelaDB is stored in each record under the "CDB" key. The following sub-keys are used:
 
 * **cdbDateCreated** - The unix time when the record was created
 

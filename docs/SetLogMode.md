@@ -7,7 +7,7 @@ This command will set the logging mode of the CDB libraries.
 ## Inputs
 * **pMode** *(String)* - The log mode. Must be one of the following:
 	* **"message box"** - Will log to the message box.
-	* **"disk"** - Will log to file "Results.txt", located inside folder "CassiaDB Logs" next to the mainstack.
+	* **"disk"** - Will log to file "Results.txt", located inside folder "CanelaDB Logs" next to the mainstack.
 	* **"ignore"** - Will not log.
 
 ## Examples
