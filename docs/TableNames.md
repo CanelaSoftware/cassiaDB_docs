@@ -11,7 +11,7 @@ None
 
 ## Examples
 ```livecodeserver
-put cdb_getTableNames()
+put cdb_tableNames()
 
 # Output: clients
 #	      employees
