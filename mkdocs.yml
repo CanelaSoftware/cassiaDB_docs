@@ -63,6 +63,7 @@ nav:
         - TableID: 'TableID.md'
         - TeamID: 'TeamID.md'
         - ProjectID: 'ProjectID.md'
+        - ProjectTableIDs: 'ProjectTableIDs.md'
         - LoadTable: 'LoadTable.md'
         - UnloadTable: 'UnloadTable.md'
     - Error Checking:
@@ -95,10 +96,12 @@ nav:
         - CreateProject: 'CreateProject.md'
         - RenameProject: 'RenameProject.md'
         - DeleteProject: 'DeleteProject.md'
+        - ProjectName: 'ProjectName.md'
         - ProjectNames: 'ProjectNames.md'
 
   - Other Info:
     - LiveCloud Homepage: 'https://livecloud.io'
+    - LiveCloud Forums: 'https://forums.livecloud.io'
 markdown_extensions:
   - toc
 theme:

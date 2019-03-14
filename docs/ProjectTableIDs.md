@@ -17,7 +17,7 @@ This API call uses local data.
 local tProjectID
 
 put "8fc03fe9-cd65-5358-hjk6-df85eb363984" into tProjectID
-put cdb_projectTableIDs(tProjectID)
+cdb_projectTableIDs(tProjectID)
 
 # Output: 72a88e4f-c6ba-4fda-9381-2f0b0ca220bd,98765432-dcdc-0210-aaaa-975102a357ca
 ```

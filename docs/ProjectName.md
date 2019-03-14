@@ -17,7 +17,7 @@ This API call uses local data.
 local tProjectID
 
 put "8fc03fe9-cd65-5358-hjk6-df85eb363984" into tProjectID
-put cdb_projectName(tProjectID)
+cdb_projectName(tProjectID)
 
 # Output: meeting
 ```
