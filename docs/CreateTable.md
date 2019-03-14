@@ -38,5 +38,5 @@ put "firstName,lastName,age,income" into tKeys
 
 cdb_createTable(tProject,tTable,tKeys)
 
-#Output: 12345678-abcd-1234-cdef-1234567890ab
+#Output: 72a88e4f-c6ba-4fda-9381-2f0b0ca220bd
 ```

@@ -17,8 +17,8 @@ This function takes a table name or TableID and returns a comma-separated list o
 # firstname, lastname, age, income
     
 put cdb_tableKeys("clients")
-# Outputs "firstname,lastname,age,income"
+# Outputs firstname,lastname,age,income
 
 put cdb_tableKeys("72a88e4f-c6ba-4fda-9381-2f0b0ca220bd")
-# Outputs "firstname,lastname,age,income"
+# Outputs firstname,lastname,age,income
 ```

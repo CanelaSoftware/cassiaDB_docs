@@ -25,7 +25,7 @@ This API call requires internet access in order to count cloud records.
 local tCountA, tDataA, tClientsTableID, tOfficeTableID
 
 #Table Name: clients 
-#Table ID: "12345678-abcd-1234-cdef-1234567890ab"
+#Table ID: "72a88e4f-c6ba-4fda-9381-2f0b0ca220bd"
 #Table Name: office 
 #Table ID: "98765432-dcdc-0210-aaaa-975102a357ca"
                                                 

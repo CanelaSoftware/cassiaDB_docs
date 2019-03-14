@@ -16,5 +16,5 @@ This function takes a table name and returns the ID of that table.
 
 put cdb_tableID("clients")
 
-# outputs "72a88e4f-c6ba-4fda-9381-2f0b0ca220bd"
+# outputs 72a88e4f-c6ba-4fda-9381-2f0b0ca220bd
 ``` 
