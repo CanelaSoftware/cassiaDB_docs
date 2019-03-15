@@ -89,6 +89,7 @@ nav:
         - RemoveKeys: 'RemoveKeys.md'
         - TableKeys: 'TableKeys.md'
         - TableKeysType: 'TableKeysType.md'
+        - TableName: 'TableName.md'
         - TableNames: 'TableNames.md'
         - AddTableToProject: 'AddTableToProject.md'
         - RemoveTableFromProject: 'RemoveTableFromProject.md'
