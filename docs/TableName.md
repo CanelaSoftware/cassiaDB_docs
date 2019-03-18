@@ -14,7 +14,7 @@ This function takes a tableID and returns the name of that table.
 local tTableID
 
 put "12345678-abcd-1234-cdef-1234567890ab" into tTableID
-cdb_tableName(tTableID)
+get cdb_tableName(tTableID)
 
 # Output: clients
 ```
