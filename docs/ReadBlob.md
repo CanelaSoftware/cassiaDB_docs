@@ -1,22 +1,18 @@
-# function cdb_readBlob(pDataA, pTarget, *pProject*)
+# function cdb_readBlob(pRecordID, pTarget, *pProject*)
 
 ---
 ## Summary
-This function reads one or more [blob](https://en.wikipedia.org/wiki/Binary_large_object) records from either cloud or local, and returns them as an array.
+This function reads one [blob](https://en.wikipedia.org/wiki/Binary_large_object) record from either cloud or local, and returns the path where the blob can be accessed.
 
 ## Inputs
-* **pDataA** *(Array)* - An array whose keys are blobIDs and values are empty.
+* **pRecordID** *(String)* - The ID of the blob to be read.
 * **pTarget** *(String)* - The place to read the blob, either "cloud" or "local".
-* \***pProject** *(String)* - The project name associated with the blob.
+* \***pProject** *(String)* - The project name associated with the blob. Defaults to the current project. We recommend that you do not set this parameter.
 
 > _*optional parameter._
 
-![ReadBlobInput](images/ReadBlobInput.svg)
-
 ## Outputs
-*(Array)* - One or more blobIDs with paths of the specified blobs.
-
-![ReadBlobOutput](images/ReadBlobOutput.svg)
+*(String)* - The filepath to the blob file.
 
 ## Additional Requirements
 This API call requires internet access.
@@ -26,15 +22,9 @@ This API call requires internet access.
 ```livecodeserver
 # Project Name: meetings
 # blobID: 01234567-abcd-8901-efgh-2345678901ij
+local tOutput
 
-local tDataA, tTarget, tProject, tOutputA
+put cdb_readBlob("01234567-abcd-8901-efgh-2345678901ij","cloud","meetings") into tOutput
 
-put empty into tData["01234567-abcd-8901-efgh-2345678901ij"]
-put "cloud" into tTarget
-put "meetings" into tProject
-
-put cdb_readBlob(tDataA,tTarget,tProject) into tOutputA
-
-# Output Array:
-# tOutputA["01234567-abcd-8901-efgh-2345678901ij"] - value
+# tOutput: "/home/username/project/CanelaDB/blobs/ProjectID/~temp/01234567-abcd-8901-efgh-2345678901ij.png"
 ```

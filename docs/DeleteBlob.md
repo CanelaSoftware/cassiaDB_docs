@@ -1,22 +1,15 @@
-# function cdb_deleteBlob(pDataA, pTarget, *pProject*)
+# command cdb_deleteBlob pRecordID, pTarget, *pProject*
 
 ---
 ## Summary
-This function deletes one or more [blob](https://en.wikipedia.org/wiki/Binary_large_object) records from either cloud or local, and returns the blobIDs of the deleted blobs as an array.
+This command deletes one or more [blob](https://en.wikipedia.org/wiki/Binary_large_object) records from either cloud or local, and returns the blobIDs of the deleted blobs as an array.
 
 ## Inputs
-* **pDataA** *(Array)* - An array whose keys are blobIDs and values are empty.
+* **pRecordID** *(String)* - The ID of the blob to be deleted. (i.e. the recordID of the blob in the _cdbBlobs_ table.)
 * **pTarget** *(String)* - The place to delete the blob, either "cloud" or "local".
-* \***pProject** *(String)* - The project name associated with the blob.
+* \***pProject** *(String)* - The project name to delete the blob from. Defaults to the current project. We recommend that you do not set this parameter.
 
 > _*optional parameter._
-
-![DeleteBlobInput](images/DeleteBlobInput.svg)
-
-## Outputs
-*(Array)* - A "results" key with one or more blobIDs with key "blobData" whose value is empty.
-
-![DeleteBlobOutput](images/DeleteBlobOutput.svg)
 
 ## Additional Requirements
 This API call requires internet access.
@@ -27,14 +20,7 @@ This API call requires internet access.
 # Project Name: meetings
 # blobID: 01234567-abcd-8901-efgh-2345678901ij
 
-local tDataA, tTarget, tProject, tOutputA
+cdb_deleteBlob "01234567-abcd-8901-efgh-2345678901ij","cloud"
 
-put empty into tData["01234567-abcd-8901-efgh-2345678901ij"]
-put "cloud" into tTarget
-put "meetings" into tProject
-
-put cdb_deleteBlob(tDataA,tTarget,tProject) into tOutputA
-
-# Output Array:
-# tOutputA["results"]["01234567-abcd-8901-efgh-2345678901ij"]["blobData"] - empty
+#The Blob object no longer exists in the cloud, and the blob record no longer exists in the cdbBlobs table.
 ```
