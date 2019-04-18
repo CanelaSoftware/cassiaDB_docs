@@ -39,8 +39,11 @@ nav:
         - CreateBlob: 'CreateBlob.md'
         - BatchCreateBlob: 'BatchCreateBlob.md'
         - DeleteBlob: 'DeleteBlob.md'
+        - BatchDeleteBlob: 'BatchDeleteBlob.md'
         - ReadBlob: 'ReadBlob.md'
+        - BatchReadBlob: 'BatchReadBlob.md'
         - UpdateBlob: 'UpdateBlob.md'
+        - BatchUpdateBlob: 'BatchUpdateBlob.md'
     - Auth:
         - Auth: 'Auth.md'
         - Logout: 'Logout.md'

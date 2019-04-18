@@ -12,6 +12,7 @@ This command updates a specified [blob](https://en.wikipedia.org/wiki/Binary_lar
 * \***pProject** *(String)* -  The project name to update the blobs to. Defaults to the current project. We recommend that you do not set this parameter.
 
 > _*optional parameter._
+
 ![Batch Update Blob Input Diagram](/images/BatchUpdateBlobInput.svg)
 
 ## Additional Requirements
