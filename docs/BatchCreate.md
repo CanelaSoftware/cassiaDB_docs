@@ -60,10 +60,10 @@ put "cloud" into tTarget
 put cdb_batchCreate(tDataA,tTarget) into tOutputA
 
 # Output Array: 
-# tOutputA[tClientsTableID][1] - "12345678-abcd-1234-cdef-1234567890ab"
-#                                 cdbRecordID for John Smith
-# tOutputA[tClientsTableID][2] - "87654321-abcd-1234-cdef-1234567890ab"
-#                                 cdbRecordID for Jenny Smith
-# tOutputA[tOfficeTableID][1] - "45678123-abcd-1234-cdef-1234567890ab"
-#                                cdbRecordID for Smith's Tech
+# tOutputA[tClientsTableID][1]["12345678-abcd-1234-cdef-1234567890ab"]
+#          cdbRecordID for John Smith is 12345678-abcd-1234-cdef-1234567890ab
+# tOutputA[tClientsTableID][2]["87654321-abcd-1234-cdef-1234567890ab"]
+#          cdbRecordID for Jenny Smith is 87654321-abcd-1234-cdef-1234567890ab
+# tOutputA[tOfficeTableID][1]["45678123-abcd-1234-cdef-1234567890ab"]
+#          cdbRecordID for Smith's Tech is 45678123-abcd-1234-cdef-1234567890ab
 ```

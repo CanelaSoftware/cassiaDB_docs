@@ -2,10 +2,10 @@
 
 ---
 ## Summary
-This command logs the developer or user account out of the system.
+This command logs the user account out of the system by removing authentication for that user.
 
 ## Inputs
-* **pTarget** *(String)* - The account type to log out, either "developer" or "user".
+* **pTarget** *(String)* - The value must be "user" to log out user accounts.
 
 
 ## Additional Requirements
@@ -13,17 +13,6 @@ This API call requires internet access.
 
 
 ## Examples
-### Example 1:
-```livecodeserver
-# We want to log out a developer account.
-
-local tTarget
-
-put "developer" into tTarget
-
-cdb_logout tTarget
-```
-### Example 2:
 ```livecodeserver
 # We want to log out a user account.
 

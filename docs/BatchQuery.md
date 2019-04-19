@@ -30,7 +30,6 @@ This function searches the specified table(s), and returns the subset that match
 
 ![BatchQuery input diagram](images/BatchQueryInput.svg)
 
-
 ## Outputs
 * *(Array)* - (the following structure assumes that collapseArray is 'false')
 	* [tableID 1] - The first tableID containing each query for that table.
@@ -38,6 +37,7 @@ This function searches the specified table(s), and returns the subset that match
 		* [queryID N] - Contains the results as specified in the 'resultFormat' when the 'mode' is not "logicalAND" or "logicalOR".
 	* [tableID N] - as above, if queries were executed on multiple tables at once.
 
+![BatchQuery output diagram](images/BatchQueryOutput.svg)
 ## Additional Requirements
 This API call requires internet access.
 
@@ -93,8 +93,8 @@ put "false" into tCollapseArray
 put cdb_batchQuery(tDataA,tTarget,tMode,tResultFormat,tCollapseArray) into tOutputA
 
 # output array: tOutputA[tClientsTableID][1] - 12345678-abcd-1234-cdef-1234567890ab
-									 87654321-abcd-1234-cdef-1234567890ab
-									 //This is a line delimited list
+#		 							 87654321-abcd-1234-cdef-1234567890ab
+		 							 //This is a line delimited list
 ```
 ### Example 2:
 ```livecodeserver

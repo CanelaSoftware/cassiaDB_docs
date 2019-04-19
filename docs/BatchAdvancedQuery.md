@@ -49,6 +49,7 @@ This function searches across one or more tables using specified logic maps and 
 * If *pResultFormat* is "recordData":
 	* Output is an array where each key is a tableID mapped to an array whose keys are recordIDs that match the query and whose values are their respective data.
 
+![BatchAdvancedQuery output diagram](images/BatchAdvancedQueryOutput.svg)
 ## Additional Requirements
 This API call requires internet access to query data on the cloud.
 	

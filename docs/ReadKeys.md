@@ -12,6 +12,7 @@ This function reads record(s) and returns only the keys requested from a recordâ
 ## Outputs
 *(Array)* â€“ One or more cdbRecordIDs containing a partial record with only the keys requested in the input.
 
+![ReadKeys output diagram](images/ReadKeysOutput.svg)
 ## Additional Requirements
 This API call requires internet access to make cloud calls.
 

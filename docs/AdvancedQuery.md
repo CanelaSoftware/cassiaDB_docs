@@ -40,6 +40,7 @@ This function searches a table using a specified logic map and returns records t
 * *(Array)* - If *pResultFormat* is "recordData":
 	* Output is an array where each key is a recordID of a record in the specified table that matches the query, with subkeys defined by the schema.
 
+![AdvancedQuery output diagram](images/AdvancedQueryOutput.svg)
 ## Additional Requirements
 This API call requires internet access to query data on the cloud.
 	
