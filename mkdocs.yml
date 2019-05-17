@@ -48,12 +48,15 @@ nav:
     - Auth:
         - Auth: 'Auth.md'
         - Logout: 'Logout.md'
+        - LoggedInUser: 'LoggedInUser.md'
     - User Accounts:
         - CreateUserAccount: 'CreateUserAccount.md'
         - DeleteUserAccount: 'DeleteUserAccount.md'
         - ReadUserAccount: 'ReadUserAccount.md'
+        - ReadUsersByEmail: 'ReadUsersByEmail.md'
         - ResendVerificationEmail: 'ResendVerificationEmail.md'
         - UpdateUserAccount: 'UpdateUserAccount.md'
+        - UserTableName: 'UserTableName.md'
     - Utilities:
         - Count: 'Count.md'
         - BatchCount: 'BatchCount.md'

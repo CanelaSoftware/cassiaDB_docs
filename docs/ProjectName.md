@@ -1,7 +1,7 @@
 # function cdb_projectName(pProjectID)
 ---
 ## Summary
-This function returns the name of the specified project.
+This function returns the name of the specified project. If no project ID is provided, whichever project name is found in the config file will be returned.
 
 ## Inputs
 * **pProjectID** *(String)* - A projectID.
