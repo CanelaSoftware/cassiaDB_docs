@@ -4,7 +4,7 @@
 This project is designed to give a detailed overview of the API calls available in the CanelaDB database and related cloud service (LiveCloud).
 
 You can view the API docs online here: 
-[http://canelasoftware.github.io/CanelaDB_docs/](http://canelasoftware.github.io/CanelaDB_docs/)
+<http://canelasoftware.github.io/cassiaDB_docs/>
 
 The API can also be found in Markdown format in the "docs" Folder.
 
