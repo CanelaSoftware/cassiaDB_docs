@@ -9,7 +9,8 @@ This command unlinks a specific table from a project.
 * **pTable** *(String)* - The specified table ID or table name.
 
 ## Additional Requirements
-This API call requires internet access.
+* This API call requires internet access.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

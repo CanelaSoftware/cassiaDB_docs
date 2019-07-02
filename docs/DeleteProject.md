@@ -7,7 +7,8 @@ This command will delete a specified project and its tables unless the tables ar
 * **pProject** *(String)* - The specified project name.
 
 ## Additional Requirements
-This API call requires internet access in order to delete a project in cloud records.
+* This API call requires internet access in order to delete a project in cloud records.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

@@ -7,7 +7,8 @@ This command creates a new project.
 * **pProject** *(String)* - The specified project name.
 
 ## Additional Requirements
-This API call requires internet access in order to create a project in cloud records.
+* This API call requires internet access in order to create a project.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

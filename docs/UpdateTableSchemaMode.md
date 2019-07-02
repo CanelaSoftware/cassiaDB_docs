@@ -8,7 +8,8 @@ This command changes the schema mode of tables.
 * **pSchemaless** *(Bool)* - Determines whether table is schemaless or not.
 
 ## Additional Requirements
-This API call requires internet access.
+* This API call requires internet access.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

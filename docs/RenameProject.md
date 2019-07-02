@@ -9,7 +9,8 @@ This command changes the name of a specific project.
 * **pNewName** *(String)* - The new name that the project will be changed to.
 
 ## Additional Requirements
-This API call requires internet access.
+* This API call requires internet access.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

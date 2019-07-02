@@ -24,7 +24,8 @@ This function creates a new table with keys and adds the table to a specified pr
 *(String)* - The table ID of the newly created table.
 
 ## Additional Requirements
-This API call requires internet access in order to create a table in cloud records.
+* This API call requires internet access in order to create a table in cloud records.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

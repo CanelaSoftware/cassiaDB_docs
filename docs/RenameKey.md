@@ -11,7 +11,8 @@ This command renames a key from a specific table.
 * **pNewName** *(String)* - The new name that the key will be renamed to.
 
 ## Additional Requirements
-This API call requires internet access.
+* This API call requires internet access.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

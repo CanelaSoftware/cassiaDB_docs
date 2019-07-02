@@ -7,7 +7,8 @@ This command deletes a table.
 * **pTable** *(String)* - The specified table ID or table name.
 
 ## Additional Requirements
-This API call requires internet access in order to delete a table in cloud records.
+* This API call requires internet access in order to delete a table in cloud records.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver

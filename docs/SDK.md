@@ -13,6 +13,11 @@ This function loads the config(s) for the specified project(s).
 ## Outputs
 *(String)* - A message to the message box, while in the IDE, if pMode is not "silent".
 
+## Additional Requirements
+* This API call requires internet access.
+* This API requires Developer Auth in order to use the **"\*"** option. See [Accounts and Authorization](AddingUsers.md) for more details.
+
+
 ## Examples
 ```livecodeserver
 # Project "meeting"

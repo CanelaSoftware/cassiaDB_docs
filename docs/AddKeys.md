@@ -9,7 +9,8 @@ This command adds new keys to a specific table.
 * **pKeys** *(String)* - The names of the keys that will be added to the table.
 
 ## Additional Requirements
-This API call requires internet access.
+* This API call requires internet access.
+* This API requires Developer Auth. See [Accounts and Authorization](AddingUsers.md) for more details.
 
 ## Examples
 ```livecodeserver
