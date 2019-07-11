@@ -74,8 +74,18 @@ put "lastName" into tDataA["lName"]["key"]
 put "=" into tDataA["lName"]["operator"]
 put "Smith" into tDataA["lName"]["value"]
 
+# second query
+put "firstName" into tDataA["first_n"]["key"]
+put "ends with" into tDataA["first_n"]["operator"]
+put "n" into tDataA["first_n"]["value"]
+
+# third query
+put "firstName" into tDataA["first_y"]["key"]
+put "ends with" into tDataA["first_y"]["operator"]
+put "y" into tDataA["first_y"]["value"]
+
 # advanced map
-put "LName" into tAdvancedMap
+put "lName and (first_n or first_y)" into tAdvancedMap
 
 put "clients" into tTable
 put "cloud" into tTarget
