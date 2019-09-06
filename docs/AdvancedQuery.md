@@ -5,7 +5,7 @@ This function searches a table using a specified logic map and returns records t
 
 ## Inputs
 * **pDataA** *(Array)* - An array defining the queries.
-	* [queryID 1] *(Array)* - Key name is an arbitrary user-defined name for a query. 
+	* [queryID 1] *(Array)* - Key name is an arbitrary user-defined name for a query.
 		* ["key"] *(String)* - Contains the table key to be queried.
 		* ["value"] *(String)* - Contains the value with which to query.
 		* ["operator"] *(String)* - Contains the operator with which to query. (See [operators](./QueryOperators.md))
@@ -43,14 +43,14 @@ This function searches a table using a specified logic map and returns records t
 ![AdvancedQuery output diagram](images/AdvancedQueryOutput.svg)
 ## Additional Requirements
 This API call requires internet access to query data on the cloud.
-	
+
 ## Examples
 ```livecodeserver
 /*
-# Table name: clients				   		
+# Table name: clients
 # Keys: firstName, lastName, age, income
 
-#Records: 
+#Records:
 [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
 							    ["lastName"] - "Smith"
 							    ["age"] - "47"
@@ -64,10 +64,14 @@ This API call requires internet access to query data on the cloud.
 ```
 ### Example 1:
 ```livecodeserver
-# We want to find all clients that have last name "Smith" 
+# We want to find all clients that have last name "Smith"
 # and a first name that ends with "n" or "y".
 
 local tDataA, tAdvancedMap, tTable, tTarget, tResultFormat
+
+put "clients" into tTable
+put "cloud" into tTarget
+put "recordList" into tResultFormat
 
 # first query
 put "lastName" into tDataA["lName"]["key"]
@@ -87,13 +91,9 @@ put "y" into tDataA["first_y"]["value"]
 # advanced map
 put "lName and (first_n or first_y)" into tAdvancedMap
 
-put "clients" into tTable
-put "cloud" into tTarget
-put "recordList" into tResultFormat
+put cdb_advancedQuery(tDataA,tAdvancedMap,tTable,tTarget,tResultFormat) into tOutputA
 
-put cdb_advancedQuery(tDataA,tAdvancedMap,tTable,tTarget,tResultFormat)
-
-# outputs: 12345678-abcd-1234-cdef-1234567890ab  
+# outputs: 12345678-abcd-1234-cdef-1234567890ab
 # 	       87654321-abcd-1234-cdef-1234567890ab
 
 # This is a line delimited list containing all record IDs with last name "Smith"
@@ -106,6 +106,10 @@ put cdb_advancedQuery(tDataA,tAdvancedMap,tTable,tTarget,tResultFormat)
 
 local tDataA, tAdvancedMap, tTable, tTarget, tResultFormat, tAggregateA, tOutputA
 
+put "clients" into tTable
+put "cloud" into tTarget
+put "recordList" into tResultFormat
+
 # first query
 put "lastName" into tDataA["query1"]["key"]
 put "=" into tDataA["query1"]["operator"]
@@ -117,11 +121,7 @@ put "query1" into tAdvancedMap
 # aggregation
 put empty into tAggregateA["aggregateKey"]
 put "count" into tAggregateA["aggregateFunction"]
-put "age" into tAggregateA["groupby"]
-
-put "clients" into tTable
-put "cloud" into tTarget
-put "recordList" into tResultFormat
+put "age" into tAggregateA["groupBy"]
 
 put cdb_advancedQuery(tDataA,tAdvancedMap,tTable,tTarget,tResultFormat,tAggregateA) into tOutputA
 
