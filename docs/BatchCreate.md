@@ -1,4 +1,4 @@
-# function cdb_batchCreate(pDataA, pTarget)
+# function cdb_batchCreate(pDataA, pTarget, *pInternalA*)
 ---
 ## Summary
 This function allocates new cdbRecordIDs and stores provided data for a batch of records across one or more tables.
@@ -20,6 +20,8 @@ This function allocates new cdbRecordIDs and stores provided data for a batch of
 
 * **pTarget** *(String)* - The place to create the record(s), either "cloud" or "local".
 
+* \***pInternalA** *(Array)* - An array whose key is "delaySend" and its value is true. Optional parameter if pTarget is "cloud." This will delay processing the cloud call and will store its transaction in "cdbCache." Use [cdb_flushCache](FlushCache.md) to process the delayed transactions.
+
 > _*optional parameter._
 
 ![BatchCreate input diagram](images/BatchCreateInput.svg)
@@ -28,7 +30,7 @@ This function allocates new cdbRecordIDs and stores provided data for a batch of
 
 ![BatchCreate output diagram](images/BatchCreateOutput.svg)
 ## Additional Requirements
-This API call requires internet access if the 'cloud' option is selected
+This API call requires internet access in order to create cloud records.
 
 ## Examples
 ```livecodeserver
@@ -66,4 +68,38 @@ put cdb_batchCreate(tDataA,tTarget) into tOutputA
 #          cdbRecordID for Jenny Smith is 87654321-abcd-1234-cdef-1234567890ab
 # tOutputA[tOfficeTableID][1]["45678123-abcd-1234-cdef-1234567890ab"]
 #          cdbRecordID for Smith's Tech is 45678123-abcd-1234-cdef-1234567890ab
+```
+
+```livecodeserver
+local tDataA, tTarget, tInternalA, tOutputA, tClientsTableID, tOfficeTableID
+     
+# Table name: clients
+# Keys: firstName, lastName, age, income
+put cdb_tableID("clients") into tClientsTableID
+
+# Table name: office
+# Keys: name, address
+put cdb_tableID("office") into tOfficeTableID
+
+put "Cora" into tDataA[tClientsTableID][1]["firstName"]
+put "Doe" into tDataA[tClientsTableID][1]["lastName"]
+put "35" into tDataA[tClientsTableID][1]["age"]
+put "100000" into tDataA[tClientsTableID][1]["income"]
+
+put "Doe's Electronics" into tDataA[tOfficeTableID][1]["name"]
+put "456 Office Road" into tDataA[tOfficeTableID][1]["address"]
+
+put "cloud" into tTarget
+put true into tInternalA["delaySend"]
+
+put cdb_batchCreate(tDataA,tTarget,tInternalA) into tOutputA
+
+# Output Array: 
+# tOutputA[tClientsTableID][1]["32165478-wxyz-7890-cdef-6544567890ty"]
+#          cdbRecordID for Cora Doe is 32165478-wxyz-7890-cdef-6544567890ty
+# tOutputA[tOfficeTableID][1]["98778124-idfd-6544-efgf-8744532890po"]
+#          cdbRecordID for Doe's Electronics is 98778124-idfd-6544-efgf-8744532890po
+
+# Process the delayed transaction
+cdb_flushCache
 ```

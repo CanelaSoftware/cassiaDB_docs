@@ -1,7 +1,7 @@
-# command cdb_batchMerge pDataA, pTarget
+# command cdb_batchMerge pDataA, pTarget, *pInternalA*
 ---
 ## Summary
-This command allows for the modification of a record key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables.
+This command allows for the modification of a record's key's value through comparisons like "is", "is not", "is in", and "is not in". This can be done across multiple keys across multiple records across multiple tables.
 
 ## Inputs
 * **pDataA** *(Array)* - An array of one or more keys that are the table IDs of the tables being used in the merge.
@@ -21,12 +21,14 @@ This command allows for the modification of a record key's value through compari
 
 * **pTarget** *(String)* - The place to merge, either "cloud" or "local".
 
+* \***pInternalA** *(Array)* - An array whose key is "delaySend" and its value is true. Optional parameter if pTarget is "cloud." This will delay processing the cloud call and will store its transaction in "cdbCache." Use [cdb_flushCache](FlushCache.md) to process the delayed transactions.
+
 > \* _optional parameter_
 
 ![BatchMergeInput](images/BatchMergeInput.svg)
 
 ## Additional Requirements
-This API call requires internet access.
+This API call requires internet access in order to merge cloud records.
 
 ## Examples
 ```livecodeserver
@@ -44,16 +46,16 @@ local tDataA, tTarget, tClientsTableID, tOfficeTableID
 # Keys: name, address
 # Record:
 # [45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-#                                       ["address"] - "123 office Road"
+#                                       ["address"] - "123 Office Road"
 
 put cdb_tableID("clients") into tClientsTableID                                       
 put cdb_tableID("office") into tOfficeTableID
 
-##Update John's record
+# Update John's record
 put "48" into tDataA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["age"]["value"]
 put "is in" into tDataA[tClientsTableID]["12345678-abcd-1234-cdef-1234567890ab"]["age"]["operator"]
 
-##Update Smith's Tech's record
+# Update Smith's Tech's record
 put "road" into tDataA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"]["value"]
 put "is not in" into tDataA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"]["operator"]
 put " " into tInputA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"]["delimiter"]
@@ -71,5 +73,54 @@ cdb_batchMerge tDataA,tTarget
                                        
 # Table name: office
 # [45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-#                                       ["address"] - "123 office"
+#                                       ["address"] - "123 Office"
+```
+
+```livecodeserver
+local tDataA, tTarget, tInternalA, tClientsTableID, tOfficeTableID
+
+# Table name: clients						   
+# Keys: firstName, lastName, age, income
+# Record: 
+# [32165478-wxyz-7890-cdef-6544567890ty]["firstName"] - "Cora"
+#                                       ["lastName"] - "Doe"
+#                                       ["age"] - "35"
+#                                       ["income"] - "100000"
+
+# Table name: office
+# Keys: name, address
+# Record:
+# [98778124-idfd-6544-efgf-8744532890po]["name"] - "Doe's Electronics"
+#                                       ["address"] - "456 Office Road"
+
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
+
+# Update Cora's record
+put "110000" into tDataA[tClientsTableID]["32165478-wxyz-7890-cdef-6544567890ty"]["income"]["value"]
+put "is in" into tDataA[tClientsTableID]["32165478-wxyz-7890-cdef-6544567890ty"]["income"]["operator"]
+
+# Update Doe's Electronics' record
+put "electronics" into tDataA[tOfficeTableID]["98778124-idfd-6544-efgf-8744532890po"]["name"]["value"]
+put "is not in" into tDataA[tOfficeTableID]["98778124-idfd-6544-efgf-8744532890po"]["name"]["operator"]
+put " " into tInputA[tOfficeTableID]["98778124-idfd-6544-efgf-8744532890po"]["name"]["delimiter"]
+
+put "cloud" into tTarget
+put true into tInternalA["delaySend"]
+
+cdb_batchMerge tDataA,tTarget,tInternalA
+
+# Process the delayed transaction
+cdb_flushCache
+
+# The tables now look like this:
+# Table name: clients						
+# [32165478-wxyz-7890-cdef-6544567890ty]["firstName"] - "Cora"
+#                                       ["lastName"] - "Doe"
+#                                       ["age"] - "35"
+#                                       ["income"] - "110000"
+                                       
+# Table name: office
+# [98778124-idfd-6544-efgf-8744532890po]["name"] - "Doe's"
+#                                       ["address"] - "456 Office Road"
 ```

@@ -1,4 +1,4 @@
-# command cdb_batchUpdate pDataA, pTarget
+# command cdb_batchUpdate pDataA, pTarget, *pInternalA*
 ---
 ## Summary
 This command makes changes to a number of records. It can access multiple tables.
@@ -16,18 +16,21 @@ This command makes changes to a number of records. It can access multiple tables
 
 * **pTarget** *(String)* - The place to udpate the record, either "cloud" or "local".
 
+* \***pInternalA** *(Array)* - An array whose key is "delaySend" and its value is true. Optional parameter if pTarget is "cloud." This will delay processing the cloud call and will store its transaction in "cdbCache." Use [cdb_flushCache](FlushCache.md) to process the delayed transactions.
+
 > _*optional parameter._
 
 ![Update Input Diagram](images/BatchUpdateInput.svg)
+
 ## Additional Requirements
-This API call requires internet access.
+This API call requires internet access to update cloud records.
 
 ## Examples
 ```livecodeserver
 local tDataA, tTarget, tClientsTableID, tOfficeTableID
      
 # Table name: clients						
-# Keys: firstName, lastName, age, income	
+# Keys: firstName, lastName, age, income
 
 # Records: 
 # [12345678-abcd-1234-cdef-1234567890ab]["firstName"] - "John"
@@ -45,7 +48,7 @@ local tDataA, tTarget, tClientsTableID, tOfficeTableID
 
 # Records:
 # [45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-# [45678123-abcd-1234-cdef-1234567890ab]["address"] - "123 office road"
+# [45678123-abcd-1234-cdef-1234567890ab]["address"] - "123 Office Road"
                                        
 put cdb_tableID("clients") into tClientsTableID                                       
 put cdb_tableID("office") into tOfficeTableID
@@ -58,7 +61,7 @@ put "47" into tDataA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["a
 put "110000" into tDataA[tClientsTableID]["87654321-abcd-1234-cdef-1234567890ab"]["income"]
 
 ## Update Smith's Tech's record
-put "1234 office road" into tDataA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"]
+put "1234 Office Road" into tDataA[tOfficeTableID]["45678123-abcd-1234-cdef-1234567890ab"]["address"]
 
 put "cloud" into tTarget
 
@@ -79,5 +82,54 @@ cdb_batchUpdate tDataA,tTarget
 
 # Table name: office
 # [45678123-abcd-1234-cdef-1234567890ab]["name"] - "Smith's Tech"
-# [45678123-abcd-1234-cdef-1234567890ab]["address"] - "1234 office road"
+# [45678123-abcd-1234-cdef-1234567890ab]["address"] - "1234 Office Road"
+```
+
+```livecodeserver
+local tDataA, tTarget, tInternalA, tClientsTableID, tOfficeTableID
+     
+# Table name: clients						
+# Keys: firstName, lastName, age, income
+
+# Records: 
+# [32165478-wxyz-7890-cdef-6544567890ty]["firstName"] - "Cora"
+# [32165478-wxyz-7890-cdef-6544567890ty]["lastName"] - "Doe"
+# [32165478-wxyz-7890-cdef-6544567890ty]["age"] - "35"
+# [32165478-wxyz-7890-cdef-6544567890ty]["income"] - "100000"
+                                       
+# Table name: office
+# Keys: name, address
+
+# Records:
+# [98778124-idfd-6544-efgf-8744532890po]["name"] - "Doe's Electronics"
+# [98778124-idfd-6544-efgf-8744532890po]["address"] - "456 Office Road"
+                                       
+put cdb_tableID("clients") into tClientsTableID                                       
+put cdb_tableID("office") into tOfficeTableID
+
+## Update Cora's record
+put "110000" into tDataA[tClientsTableID]["32165478-wxyz-7890-cdef-6544567890ty"]["income"]
+
+## Update Doe's Electronics' record
+put "789 Tech Street" into tDataA[tOfficeTableID]["98778124-idfd-6544-efgf-8744532890po"]["address"]
+
+put "cloud" into tTarget
+put true into tInternalA["delaySend"]
+
+cdb_batchUpdate tDataA,tTarget,tInternalA
+
+# Process the delayed transaction
+cdb_flushCache
+
+# The tables now look like this:
+
+# Table name: clients						
+# [32165478-wxyz-7890-cdef-6544567890ty]["firstName"] - "Cora"
+# [32165478-wxyz-7890-cdef-6544567890ty]["lastName"] - "Doe"
+# [32165478-wxyz-7890-cdef-6544567890ty]["age"] - "35"
+# [32165478-wxyz-7890-cdef-6544567890ty]["income"] - "110000"
+
+# Table name: office
+# [98778124-idfd-6544-efgf-8744532890po]["name"] - "Doe's Electronics"
+# [98778124-idfd-6544-efgf-8744532890po]["address"] - "789 Tech Street"
 ```
