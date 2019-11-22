@@ -45,8 +45,10 @@ nav:
         - BatchReadBlob: 'BatchReadBlob.md'
         - UpdateBlob: 'UpdateBlob.md'
         - BatchUpdateBlob: 'BatchUpdateBlob.md'
+        - ClearTempBlobs: 'ClearTempBlobs.md'
     - Auth:
         - Auth: 'Auth.md'
+        - AuthStatus: 'AuthStatus.md'
         - Logout: 'Logout.md'
         - LoggedInUser: 'LoggedInUser.md'
     - User Accounts:
@@ -83,12 +85,14 @@ nav:
         - PingNode: 'PingNode.md'
         - SetCloudTolerance: 'SetCloudTolerance.md'
         - SetFlushCacheInterval: 'SetFlushCacheInterval.md'
+        - SetUploadMethod: 'SetUploadMethod.md'
     - Export:
         - ExportAsJSON: 'ExportAsJSON.md'
         - ExportAsLSON: 'ExportAsLSON.md'
     - Table Management:
         - CreateTable: 'CreateTable.md'
         - RenameTable: 'RenameTable.md'
+        - Schemaless: 'Schemaless.md'
         - UpdateTableSchemaMode: 'UpdateTableSchemaMode.md'
         - DeleteTable: 'DeleteTable.md'
         - AddKeys: 'AddKeys.md'
@@ -104,6 +108,8 @@ nav:
         - CreateProject: 'CreateProject.md'
         - RenameProject: 'RenameProject.md'
         - DeleteProject: 'DeleteProject.md'
+        - ProjectDetail: 'ProjectDetail.md'
+        - ProjectInfo: 'ProjectInfo.md'
         - ProjectName: 'ProjectName.md'
         - ProjectNames: 'ProjectNames.md'
 
