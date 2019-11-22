@@ -13,7 +13,7 @@ This function takes a tableID and returns the name of that table.
 ```livecodeserver
 local tTableID
 
-put "12345678-abcd-1234-cdef-1234567890ab" into tTableID
+put "72a88e4f-c6ba-4fda-9381-2f0b0ca220bd" into tTableID
 get cdb_tableName(tTableID)
 
 # Output: clients

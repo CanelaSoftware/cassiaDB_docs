@@ -4,7 +4,7 @@
 This function reads a list of records and returns those records' contents.
 
 ## Inputs
-* **pDataA** *(Array)* - A multidimensional array, where the first key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at one tableID key in the array.
+* **pDataA** *(Array)* - A multidimensional array, where the first key is a tableID that maps to another array where the keys are recordIDs, and the elements are empty. There must be at least one tableID key in the array.
     * [tableID] *(Key)* - Key is the table's ID, maps to subarray of record IDs.
     	* [cdbRecordID 1] *(Key)* - Key that is the cdbRecordID of the first record to be read, or "*" to read all records in a table. 
     		* empty - The value of the corresponding key must be empty.
@@ -18,6 +18,7 @@ This function reads a list of records and returns those records' contents.
 > Note: To read all the records for a given table, use "\*" as key mapping to empty in place of the array of cdbRecordID keys.
 
 ![BatchRead input diagram](images/BatchReadInput.svg)
+
 ## Outputs
 *(Array)* - A multidimensional array with the same structure as the input array. The empty values for each cdbRecordID have been replaced with the keys and values of the corresponding record.
 
