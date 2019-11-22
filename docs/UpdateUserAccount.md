@@ -1,4 +1,4 @@
-# command cdb_updateUserAccount pDataA, pEmail, pPassword, pSecureMode, pProjectName
+# command cdb_updateUserAccount pDataA, pEmail, *pPassword*, pSecureMode, pProjectName
 
 ---
 ## Summary

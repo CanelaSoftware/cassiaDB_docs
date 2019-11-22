@@ -16,6 +16,7 @@ Used to see if the most recently executed CDB call was successful or not.
 	
 ## Outputs
 Depending on the input parameter:
+
 * (Boolean) - if **"completed"** or **empty** is passed.
 * (String) - if **"context"**, **"response"**, **"date"**, or **"log"** is passed.
 * (Array) - if **"recent"** is passed.

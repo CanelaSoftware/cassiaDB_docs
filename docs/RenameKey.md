@@ -1,4 +1,4 @@
-# command cdb_renameKey pTable, pKey, pNewName
+# command cdb_renameKey pTable, pOldKeyName, pNewKeyName
 ---
 ## Summary
 This command renames a key from a specific table.
@@ -6,9 +6,9 @@ This command renames a key from a specific table.
 ## Inputs
 * **pTable** *(String)* - The specified table ID or table name.
 
-* **pKey** *(String)* - The current name of the key that will be renamed.
+* **pOldKeyName** *(String)* - The current name of the key that will be renamed.
 
-* **pNewName** *(String)* - The new name that the key will be renamed to.
+* **pNewKeyName** *(String)* - The new name that the key will be renamed to.
 
 ## Additional Requirements
 * This API call requires internet access.
@@ -16,14 +16,14 @@ This command renames a key from a specific table.
 
 ## Examples
 ```livecodeserver
-local tTable, tKey, tNewName
+local tTable, tOldKeyName, tNewName
 
 # Table name: clients
 # Keys: firstName, lastName, age, income
 
 put "clients" into tTable
-put "income" into tKey
-put "salary" into tNewName
+put "income" into tOldKeyName
+put "salary" into tNewKeyName
 
-cdb_renameKey tTable,tKey,tNewName
+cdb_renameKey tTable,tOldKeyName,tNewKeyName
 ```

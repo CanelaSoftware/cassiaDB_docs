@@ -1,4 +1,4 @@
-# function cdb_createTable(pProject, pTable, pKeys, *pKeysType*, *pSchemaless*, *pTableDomain*, *pInstanceName*)
+# function cdb_createTable(pProject, pTableName, pKeys, *pKeysType*, *pSchemaless*, *pTableDomain*, *pInstanceName*)
 ---
 ## Summary
 This function creates a new table with keys and adds the table to a specified project.
@@ -6,7 +6,7 @@ This function creates a new table with keys and adds the table to a specified pr
 ## Inputs
 * **pProject** *(String)* - The name of the project the table will be created in.
 
-* **pTable** *(String)* - The name of the table to be created.
+* **pTableName** *(String)* - The name of the table to be created.
 
 * **pKeys** *(String)* - The comma-delimited list of names of the keys that will be added to the table.
 

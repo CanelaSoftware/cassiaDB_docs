@@ -1,13 +1,15 @@
-# command cdb_deleteUserAccount pEmail, pPassword, pSecureMode, pProjectName
+# command cdb_deleteUserAccount pEmail, *pPassword*, pSecureMode, pProjectName
 ---
 ## Summary
 This command deletes a user account record in the cdbUsers table for a specific project.
 
 ## Inputs
 * **pEmail** *(String)* - The email associated with the user's account.
-* **pPassword** *(String)* - The password associated with the user's account.
+* \***pPassword** *(String)* - The password associated with the user's account.
 * **pSecureMode** *(Boolean)* - Whether to require the user's password to delete the user.
 * **pProjectName** *(String)* - The name of the project to delete the user account from.
+
+> _*optional parameter._
 
 ## Additional Requirements
 This API call requires internet access.

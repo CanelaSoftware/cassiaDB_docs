@@ -1,10 +1,10 @@
-# command cdb_createProject pProject
+# command cdb_createProject pProjectName
 ---
 ## Summary
 This command creates a new project.
 
 ## Inputs
-* **pProject** *(String)* - The specified project name.
+* **pProjectName** *(String)* - The specified project name.
 
 ## Additional Requirements
 * This API call requires internet access in order to create a project.
@@ -12,9 +12,9 @@ This command creates a new project.
 
 ## Examples
 ```livecodeserver
-local tProject
+local tProjectName
 
-put "meeting" into tProject
+put "meeting" into tProjectName
 
-cdb_createProject tProject
+cdb_createProject tProjectName
 ```
