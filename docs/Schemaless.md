@@ -1,4 +1,4 @@
-# function cdb_schemaless pTable
+# function cdb_schemaless(pTable)
 ---
 ## Summary
 This function returns true or false depending on if the specific table is schemaless or not.

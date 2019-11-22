@@ -32,5 +32,5 @@ local tOutputA
 put cdb_tableID("*") into tOutputA
 
 # tOutputA: ["clients"] - "72a88e4f-c6ba-4fda-9381-2f0b0ca220bd"
-			["office"] - "98765432-dcdc-0210-aaaa-975102a357ca"
+#			["office"] - "98765432-dcdc-0210-aaaa-975102a357ca"
 ``` 
