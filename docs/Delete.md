@@ -1,5 +1,6 @@
 # command cdb_delete pTable, pRecordIDs, pTarget, *pInternalA*
 ---
+Updated 11/22/19
 ## Summary
 This command deletes one or more records from the table.
 

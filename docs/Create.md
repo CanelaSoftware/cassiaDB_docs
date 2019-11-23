@@ -1,5 +1,6 @@
 # function cdb_create(pDataA, pTable, pTarget, *pInternalA*)
 ---
+Updated 11/22/19
 ## Summary
 This function allocates a new cdbRecordID for a record in either the cloud or locally, storing the provided data.
 

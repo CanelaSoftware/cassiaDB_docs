@@ -1,5 +1,6 @@
 # function cdb_userTableName(pProjectName)
 ---
+Updated 11/22/19
 ## Summary
 This function returns the table name of the cdbUsers table for a specified project. This function is needed in order to do normal Read/Update/Delete and Table operations on the cdbUsers table. Internally, the cdbUsers table is not named "cdbUsers". As such, this function is required in order to access the actual table records.
 

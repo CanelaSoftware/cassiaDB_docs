@@ -1,5 +1,6 @@
 # function cdb_projectInfo(*pProject*)
 ---
+Updated 11/22/19
 ## Summary
 This function returns the name of the project and its projectID. You cannot get the project info of another project within a client app.
 

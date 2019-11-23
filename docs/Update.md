@@ -1,5 +1,6 @@
 # command cdb_update pDataA, pTable, pRecordID, pTarget, *pInternalA*
 ---
+Updated 11/22/19
 ## Summary
 This command makes changes to an existing record.
 

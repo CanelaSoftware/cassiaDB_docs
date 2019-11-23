@@ -1,5 +1,6 @@
 # command cdb_exportAsLSON pTable, *pPath*
 ---
+Updated 11/22/19
 ## Summary
 This command exports a complete table (local records only) as a single document for all the records in LSON (LiveCode array encoded) format in a folder.
 

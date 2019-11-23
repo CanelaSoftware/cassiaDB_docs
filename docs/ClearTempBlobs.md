@@ -1,6 +1,7 @@
 # command cdb_clearTempBlobs pProjectID
 
 ---
+Updated 11/22/19
 ## Summary
 This command deletes the temporary blob folder of a specified project that is created when a blob is read. See [cdb_readBlob](ReadBlob.md) or [cdb_batchReadBlob](BatchReadBlob.md) for examples of the temporary blob folder file path.
 

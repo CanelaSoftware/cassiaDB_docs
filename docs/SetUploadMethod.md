@@ -1,6 +1,7 @@
 # command cdb_setUploadMethod *pMethod*
 
 ---
+Updated 11/22/19
 ## Summary
 This command controls the upload method used for cloud calls.
 

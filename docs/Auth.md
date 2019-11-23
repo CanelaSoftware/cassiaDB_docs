@@ -1,6 +1,7 @@
 # function cdb_auth(pEmail, pPassword, pTarget)
 
 ---
+Updated 11/22/19
 ## Summary
 This function authenticates a user or developer account and returns an API key. Both local and cloud authentication will occurr. Local authentication requires local data to exist in order to verify the account. You can check the authentication status with [cdb_authStatus](AuthStatus.md).
 

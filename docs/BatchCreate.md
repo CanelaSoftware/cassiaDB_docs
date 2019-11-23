@@ -1,5 +1,6 @@
 # function cdb_batchCreate(pDataA, pTarget, *pInternalA*)
 ---
+Updated 11/22/19
 ## Summary
 This function allocates new cdbRecordIDs and stores provided data for a batch of records across one or more tables.
 

@@ -1,5 +1,6 @@
 # function cdb_projectDetail(*pProject*)
 ---
+Updated 11/22/19
 ## Summary
 This function returns an array of the details of a project which consists of its tableIDs, project name, projectID, and the teamID. You cannot get the project details of another project within a client app.
 

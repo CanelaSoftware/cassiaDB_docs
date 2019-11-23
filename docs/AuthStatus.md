@@ -1,6 +1,7 @@
 # function cdb_authStatus()
 
 ---
+Updated 11/22/19
 ## Summary
 This function returns the current authentication status.
 

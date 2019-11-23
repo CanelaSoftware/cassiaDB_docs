@@ -1,5 +1,6 @@
 # command cdb_batchUpdate pDataA, pTarget, *pInternalA*
 ---
+Updated 11/22/19
 ## Summary
 This command makes changes to a number of records. It can access multiple tables.
 

@@ -1,5 +1,6 @@
 # function cdb_schemaless(pTable)
 ---
+Updated 11/22/19
 ## Summary
 This function returns true or false depending on if the specific table is schemaless or not.
 
