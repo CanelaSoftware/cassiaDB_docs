@@ -2,7 +2,7 @@ site_name: LiveCloud Documentation
 site_url: https://docs.livecloud.io
 site_description: LiveCloud Documentation site
 site_author: Canela Software
-copyright: © 2018, Canela Software, Inc.
+copyright: © 2018-2020, Canela Software, Inc.
 site_dir:  html
 nav:
   - Home: 'index.md'
