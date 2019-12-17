@@ -1,22 +1,31 @@
 # function cdb_sync(pRecordIDL, pTable, pSource, pAllowDeletes, pDetectCollisions)
 ---
-
+Updated 12/17/19
 ## Summary
-This function will sync all records in a specified table between local and cloud. 
+This function will sync records in a specified table between local and cloud.
 
 ## Inputs
 * **pRecordIDL** *(String)* - A line-delimited list of records to be synced
-	* If "**\***" is passed, all records will be synced. 
-* **pTable** *(String)* - The specified table name or table ID to be synced.    
-* **pSource** *(Enum)* - Must be either 'cloud' or 'local'. **pSource** determines the direction of the sync. If 'cloud' is chosen, records will be synced from cloud to local. If 'local' is chosen, records will be synced from local to cloud.    	    
-* **pAllowDeletes** *(Boolean)* - 'True' or 'False'. A value of 'true' means any recordIDs passed that are empty in the source (i.e. the record does not exist in the source) will be deleted in the target. A value of 'false' means that no deletions will occur -- recordIDs that don't exist in the source will be ignored in the target.
-* **pDetectCollisions** *(Boolean)* - 'True' or 'False'. A value of 'true' means that the record versions between each record will be compared. Any time the source has a lower version (i.e. when the target record has been updated after the last time the source and target were in sync), the record will not be overwritten. Instead, the record will be listed in the response as a collision. A value of 'false' means that records will not be compared for versions, and that all source records will overwrite all target records.
+	* If "**\***" is passed, all records will be synced.
+* **pTable** *(String)* - The specified table name or table ID to be synced.
+* **pSource** *(String)* - Must be either "cloud" or "local". **pSource** determines the direction of the sync. If "cloud" is chosen, records will be synced from cloud to local. If "local" is chosen, records will be synced from local to cloud.
+* **pAllowDeletes** *(Boolean)* - "True" or "False". A value of "true" means any recordIDs passed that are empty in the source (i.e. the record does not exist in the source) will be deleted in the target. A value of "false" means that no deletions will occur -- recordIDs that don't exist in the source will be ignored in the target.
+* **pDetectCollisions** *(Boolean)* - "True" or "False". A value of "true" means that the record versions between each record will be compared. Any time the source has a lower version (i.e. when the target record has been updated after the last time the source and target were in sync), the record will not be overwritten. Instead, the record will be listed in the response as a collision. A value of "false" means that records will not be compared for versions, and that all source records will overwrite all target records.
 
 ## Output
 *(Array)* - An array with two keys:
 
-* **["sync"]** - A line-delimited list of records that were successfully synced.
-* **["collisions"]** - A line-delimited list of records that had collisions, and were therefore NOT synced. (This will always be empty if **pDetectCollisions** is false).
+* **["collisions"]** -
+	* *(String)* - If there are no collisions, the value is 0.
+	* *(Array)* - If there are collisions:
+		* "Collisions" key is an array whose key is the specified tableID mapped to recordIDs that were not synced. An empty value is mapped to these recordIDs.
+* **["sync"]** -
+	* *(String)* - If there are no records synced, the value is 0.
+	* *(Array)* - If there are records synced:
+		* "Sync" key is an array whose key is the specified tableID mapped to recordIDs and each recordID is mapped to a value, its cdbCloudSyncVersion.
+
+![BatchSync output diagram](images/SyncOutput.svg)
+
 
 ## Additional Requirements
 This API call requires internet access.
@@ -38,10 +47,12 @@ get cdb_sync("*","clients","cloud",true,false)
 ## Example 2: Make our cloud get anything new from our local
 ## But do not overwrite anything that is newer.
 
-local tResultA
+local tResultA, tTableID
+
+put cdb_tableID("clients") into tTableID
 
 put cdb_sync("*","clients","local",false,true) into tResultA
-repeat for each line xL in tResultA["collisions"]
+repeat for each key xKey in tResultA["collisions"][tTableID]
 	# Process our collisions here
 end repeat
      
@@ -67,14 +78,16 @@ get cdb_sync("*","clients","cloud",false,false)
 ## Example 4: Sync certain records from local to cloud
 ## Only overwrite if local is newer
 
-local tList, tResultA
+local tList, tResultA, tTableID
+
+put cdb_tableID("clients") into tTableID
 
 put "535f96c2-c08a-447d-9293-68183699a17a" into tList
 put lf & "cdb2dabc-cd91-49d3-af02-a69a73c5928e" after tList
 put lf & "7c397cb0-91bb-4f0a-9d42-5798af59b902" after tList
 
 put cdb_sync(tList,"clients","cloud",false,true) into tResultA
-repeat for each line xL in tResultA["collisions"]
+repeat for each key xKey in tResultA["collisions"][tTableID]
 	# Process our collisions here
 end repeat
      

@@ -69,6 +69,7 @@ nav:
         - SdkBuild: 'SdkBuild.md'
         - SendEmail: 'SendEmail.md'
         - Sync: 'Sync.md'
+        - BatchSync: 'BatchSync.md'
         - TableID: 'TableID.md'
         - TeamID: 'TeamID.md'
         - ProjectID: 'ProjectID.md'
