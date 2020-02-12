@@ -6,7 +6,7 @@ This function returns a line-delimited list of the values of the requested key(s
 ## Inputs
 * **pTable** *(String)* - The specified table ID or table name.
 * **pTarget** *(String)* - The place to access the records, either "cloud" or "local".
-* \***pKeys** *(String)* - The comma-delimited list of keys whose values will be listed. If no value is provided, **CDBRecordID** will be listed.
+* \***pKeys** *(String)* - The line-delimited list of keys whose values will be listed. If no value is provided, **CDBRecordID** will be listed.
 
 > \* _optional parameter_
 
