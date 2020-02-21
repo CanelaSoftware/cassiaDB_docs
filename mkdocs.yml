@@ -8,6 +8,7 @@ nav:
   - Home: 'index.md'
   - Tutorials:
     - Setting Up LiveCloud: 'Setup.md'
+    - Adding a Promo Code: 'PromoCode.md'
     - Simple CRUD Example: 'CRUDExample.md'
     - Building Standalones: 'Standalone.md'
     - Authorization and Accounts: 'AddingUsers.md'
