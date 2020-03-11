@@ -2,7 +2,7 @@
 ---
 Updated 2020/03/10
 ## Summary
-This function imports a complete table to a local or cloud database. The requirements are that the table and schema (keys) must have been previously created. The header line in the CSV file must be the first line. The function will accept only comma-delimited data. Though, the header will support comma, semicolon, and tabs.
+This function imports CSV data to a local or cloud database. The table and schema (keys) must have been previously created. The header line in the CSV file must be the first line. The CSV header may be delimited by commas, semicolons, or tabs. The body of the CSV data must be delimited by commas.
 
 ## Inputs
 * **pTable** *(String)* - The name or tableID of the specified table.
