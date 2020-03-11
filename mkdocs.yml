@@ -88,6 +88,8 @@ nav:
         - SetCloudTolerance: 'SetCloudTolerance.md'
         - SetFlushCacheInterval: 'SetFlushCacheInterval.md'
         - SetUploadMethod: 'SetUploadMethod.md'
+    - Import:
+        - ImportCSV: 'ImportCSV.md'  
     - Export:
         - ExportAsJSON: 'ExportAsJSON.md'
         - ExportAsLSON: 'ExportAsLSON.md'
