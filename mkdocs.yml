@@ -89,7 +89,8 @@ nav:
         - SetFlushCacheInterval: 'SetFlushCacheInterval.md'
         - SetUploadMethod: 'SetUploadMethod.md'
     - Import:
-        - ImportCSV: 'ImportCSV.md'  
+        - ImportCSV: 'ImportCSV.md'
+        - ImportJSON: 'ImportJSON.md'  
     - Export:
         - ExportAsJSON: 'ExportAsJSON.md'
         - ExportAsLSON: 'ExportAsLSON.md'
