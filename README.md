@@ -13,16 +13,22 @@ This project is build using [MKDocs](http://www.mkdocs.org/). To make doc modifi
 
 (see http://www.mkdocs.org/user-guide/deploying-your-docs/) .
 
-Steps
+Terminal
 1. Open terminal and set path to gitHub repo for cassiaDB_docs
-2. Modify .md file in 'docs' folder in your favorite text or markdown editor
 
 Edit existing file
-3. Build changes to html folder with: 'mkdocs build' in terminal. 
-4. Test updated file with: 'mkdocs serve' in terminal.
-5. Upload changed files to /var/www/docs/html/ on livecloud.io server
+1. Modify .md file in 'docs' folder in your favorite editor
+2. Rebuild the html files by typing in the terminal: mkdocs build 
 
 Add new file
-3. If this is a new file, you will need to update mkdocs.yml
-4. Build changes to html folder: 'mkdocs build --clean' in terminal.
-5. Upload changed files to /var/www/docs/html/ on livecloud.io server
+1. Create or edit existing file for new doc 
+2. You will need to update mkdocs.yml with new doc filename
+3. Build changes to html folder. In terminal type: mkdocs build --clean
+
+Running a local server to test your work
+1. In terminal type: mkdocs serve
+2. Point your browser to: http://127.0.0.1:8000/
+Every time you save a change the the documentation file, your browser will auto-refresh to see the local changes. You do not need to run 'mkdocs build'. This is only for pushing your changes to the cloud.
+
+Upload files to cloud
+2. Upload changed files to /var/www/docs/html/ on livecloud.io server after running the appropriate mkdocs build method.
