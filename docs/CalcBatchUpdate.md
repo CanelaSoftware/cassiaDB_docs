@@ -5,18 +5,20 @@ Created 2020/04/09
 ## Summary
 This function allows addition, subtraction, multiplication, division operations on any key that contains numeric data. The updated data is returned to the client. Since the server is processing the calculation, this prevents collisions on the same data. No prior knowledge of the server's value of a given column is needed to make the update.
 
-You can access any amount of records on any amount of tables in a single transaction.
+You can access any amount of records on any amount of tables in a single transaction .
 
-This API can work with both local and cloud data. It is most effective when used on cloud data because your goal is update a numeric value without having to worry about data collisions with other people access to the same piece of data. 
+This API can work with both local and cloud data. It is most effective when used on cloud data because your goal is update a numeric value without having to worry about data collisions with other modifications to the same data. 
 
 ## Inputs
 * **pDataA** *(Array)* - A multidimensional array of keys, where each key is a tableID that maps to another array of keys. There must be at least one tableID key in this array.
     * [tableID 1] *(Key)* - Key is the first table's ID, maps to subarray of record IDs. There must be at least one record key in this sub-array.
-    	* [cdbRecordID 1] *(Key)* - key that is the cdbRecordID of the first record to be updated. 
-    		* [keyName 1] *(Key)* - User-defined keyname corresponding to a value of the record to be udpated. User must provide at least one self-defined keyname.
-    			*  value - The new value for the corresponding key.
+    	* [cdbRecordID 1] *(Key)* - Key that is the cdbRecordID of the first record to be updated. 
+    		* [keyName 1] *(Key)* - User-defined keyname corresponding to a value of the record to be udpated. The value of this key must be numeric.
+    			* [operation 1] *(Key)* - add, subtract, multiply, divide
+    				*  value - The numeric value that will be used in the calculation.
     		* \*[keyName N] *(Key)* - The nth user-defined keyname. Repeat *keyName 1*'s sublevel structure.
-    			*  value - The new value for the corresponding key.
+    			* \*[operation N] *(Key)* - The nth operation: add, subtract, multiply, divide.
+					*  value - The numeric value that will be used in the calculation.
     	* \*[cdbRecordID N] *(Key)* - The nth record key. Repeat *cdbRecordID 1*'s sublevel structure.
     * \*[tableID N] *(Key)* - key that is the nth table's UID. Repeat *tableID 1*'s sublevel structure.
 
@@ -25,8 +27,6 @@ This API can work with both local and cloud data. It is most effective when used
 * \***pInternalA** *(Array)* - An array whose key is "delaySend" and its value is true. Optional parameter if pTarget is "cloud." This will delay processing the cloud call and will store its transaction in "cdbCache." Use [cdb_flushCache](FlushCache.md) to process the delayed transactions.
 
 > _*optional parameter._
-
-![Update Input Diagram](images/BatchUpdateInput.svg)
 
 ## Additional Requirements
 This API call requires internet access to update cloud records.
