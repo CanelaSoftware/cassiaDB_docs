@@ -26,8 +26,9 @@ Add new file
 3. Build changes to html folder. In terminal type: mkdocs build --clean
 
 Running a local server to test your work
-1. In terminal type: mkdocs serve
-2. Point your browser to: http://127.0.0.1:8000/
+1. Set the path of terminal to the cassiaDB_docs folder.
+2. In terminal type: mkdocs serve
+3. Point your browser to: http://127.0.0.1:8000/
 Every time you save a change the the documentation file, your browser will auto-refresh to see the local changes. You do not need to run 'mkdocs build'. This is only for pushing your changes to the cloud.
 
 Upload files to cloud

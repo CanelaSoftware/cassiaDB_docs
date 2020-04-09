@@ -32,6 +32,7 @@ nav:
         - BatchDelete: 'BatchDelete.md'
         - DeleteKeys: 'DeleteKeys.md'
         - BatchDeleteKeys: 'BatchDeleteKeys.md'
+        - CalcUpdate: 'CalcUpdate.md'
     - Query:
         - Query: 'Query.md'
         - AdvancedQuery: 'AdvancedQuery.md'
