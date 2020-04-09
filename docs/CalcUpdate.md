@@ -5,6 +5,10 @@ Created 2020/04/08
 ## Summary
 This function allows addition, subtraction, multiplication, division operations on any key that contains numeric data. The updated data is returned to the client. Since the server is processing the calculation, this prevents collisions on the same data. No prior knowledge of the server's value of a given column is needed to make the update.
 
+You can access only one record at a time. But, you can access more than one key on a single transaction.
+
+This API can work with both local and cloud data. It is most effective when used on cloud data because your goal is update a numeric value without having to worry about data collisions with other people access to the same piece of data. 
+
 
 ## Inputs
 * **pDataA** *(Array)* - An array with the following format:
