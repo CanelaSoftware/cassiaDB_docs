@@ -1,6 +1,6 @@
 # function cdb_calcUpdate pDataA, pOperator, pTable, pRecordID, pTarget, *pInternalA*
 ---
-Created 2020/04/09
+Created 2020/05/14
 
 ## Summary
 This function allows addition, subtraction, multiplication, division operations on any key that contains numeric data. The updated data is returned to the client. Since the server is processing the calculation, this prevents collisions on the same data. No prior knowledge of the server's value of a given column is needed to make the update.
@@ -47,7 +47,7 @@ put "inventory" into tTable
 put "4c074c1b-e4e8-41a9-8dbf-810c42650c38" into tRecordID
 put "cloud" into tTarget 
      
-cdb_calcUpdate tInputA,tOperation,tTable,tRecordID,tTarget
+put cdb_calcUpdate(tInputA,tOperation,tTable,tRecordID,tTarget) into tOutputA
 
 # Output Array: 
 # tOutputA["2dabc384-6c5d-467e-ba00-b14b03312760"]
@@ -72,7 +72,7 @@ put "invoices" into tTable
 put "be4285ed-54f8-4680-8f46-ac4cc0fa41b2" into tRecordID
 put "cloud" into tTarget
      
-cdb_calcUpdate tInputA,tOperation,tTable,tRecordID,tTarget
+put cdb_calcUpdate(tInputA,tOperation,tTable,tRecordID,tTarget) into tOutputA
 # Output Array: 
 # tOutputA["63eb5104-9eec-45c6-9dde-1670fe80e539"]
 #						  ["be4285ed-54f8-4680-8f46-ac4cc0fa41b2"] - "6494"
