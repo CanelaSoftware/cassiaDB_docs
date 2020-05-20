@@ -1,4 +1,4 @@
-# command cdb_calcBatchUpdate pDataA, pTarget, *pInternalA*
+# function cdb_calcBatchUpdate pDataA, pTarget, *pInternalA*
 ---
 Created 2020/04/09
 
