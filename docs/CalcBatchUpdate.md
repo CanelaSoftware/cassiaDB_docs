@@ -1,6 +1,7 @@
 # function cdb_calcBatchUpdate pDataA, pTarget, *pInternalA*
 ---
-Created 2020/04/09
+Created 2020/04/09  
+Updated 2020/07/13
 
 ## Summary
 This function allows addition, subtraction, multiplication, division operations on any key that contains numeric data. The updated data is returned to the client. Since the server is processing the calculation, this prevents collisions on the same data. No prior knowledge of the server's value of a given column is needed to make the update.
@@ -14,10 +15,10 @@ This API can work with both local and cloud data. It is most effective when used
     * [tableID 1] *(Key)* - Key is the first table's ID, maps to subarray of record IDs. There must be at least one record key in this sub-array.
     	* [cdbRecordID 1] *(Key)* - Key that is the cdbRecordID of the first record to be updated. 
     		* [keyName 1] *(Key)* - User-defined keyname corresponding to a value of the record to be udpated. The value of this key must be numeric.
-    			* [operation 1] *(Key)* - add, subtract, multiply, divide
+    			* [operation 1] *(Key)* - add, subtract, multiply, divide, +, -, *, or /.
     				*  value - The numeric value that will be used in the calculation.
     		* \*[keyName N] *(Key)* - The nth user-defined keyname. Repeat *keyName 1*'s sublevel structure.
-    			* \*[operation N] *(Key)* - The nth operation: add, subtract, multiply, divide.
+    			* \*[operation N] *(Key)* - The nth operation: add, subtract, multiply, divide, +, -, *, or /.
 					*  value - The numeric value that will be used in the calculation.
     	* \*[cdbRecordID N] *(Key)* - The nth record key. Repeat *cdbRecordID 1*'s sublevel structure.
     * \*[tableID N] *(Key)* - key that is the nth table's UID. Repeat *tableID 1*'s sublevel structure.

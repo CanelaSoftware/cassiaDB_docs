@@ -1,6 +1,7 @@
 # function cdb_calcUpdate pDataA, pOperator, pTable, pRecordID, pTarget, *pInternalA*
 ---
-Created 2020/05/14
+Created 2020/05/14  
+Updated 2020/07/13
 
 ## Summary
 This function allows addition, subtraction, multiplication, division operations on any key that contains numeric data. The updated data is returned to the client. Since the server is processing the calculation, this prevents collisions on the same data. No prior knowledge of the server's value of a given column is needed to make the update.
@@ -16,7 +17,7 @@ This API can work with both local and cloud data. It is most effective when used
 		* value - The numeric value to be used in the calculation with pOperator.
     * \*[*keyName N*] *(String)* - A key as defined by the table's schema.
     	* value - The new value for the corresponding key.
-* **pOperation** *(String)* - The operation used for the calculation: add, subtract, multiply, or divide.
+* **pOperation** *(String)* - The operation used for the calculation: add, subtract, multiply, divide, +, -, *, or /.
 * **pTable** *(String)* - The name or tableID of the specified table.
 * **pRecordID** *(String)* - The cdbRecordID of the record being updated.
 * **pTarget** *(String)* - The place to update the record, either "cloud" or "local".
