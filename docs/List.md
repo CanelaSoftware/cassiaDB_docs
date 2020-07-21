@@ -1,5 +1,7 @@
 # function cdb_list(pTable, pTarget, *pKeys*, *pRecordIDs*)
 ---
+Updated 2020/07/21
+
 ## Summary
 This function returns a line-delimited string from the values of the requested key(s) or a line-delimited string of the cdbRecordIDs of all the records in the table.
 
@@ -34,9 +36,13 @@ put "cloud" into tTarget
 put "cdbRecordID" into tKeys
 
 # RETURN A STRING OF ALL RECORD IDS, LINE DELIMITED
-# BOTH EXAMPLES WILL RETURN THE SAME OUTPUT
+# BOTH METHODS WILL RETURN THE SAME OUTPUT
 # THIS IS THE MOST EFFICIENT METHOD FOR GETTING ALL RECORD IDS FROM A TABLE
+
+#Method 1
 put cdb_list(tTable,tTarget,tKeys) into tOutputA
+
+#Method 2 (Not passing tKeys defaults to cdbRecordID)
 put cdb_list(tTable,tTarget) into tOutputA
 
 #Output: 5af2dd2f-b5b8-4178-b4d2-cbaa03b8ea23
