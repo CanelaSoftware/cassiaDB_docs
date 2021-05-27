@@ -11,7 +11,9 @@ The API can also be found in Markdown format in the "docs" Folder.
 ## Editing the project
 This project is build using [MKDocs](http://www.mkdocs.org/). To make doc modifications, you will need to have [mkdocs installed](http://www.mkdocs.org/#installation). Then, checkout master branch, make updates to .md files (under "docs"), and commit. To view locally, use `mkdocs serve`. To deploy, use `mkdocs build`. Copy the contents of the "site" folder to /var/www/docs/html/ on livecloud.io server.
 
-(see http://www.mkdocs.org/user-guide/deploying-your-docs/) .
+(see http://www.mkdocs.org/user-guide/deploying-your-docs/)
+Note: Theme compatibility requires version 1.0.4: pip install -Iv mkdocs==1.0.4
+Newer versions will break the layout.
 
 Terminal
 1. Open terminal and set path to gitHub repo for cassiaDB_docs

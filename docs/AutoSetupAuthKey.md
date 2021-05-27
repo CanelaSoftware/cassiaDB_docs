@@ -22,14 +22,15 @@ It is highly suggested to place the initializeCanelaDB handler in a file that is
 
 ## Examples
 ```livecodeserver
-# We want to save our authKey in our initializeCanelaDB handler. This is a good API to use just after doing a cdb_sdk().
+# We want to save our authKey in our initializeCanelaDB handler. This is a good API to use just after doing a cdb_sdk(). 
 
  //UPDATE initializeCanelaDB HANDLER
      put the long id of stack "setup.behavior" into tID
      get cdb_autoSetupAuthKey(tID)
-     if it is not true then
+     put it into tResponse
+     if tResponse is not true then
           // AUTH KEY
-          put it into tAuthKey
+          put tResponse into tAuthKey
           
           //STORE AUTHKEY IN initializeCanelaDB HANDLER
           put the script of stack "setup.behavior" into tScript
