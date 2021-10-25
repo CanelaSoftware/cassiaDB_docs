@@ -17,18 +17,18 @@ This method is for cloud-based applications that do not require users to create 
 
 ### Creating User Account
 
-1. Create a user account for your project with an email and password of your choosing. **Do not use your developer credentials or any personal information.** You will be hardcoding the email and password in your application.
+1. Create a user account for your project with an email and password of your choosing. **Do not use your developer credentials or any personal information.** You will be hardcoding the email and password in your application. We use the [cdb_userAccount](CreateUserAccount.md) API to do this:
 
-		# Required Parameters: 	pProjectName, pEmail, pPassword
-		# Optional Parameters: 	pFirstName, pLastName, pPreVerify
+		# Required Parameters: 	pEmail, pPassword
+		# Optional Parameters: 	pFirstName, pLastName, pPreVerify, pAutoAuth, pProjectName
 
-		cdb_createUserAccount "My Project Name","email@email.com","fakepassword",,,true
+		cdb_createUserAccount "email@email.com","fakepassword",,,true
 
 2. Passing "true" as to pPreVerify will automatically verify this user account. This means you don't need to verify your email prior to using the account.
 
 ### Authorizing Your App
 
-1. Call [cdb_auth](https://docs.livecloud.io/Auth/) with the necessary parameters after the call to "initializeCanelaDB" in the "preOpenStack" of the application's stack script. Hardcode the email and password of the user account created in the "Creating User Accounts" section above in your stack script. This will authenticate the user with the hardcoded credentials when the application is opened.
+1. Call [cdb_auth](Auth.md) with the necessary parameters after the call to "initializeCanelaDB" in the "preOpenStack" of the application's stack script. Hardcode the email and password of the user account created in the "Creating User Accounts" section above in your stack script. This will authenticate the user with the hardcoded credentials when the application is opened.
 
 		on preOpenStack
      		initializeCanelaDB
@@ -46,26 +46,28 @@ This method is for applications that require users to create an account.
 	* password
 	* first name (optional)
 	* last name (optional)
-2. When users proceed to create an account, call [cdb_createUserAccount](https://docs.livecloud.io/CreateUserAccount/) with the necessary parameters. If a user account with the provided email does not exist in the cdbUsers table for the specified project, it will create a new record in the that table.
+2. When users proceed to create an account, call [cdb_createUserAccount](CreateUserAccount.md) with the necessary parameters. If a user account with the provided email does not exist in the cdbUsers table for the specified project, it will create a new record in the that table.
 
-		# Required Parameters: 	pProjectName, pEmail, pPassword
-		# Optional Parameters: 	pFirstName, pLastName, pPreVerified
+		# Required Parameters:  pEmail, pPassword
+		# Optional Parameters: 	pFirstName, pLastName, pPreVerified, pAutoAuth, pProjectName
 
-		cdb_createUserAccount pProjectName,pEmail,pPassword,pFirstName,pLastName,pPreVerified
+		cdb_createUserAccount pEmail,pPassword,pFirstName,pLastName,pPreVerified,pAutoAuth,pProjectName
 
 ### User Account Verification
-The "verified" key in user account records is "false" by default. When the user's account is created, an email with a link to verify the account is sent to the user's email. After the link is clicked, the "verified" key will change to "true". If you want to automatically verify all your users, i.e. you don't want them to verify their emails, you can pass "true" to the parameter _pPreVerified_.
+The "verified" key in user account records is **false** by default. When the user's account is created, an email with a link to verify the account is sent to the user's email. After the link is clicked, the "verified" key will change to **true**. If you want to automatically verify all your users, i.e. you don't want them to verify their emails, you can pass **true** to the parameter _pPreVerified_.
+
+If you want the user to automatically be authenticated after creating an account, pass **true** to the parameter _pAutoAuth_. They will automatically be logged in as they create their account.
 
 ### User Authentication
 This method is for applications that require users to log in.
 
 1. Create a user interface to allow users to enter their email and password to log in.
 
-2. When users proceed to log in, call [cdb_auth](https://docs.livecloud.io/Auth/) with the necessary parameters. Use [cdb_result](https://docs.livecloud.io/Result/) to check if the call was successful.
+2. When users proceed to log in, call [cdb_auth](Auth.md) with the necessary parameters. Use [cdb_result](Result.md) to check if the call was successful.
 
 		get cdb_auth(pEmail,pPassword,"user")
 	
 		if not cdb_result() then
-			answer "Failed to authenticate user."
+			answer "Failed to authenticate user - " & cdb_result("response")
 		end if
 
