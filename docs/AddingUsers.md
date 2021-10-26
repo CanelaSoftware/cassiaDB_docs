@@ -24,7 +24,7 @@ This method is for cloud-based applications that do not require users to create 
 
 		cdb_createUserAccount "email@email.com","fakepassword",,,true
 
-2. Passing "true" as to pPreVerify will automatically verify this user account. This means you don't need to verify your email prior to using the account.
+2. Passing "true" to pPreVerify will automatically verify this user account. This means you don't need to verify your email before using the account. Passing "true" to pAuthAuth will automatically log the user into your app. For most apps, you would not need to pass anything in pProjectName. LiveCloud will assume the current project.
 
 ### Authorizing Your App
 
@@ -48,8 +48,8 @@ This method is for applications that require users to create an account.
 	* last name (optional)
 2. When users proceed to create an account, call [cdb_createUserAccount](CreateUserAccount.md) with the necessary parameters. If a user account with the provided email does not exist in the cdbUsers table for the specified project, it will create a new record in the that table.
 
-		# Required Parameters:  pEmail, pPassword
-		# Optional Parameters: 	pFirstName, pLastName, pPreVerified, pAutoAuth, pProjectName
+		# Required Parameters: 	pEmail, pPassword
+		# Optional Parameters: 	pFirstName, pLastName, pPreVerify, pAutoAuth, pProjectName
 
 		cdb_createUserAccount pEmail,pPassword,pFirstName,pLastName,pPreVerified,pAutoAuth,pProjectName
 
